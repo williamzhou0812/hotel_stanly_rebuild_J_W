@@ -1,0 +1,89 @@
+@import "../../../Utilities/_Variables";
+
+.services-title {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+
+    background-color: $LightBlueButtonBackground;
+
+    align-items: center;
+    border-width: 1px;
+    border-style: solid none solid solid;
+    border-color: rgb(183, 223, 228);
+    padding-left: 5%;
+    text-align: left;
+    letter-spacing: 3px;
+
+    @include for-size(small-phone) {
+        letter-spacing: 1px;
+        padding: 0px !important;
+        margin: 0 auto;
+    }
+    @include for-size(phone-only) {
+        letter-spacing: 1px;
+        padding: 0px !important;
+        margin: 0 auto;
+    }
+    @include for-size(tablet-portrait) {
+        letter-spacing: 3px;
+        padding: 0;
+    }
+    @include for-size(tablet-landscape) {
+        letter-spacing: 4px;
+        padding: 0;
+    }
+    h3 {
+        font-size: $h3;
+        line-height: 150%;
+        @include for-size(small-phone) {
+            padding: 0 5%;
+            text-align: left;
+        }
+        @include for-size(phone-only) {
+            padding: 0 5%;
+            text-align: left;
+        }
+        @include for-size(tablet-portrait) {
+            padding: 0 5%;
+            text-align: left;
+        }
+        @include for-size(tablet-landscape) {
+            padding: 0 5%;
+            text-align: left;
+        }
+    }
+}
+
+.seeMap-btn {
+    span {
+        @include for-size(small-phone) {
+            height: auto !important;
+            font-size: 8px !important;
+            padding-top: 2%;
+        }
+        @include for-size(phone-only) {
+            font-size: 12px !important;
+            height: auto !important;
+            padding-top: 2%;
+        }
+        @include for-size(tablet-portrait) {
+            font-size: 14px !important;
+            height: auto !important;
+            padding-top: 2%;
+        }
+        @include for-size(tablet-landscape) {
+            font-size: 16px !important;
+            height: auto !important;
+            padding-top: 2%;
+        }
+    }
+}

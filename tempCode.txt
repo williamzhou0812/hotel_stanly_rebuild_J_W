@@ -1,0 +1,186 @@
+                                       //() => setModalShow(true)
+      
+      
+      
+      
+       <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/PortMoresbyAirportMap.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>PORT MORESBY AIRPORT</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Lae-Map-LAE.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>PORT MORESBY MAP National Capital District</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>LAE MAP Morobe</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>MADANG MAP Madang</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>MOUNT HAGEN MAP Western Highlands</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>KOKPO MAP East New Britain</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>GOROKA MAP Eastern Highlands</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>ALOTAU MAP Milne Bay Province</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>KIMBE MAP West New Britain</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>KAVILENG MAP New Ireland Province </h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>WEWAK MAP East Sepik Province</h1>
+                                            </div>
+                                    </ListItem>
+                                    <ListItem button>
+                                        <ListItemIcon>
+                                        <img src="./imgs/maps/Madang-Map-MADANG.png" alt="" style={{width: 200, height: 200}}/>
+                                        </ListItemIcon>
+                                        {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                            <div className="list_text">
+                                                <h1>BUKA MAP Autonomous Region of Bougainville</h1>
+                                            </div>
+                                    </ListItem>
+
+
+
+
+
+
+
+///////////
+           {mapData.map((maplist, index) => {
+
+                                       return ( 
+                                        <ListItem button key={maplist.id} onClick={() => setModalShow(true)
+                                        }>
+
+                                       
+                                        <ListItemIcon>
+                                            <img src={maplist.img_url} alt="" style={{width: 200, height: 200}}/>
+                                            </ListItemIcon>
+                                            {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                                <div className="list_text">
+                                                    <h1>{maplist.location}</h1>
+                                                </div>
+                                         </ListItem>
+                                        
+                                      
+                                 
+                                       );
+                                   })}
+                                
+
+
+
+
+
+
+
+
+
+
+             <List component="nav" aria-label="main mailbox folders" > 
+                                   
+                                   {mapData.map((maplist, index) => {
+
+                                       return ( 
+                                         
+
+                                        <ListItem button key={maplist.id} onClick={() => setModalShow(true)
+                                        }>
+
+                                       
+                                        <ListItemIcon>
+                                            <img src={maplist.img_url} alt="" style={{width: 200, height: 200}}/>
+                                            </ListItemIcon>
+                                            {/* <ListItemText primary="PAPUA NEW GUNIEA MAP"  style={{textAlign: 'center'}}/> */}
+                                                <div className="list_text">
+                                                    <h1>{maplist.location}</h1> 
+                                                    
+                                                </div>
+                                         </ListItem>
+                                        
+                                      
+                                 
+                                       );
+                                   })}
+                                
+
+
+
+
+
+
+
+                                 </List>
