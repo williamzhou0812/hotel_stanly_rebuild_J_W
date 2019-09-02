@@ -22,6 +22,10 @@ import ServiceInitialList from './components/MainContents/Service/ServiceInitial
 
 import { serviceNamespace }  from './Constants';
 
+import  Essential  from './components/MainContents/Service/essential/essential'; 
+
+import Banks from './components/MainContents/Service/essential/subpages/bank';
+
 
 // Style Sheets
 
@@ -39,19 +43,24 @@ function App() {
       <main>
           <Switch>
 
-            <Route exact  path='/' component={AboutOurHotel} />
-            <Route exact path='/ourhotel' component={OurHotel} />
-            <Route  path='/ourhotel/:name' component={OurHotel} />
-            <Route  path='/hoteldetail' component={HotelWelcome} />
+              <Route  exact  path='/' component={AboutOurHotel} />
+              <Route  exact path='/ourhotel' component={OurHotel} />
+              <Route  exact path='/ourhotel/:name' component={OurHotel} />
+              <Route  exact path='/hoteldetail' component={HotelWelcome} />
 
-            <Route   exact path='/events' component={EventList} />
-            <Route   path='/events/:id' component={EventDetail} /> 
+              <Route   exact path='/events' component={EventList} />
+              <Route    path='/events/:id' component={EventDetail} /> 
 
-            <Route exact path={serviceNamespace} component={ServiceInitialList} />
+              <Route exact path={serviceNamespace} component={ServiceInitialList} />
 
 
-            <Route exact path='/maps' component={Maps} />
-            <Route    path='/maps/:id' component={Maps} />
+              <Route exact path='/maps' component={Maps} />
+              <Route    path='/maps/:id' component={Maps} />
+
+              <Route  exact path='/services/essential' component={Essential} />
+              <Route  exact path='/services/essential/bank/1' component={Banks} /> 
+         
+
 
 
           </Switch>

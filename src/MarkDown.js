@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const Markdown = ({ source }) => {
     let md = new Remarkable();
-    md.inline.ruler.enable(["ins"]);
+    // md.inline.ruler.enable(["ins"]);
     if (Boolean(source)) {
         return Parser(md.render(source));
     } else {

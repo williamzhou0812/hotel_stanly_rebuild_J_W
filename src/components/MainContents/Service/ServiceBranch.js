@@ -7,11 +7,11 @@ import {
     removeHttp,
     serviceNamespace,
     LightOrange
-} from "../../Constants";
+} from "../../../Constants";
 import { Link } from "react-router-dom";
 import ServiceTypesIcon from "../Dining/icons/RestaurantListIcon.png";
 import MapModal from "../Maps/MapModal";
-import Markdown from "../../MarkDown";
+import Markdown from "../../../MarkDown";
 import "../List/MainSectionList.scss";
 import "./Service.css";
 

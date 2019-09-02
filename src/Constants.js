@@ -48,6 +48,8 @@ export const directoryListNamespace = "/directorylist";
 
 
 export const SUBSECTION_LIST_ENTRIES = 6;
+export const timezone = "Pacific/Port_Moresby";
+
 export const HOVER_DELAY = 2000;
 export const DECIMAL_RADIX = 10;
 // export const SECTION_LIST_ENTRIES = 3;

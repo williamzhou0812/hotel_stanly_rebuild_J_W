@@ -22,7 +22,7 @@ class SubsectionList extends React.Component {
     constructor(props) {
         super(props);
         
-        console.log(props.anyName);
+       console.log(props.data);
 
         
         const { data, randomise } = this.props;
@@ -217,22 +217,26 @@ class SubsectionList extends React.Component {
 
                                 <Link
 
-                                    to={`${namespace}/${item.id}`}
+                                    to={`${namespace}/${index}`}
                                     key={`${item.id}-${index}`}
-                                //  imageSrc={`${item.imgSrc}`}
-                                // backgroundImage={ `url(${
-                                //     images[index]
-                                //     })`}
+                                    // imageSrc={`${item.imgSrc}`}
+                                    // backgroundImage={ `url(${
+                                    // images[index]
+                                    // })`}
                                 >
                                     <div style={{ display: "flex", padding: "1%", borderBottom: "1px solid white" }}>
-                                        <div><div style={{
+                                        <div>
+                                            <div style={{
                                             backgroundImage: `url(${imageSrc})`,
                                             backgroundSize:
                                                 "cover",
                                             backgroundPosition:
                                                 "center",
-                                        }}>image</div></div>
-                                        <div className="subSection--title">{item.title}</div>
+                                            }}> 
+                                              <img src={item.img_url} alt={item.event_title} style={{width: '300px',  height: '230px'}}/>
+                                            </div>
+                                         </div>
+                                        <div className="subSection--title"> {item.event_title}</div>
                                     </div>
 
                                 </Link>

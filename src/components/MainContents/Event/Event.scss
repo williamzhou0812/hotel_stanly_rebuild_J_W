@@ -55,13 +55,16 @@
 .event-main{
     width: 86%;
     height:100%;
-    &--topImg{
+    &--topImg {
+
         height: 50%;
       //  background-color: blue;
-        background-image: url(../../../media/Event_Image_P3.jpg);
+        // background-image: url(../../../media/Event_Image_P3.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-     
+  
+
     }
+   
 }
