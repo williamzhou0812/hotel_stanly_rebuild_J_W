@@ -1,44 +1,44 @@
-import React from 'react';
-
+import React, {Fragment} from 'react';
+import { Link } from 'react-router-dom';
 
 
 const banksDatas = [
     {
         id: 1,
         name: 'ANZ BANK',
-        logo:''
+        logo:'/imgs/service/bank/S1-IMAGES2.jpg'
         
     },
     {
         id: 2,
         name: 'BANK OF SOUTH PACIFIC',
-        logo: ''
+        logo: '/imgs/service/bank/S1-IMAGES.jpg'
     },
     {
         id: 3,
         name: 'WESTPAC BANK',
-        logo: ''
-    },
-    {
-        id: 4,
-        name: 'Advertise you business here! For more information, contact: touchscreen@jbg.com.pg',
-        logo: ''
+        logo: '/imgs/service/bank/S1-IMAGES3.jpg'
     }
 ];
 
 const Banks = (props) => {
 
+  
+     
     return ( 
-        <div>
-            {banksDatas.map( (bankList, index)  => {
+        <Fragment>
+            <div>BANK List Page</div>
+            {banksDatas.map((banklist, index) => {
                 return (
-
                     <ul>
-                        <li>{bankList.id} | {bankList.name}  | {bankList.logo} </li>
-                    </ul> 
+                      
+                        <Link to={`/services/essential/0/${index}`}><img src={banklist.logo} alt={banklist.name} /> {banklist.name}</Link>
+                    </ul>
                 )
-            })}    
-        </div> 
+            })}
+            
+        </Fragment>
+       
     )
 }
 

@@ -3,28 +3,30 @@ import {Link} from 'react-router-dom';
 
 const  essential_service_data = [
     {
-        id: 1,
+        id: 0,
         title: 'BANKS',
         svgIcon: ''
     },
     {
-        id: 2,
+        id: 1,
         title: 'MEDICL SERVICE',
+        svgIcon: ''
+    },
+    {
+        id: 2,
+        title: 'EMBASSIES & HIGH COMMISSIONS', 
         svgIcon: ''
     },
     {
         id: 3,
         title: 'SECURITY',
         svgIcon: ''
-    },
-    {
-        id: 4,
-        title: 'EMBASSIES & HIGH COMMISSIONS',
-        svgIcon: ''
     }
 ]
 
-const Essential = () => { 
+const Essential = (props) => { 
+
+    console.log(props)
 
 
 
@@ -34,16 +36,36 @@ const Essential = () => {
                     <h1>Left part of </h1>
             </div>
             <div>esential pages</div>
-            {essential_service_data.map((essential_data, index) => {
-                return (
-                    <ul>
-                        <Link to={`/service/esssential/bank/${essential_data.id}`}>
-                            {essential_data.id} |  {essential_data.title} |  {essential_data.svgIcon}
+         
+                    <div>
+                        <Link to={`/services/essential/0`}>
+                            {essential_service_data[0].id} |  {essential_service_data[0].title} |  {essential_service_data[0].svgIcon}
                         </Link>
+
+                    </div>
+                    <div>
+                        <Link to={`/services/essential/medicl`}>
+                            {essential_service_data[1].id} |  {essential_service_data[1].title} |  {essential_service_data[1].svgIcon}
+                        </Link>
+                    </div>
+                    <div>
+                        <Link to={`/services/essential/embassy`}>
+                            {essential_service_data[2].id} |  {essential_service_data[2].title} |  {essential_service_data[2].svgIcon}
+                        </Link>
+                    </div>
+                   
+                    <div>
+                        <Link to={`/services/essential/security`}>
+                            {essential_service_data[3].id} |  {essential_service_data[3].title} |  {essential_service_data[3].svgIcon}
+                        </Link>
+                    </div>
+                   
                         
-                    </ul>
-                )
-            })}
+                   
+                        
+                        
+                
+            
         </Fragment>
       
 
