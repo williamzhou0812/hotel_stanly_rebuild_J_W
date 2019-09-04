@@ -1,0 +1,91 @@
+.page-details {
+  height: 50%;
+  background-color: #058c9b;
+  padding-left: 4%;
+  color: white; }
+  .page-details--title {
+    height: 20%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 10px; }
+    @media (max-width: 479px) {
+      .page-details--title {
+        letter-spacing: 1px;
+        font-size: 20px; } }
+    @media (min-width: 480px) and (max-width: 599px) {
+      .page-details--title {
+        letter-spacing: 2px;
+        font-size: 24px; } }
+    @media (min-width: 600px) and (max-width: 900px) {
+      .page-details--title {
+        letter-spacing: 3px;
+        font-size: 34px; } }
+    @media (min-width: 901px) and (max-width: 1070px) {
+      .page-details--title {
+        letter-spacing: 4px;
+        font-size: 38px; } }
+  .page-details--middleLeft {
+    width: 50%;
+    text-align: left; }
+    .page-details--middleLeft p {
+      font-size: 1.7vw;
+      letter-spacing: 1px; }
+  .page-details--middleRight {
+    width: 50%;
+    height: 100%;
+    margin-left: 4%;
+    font-size: 1.7vw; }
+    @media (max-width: 479px) {
+      .page-details--middleRight {
+        font-size: 1.4vw; } }
+    @media (min-width: 480px) and (max-width: 599px) {
+      .page-details--middleRight {
+        font-size: 1.4vw; } }
+    @media (min-width: 600px) and (max-width: 900px) {
+      .page-details--middleRight {
+        font-size: 1.4vw; } }
+    @media (min-width: 901px) and (max-width: 1070px) {
+      .page-details--middleRight {
+        font-size: 1.4vw; } }
+  @media (max-width: 479px) {
+    .page-details--btn {
+      width: 90% !important; } }
+  @media (min-width: 480px) and (max-width: 599px) {
+    .page-details--btn {
+      width: 90% !important; } }
+  @media (min-width: 600px) and (max-width: 900px) {
+    .page-details--btn {
+      width: 85% !important; } }
+  @media (min-width: 901px) and (max-width: 1070px) {
+    .page-details--btn {
+      width: 85% !important; } }
+  .page-details--btn span {
+    font-size: 1.9vw;
+    font-weight: bold; }
+    @media (max-width: 479px) {
+      .page-details--btn span {
+        padding-top: 1%; } }
+    @media (min-width: 480px) and (max-width: 599px) {
+      .page-details--btn span {
+        padding-top: 1%; } }
+    @media (min-width: 600px) and (max-width: 900px) {
+      .page-details--btn span {
+        padding-top: 1%; } }
+
+.Explore {
+  width: 32%; }
+  .Explore--title {
+    width: 68%;
+    font-size: 1.7vw; }
+  .Explore--name {
+    width: 67%;
+    background-color: #0597a5;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    border-left: 1px solid #b8dfe4;
+    border-bottom: 1px solid #b8dfe4;
+    font-size: 1.7vw; }

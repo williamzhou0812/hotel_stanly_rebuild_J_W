@@ -19,8 +19,17 @@ import EventDetail from './components/MainContents/Event/EventDetail';
 
 import ServiceInitialList from './components/MainContents/Service/ServiceInitialList';
 
+// new improt J
+import DiningList from './components/MainContents/Dining/DiningList';
+import DiningDetail from './components/MainContents/Dining/DiningDetail';
+import DestinationDetail from './components/MainContents/Destination/DestinationDetail';
+import DestinationList from './components/MainContents/Destination/DestinationList';
 
-import { serviceNamespace }  from './Constants';
+import { serviceNamespace, accomodationNamespace, destinationNamespace, mapListNamespace, diningNamespace } from './Constants';
+
+// +++++
+
+
 
 import  Essential  from './components/MainContents/Service/essential/essential'; 
 
@@ -34,9 +43,18 @@ import Security from './components/MainContents/Service/essential/security';
 import SecurityDetails from './components/MainContents/Service/essential/subpages/securityDetails'; 
 import Transport from './components/MainContents/Service/transport/transport';
 import VehicleHire from './components/MainContents/Service/transport/vehicleHire';
+import TransportDetails from './components/MainContents/Service/transport/vehicelDetails';
 
+import FreightService from './components/MainContents/Service/transport/freightService';
+import FreightServiceDetail from './components/MainContents/Service/essential/subpages/freightServiceDetails';
+
+import mainComponent from './components/MainContents/Videos/mainComponent';
 
 // Style Sheets
+import PassengerAirline from './components/MainContents/Service/transport/passagerAirline';
+
+import RoomSuite from './components/MainContents/OurHotel/RoomSuite';
+
 
 import './App.css';
 
@@ -53,14 +71,23 @@ function App() {
           <Switch>
 
               <Route  exact  path='/' component={AboutOurHotel} />
+              
               <Route  exact path='/ourhotel' component={OurHotel} />
+              <Route  path ='/outhotel/roomsuite' component={RoomSuite}/>
+
               <Route  exact path='/ourhotel/:name' component={OurHotel} />
+
+              
               <Route  exact path='/hoteldetail' component={HotelWelcome} />
 
               <Route   exact path='/events' component={EventList} />
               <Route    path='/events/:id' component={EventDetail} /> 
 
               <Route exact path={serviceNamespace} component={ServiceInitialList} />
+              <Route exact path={destinationNamespace} component={DestinationList} />
+              <Route exact path={destinationNamespace + "/:id"} component={DestinationDetail} />
+              <Route exact path={diningNamespace} component={DiningList} />
+              <Route exact path={diningNamespace + "/:id"} component={DiningDetail} />
 
 
               <Route exact path='/maps' component={Maps} />
@@ -85,7 +112,16 @@ function App() {
          
               <Route  exact path='/services/transport' component={Transport} />
               <Route exact path='/services/transport/vehicle-hire' component={VehicleHire} /> 
-              {/* <Route exact path='/services/transport/:id' component={TransportDetails} />  */}
+              <Route exact path='/services/transport/vehicle-hire/:id' component={TransportDetails} /> 
+
+
+              <Route exact path='/services/transport/freight-services' component={FreightService}/>
+              <Route exact path='/services/transport/freight-services/:id' component={FreightServiceDetail} />
+
+              <Route exact path='/services/transport/passenger-airline-serviece' component={PassengerAirline} />
+
+
+              <Route exact path='/videos' component={mainComponent} />
 
           </Switch>
       </main>

@@ -121,6 +121,7 @@ class SectionList extends React.Component {
                                             backgroundImage: `url(${
                                                 images[index]
                                                 })`,
+                                            //    backgroundImage: `url(${item.images})`,
                                             backgroundPosition: backgroundPositionValue,
                                             backgroundRepeat: "no-repeat",
                                             backgroundSize: "cover",

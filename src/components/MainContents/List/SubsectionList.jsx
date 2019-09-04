@@ -1,6 +1,6 @@
 import React from "react";
-import UpButton from "../../MainContents/Destination/icons/DownExploreButton.png";
-import DownButton from "../../MainContents/Destination/icons/UpExploreButton.png";
+import DownButton from "../../MainContents/Destination/icons/DownExploreButton.png";
+import UpButton from "../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
@@ -21,10 +21,10 @@ import "./MainSectionList.scss";
 class SubsectionList extends React.Component {
     constructor(props) {
         super(props);
-        
-       console.log(props.data);
 
-        
+        console.log(props.data);
+
+
         const { data, randomise } = this.props;
 
         this.state = {
@@ -61,7 +61,7 @@ class SubsectionList extends React.Component {
             sideButtons,
             sideTitle,
             mainTitle,
-            namespace, 
+            namespace,
         } = this.props;
         const itemHeight = `${100 / numberOfEntries}%`;
         let toRender = data.slice();
@@ -148,7 +148,7 @@ class SubsectionList extends React.Component {
                                         mainTitle={mainTitle}
                                     //  maps={maps}
                                     />
-                                
+
                                 );
                             } else {
                                 return (
@@ -219,24 +219,28 @@ class SubsectionList extends React.Component {
 
                                     to={`${namespace}/${index}`}
                                     key={`${item.id}-${index}`}
-                                    // imageSrc={`${item.imgSrc}`}
-                                    // backgroundImage={ `url(${
-                                    // images[index]
-                                    // })`}
+                                // imageSrc={`${item.imgSrc}`}
+                                // backgroundImage={ `url(${
+                                // images[index]
+                                // })`}
                                 >
-                                    <div style={{ display: "flex", padding: "1%", borderBottom: "1px solid white" }}>
+                                    <div style={{
+                                        display: "flex", alignItems: "center",
+                                        borderBottom: "1px solid white"
+                                    }}>
                                         <div>
                                             <div style={{
-                                            backgroundImage: `url(${imageSrc})`,
-                                            backgroundSize:
-                                                "cover",
-                                            backgroundPosition:
-                                                "center",
-                                            }}> 
-                                              <img src={item.img_url} alt={item.event_title} style={{width: '300px',  height: '230px'}}/>
+                                                backgroundImage: `url(${imageSrc})`,
+                                                backgroundSize:
+                                                    "cover",
+                                                backgroundPosition:
+                                                    "center",
+                                            }}>
+                                                <img src={item.img_url} alt={item.event_title} style={{ width: "auto", height: "8vh" }} />
                                             </div>
-                                         </div>
-                                        <div className="subSection--title"> {item.event_title}</div>
+                                        </div>
+                                        {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
+                                        <div className="subSection--title"><div>{item.title}</div> <div style={{ fontSize: "1.7vw" }}>{item.subTitle}</div> </div>
                                     </div>
 
                                 </Link>

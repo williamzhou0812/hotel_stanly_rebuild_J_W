@@ -1,0 +1,30 @@
+
+    h2 {
+        position: absolute;
+        left: -50px;
+        top: 85%;
+        color: white;
+        font-weight: 900;
+        transform: rotate(-450deg);
+        font-size: 6rem;
+       
+         
+    
+            /* Legacy vendor prefixes that you probably don't need... */
+    
+            /* Safari */
+            -webkit-transform: rotate(-450deg);
+    
+            /* Firefox */
+            -moz-transform: rotate(-450deg);
+    
+            /* IE */
+            -ms-transform: rotate(-450deg);
+    
+            /* Opera */
+            -o-transform: rotate(-450deg);
+    
+      }
+.list_text > h1 {
+    text-align: center;
+}

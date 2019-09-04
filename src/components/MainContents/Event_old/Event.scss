@@ -1,0 +1,70 @@
+@import "../../../Utilities/Variables";
+
+.event-title {
+    flex-basis: 72%;
+    background-color: $LightBlueButtonBackground;
+
+    span {
+        font-size: 3.2vw;
+        font-weight: bold;
+        letter-spacing: 2px;
+        @include for-size(small-phone) {
+            letter-spacing: 0px;
+            padding: 0;
+        }
+        @include for-size(phone-only) {
+            letter-spacing: 1px;
+            padding: 0;
+        }
+        @include for-size(tablet-portrait) {
+            letter-spacing: 2px;
+            padding: 0;
+        }
+        @include for-size(tablet-landscape) {
+            letter-spacing: 2px;
+            padding: 0;
+        }
+    }
+}
+.event-nextPre-btn {
+    flex-basis: 14%;
+    background-color: rgb(101, 199, 197);
+    span {
+        font-size: $p;
+        letter-spacing: 2px;
+
+        @include for-size(small-phone) {
+            letter-spacing: 0px;
+            padding: 0;
+        }
+        @include for-size(phone-only) {
+            letter-spacing: 0px;
+            padding: 0;
+        }
+        @include for-size(tablet-portrait) {
+            letter-spacing: 0px;
+            padding: 0;
+        }
+        @include for-size(tablet-landscape) {
+            letter-spacing: 0px;
+            padding: 0;
+        }
+    }
+}
+
+.event-main{
+    width: 86%;
+    height:100%;
+    &--topImg {
+
+        height: 50%;
+      //  background-color: blue;
+        // background-image: url(../../../media/Event_Image_P3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+  
+
+    }
+   
+}

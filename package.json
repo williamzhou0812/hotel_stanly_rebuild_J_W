@@ -14,6 +14,8 @@
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
+    "react-image-gallery": "^0.9.1",
+    "react-image-magnify": "^2.7.4",
     "react-image-zoom": "^0.7.0",
     "react-pinch-and-zoom": "^1.2.4",
     "react-remarkable": "^1.1.3",

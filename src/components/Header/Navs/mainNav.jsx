@@ -71,8 +71,8 @@ class mainNav extends React.Component {
                     iconWidth: "70px"
                 },
                 {
-                    name: "HOTELS",
-                    path: accomodationNamespace,
+                    name: "OUR HOTELS",
+                    path: '/ourhotel',
                     icon: AccommodationIcon,
                     iconWidth: "70px"
                 }

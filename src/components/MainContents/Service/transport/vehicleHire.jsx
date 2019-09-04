@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-
+import {Link} from 'react-router-dom';
 
 
 const  vehicleHireList = [
@@ -56,7 +56,10 @@ const VehicleHire = () => {
             <ul>
                 {vehicleHireList.map((vhList, index) => {
                     return (
-                        <li> <img src={vhList.img_logo}  alt='' /> | {vhList.title} </li>
+                        <div>
+
+                            <Link to={`/services/transport/vehicle-hire/${index}`}> <img src={vhList.img_logo}  alt='' /> | {vhList.title} </Link>
+                        </div>
                     )
                 })}
             

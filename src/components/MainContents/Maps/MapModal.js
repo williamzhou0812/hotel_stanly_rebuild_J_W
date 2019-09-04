@@ -8,11 +8,11 @@ import {
     HeavyOrange,
     HOVER_DELAY
 } from "../../../Constants";
-// import ReactImageMagnify from "react-image-magnify";
-// import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-// import CloseIcon from "material-ui/svg-icons/navigation/close";
+import ReactImageMagnify from 'react-image-magnify';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import CloseIcon from '@material-ui/icons/Close';
 import PropTypes from "prop-types";
-// import "./Map.scss";
+import "./Maps.scss";
 
 class MapModal extends React.Component {
     constructor(props) {
@@ -55,7 +55,7 @@ class MapModal extends React.Component {
                 >
                     <Modal.Body>
                         <div style={{ position: "absolute", right: 0, top: 0 }}>
-                            {/* <MuiThemeProvider>
+                            <MuiThemeProvider>
                                 <CloseIcon
                                     onClick={this.closeModal}
                                     color="white"
@@ -65,14 +65,14 @@ class MapModal extends React.Component {
                                         width: 32
                                     }}
                                 />
-                            </MuiThemeProvider> */}
+                            </MuiThemeProvider>
                         </div>
                         <div className="map-title">
                             MAP OF
                             <br />
                             {title.toUpperCase()}
                         </div>
-                        {/* <ReactImageMagnify
+                        <ReactImageMagnify
                             {...{
                                 smallImage: {
                                     alt: `Map of ${title}`,
@@ -101,7 +101,7 @@ class MapModal extends React.Component {
                             }}
                         >
                             TAP OUTSIDE OF MAP TO CLOSE
-                        </div> */}
+                        </div>
                     </Modal.Body>
                 </Modal>
             </div>

@@ -18,8 +18,8 @@ import "./Event.scss";
 //import { url } from "inspector";
 
 class EventDetail extends React.Component {
-    constructor(props) { 
-        console.log(`hi wiliam props`+ props.match)
+    constructor(props) {
+        console.log(`hi wiliam props` + props.match)
         super();
         // this.onChangeLink = this.onChangeLink.bind(this);
         this.state = {
@@ -29,102 +29,105 @@ class EventDetail extends React.Component {
 
     events = [
         {
-                id: 1,
-                event_title: 'SP SPORT AWARDS',
-                month: 'Match',
-                img_url: '/imgs/events/Events_Images_P.jpg',
-                description: 'In March, Port Moresby plays host to the SP Sports Awards which recognises the outstanding achievements of Papua New Guinea’s sporting elite. Fifteen awards are handed out on the night including the Male and Female Athlete of the Year. Facebook: spsportsawards',     
-                details: {
-                    call: '+675 302 8200',
-                    websit: null,
-                    email: 'info@sp.com.pg',
-                    location: 'Port Moresby, Papua New Guniea'
-                }
+            id: 1,
+            event_title: 'SP SPORT AWARDS',
+            month: 'MARCH',
+            img_url: '/imgs/events/Events_Images_P.jpg',
+            mapImage: '/imgs/events/maps/SP-SPORTS-AWARDS-MAP.png',
+            description: 'In March, Port Moresby plays host to the SP Sports Awards which recognises the outstanding achievements of Papua New Guinea’s sporting elite. Fifteen awards are handed out on the night including the Male and Female Athlete of the Year. Facebook: spsportsawards',
+            details: {
+                call: '+675 302 8200',
+                websit: null,
+                email: 'info@sp.com.pg',
+                location: 'Port Moresby, Papua New Guniea'
+            }
 
         },
         {
-                id: 2,
-                event_title: 'GOGODALA CANOE FESTIVAL',
-                img_url:'/imgs/events/Events_Images_P2.jpg', 
-                month: 'April',
-                description: 'The Gogodala people from the Middle Fly District in the Western Province are renowned for their flamboyant and ornately crafted canoes. Once upon a time, it was customary for tribes to settle disputes by racing canoes which the festival pays homage to.',
-                details: {
-                    call: null,
-                    website: null,
-                    email: null,
-                    location: 'Balimo, Papua New Guniea'
-                }
+            id: 2,
+            event_title: 'GOGODALA CANOE FESTIVAL',
+            img_url: '/imgs/events/Events_Images_P2.jpg',
+            mapImage: '/imgs/events/maps/GOGODALA-CANOE-FESTIVAL-MAP.png',
+            month: 'April',
+            description: 'The Gogodala people from the Middle Fly District in the Western Province are renowned for their flamboyant and ornately crafted canoes. Once upon a time, it was customary for tribes to settle disputes by racing canoes which the festival pays homage to.',
+            details: {
+                call: null,
+                website: null,
+                email: null,
+                location: 'Balimo, Papua New Guniea'
+            }
         },
         {
-                id: 3,
-                event_title: 'THE MADANG FESTIVAL' , 
-                img_url: '/imgs/events/Events_Images_P3.jpg',
-                month: 'JUNE',
-                description: 'Showcasing cultural groups from the Madang Province, the Madang Festival celebrates the region’s rich culture with a colourful parade, live performances, canoe racing, sporting activities and stalls.',
-                details: {
-                    call: '+675 422 3302',
-                    website: 'www.madangfestival.org',
-                    email: 'madangfestival@gmail.com',
-                    location: 'Madang, Papua New Guniea'
-                }
+            id: 3,
+            event_title: 'THE MADANG FESTIVAL',
+            img_url: '/imgs/events/Events_Images_P3.jpg',
+            mapImage: '/imgs/events/maps/THE-MADANG-FESTIVAL-MAP.png',
+            month: 'JUNE',
+            description: 'Showcasing cultural groups from the Madang Province, the Madang Festival celebrates the region’s rich culture with a colourful parade, live performances, canoe racing, sporting activities and stalls.',
+            details: {
+                call: '+675 422 3302',
+                website: 'www.madangfestival.org',
+                email: 'madangfestival@gmail.com',
+                location: 'Madang, Papua New Guniea'
+            }
 
-        },          
-        {
-            
-                id: 4,
-                event_title: 'NATIONAL MASK FESTIVAL',
-                img_url: '/imgs/events/Events_Images_P4.jpg',
-                month: 'JULY',
-                description: 'In July, the National Mask Festival in Rabaul brings the variety of the Papua New Guinean masks to one single celebration. The festival usually runs for four or five days and provides visitors with a fantastic array of performances including fire-eaters, singers, drummers, and more.',
-                detials: {
-                    call: '675 982 8697',
-                    website: 'www.enb.travel',
-                    email: null,
-                    location: 'Rabaul, Papua New Guniea'
-                }
         },
         {
 
-    
-                id: 5,
-                event_title: 'MONA FESTIVAL',
-                img_url: '/imgs/events/E3A_-_Mona_Festival_P5.jpg',
-                month: 'JULY',
-                description: 'Mona Festival, the largest cultural event in Bougainville, only launched in 2009. The festival is dedicated to the traditional warrior canoes called ‘Monas’. Occurring in July each year, this colourful festival is said to celebrate the cultural diversity and autonomy that inspires peace and reconciliation today.',
-                detials: {
-                    call: '+675 71 626 393',
-                    website: 'www.bougainville.travel',
-                    email: 'bougainville.travel@abg.gov.pg',
-                    location: 'Buka, Papua New Guniea'
-                }
+            id: 4,
+            event_title: 'NATIONAL MASK FESTIVAL',
+            img_url: '/imgs/events/Events_Images_P4.jpg',
+            month: 'JULY',
+            description: 'In July, the National Mask Festival in Rabaul brings the variety of the Papua New Guinean masks to one single celebration. The festival usually runs for four or five days and provides visitors with a fantastic array of performances including fire-eaters, singers, drummers, and more.',
+            detials: {
+                call: '675 982 8697',
+                website: 'www.enb.travel',
+                email: null,
+                location: 'Rabaul, Papua New Guniea'
+            }
         },
-      
         {
-                id: 6,
-                event_title: 'DWU CULTURAL DAY',
-                img_url: '/imgs/events/Events_Images_P5.jpg',
-                month: 'AUGUST',
-                description: 'The Divine Word University Cultural Day is an annual event that sees students come together to perform and celebrate their cultural heritage.',
-                detials: {
-                    call: '+675 422 2937',
-                    website: 'www.dwu.ac.pg',
-                    email: 'events@dwu.ac.pg',
-                    location: 'Madang Campus, Divine Word University, Papua New Guniea'
-                }
+
+
+            id: 5,
+            event_title: 'MONA FESTIVAL',
+            img_url: '/imgs/events/E3A_-_Mona_Festival_P5.jpg',
+            month: 'JULY',
+            description: 'Mona Festival, the largest cultural event in Bougainville, only launched in 2009. The festival is dedicated to the traditional warrior canoes called ‘Monas’. Occurring in July each year, this colourful festival is said to celebrate the cultural diversity and autonomy that inspires peace and reconciliation today.',
+            detials: {
+                call: '+675 71 626 393',
+                website: 'www.bougainville.travel',
+                email: 'bougainville.travel@abg.gov.pg',
+                location: 'Buka, Papua New Guniea'
+            }
         },
 
         {
-                id: 7,
-                event_title: 'MOUNT HAGEN SHOW',
-                img_url: '/imgs/events/Events_Images_P6.jpg',
-                month: 'AUGUST',
-                description: 'The Mount Hagen Show highlights the rich culture of the Highlands region in a wonderful display of sing-sings. The show attracts around 50,000 visitors each year and is one of PNG’s oldest shows, launching back in 1961. Occurring in August each year, the show provides an insight into the fascinating customs of the local tribes.',
-                detials: {
-                    call: '+675 7308 1368',
-                    website: 'www.papuanewguinea.travel',
-                    email: 'howarigc@gmail.com',
-                    location: 'Mount Hagen, Papua New Guniea'
-                }
+            id: 6,
+            event_title: 'DWU CULTURAL DAY',
+            img_url: '/imgs/events/Events_Images_P5.jpg',
+            month: 'AUGUST',
+            description: 'The Divine Word University Cultural Day is an annual event that sees students come together to perform and celebrate their cultural heritage.',
+            detials: {
+                call: '+675 422 2937',
+                website: 'www.dwu.ac.pg',
+                email: 'events@dwu.ac.pg',
+                location: 'Madang Campus, Divine Word University, Papua New Guniea'
+            }
+        },
+
+        {
+            id: 7,
+            event_title: 'MOUNT HAGEN SHOW',
+            img_url: '/imgs/events/Events_Images_P6.jpg',
+            month: 'AUGUST',
+            description: 'The Mount Hagen Show highlights the rich culture of the Highlands region in a wonderful display of sing-sings. The show attracts around 50,000 visitors each year and is one of PNG’s oldest shows, launching back in 1961. Occurring in August each year, the show provides an insight into the fascinating customs of the local tribes.',
+            detials: {
+                call: '+675 7308 1368',
+                website: 'www.papuanewguinea.travel',
+                email: 'howarigc@gmail.com',
+                location: 'Mount Hagen, Papua New Guniea'
+            }
 
 
         },
@@ -234,18 +237,17 @@ class EventDetail extends React.Component {
             justifyContent: "center",
             padding: "2%"
         },
-        
+
         mapOrFindButtonStyle: {
             backgroundColor: LightBlueButtonBackground,
+            display: "flex",
             width: "100%",
             padding: "4% 0",
             display: "inline-bock",
             marginTop: "-5%",
             borderRadius: "5px",
-
             boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
             color: "white",
-
             justifyContent: "center"
         },
         mapOrFindButtonText: {
@@ -258,7 +260,7 @@ class EventDetail extends React.Component {
 
     render() {
 
-     let  eventDetail = this.events[parseInt(this.props.match.params.id)]
+        let eventDetail = this.events[parseInt(this.props.match.params.id)]
 
 
         return (
@@ -301,16 +303,16 @@ class EventDetail extends React.Component {
                                 >
                                     <p
                                         className="menu-title"
-                                        style={this.styles.removePaddingMargin}
+                                    //  style={this.styles.removePaddingMargin}
                                     >
                                         CALENDAR
-                                </p>
+                                     </p>
                                     <p
                                         className="menu-title"
-                                        style={this.styles.removePaddingMargin}
+                                    //  style={this.styles.removePaddingMargin}
                                     >
                                         OF EVENTS
-                                </p>
+                                    </p>
                                 </div>
                             </div>
                         </Link>
@@ -321,196 +323,202 @@ class EventDetail extends React.Component {
                                 transform: "rotate(-90deg)"
                             }}
                         >
-                            EVENTS 
+                            EVENTS
                     </span>
                     </div>
                 </div>
                 <div >
                     <div className='event-main'>
-                      
-                            <img src={eventDetail.img_url}  style={{height: '45vh', width: '100%'}} />  
-                       
-                    </div>
-                    <div style={{ height: "50%" }}>
-                        <div style={{ height: "13%", display: "flex" }}>
-                            <div
-                                className="event-nextPre-btn"
-                                style={{
-                                    ...this.styles.horizontalVerticalCenter
-                                }}
-                                onClick={this.prevEvent}
-                            >
-                                <span>PREVIOUS EVENT</span>
-                            </div>
-                            <div
-                                className="event-title"
-                                style={{
-                                    ...this.styles.horizontalVerticalCenter
-                                }}
-                            >
-                                {/* <span>{event.title}</span> */}
-                                <h2>Event Title</h2>
-                            </div>
-                            <div
-                                className="event-nextPre-btn"
-                                style={{
-                                    ...this.styles.horizontalVerticalCenter
-                                }}
-                            // onClick={this.nextEvent}
-                            >
-                                <span>NEXT EVENT</span>
-                            </div>
+                        <div style={{ height: "50%", width: "100%" }}>
+                            <img src={eventDetail.img_url} style={{ height: '100%', width: '100%' }} />
+
                         </div>
-                        <div
-                            style={{
-                                height: "87%",
-                                backgroundColor: ExtraHeavyBlueGreen,
-                                display: "flex"
-                            }}
-                        >
+                        <div style={{ height: "50%", width: "100%" }}>
+                            <div style={{ height: "13%", display: "flex" }}>
+                                <div
+                                    className="event-nextPre-btn"
+                                    style={{
+                                        ...this.styles.horizontalVerticalCenter
+                                    }}
+                                    onClick={this.prevEvent}
+                                >
+                                    <span>PREVIOUS EVENT</span>
+                                </div>
+                                <div
+                                    className="event-title"
+                                    style={{
+                                        ...this.styles.horizontalVerticalCenter
+                                    }}
+                                >
+                                    <span>{eventDetail.event_title}</span>
+                                </div>
+                                <div
+                                    className="event-nextPre-btn"
+                                    style={{
+                                        ...this.styles.horizontalVerticalCenter
+                                    }}
+                                // onClick={this.nextEvent}
+                                >
+                                    <span>NEXT EVENT</span>
+                                </div>
+                            </div>
                             <div
                                 style={{
-                                    flexBasis: "50%",
-                                    borderRight:
-                                        "1px solid rgb(105,194,209)",
-                                    padding: "1% 1% 1% 4%"
+                                    height: "87%",
+                                    backgroundColor: ExtraHeavyBlueGreen,
+                                    display: "flex"
                                 }}
                             >
                                 <div
-                                    className="middle-section--innerTitle"
                                     style={{
-                                        height: "21%"
+                                        flexBasis: "50%",
+                                        borderRight:
+                                            "1px solid rgb(105,194,209)",
+                                        padding: "1% 1% 1% 4%"
                                     }}
                                 >
-                                    {/* <span>{event.eventMonth}</span> */}
-                                    <h3>{eventDetail.month}</h3>
-                                </div>
-                                <div className="middle-section--leftSide"
-                                    style={{
-                                        height: "75%",
-                                        overflow: "scroll",
-                                        display: "inline-table"
-                                    }}
-                                >
-                                    <p
-
+                                    <div
+                                        className="middle-section--innerTitle"
                                         style={{
-                                            marginTop: 0,
-                                            marginBottom: 0
+                                            height: "15%"
                                         }}
                                     >
-                                        {/* <Markdown
+                                        {/* <span>{event.eventMonth}</span> */}
+                                        <span>{eventDetail.month}</span>
+                                    </div>
+                                    <div className="middle-section--leftSide"
+                                        style={{
+                                            height: "75%",
+                                            overflow: "scroll",
+                                            display: "inline-table"
+                                        }}
+                                    >
+                                        <p
+
+                                            style={{
+                                                marginTop: 0,
+                                                marginBottom: 0
+                                            }}
+                                        >
+                                            {/* <Markdown
                                             // source={event.description}
                                             source="dhj yru  ewkhrfkhr  kurhf a  yhgdf"
                                         /> */}
 
-                                        {eventDetail.description}
-                                    </p>
-                                </div>
-                            </div>
-                            <div style={{
-                                flexBasis: "50%",
-                                padding: "1%  2%"
-                            }}
-                            >
-                                <div
-                                    className="middle-section--rightSide"
-                                    style={{
-                                        height: "38%",
-
-                                        letterSpacing: "1px",
-                                        overflow: "scroll",
-                                        display: "inline-table"
-                                    }}
-                                >
-                                     { eventDetail.details.call && ( 
-                                            <p>CALL TODAY: {eventDetail.details.call} </p>
-                                      )}
-                                    {eventDetail.details.websit && (
-                                        <p>WEBSITE: {eventDetail.details.website} </p>
-                                    )}
-                                    {eventDetail.details.email && ( 
-                                        <p>EMAIL: {eventDetail.details.email} </p> )}
-
-                                    {eventDetail.details.location && ( 
-                                        <p>LOCATION: {eventDetail.details.location} </p>
-                                    )} 
-
-                         
-                                    {/* {event.phone && (
-                                        <p>CALL TODAY: {event.phone}</p>
-                                    )}
-                                    {event.website && (
-                                        <p>WEBSITE: {event.website}</p>
-                                    )}
-                                    {event.email && (
-                                        <p>EMAIL: {event.email}</p>
-                                    )}
-                                    {event.location && (
-                                        <p>
-                                            LOCATION: {event.location},
-                                            Papua New Guniea
-                                            </p>
-                                    )} */}
-                                </div>
-                                <div className="middle-section--btnContainer">
-
-                                    <div className="middle-section--btnContainer--btn">
-                                        <MapModal
-                                            buttonTitle="SHOW ON MAP"
-                                            title="Event Title"
-                                            //  title={event.title}
-                                            buttonStyle={
-                                                this.styles
-                                                    .mapOrFindButtonStyle
-                                            }
-                                            textStyle={
-                                                this.styles
-                                                    .mapOrFindButtonText
-                                            }
-                                        // mapImage={
-                                        //     event.mapEvent[0]
-                                        //         .mapImage
-                                        // }
-                                        />
+                                            {eventDetail.description}
+                                        </p>
                                     </div>
+                                </div>
+                                <div style={{
+                                    flexBasis: "50%",
+                                    padding: "1%  2%"
+                                }}
+                                >
+                                    <div style={{ height: "15%" }} />
+                                    {/* <div
+                                        className="middle-section--rightSide"
+                                        style={{
+                                            height: "38%",
 
-                                    <div
-                                        className="middle-section--btnContainer--btn"
-                                        style={{ marginTop: "7%" }}
+                                            letterSpacing: "1px",
+                                            overflow: "scroll",
+                                            display: "inline-table"
+                                        }}
                                     >
-                                        <Link
-                                            style={{
-                                                textDecoration: "none",
-                                                display: "inlineBlock"
-                                            }}
-                                            // to={
-                                            //     accomodationNamespace +
-                                            //     "/" +
-                                            //     event.destination
-                                            // }
-                                            to={
-                                                accomodationNamespace +
-                                                "/:id"
+                                        {eventDetail.details.call && (
+                                            <p>CALL TODAY: {eventDetail.details.call} </p>
+                                        )}
+                                        {eventDetail.details.website && (
+                                            <p>WEBSITE: {eventDetail.details.website} </p>
+                                        )}
+                                        {eventDetail.details.email && (
+                                            <p>EMAIL: {eventDetail.details.email} </p>)}
 
-                                            }
-                                        >
-                                            <div
-                                                style={
+                                        {eventDetail.details.location && (
+                                            <p>LOCATION: {eventDetail.details.location} </p>
+                                        )}
+
+                                    </div> */}
+                                    <div className="middle-section--rightSide"
+                                        style={{
+                                            height: "38%",
+                                            letterSpacing: "1px",
+                                            overflow: "scroll",
+                                            display: "inline-table",
+                                            // fontSize: "2vw"
+                                        }}
+                                    >
+                                        {eventDetail.details.call && (
+                                            <p>CALL TODAY: {eventDetail.details.call} </p>
+                                        )}
+                                        {eventDetail.details.website && (
+                                            <p>WEBSITE: {eventDetail.details.website} </p>
+                                        )}
+                                        {eventDetail.details.email && (
+                                            <p>EMAIL: {eventDetail.details.email} </p>)}
+
+                                        {eventDetail.details.location && (
+                                            <p>LOCATION: {eventDetail.details.location} </p>
+                                        )}
+                                    </div>
+                                    <div className="middle-section--btnContainer">
+
+                                        <div className="middle-section--btnContainer--btn">
+                                            <MapModal
+                                                buttonTitle="SHOW ON MAP"
+                                                title="Event Title"
+                                                //  title={event.title}
+                                                buttonStyle={
                                                     this.styles
                                                         .mapOrFindButtonStyle
                                                 }
+                                                textStyle={
+                                                    this.styles
+                                                        .mapOrFindButtonText
+                                                }
+                                                mapImage={
+                                                    eventDetail.mapImage
+                                                }
+                                            />
+                                        </div>
+
+                                        {/* <div
+                                            className="middle-section--btnContainer--btn"
+                                            style={{ marginTop: "7%" }}
+                                        >
+                                            <Link
+                                                style={{
+                                                    textDecoration: "none",
+                                                    display: "inlineBlock"
+                                                }}
+                                                to={
+                                                    accomodationNamespace +
+                                                    "/" +
+                                                    event.destination
+                                                }
+                                                to={
+                                                    accomodationNamespace +
+                                                    "/:id"
+
+                                                }
                                             >
-                                                <span
+                                                <div
                                                     style={
                                                         this.styles
-                                                            .mapOrFindButtonText
+                                                            .mapOrFindButtonStyle
                                                     }
                                                 >
-                                                    FIND A CLOSE HOTEL
+                                                    <span
+                                                        style={
+                                                            this.styles
+                                                                .mapOrFindButtonText
+                                                        }
+                                                    >
+                                                        FIND A CLOSE HOTEL
                                                     </span>
-                                            </div>
-                                        </Link>
+                                                </div>
+                                            </Link>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

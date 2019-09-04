@@ -165,9 +165,11 @@ span.info-span {
         overflow: scroll;
         @include for-size(small-phone) {
             letter-spacing: 0px;
+            font-size: 1.4vw;
         }
         @include for-size(phone-only) {
             letter-spacing: 1px;
+            font-size: 1.4vw;
         }
         @include for-size(tablet-portrait) {
             font-size: 1.4vw;
@@ -181,10 +183,9 @@ span.info-span {
         text-align: left;
         overflow-wrap: break-word;
         word-wrap: break-word;
-        p {
-            font-size: $p;
+        font-size: 1.7;
             letter-spacing: 1px;
-            padding-bottom: 1%;
+           // padding-bottom: 1%;
             @include for-size(small-phone) {
                 letter-spacing: 0px;
                 font-size: 1.4vw;
@@ -201,9 +202,9 @@ span.info-span {
             }
             @include for-size(tablet-landscape) {
                 margin: 0;
-                font-size: 1.4vw;
+                font-size: 1.5vw;
             }
-        }
+        
     }
 
     &--btnContainer {
@@ -262,18 +263,19 @@ text-align: center;
 
 .subSection {
     &--title {
-        width: 67%;
+        // width: 67%;
         background-color: $HeavyBlue;
-        display: flex;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
+        // display: flex;
+        // display: -webkit-box;
+        // display: -moz-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
         font-size: 2.5vw;
         letter-spacing: 3px;
         align-items: center;
         padding: 0 5%;
         text-align: left;
+        color: white;
     }
 
     &--link {
@@ -334,8 +336,11 @@ text-align: center;
 .menu-title {
     color: white;
     font-size: 1.2vw;
-    margin-top: 3%;
+    margin: 3%;
     padding: 0 2%;
+    display: block;
+    text-align: center;
+    
 }
 .services-icon {
     @include for-size(small-phone) {
@@ -344,6 +349,7 @@ text-align: center;
 
     @include for-size(phone-only) {
         width: 45% !important;
+       
     }
     @include for-size(tablet-portrait) {
         width: 40% !important;
