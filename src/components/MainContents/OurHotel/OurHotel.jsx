@@ -99,10 +99,10 @@ import SectionList from '../List/SectionList';
 
   
 const ourHotel = [
-  {id: 1, title: 'ROOMS & SUITES', url: '/outhotel/roomsuite'},
-  {id: 2, title: 'DINING', url: ''},
-  {id: 3, title: 'FACILITIES', url: '' },
-  {id: 4, title: 'MEETTING', url: '' },
+  {id: 1, title: 'ROOMS & SUITES', url: '/ourhotel/roomsuite'},
+  {id: 2, title: 'DINING', url: '/ourhotel/dining'},
+  {id: 3, title: 'FACILITIES', url: '/ourhotel/facilities' },
+  {id: 4, title: 'MEETTING', url: '/ourhotel/meeting' },
 ];
 const images = [
   RoomandSuites,

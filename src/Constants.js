@@ -1,10 +1,17 @@
 import React from "react";
-//import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-// import LeftIcon from "material-ui/svg-icons/navigation/chevron-left";
-// import RightIcon from "material-ui/svg-icons/navigation/chevron-right";
-// import PlayIcon from "material-ui/svg-icons/av/play-arrow";
-// import PauseIcon from "material-ui/svg-icons/av/pause";
-// import ImageGallery from "react-image-gallery";
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+//  import LeftIcon from "material-ui/svg-icons/navigation/chevron-left";
+//  import RightIcon from "material-ui/svg-icons/navigation/chevron-right";
+//  import PlayIcon from "material-ui/svg-icons/av/play-arrow";
+//  import PauseIcon from "material-ui/svg-icons/av/pause";
+// import { ChevronLeftIcon, RightIcon, PlayIcon, PauseIcon } from '@material-ui/icons';
+
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import PauseIcon from '@material-ui/icons/Pause';
+
+ import ImageGallery from "react-image-gallery";
 //import "../node_modules/react-image-gallery/styles/css/image-gallery-no-icon.css";
 // import Rating from "react-rating";
 // import FullStar from "material-ui/svg-icons/toggle/star";
@@ -337,72 +344,72 @@ export function imageGallery(
     slideInterval = SLIDE_INTERVAL
 ) {
     return (
-        <img>Image gallery</img>
-        // <MuiThemeProvider>
-        //     <ImageGallery
-        //         items={gatherImages(images)}
-        //         autoPlay={true}
-        //         slideInterval={slideInterval}
-        //         lazyLoad={true}
-        //         renderLeftNav={(onClick, _disabled) => (
-        //             <LeftIcon
-        //                 className="image-gallery-left-nav"
-        //                 onClick={onClick}
-        //                 color={HeavyOrange}
-        //                 style={{ padding: 0, height: 64, width: 64 }}
-        //             />
-        //         )}
-        //         renderRightNav={(onClick, _disabled) => (
-        //             <RightIcon
-        //                 className="image-gallery-right-nav"
-        //                 onClick={onClick}
-        //                 color={HeavyOrange}
-        //                 style={{ padding: 0, height: 64, width: 64 }}
-        //             />
-        //         )}
-        //         renderPlayPauseButton={(onClick, isPlaying) => {
-        //             if (isPlaying) {
-        //                 return (
-        //                     <PauseIcon
-        //                         className="image-gallery-play-button active"
-        //                         onClick={onClick}
-        //                         color={HeavyOrange}
-        //                         style={{ padding: 0, height: 64, width: 64 }}
-        //                     />
-        //                 );
-        //             } else {
-        //                 return (
-        //                     <PlayIcon
-        //                         className="image-gallery-play-button"
-        //                         onClick={onClick}
-        //                         color={HeavyOrange}
-        //                         style={{ padding: 0, height: 64, width: 64 }}
-        //                     />
-        //                 );
-        //             }
-        //         }}
-        //         renderItem={item => {
-        //             return (
-        //                 <div className="image-gallery-image">
-        //                     <img
-        //                         src={item.original}
-        //                         alt={item.originalAlt}
-        //                         srcSet={item.srcSet}
-        //                         sizes={item.sizes}
-        //                         title={item.originalTitle}
-        //                         style={{
-        //                             width: imageWidth,
-        //                             height: imageHeight
-        //                         }}
-        //                     />
-        //                 </div>
-        //             );
-        //         }}
-        //         showThumbnails={false}
-        //         showPlayButton={true}
-        //         showFullscreenButton={false}
-        //     />
-        // </MuiThemeProvider>
+        // <img>Image gallery</img>
+        <MuiThemeProvider>
+            <ImageGallery
+                items={gatherImages(images)}
+                autoPlay={true}
+                slideInterval={slideInterval}
+                lazyLoad={true}
+                renderLeftNav={(onClick, _disabled) => (
+                    <ChevronLeftIcon
+                        className="image-gallery-left-nav"
+                        onClick={onClick}
+                        color={HeavyOrange}
+                        style={{ padding: 0, height: 64, width: 64 }}
+                    />
+                )}
+                renderRightNav={(onClick, _disabled) => (
+                    <ChevronRightIcon
+                        className="image-gallery-right-nav"
+                        onClick={onClick}
+                        color={HeavyOrange}
+                        style={{ padding: 0, height: 64, width: 64 }}
+                    />
+                )}
+                renderPlayPauseButton={(onClick, isPlaying) => {
+                    if (isPlaying) {
+                        return (
+                            <PauseIcon
+                                className="image-gallery-play-button active"
+                                onClick={onClick}
+                                color={HeavyOrange}
+                                style={{ padding: 0, height: 64, width: 64 }}
+                            />
+                        );
+                    } else {
+                        return (
+                            <PlayArrowIcon
+                                className="image-gallery-play-button"
+                                onClick={onClick}
+                                color={HeavyOrange}
+                                style={{ padding: 0, height: 64, width: 64 }}
+                            />
+                        );
+                    }
+                }}
+                renderItem={item => {
+                    return (
+                        <div className="image-gallery-image">
+                            <img
+                                src={item.original}
+                                alt={item.originalAlt}
+                                srcSet={item.srcSet}
+                                sizes={item.sizes}
+                                title={item.originalTitle}
+                                style={{
+                                    width: imageWidth,
+                                    height: imageHeight
+                                }}
+                            />
+                        </div>
+                    );
+                }}
+                showThumbnails={false}
+                showPlayButton={true}
+                showFullscreenButton={false}
+            />
+        </MuiThemeProvider>
     );
 }
 

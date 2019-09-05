@@ -16,32 +16,43 @@ const ourhotel_room_suite = [
     {
         id: 1,
         title: 'STANDARD TWIN',
-        img_url: StandTwin
+        img_url: StandTwin,
+        link: '/ourhotel/roomsuite/'
     },
     {
         id: 2,
         title: 'DELUXE KING',
-        img_url: DeluxeKing
+        img_url: DeluxeKing,
+        link: '/ourhotel/roomsuite/'
+
     },
     {
         id: 3,
         title: 'EXECUTIVE KING',
-        img_url: ExedutiveKing
+        img_url: ExedutiveKing,
+        link: '/ourhotel/roomsuite/'
+
     },
     {
         id: 4,
         title: 'CORNER SUITE',
-        img_url: CornerSuite
+        img_url: CornerSuite,
+        link: '/ourhotel/roomsuite/'
+
     },
     {
         id: 5,
         title: 'JUNIOR SUITE',
-        img_url: JuniorSuite
+        img_url: JuniorSuite,
+        link: '/ourhotel/roomsuite/'
+
     },
     {
         id: 6,
         title: 'PRESIDENTIAL SUITE',
-        img_url: Persidential
+        img_url: Persidential,
+        link: '/ourhotel/roomsuite/'
+
     }
 ]
 
@@ -53,7 +64,7 @@ const RoomSuite = () => {
         <SubsectionList
              numberOfEntries={4}
              data={ourhotel_room_suite}
-             to=''
+             namespace={`/ourhotel/roomsuite`}
             
              imageKey="imageServiceType"
              isImageArray={true}

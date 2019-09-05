@@ -54,7 +54,14 @@ import mainComponent from './components/MainContents/Videos/mainComponent';
 import PassengerAirline from './components/MainContents/Service/transport/passagerAirline';
 
 import RoomSuite from './components/MainContents/OurHotel/RoomSuite';
+import Dining from './components/MainContents/OurHotel/Dining';
+import RoomSuiteDetails from './components/MainContents/OurHotel/RoomSuiteDetails';
+import DiningDetails from './components/MainContents/OurHotel/DiningDetails';
+import Facilities from './components/MainContents/OurHotel/Facilities';
+import FacilitieDetails from  './components/MainContents/OurHotel/FacilitieDetails';
 
+import Meetings from './components/MainContents/OurHotel/Meetings';
+import MeetingDetails from './components/MainContents/OurHotel/MeetingDetails';
 
 import './App.css';
 
@@ -73,9 +80,20 @@ function App() {
               <Route  exact  path='/' component={AboutOurHotel} />
               
               <Route  exact path='/ourhotel' component={OurHotel} />
-              <Route  path ='/outhotel/roomsuite' component={RoomSuite}/>
+              <Route  exact path ='/ourhotel/roomsuite' component={RoomSuite}/>
+              <Route  exact path='/ourhotel/roomsuite/:id' component={RoomSuiteDetails} />
+              <Route exact path='/ourhotel/dining' component={Dining} />
+              <Route exact path='/ourhotel/dining/:id' component={DiningDetails} />
+              <Route exact  path='/ourhotel/facilities' component={Facilities} />
+              <Route  exact  path='/ourhotel/facilities/:id' component={FacilitieDetails} /> 
 
-              <Route  exact path='/ourhotel/:name' component={OurHotel} />
+              <Route exact  path='/ourhotel/meeting' component={Meetings} />
+              <Route exact  path='/ourhotel/meeting/:id' component={MeetingDetails} />
+
+
+
+
+              {/* <Route  exact path='/ourhotel/:name' component={OurHotel} /> */}
 
               
               <Route  exact path='/hoteldetail' component={HotelWelcome} />
