@@ -1,373 +1,515 @@
-// import React from "react";
-// //import { connect } from "react-redux";
-// import UpButton from "../Destination/icons/UpExploreButton.png";
-// import DownButton from "../Destination/icons/DownExploreButton.png";
-// import {
-//     SUBSECTION_LIST_ENTRIES,
-//     MediumOrange,
-//     shiftArray,
-//     HeavyBlue,
-//     HeavyOrange,
-//     LightOrange,
-//     LightBlue,
-//     MAX_ZOOM_LEVEL,
-//     MAP_HEIGHT,
-//     MAP_WIDTH,
-//     HOVER_DELAY
-// } from "../Constants";
-// import { Modal } from "react-bootstrap";
-// import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-// import CloseIcon from "material-ui/icons/close";
-// import ReactImageMagnify from "react-image-magnify";
-// import "../List/MainSectionList.css";
-// import "../Airport/AirportModal.css";
+import React, {Fragment, useState} from "react";
+import UpButton from "../../MainContents/Destination/icons/UpExploreButton.png";
+import DownButton from "../../MainContents/Destination/icons/DownExploreButton.png";
+import {
+    SUBSECTION_LIST_ENTRIES,
+    MediumOrange,
+    shiftArray,
+    HeavyBlue,
+    HeavyOrange,
+    LightOrange,
+    LightBlue,
+    MAX_ZOOM_LEVEL,
+    MAP_HEIGHT,
+    MAP_WIDTH,
+    HOVER_DELAY
+} from "../../../Constants";
+import { Modal } from "react-bootstrap";
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import CloseIcon from "@material-ui/icons/CloseOutlined";
+import ReactImageMagnify from "react-image-magnify";
+import "../../MainContents/List/MainSectionList.scss";
 
-// class MapList extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         const { maps } = this.props;
-//         let data = maps.slice();
-//         data.forEach(d => {
-//             d.map = false;
-//         });
-//         this.state = {
-//             data
-//         };
-//         this.goUp = this.goUp.bind(this);
-//         this.goDown = this.goDown.bind(this);
-//     }
-//     goUp() {
-//         let items = this.state.data.slice();
-//         items = shiftArray(items, 1);
-//         this.setState({
-//             data: items
-//         });
-//     }
-//     goDown() {
-//         let items = this.state.data.slice();
-//         items = shiftArray(items, -1);
-//         this.setState({
-//             data: items
-//         });
-//     }
-//     openMap(index) {
-//         this.setState({
-//             data: [
-//                 ...this.state.data.slice(0, index),
-//                 { ...this.state.data[index], map: true },
-//                 ...this.state.data.slice(index + 1)
-//             ]
-//         });
-//     }
-//     closeMap(index) {
-//         this.setState({
-//             data: [
-//                 ...this.state.data.slice(0, index),
-//                 { ...this.state.data[index], map: false },
-//                 ...this.state.data.slice(index + 1)
-//             ]
-//         });
-//     }
-//     styles = {
-//         horizontalVerticalCenter: {
-//             display: "flex",
-//             alignItems: "center",
-//             justifyContent: "center"
-//         }
-//     };
+import MapModal from './MapModal';
+// Import TEMP MAP IMAGES
+
+import PNG from './mapsImg/Port-Moresby-Map-PORTMORESBY.png';
+import PORT_MORESBBY from './mapsImg/Port-Moresby-Map-PORTMORESBY.png';
+import PORT_MORESBBY_AIRPORT from './mapsImg/PortMoresbyAirportMap.png';
+import LAE_MAP from './mapsImg/Lae-Map-LAE.png';
+import MADANG_MAP from './mapsImg/Madang-Map-MADANG.png';
+
+import  MOUNTHAGEN from './mapsImg/Mount-Hagen-Map-MOUNTHAGEN.png';
+
+import KOKAPU from './mapsImg/Kokopo-Map-KOKOPO.png';
+
+import GOROKA from './mapsImg/Goroka-Map-GOROKA.png';
+import ALOTI from './mapsImg/Alotau-Map-ALOTAU.png';
+import KIVI from './mapsImg/Kavieng-Map-KAVIENG.png';
+import KIMBE from './mapsImg/Alotau-Map-ALOTAU.png';
+
+import WEWK from './mapsImg/Wewak-Map-WEWAK.png';
+import BUKA from './mapsImg/BUKA-PNG-Map_y8cFpiC.png';
+import SubsectionList from "../List/SubsectionList";
+import { setServers } from "dns";
+
+// BUKA MAP
+// Autonomous Region of Bougainville
+// const temp_mapList_Data = [
+//     {
+//             title: 'PAPUA NEW GUNIEA MAP',
+//             img_url: PNG,
+//             map: false
+//           },
+//           {
+//             title: 'PORT MORESBY AIRPORT',
+//             img_url: PORT_MORESBBY
+//           },
+//           {
+        
+//             title: 'PORT MORESBY MAP National Capital District',
+//             img_url: PORT_MORESBBY_AIRPORT
+//           },
+//           {
+        
+//             title: 'LAE MAP Morobe',
+//             img_url: LAE_MAP
+//           },
+//           {
+//             title: 'MADANG MAP Madang',
+//             img_url: MADANG_MAP
+//           },
+//           {
+//             title: 'MOUNT HAGEN MAP Western Highlands',
+//             img_url: MOUNTHAGEN
+//           },
+//           {
+//             title: 'KOKPO MAP East New Britain',
+//             img_url: KOKAPU
+//           },
+//           {
+//             title: 'GOROKA MAP Eastern Highlands',
+//             img_url: GOROKA
+//           },
+//           {
+//             title: 'ALOTAU MAP Milne Bay Province',
+//             img_url: ALOTI
+//           },
+//           {
+//             title: 'KIMBE MAP West New Britain',
+//             img_url: KIMBE
+//           },
+//           {
+//             title: 'KAVILENG MAP New Ireland Province',
+//             img_url: KIVI
+//           },
+//           {
+//             title: 'WEWAK MAP East Sepik Province',
+//             img_url: WEWK
+//           },
+//           {
+//             title: 'BUKA MAP Autonomous Region of Bougainville',
+//             img_url: BUKA
+//           }
+        
+// ];
 
 
-//     temp_mapData = [
-//         {
-//             location_name: 'PAPUA NEW GUNIEA MAP',
-//             img_url: 'Port-Moresby-Map-PORTMORESBY.png'
-//         },
-//         {
-//             location_name: 'PORT MORESBY AIRPORT',
-//             img_url: 'PortMoresbyAirportMap.png'
-//         },
-//         {
 
-//             location_name: 'PORT MORESBY MAP National Capital District',
-//             img_url: 'Lae-Map-LAE.png'
-//         },
-//         {
 
-//             location_name: 'LAE MAP Morobe',
-//             img_url: 'Madang-Map-MADANG.png'
-//         },
-//         {
-//             location_name: 'MADANG MAP Madang',
-//             img_url: 'Madang-Map-MADANG.png'
-//         },
-//         {
-//             location_name: 'MOUNT HAGEN MAP Western Highlands',
-//             img_url: 'Madang-Map-MADANG.png'
-//         },
-//         {
-//             location_name: 'KOKPO MAP East New Britain',
-//             img_url: 'Madang-Map-MADANG.png'
-//         },
-//         {
-//             location_name: 'GOROKA MAP Eastern Highlands',
-//             img_url: 'Madang-Map-MADANG.png'
-//         },
-//         {
-//             location_name: 'ALOTAU MAP Milne Bay Province',
-//             img_url: 'Alotau-Map-ALOTAU.png'
-//         },
-//         {
-//             location_name: 'KIMBE MAP West New Britain',
-//             img_url: 'Kimbe-Map-KIMBE-2_djG3ysi.png'
-//         },
-//         {
-//             location_name: 'KAVILENG MAP New Ireland Province',
-//             img_url: 'Kavieng-Map-KAVIENG.png'
-//         },
-//         {
-//             location_name: 'WEWAK MAP East Sepik Province',
-//             img_url: 'Wewak-Map-WEWAK.png'
-//         },
-//         {
-//             location_name: 'BUKA MAP Autonomous Region of Bougainville',
-//             img_url: 'BUKA-PNG-Map_y8cFpiC.png'
-//         }
+const styles = {
+    horizontalVerticalCenter: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+}
 
-//     ];
-//     render() {
-//         // const { data } = this.state;
-//         const { data }
-//         const itemHeight = `${100 / SUBSECTION_LIST_ENTRIES}%`;
-//         return (
-//             <div
-//                 className="section--bottom--animation"
-//                 style={{ width: "100%", height: "100%", display: "flex" }}
-//             >
-//                 <div
-//                     className="vertical-titleContainer"
-//                     style={{
-//                         flexDirection: "column"
-//                     }}
-//                 >
-//                     <div className="vertical-title">
-//                         <span style={{ transform: "rotate(-90deg)" }}>
-//                             MAPS
-//                         </span>
-//                     </div>
-//                 </div>
-//                 <div style={{ width: "86%" }}>
-//                     <div
-//                         className="middle-section--title"
-//                         style={{
-//                             height: "8%",
-//                             backgroundColor: LightOrange,
 
-//                             ...this.styles.horizontalVerticalCenter
-//                         }}
-//                     >
-//                         LIST OF MAPS
-//                     </div>
-//                     <div
-//                         style={{
-//                             height: "6%",
-//                             backgroundColor: MediumOrange,
-//                             ...this.styles.horizontalVerticalCenter
-//                         }}
-//                         onClick={this.goUp}
-//                     >
-//                         <img src={UpButton} style={{ width: "5%" }} alt="Up" />
-//                     </div>
-//                     <div style={{ height: "80%", overflow: "hidden" }}>
-//                         <div
-//                             style={{
-//                                 height: "100%",
-//                                 overflowY: "auto",
-//                                 marginRight: "-30px"
-//                             }}
-//                         >
-//                             <div
-//                                 style={{
-//                                     height: "100%",
-//                                     overflow: "auto",
-//                                     paddingRight: "30px"
-//                                 }}
-//                             >
-//                                 {data.map((item, index) => {
-//                                     const isLastItem =
-//                                         index === data.length - 1;
-//                                     return (
-//                                         <div
-//                                             style={{ height: itemHeight }}
-//                                             key={`${item.id}-${index}`}
-//                                         >
-//                                             <div
-//                                                 style={{
-//                                                     height: "100%",
-//                                                     color: "white",
-//                                                     display: "flex"
-//                                                 }}
-//                                                 onClick={() =>
-//                                                     this.openMap(index)
-//                                                 }
-//                                             >
-//                                                 <div
-//                                                     style={{
-//                                                         width: "33%",
-//                                                         backgroundImage: `url(${
-//                                                             item.mapImage
-//                                                             })`,
-//                                                         backgroundSize: "cover",
-//                                                         backgroundPosition:
-//                                                             "center",
-//                                                         borderBottom: isLastItem
-//                                                             ? "none"
-//                                                             : `1px solid ${LightBlue}`
-//                                                     }}
-//                                                 />
-//                                                 <div
-//                                                     // className="subSection--link"
-//                                                     style={{
-//                                                         width: "67%",
-//                                                         height: "100%",
-//                                                         display: "flex",
-//                                                         justifyContent:
-//                                                             "center",
-//                                                         flexDirection: "column",
-//                                                         backgroundColor: HeavyBlue,
-//                                                         paddingLeft: "5%",
+// State 
 
-//                                                         letterSpacing: "3px",
-//                                                         borderBottom: isLastItem
-//                                                             ? "none"
-//                                                             : "1px solid rgb(183,223,228)"
-//                                                     }}
-//                                                 >
-//                                                     <div className="subSection--link">
-//                                                         {item.title.toUpperCase()}
-//                                                         {item.province &&
-//                                                             item.id !== 1 && (
-//                                                                 <div>
-//                                                                     {
-//                                                                         item.province
-//                                                                     }
-//                                                                 </div>
-//                                                             )}
-//                                                     </div>
-//                                                 </div>
-//                                             </div>
-//                                             <Modal
-//                                                 show={data[index].map}
-//                                                 onHide={() =>
-//                                                     this.closeMap(index)
-//                                                 }
-//                                                 dialogClassName="map-modal"
-//                                             >
-//                                                 <Modal.Body>
-//                                                     <div
-//                                                         style={{
-//                                                             position:
-//                                                                 "absolute",
-//                                                             right: 0,
-//                                                             top: 0
-//                                                         }}
-//                                                     >
-//                                                         <MuiThemeProvider>
-//                                                             <CloseIcon
-//                                                                 onClick={() =>
-//                                                                     this.closeMap(
-//                                                                         index
-//                                                                     )
-//                                                                 }
-//                                                                 color="white"
-//                                                                 style={{
-//                                                                     padding: 0,
-//                                                                     height: 32,
-//                                                                     width: 32
-//                                                                 }}
-//                                                             />
-//                                                         </MuiThemeProvider>
-//                                                     </div>
-//                                                     <div className="map-title">
-//                                                         MAP OF
-//                                                         <br />
-//                                                         {item.title.toUpperCase()}
-//                                                     </div>
-//                                                     <ReactImageMagnify
-//                                                         {...{
-//                                                             smallImage: {
-//                                                                 alt: `Map of ${item.title.toUpperCase()}`,
-//                                                                 isFluidWidth: true,
-//                                                                 src:
-//                                                                     item.mapImage
-//                                                             },
-//                                                             largeImage: {
-//                                                                 src:
-//                                                                     item.mapImage,
-//                                                                 width:
-//                                                                     MAX_ZOOM_LEVEL *
-//                                                                     MAP_WIDTH,
-//                                                                 height:
-//                                                                     MAX_ZOOM_LEVEL *
-//                                                                     MAP_HEIGHT
-//                                                             },
-//                                                             hoverOffDelayInMs: HOVER_DELAY,
-//                                                             enlargedImagePosition:
-//                                                                 "over",
-//                                                             isHintEnabled: true,
-//                                                             isActivatedOnTouch: true,
-//                                                             shouldHideHintAfterFirstActivation: false,
-//                                                             hintTextMouse:
-//                                                                 "Long-Touch to Zoom"
-//                                                         }}
-//                                                     />
-//                                                     <div
-//                                                         style={{
-//                                                             backgroundColor:
-//                                                                 "rgb(13,109,121)",
-//                                                             color:
-//                                                                 "rgb(107,193,209)",
-//                                                             padding: 5,
-//                                                             textAlign: "center"
-//                                                         }}
-//                                                     >
-//                                                         TAP OUTSIDE OF MAP TO
-//                                                         CLOSE
-//                                                     </div>
-//                                                 </Modal.Body>
-//                                             </Modal>
-//                                         </div>
-//                                     );
-//                                 })}
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div
-//                         style={{
-//                             height: "6%",
-//                             backgroundColor: MediumOrange,
-//                             ...this.styles.horizontalVerticalCenter
-//                         }}
-//                         onClick={this.goDown}
-//                     >
-//                         <img
-//                             src={DownButton}
-//                             style={{ width: "5%" }}
-//                             alt="Down"
-//                         />
-//                     </div>
-//                 </div>
-//             </div>
-//         );
-//     }
+
+
+/// Function goes herer 
+
+// const goUp = () => {
+
+//        //
+
 // }
 
-// const mapStateToProps = ({ map }) => {
-//     const { maps } = map;
-//     return {
-//         maps
-//     };
-// };
-// export default connect(
-//     mapStateToProps,
-//     null
-// )(MapList);
+// const goDown = () => {
+//     // 
+// }
+
+
+
+// const closeMap = (index) => {
+//     //map close
+//     console.log('close Map ' + index)
+// }
+ 
+class  MapList extends React.Component { 
+
+        constructor(props) {
+            super(props) 
+
+            this.state = {
+                showModal: false,
+              
+               data : [
+                         {
+                            title: 'PAPUA NEW GUNIEA MAP',
+                            img_url: PNG,
+                            map: false,
+                          },
+                          {
+                            title: 'PORT MORESBY AIRPORT',
+                            img_url: PORT_MORESBBY,
+                            map: false
+
+                          },
+                          {
+                        
+                            title: 'PORT MORESBY MAP National Capital District',
+                            img_url: PORT_MORESBBY_AIRPORT,
+                            map: false
+
+                          },
+                          {
+                        
+                            title: 'LAE MAP Morobe',
+                            img_url: LAE_MAP,
+                            map: false
+
+                          },
+                          {
+                            title: 'MADANG MAP Madang',
+                            img_url: MADANG_MAP,
+                            map: false
+
+                          },
+                          {
+                            title: 'MOUNT HAGEN MAP Western Highlands',
+                            img_url: MOUNTHAGEN,
+                            map: false
+
+                          },
+                          {
+                            title: 'KOKPO MAP East New Britain',
+                            img_url: KOKAPU,
+                            map: false
+
+                          },
+                          {
+                            title: 'GOROKA MAP Eastern Highlands',
+                            img_url: GOROKA,
+                            map: false
+
+                          },
+                          {
+                            title: 'ALOTAU MAP Milne Bay Province',
+                            img_url: ALOTI,
+                            map: false
+
+                          },
+                          {
+                            title: 'KIMBE MAP West New Britain',
+                            img_url: KIMBE,
+                            map: false
+
+                          },
+                          {
+                            title: 'KAVILENG MAP New Ireland Province',
+                            img_url: KIVI,
+                            map: false
+
+                          },
+                          {
+                            title: 'WEWAK MAP East Sepik Province',
+                            img_url: WEWK,
+                            map: false
+
+                          },
+                          {
+                            title: 'BUKA MAP Autonomous Region of Bougainville',
+                            img_url: BUKA,
+                            map: false
+
+                          }
+                        
+                ]
+            }
+
+            this.openMap = this.openMap.bind(this);
+            this.openModal = this.openModal.bind(this);
+            this.closeModal = this.closeModal.bind(this);
+        }
+
+
+goUp = () => {
+
+       //
+
+}
+
+goDown = () => {
+    // 
+}
+
+openModal() {
+    this.setState({showModal: true });
+    console.log(this.state.showModal);
+}
+closeModal() {
+    this.setState({ showModal: false });
+}
+ren
+
+closeMap = (index) => {
+    //map close
+    console.log('close Map ' + index)
+}
+
+     
+    openMap () {
+        // get Array index id and show on the map 
+    
+        
+        // console.log('setstate ', index)
+        // console.log(this.state.data[index].map)
+        // this.setState({
+         
+        //       data: [
+        //          ...this.state.data,
+        //         { ...this.state.data, maps: true }
+                  
+        //       ]
+              
+            
+        //  })
+        //  console.log(this.state)
+        this.setState({ showModal: true });
+       
+    }
+    render() {
+        const { data } = this.state;
+        const itemHeight = `${100 / SUBSECTION_LIST_ENTRIES}%`;
+
+        return (
+            <Fragment> 
+                {/* <button  type='button' onClick={() => this.openModal} >
+                    OPEN
+                </button> */}
+                
+               <div className="section--bottom--animation" 
+                    style={{width:"100%", height:"100%", display:"flex"}}
+               >    
+                    <div
+                        style={{
+                            backgroundColor: HeavyOrange,
+                            width: "14%",
+                            boxShadow: '9.899px 0px 7px 0px rgba(0,0,0,0.6)',
+                            zIndex:1,
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }} 
+        
+                    >
+                            <div
+                                style={{
+                                    flex: 1,
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems:' center',
+                                    color:'white',
+                                    fontSize: '40pt',
+                                    fontWeight: 500,
+                                    letterSpacing: '10px'
+                                }}  
+                            >
+                                <span style={{transform: 'rotate(-90deg)'}}>MAPS</span> 
+                            </div>
+                    </div>
+                    <div style={{width: '86%'}}>
+                        <div style={{
+                            height: '8%',
+                            backgroundColor: LightOrange,
+                            color: 'white',
+                            ...styles.horizontalVerticalCenter,
+                            fontSize: '20pt',
+                            letterSpacing: 5
+                        }}>
+                             LIST OF MAPS
+                        </div>
+                        <div style={{ 
+                            height: '6%',
+                            backgroundColor: MediumOrange,
+                            ...styles.horizontalVerticalCenter
+    
+                        }}
+                            onClick={this.goUp}
+                        >
+                            <img  src={UpButton} style={{width: '5%'}} alt="up" />
+                            
+    
+                        </div>
+                        <div   style={{height: '80%', overflow:'hidden'}} >
+                                <div style={{
+                                        height: '100%',
+                                        overflow:'auto',
+                                        marginRight: '-30px',
+    
+                                }}>
+                                        { data.map((item, index)=> {
+                                            const isLastItem = index === data.length - 1;
+    
+                                                return ( 
+                                                    
+                                                    <div style={{height: itemHeight}} 
+                                                         key={`${index}`}
+                                                    >
+                                                        <div style={{
+                                                            height: '100%',
+                                                            color: 'white',
+                                                            display:'flex',
+                                        
+                                                        }}
+                                                            onClick={this.openModal}
+                                                        >
+                                                            <div 
+                                                                style={{
+                                                                    width: '33%',
+                                                                    backgroundImage:`url(${item.img_url})`,
+                                                                    backgroundSize: "conver",
+                                                                    backgroundPosition: "center",
+                                                                    borderBottom: isLastItem ? 'none' : `1px solid ${LightBlue}`
+                                                                }}
+                                                            />
+                                                             <div style={{
+                                                                 width: "67%",
+                                                                 backgroundColor: HeavyBlue,
+                                                                 display: 'flex',
+                                                                 alignItems: 'center',
+                                                                 paddingLeft: 35,
+                                                                 fontSize: '24px',
+                                                                 letterSpacing: '3px',
+                                                                 borderBottom: isLastItem ? 'none' : '1px solid rgb(183, 223, 228)'
+                                                             }} >
+                                                                <div style={{ 
+                                                                    height: "100%",
+                                                                    display: "flex",
+                                                                    flexDirection: "column",
+                                                                    justifyContent: "center",
+                                                                    alignItems: "center"
+                                                                }}>
+                                                                        {item.title.toUpperCase()}
+                                                                 </div>
+    
+                                                             </div>
+    
+                                                        </div>
+                                                        <Modal 
+                                                                show={this.state.showModal}
+                                                                onHide={this.closeModal}
+                                                                dialogClassName="map-modal"
+                                                            >
+                                                                <Modal.Body>
+                                                                    <div
+                                                                        style={{ 
+                                                                            position: 'absolute',
+                                                                            right: 0,
+                                                                            top: 0
+                                                                        }}  
+                                                                    >
+                                                                        <MuiThemeProvider>
+                                                                            <CloseIcon 
+                                                                                onClick={this.closeModal}
+                                                                                color="white"
+                                                                                style={{
+                                                                                    padding: 0,
+                                                                                    height: 32,
+                                                                                    width: 32
+                                                                                }}
+                                                                            /> 
+                                                                        </MuiThemeProvider>
+                                                                    </div>
+                                                                    <div 
+                                                                        style={{
+                                                                            backgroundColor: HeavyOrange,
+                                                                            fontSize: '20pt',
+                                                                            padding: 20,
+                                                                            textAlign: 'center'
+                                                                        }}
+                                                                    >
+                                                                        MAP OF <br/>
+                                                                        {item.title.toUpperCase()}
+                                                                    </div>
+                                                                    <ReactImageMagnify 
+                                                                    
+                                                                        {...{
+                                                                            smallImage: {
+                                                                                alt: `Map of ${item.title.toUpperCase()}`,
+                                                                                isFluidWidth: true,
+                                                                                src: item.img_url
+                                                                            },
+                                                                            largeImage: { 
+                                                                                src: item.img_url,
+                                                                                width: MAX_ZOOM_LEVEL * MAP_WIDTH,
+                                                                                height: MAX_ZOOM_LEVEL * MAP_HEIGHT
+                                                                            },
+                                                                            hoverOfDelayInMs: HOVER_DELAY,
+                                                                            enlargedImagePosition: 'over',
+                                                                            isHintEnabled: true,
+                                                                            isActivatedOnTouch: true,
+                                                                            shouldHideHintAfterFirstActivation: false,
+                                                                            hintTexMouse: 'Long-Touch to Zoom'
+                                                                        }}
+                                                                     
+                                                                        
+                                                                    /> 
+                                                                       <div style={{
+                                                                           backgroundColor: 'rgb(13, 109. 121)',
+                                                                           color: 'rgb(107,193,209)',
+                                                                           padding: 5,
+                                                                           textAlign: 'center'
+                                                                           }} 
+                                                                        >
+                                                                            TAP OUTSIDE OF MAP TO CLOSE  
+                                                                       </div>
+    
+                                                                </Modal.Body>
+    
+    
+                                                            </Modal>
+    
+    
+                                                    </div>
+    
+                                                  
+                                              
+                                                );
+                                            })}
+    
+                                </div>
+                        </div>
+                        <div style={{
+                            height: '6%',
+                            backgroundColor: MediumOrange,
+                            ...styles.horizontalVerticalCenter
+                    }}
+                        onClick={this.goDown}
+                     > 
+                     <img src={DownButton}
+                          style={{width: '5%'}}
+                          alt="Down"
+                     />
+                    </div>
+    
+                    </div>
+                 
+    
+               </div> 
+    
+    
+              
+    
+            </Fragment>
+        )
+
+    }
+
+   
+}
+
+export default MapList;

@@ -6,7 +6,10 @@ import SubNavs from './components/Header/Navs/SubNav';
 import MainNav from './components/Header/Navs/mainNav';
 
 import AboutOurHotel from './components/MainContents/AboutOurHotel/AboutOurHotel';
-import Maps from './components/MainContents/Maps/Maps';
+
+// import Maps from './components/MainContents/Maps/Maps';
+import MapList from './components/MainContents/Maps/MapList';
+
 import OurHotel from './components/MainContents/OurHotel/OurHotel';
 
 import Footer from './components/Footer/Footer';
@@ -108,8 +111,13 @@ function App() {
               <Route exact path={diningNamespace + "/:id"} component={DiningDetail} />
 
 
-              <Route exact path='/maps' component={Maps} />
-              <Route    path='/maps/:id' component={Maps} />
+              {/* <Route exact path='/maps' component={Maps} />
+              <Route    path='/maps/:id' component={Maps} /> */}
+              <Route exact path='/maplist' component={MapList} />
+              {/* <Route  path='/maplist/:id' component={MapList} /> */}
+
+
+
 
               <Route  exact path='/services/essential' component={Essential} />
               <Route   exact  path='/services/essential/0' component={Banks} />  
