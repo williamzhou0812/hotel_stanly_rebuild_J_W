@@ -85,15 +85,13 @@ import './App.css';
 function App() {
   return (
     <Fragment>
-      <header>
         <MainLogo /> 
              <SubNavs/>
              <MainNav />  
-      </header>
-      <main>
+      
           <Switch>
 
-              <Route  exact  path='/' component={AboutOurHotel} />
+              <Route  exact  path='/' component={HotelWelcome} />
               
               <Route  exact path='/ourhotel' component={OurHotel} />
               <Route  exact path ='/ourhotel/roomsuite' component={RoomSuite}/>
@@ -176,12 +174,9 @@ function App() {
               <Route exact path='/videos' component={mainComponent} />
 
           </Switch>
-      </main>
-      
-     <div >
-
-        <Footer /> 
-     </div>
+   
+          <Footer /> 
+    
     
 
     </Fragment>

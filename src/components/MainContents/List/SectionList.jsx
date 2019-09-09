@@ -81,7 +81,7 @@ class SectionList extends React.Component {
                     </div>
 
                     <div className="vertical-title">
-                        <span style={{ transform: "rotate(-90deg)" }}>
+                        <span style={{ transform: "rotate(-90deg)", whiteSpace:"nowrap"}}>
                             {title.toUpperCase()}
                         </span>
                     </div>

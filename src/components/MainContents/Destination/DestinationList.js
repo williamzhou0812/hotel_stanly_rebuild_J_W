@@ -13,6 +13,14 @@ import DP4 from './images/D-DESTINATIONS-IMAGES_P4.jpg';
 
 
 class DestinationList extends React.Component {
+
+    constructor(props) {
+         super(props)
+        setTimeout(() => {
+            console.log(`im time outat index page`)
+            window.location.replace("http://localhost:3000/");
+        }, 40000)
+    }
     destinations = [
         {
             id: 1,

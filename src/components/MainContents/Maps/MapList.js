@@ -367,7 +367,7 @@ openMap  = (index) =>  {
                             
     
                         </div>
-                        <div   style={{height: '80%', overflow:'hidden'}} >
+                        <div   style={{height: '54vh', overflow:'hidden'}} >
                                 <div style={{
                                         height: '100%',
                                         overflow:'auto',
@@ -394,7 +394,7 @@ openMap  = (index) =>  {
                                                                 style={{
                                                                     width: '33%',
                                                                     backgroundImage:`url(${item.img_url})`,
-                                                                    backgroundSize: "conver",
+                                                                    backgroundSize: "cover",
                                                                     backgroundPosition: "center",
                                                                     borderBottom: isLastItem ? 'none' : `1px solid ${LightBlue}`
                                                                 }}

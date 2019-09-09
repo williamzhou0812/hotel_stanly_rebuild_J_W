@@ -42,7 +42,7 @@ const Videos = () => {
     
         <div style={{background: 'back', width: '100%', height: '100%'}} > 
            
-            <video src={temp_video_data[_id].video} autoPlay  type="video/mp4" /> 
+            <video src={temp_video_data[_id].video} autoPlay  type="video/mp4"  style={{width: '100%'}} /> 
          
         
         </div>

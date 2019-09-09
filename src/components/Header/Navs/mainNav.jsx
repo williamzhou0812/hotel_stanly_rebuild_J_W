@@ -44,7 +44,7 @@ class mainNav extends React.Component {
                 {
                     name: "MAPS",
                     //   path: mapListNamespace,
-                    path: "/maps",
+                    path: "/maplist",
                     icon: MapListIcon,
                     iconWidth: "70px"
                 },
@@ -56,7 +56,7 @@ class mainNav extends React.Component {
                 },
                 {
                     name: "DESTINATIONS",
-                    path: destinationNamespace,
+                    path: '/destinations',
                     icon: DestinationsIcon,
                     iconWidth: "90px"
                 },
@@ -74,7 +74,7 @@ class mainNav extends React.Component {
                 },
                 {
                     name: "HOTELS",
-                    path: accomodationNamespace,
+                    path: '/ourhotel',
                     icon: AccommodationIcon,
                     iconWidth: "70px"
                 }
