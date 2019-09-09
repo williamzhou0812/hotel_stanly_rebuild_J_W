@@ -10,12 +10,10 @@ import {
     ExtraHeavyBlueGreen,
 } from "../../../Constants";
 import MapModal from "../Maps/MapModal";
-// import Markdown from "../../../MarkDown";
+
 import "../List/MainSectionList.scss";
 import "./Event.scss";
-// import { renderComponent } from "recompose";
-// import Events from "material-ui/utils/events";
-//import { url } from "inspector";
+
 
 class EventDetail extends React.Component {
     constructor(props) {
@@ -274,7 +272,7 @@ class EventDetail extends React.Component {
                 }}
                 className="section--bottom--animation"
             >
-                <div className="vertical-side"
+                <div className="left-vertical-nav"
                     style={{
                         backgroundColor: HeavyOrange,
                         width: "14%",

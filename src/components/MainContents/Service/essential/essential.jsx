@@ -27,7 +27,7 @@ const essential_service_data = [
     },
     {
         id: 1,
-        title: 'MEDICL SERVICE',
+        title: 'MEDICAL SERVICE',
         svgIcon: '/imgs/service/service_type_icons/Services_Icons-Medical.svg',
     },
     {
@@ -185,7 +185,7 @@ class Essential extends React.Component {
                                         alt="Bank Icon" />
                                 </div>
                                 <div style={{ ...this.styles.mainTitleContainer }}>
-                                    <Link to={`/services/essential/0`} style={{ textDecoration: "none" }}>
+                                    <Link to={`/services/essential/banks`} style={{ textDecoration: "none" }}>
                                         <h4 style={{ color: "white" }}>{essential_service_data[0].title}</h4>
                                     </Link>
                                 </div>

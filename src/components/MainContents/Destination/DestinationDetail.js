@@ -105,7 +105,6 @@ class DestinationDetail extends React.Component {
             <div
                 style={{
                     width: "100%",
-
                     height: "54vh",
                     display: "flex",
 
@@ -113,7 +112,7 @@ class DestinationDetail extends React.Component {
                 className="section--bottom--animation"
             >
                 <div
-                    className="vertical-titleContainer"
+                    className="left-vertical-nav"
                 >
                     <Link style={{ textDecoration: "none" }} to={destinationNamespace}>
                         <div

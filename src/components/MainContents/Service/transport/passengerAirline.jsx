@@ -1,11 +1,12 @@
 
+
 import React, { Fragment } from 'react';
 import DownButton from "../../../MainContents/Destination/icons/DownExploreButton.png";
 import UpButton from "../../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
-import ServiceTypesIcon from "../icons/ServiceTypesIcon.png";
-import ESSENTIAL_ICON from "../icons//ESSENTIAL_ICON.png"
-import PropTypes from "prop-types";
+import ListIcon from "../../icons/ListIcon.png";
+import HireAndTransport from "../../icons/HireAndTransport.svg";
+
 import {
     SUBSECTION_LIST_ENTRIES,
     MediumOrange,
@@ -18,34 +19,36 @@ import {
     randomiseButKeepOrder,
     addNullItemToData
 } from "../../../../Constants";
-import SidebarMapModel from "./../../Maps/SidebarMapModel";
 import "../../List/MainSectionList.scss";
 import { borderBottom } from '@material-ui/system';
 import { lightBlue } from '@material-ui/core/colors';
 
-
-const temp_medical_data = [
+const PassengerServiceData = [
     {
         id: 1,
-        title: 'EMS ASSIST (MEDIVAC SERVICE)',
-        img_logo: '/imgs/service/medical/S1-IMAGES20.jpg',
+        title: 'AIR NIUGINI',
+        img_logo: '/imgs/service/airline/S2A1-Logo-Niugini.png'
 
     },
     {
         id: 2,
-        title: 'PNG CHIROPRACTIC',
-        img_logo: '/imgs/service/medical/S1-IMAGES21.jpg',
-
+        title: 'PNG AIR',
+        img_logo: '/imgs/service/airline/S2A2-Logo-PNG.png'
     },
     {
         id: 3,
-        title: 'MEDEVAC PACIFIC (MEDIVAC SERVICE)',
-        img_logo: '/imgs/service/medical/S1-IMAGES19.jpg',
+        title: 'HELIFIX',
+        img_logo: '/imgs/service/airline/S2A3-Logo-Helifix.png'
     },
+    {
+        id: 4,
+        title: 'HELISCOPE',
+        img_logo: '/imgs/service/airline/S2A4Logo-Heliscope.png'
+    }
+];
 
-]
 
-class MedicalService extends React.Component {
+class PassengerAirline extends React.Component {
     constructor(props) {
         super(props);
 
@@ -58,18 +61,18 @@ class MedicalService extends React.Component {
         this.goDown = this.goDown.bind(this);
     }
     goUp() {
-        let items = this.data.slice();
-        items = shiftArray(items, 1);
-        this.setState({
-            data: items
-        });
+        // let items = data.slice();
+        // items = shiftArray(items, 1);
+        // this.setState({
+        //     data: items
+        // });
     }
     goDown() {
-        let items = this.data.slice();
-        items = shiftArray(items, -1);
-        this.setState({
-            data: items
-        });
+        // let items = data.slice();
+        // items = shiftArray(items, -1);
+        // this.setState({
+        //     data: items
+        // });
     }
     styles = {
         mainSectionRow: {
@@ -83,7 +86,7 @@ class MedicalService extends React.Component {
         mainIcon: {
             width: "30%",
             height: "100%",
-            //  padding: "3%"
+            // padding: "3%"
         },
         mainTitleContainer: {
             width: "70%",
@@ -91,7 +94,6 @@ class MedicalService extends React.Component {
             paddingLeft: "3%",
             alignItems: "center",
             display: "flex",
-
         },
         horizontalVerticalCenter: {
             display: "flex",
@@ -101,13 +103,20 @@ class MedicalService extends React.Component {
     }
 
     render() {
+        const {
+            numberOfEntries,
+            sideButtons,
+            sideTitle,
+            mainTitle,
+            namespace,
+        } = this.props;
         return (
-
             <div style={{ height: "54vh" }}>
 
 
-                <div style={{ width: "100%", height: "100%", display: "flex" }}>
-                    <div className="left-vertical-nav"
+                < div style={{ width: "100%", height: "100%", display: "flex" }}>
+
+                    <div
                         style={{
                             backgroundColor: HeavyOrange,
                             width: "14%",
@@ -118,45 +127,41 @@ class MedicalService extends React.Component {
                             flexDirection: "column"
                         }}
                     >
+
                         <div
                         >
                             <Link style={{ textDecoration: "none" }} to="/Services">
                                 <div
                                     className="leftSide-menu--container"
-
                                 >
-
                                     <img
                                         className="leftSide-menu--img"
-                                        src={ServiceTypesIcon}
-                                        alt="SERVICE TYPES ICON"
+                                        src={ListIcon}
+                                        alt="SERVICE TYPES"
                                     />
-
                                     <div
                                         className="menu-title"
-
                                     >
                                         SERVICE TYPES
                                 </div>
                                 </div>
                             </Link>
-                            <Link style={{ textDecoration: "none" }} to="/Services/essential">
+                        </div>
+                        <div
+                        >
+                            <Link style={{ textDecoration: "none" }} to="/Services/transport">
                                 <div
                                     className="leftSide-menu--container"
-
                                 >
-
                                     <img
                                         className="leftSide-menu--img"
-                                        src={ESSENTIAL_ICON}
-                                        alt="ESSENTIAL SERVICES ICON"
+                                        src={HireAndTransport}
+                                        alt="SERVICE TYPES"
                                     />
-
                                     <div
                                         className="menu-title"
-
                                     >
-                                        ESSENTIAL SERVICES
+                                        CAR HIRE & TRANSPORT
                                 </div>
                                 </div>
                             </Link>
@@ -176,6 +181,8 @@ class MedicalService extends React.Component {
                             <div
                                 className="main-section--top--title"
                                 style={{
+                                    // height: "8%",
+                                    // backgroundColor: LightOrange,
 
                                     ...this.styles.horizontalVerticalCenter
 
@@ -195,18 +202,19 @@ class MedicalService extends React.Component {
                             </div>
                         </div>
 
+
                         <div className="main-section--middle">
-                            {temp_medical_data.map((medicalList, index) => {
+                            {PassengerServiceData.map((PassengerAirlineList, index) => {
                                 return (
                                     <div style={{ ...this.styles.mainSectionRow }}>
                                         <div style={{ ...this.styles.mainIcon }}>
-                                            <img style={{ width: "100%", height: "100%" }} src={medicalList.img_logo}
-                                                alt={medicalList.title + " icon"} />
+                                            <img style={{ width: "100%", height: "100%" }} src={PassengerAirlineList.img_logo}
+                                                alt={PassengerAirlineList.title + " icon"} />
                                         </div>
                                         <div style={{ ...this.styles.mainTitleContainer }}>
-                                            <Link style={{ textDecoration: "none" }} to={`/services/essential/medicl/${index}`}>
+                                            <Link style={{ textDecoration: "none" }} to={`/services/transport/passenger-airline-service/${index}`}>
 
-                                                <h4 style={{ color: "white" }}>{medicalList.title}</h4>
+                                                <h4 style={{ color: "white" }}>{PassengerAirlineList.title}</h4>
                                             </Link>
 
                                         </div>
@@ -216,6 +224,7 @@ class MedicalService extends React.Component {
                                 );
                             })}
                         </div>
+
                         <div className="main-section--bottom"
                             style={{
                                 height: "6%",
@@ -234,7 +243,6 @@ class MedicalService extends React.Component {
                     </div>
 
 
-
                 </div>
 
 
@@ -244,57 +252,6 @@ class MedicalService extends React.Component {
         );
     }
 }
-export default MedicalService;
 
+export default PassengerAirline;
 
-
-
-
-
-// import React, {Fragment} from 'react';
-// import {Link} from 'react-router-dom';
-
-// const temp_data_mediclService  = [
-//     {
-//         id: 1,
-//         title: 'EMS ASSIST (MEDIVAC SERVICE)',
-//         img_logo: '/imgs/service/medical/S1-IMAGES20.jpg',
-
-//     },
-//     {
-//         id: 2,
-//         title: 'PNG CHIROPRACTIC',
-//         img_logo: '/imgs/service/medical/S1-IMAGES21.jpg',
-
-//     },
-//     {
-//         id: 3,
-//         title: 'MEDEVAC PACIFIC (MEDIVAC SERVICE)',
-//         img_logo: '/imgs/service/medical/S1-IMAGES19.jpg',
-//     },
-
-// ]
-
-// const MediclService = () => {
-
-//     return (
-//         <Fragment>
-//             <div>Medicl Servic list page</div> 
-
-//             {temp_data_mediclService.map((mediclData, index) => {
-//                 return  (
-//                     <div> 
-//                         <ul>
-//                             <Link to={`/services/essential/medicl/${index}`}>{mediclData.id} | <img src={mediclData.img_logo}  alt='' /> | {mediclData.title} |  </Link>
-//                         </ul>
-//                     </div>
-//                 )
-//             })}
-
-//         </Fragment>
-
-
-//     )
-// };
-
-// export default MedicalService;

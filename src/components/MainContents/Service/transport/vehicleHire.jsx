@@ -3,7 +3,8 @@ import React, { Fragment } from 'react';
 import DownButton from "../../../MainContents/Destination/icons/DownExploreButton.png";
 import UpButton from "../../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
-import ServiceTypesIcon from "../icons/ServiceTypesIcon.png";
+import ListIcon from "../../icons/ListIcon.png";
+import HireAndTransport from "../../icons/HireAndTransport.svg";
 import {
     SUBSECTION_LIST_ENTRIES,
     MediumOrange,
@@ -154,7 +155,7 @@ class vehicleHire extends React.Component {
                                 >
                                     <img
                                         className="leftSide-menu--img"
-                                        src={ServiceTypesIcon}
+                                        src={ListIcon}
                                         alt="SERVICE TYPES"
                                     />
                                     <div
@@ -173,7 +174,7 @@ class vehicleHire extends React.Component {
                                 >
                                     <img
                                         className="leftSide-menu--img"
-                                        src={ServiceTypesIcon}
+                                        src={HireAndTransport}
                                         alt="SERVICE TYPES"
                                     />
                                     <div

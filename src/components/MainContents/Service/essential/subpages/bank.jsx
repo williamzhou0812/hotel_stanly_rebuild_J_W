@@ -196,21 +196,22 @@ class Banks extends React.Component {
                         <div className="main-section--middle">
                             {banksDatas.map((bankList, index) => {
                                 return (
-                                    <div style={{ ...this.styles.mainSectionRow }}>
-                                        <div style={{ ...this.styles.mainIcon }}>
-                                            <img style={{ width: "100%", height: "100%" }} src={bankList.logo}
-                                                alt={bankList.title + " icon"} />
-                                        </div>
-                                        <div style={{ ...this.styles.mainTitleContainer }}>
-                                            <Link style={{ textDecoration: "none" }} to={`/services/essential/embassy/${index}`}>
+                                    <Link style={{ textDecoration: "none" }} to={`/services/essential/banks/${index}`}>
+                                        <div style={{ ...this.styles.mainSectionRow }}>
+
+                                            <div style={{ ...this.styles.mainIcon }}>
+                                                <img style={{ width: "100%", height: "100%" }} src={bankList.logo}
+                                                    alt={bankList.title + " icon"} />
+                                            </div>
+                                            <div style={{ ...this.styles.mainTitleContainer }}>
+                                                {/* <Link style={{ textDecoration: "none" }} to={`/services/essential/banks/${index}`}> */}
 
                                                 <h4 style={{ color: "white" }}>{bankList.name}</h4>
-                                            </Link>
-                                            {/* <img src={embassyList.img_logo} alt='' /> */}
+                                                {/* </Link> */}
+                                                {/* <img src={embassyList.img_logo} alt='' /> */}
+                                            </div>
                                         </div>
-
-                                    </div>
-
+                                    </Link>
                                 );
                             })}
                         </div>
@@ -230,15 +231,8 @@ class Banks extends React.Component {
                         </div>
 
                     </div>
-
-
-
                 </div>
-
-
             </div >
-
-
         );
     }
 }
@@ -250,7 +244,7 @@ export default Banks;
 
 
 
-// import React, {Fragment} from 'react';
+// import React, { Fragment } from 'react';
 // import { Link } from 'react-router-dom';
 
 
@@ -258,7 +252,7 @@ export default Banks;
 //     {
 //         id: 1,
 //         name: 'ANZ BANK',
-//         logo:'/imgs/service/bank/S1-IMAGES2.jpg'
+//         logo: '/imgs/service/bank/S1-IMAGES2.jpg'
 
 //     },
 //     {
@@ -277,7 +271,7 @@ export default Banks;
 
 
 
-//     return ( 
+//     return (
 //         <Fragment>
 //             <div>BANK List Page</div>
 //             {banksDatas.map((banklist, index) => {

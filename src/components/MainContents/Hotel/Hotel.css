@@ -1,0 +1,54 @@
+.hotel-title {
+  padding-left: 5%;
+  font-size: 2.5vw;
+  letter-spacing: 1px;
+  text-align: left; }
+  @media (max-width: 479px) {
+    .hotel-title {
+      letter-spacing: 0px !important; } }
+  @media (min-width: 480px) and (max-width: 599px) {
+    .hotel-title {
+      letter-spacing: 1px !important; } }
+  @media (min-width: 600px) and (max-width: 900px) {
+    .hotel-title {
+      letter-spacing: 2px !important; } }
+  @media (min-width: 901px) and (max-width: 1070px) {
+    .hotel-title {
+      letter-spacing: 2px !important; } }
+
+.hotel-rating {
+  padding-left: 5%;
+  text-align: left; }
+  @media (max-width: 479px) {
+    .hotel-rating svg {
+      width: 10px !important;
+      height: 10px !important; } }
+  @media (min-width: 480px) and (max-width: 599px) {
+    .hotel-rating svg {
+      width: 15px !important;
+      height: 15px !important; } }
+  @media (min-width: 600px) and (max-width: 900px) {
+    .hotel-rating svg {
+      width: 18px !important;
+      height: 18px !important; } }
+  @media (min-width: 901px) and (max-width: 1070px) {
+    .hotel-rating svg {
+      width: 25px !important;
+      height: 25px !important; } }
+
+.hotels-btn {
+  margin-bottom: 2%; }
+  .hotels-btn span {
+    font-size: 2vw !important; }
+    @media (max-width: 479px) {
+      .hotels-btn span {
+        padding-top: 2%; } }
+    @media (min-width: 480px) and (max-width: 599px) {
+      .hotels-btn span {
+        padding-top: 2%; } }
+    @media (min-width: 600px) and (max-width: 900px) {
+      .hotels-btn span {
+        padding-top: 2%; } }
+    @media (min-width: 901px) and (max-width: 1070px) {
+      .hotels-btn span {
+        padding-top: 2%; } }

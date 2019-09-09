@@ -34,7 +34,7 @@ const temp_transportDetails = [
     },
     {
         id: 3,
-        title: 'PASSEMGER AIRLINE SERVICES',
+        title: 'PASSENGER AIRLINE SERVICES',
         img_logo: '/imgs/service/service_type_icons/Services_Icons-AirTransport-05.svg'
     }
 ]
@@ -208,7 +208,7 @@ class Transport extends React.Component {
                                         alt="Medical Icon" />
                                 </div>
                                 <div style={{ ...this.styles.mainTitleContainer }}>
-                                    <Link to={`/services/transport/passenger-airline-serviece`} style={{ textDecoration: "none" }}>
+                                    <Link to={`/services/transport/passenger-airline-service`} style={{ textDecoration: "none" }}>
                                         <h4 style={{ color: "white" }}>{temp_transportDetails[2].title}</h4>
                                     </Link>
                                 </div>

@@ -16,9 +16,9 @@ class SubNav extends React.Component {
     return (
       <div style={{ width: "100%", height: "3vh" }}>
         <div className="subNav-container" >
-          <div className="subNav-container--search">
+          {/* <div className="subNav-container--search">
             <div></div>
-          </div>
+          </div> */}
           <div className="subNav-container--about">
             <Link to="/hoteldetail">ABOUT OUR HOTEL</Link>
           </div>

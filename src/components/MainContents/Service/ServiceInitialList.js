@@ -12,7 +12,7 @@ class ServiceInitialList extends React.Component {
         { id: 1, title: 'ESSENTIAL SERVICES', url: essentialNamespace },
         { id: 2, title: 'CAR HIRE & TRANSPORT', url: transportNamespace },
         { id: 3, title: 'MINING & RESOURCES', url: miningNamespace },
-        { id: 4, title: 'RETAIL & SERVICES', url: retailNamespace }
+        // { id: 4, title: 'RETAIL & SERVICES', url: retailNamespace }
     ];
     images = [
         EssentialServiceHeader,

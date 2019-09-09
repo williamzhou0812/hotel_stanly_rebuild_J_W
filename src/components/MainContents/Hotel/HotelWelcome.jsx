@@ -19,7 +19,7 @@ class HotelWelcome extends React.Component {
                 }}
               //  className="section--bottom--animation"
             >
-                <div className="vertical-titleContainer"
+                <div className="left-vertical-nav"
                   style={{flex:"1"}}
                 >
                     <div className="vertical-title"

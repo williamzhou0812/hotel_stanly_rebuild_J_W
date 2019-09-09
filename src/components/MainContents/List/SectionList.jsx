@@ -73,7 +73,7 @@ class SectionList extends React.Component {
                 style={{ width: "100%", height: "100%", display: "flex" }}
                 className="section--bottom--animation"
             >
-                <div className="vertical-titleContainer"
+                <div className="left-vertical-nav"
                 >
 
                     <div style={this.styles.upArrow} onClick={this.goUp}>
@@ -81,7 +81,7 @@ class SectionList extends React.Component {
                     </div>
 
                     <div className="vertical-title">
-                        <span style={{ transform: "rotate(-90deg)", whiteSpace:"nowrap"}}>
+                        <span style={{ transform: "rotate(-90deg)" }}>
                             {title.toUpperCase()}
                         </span>
                     </div>
