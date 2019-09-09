@@ -1,22 +1,25 @@
 import React from 'react';
 
 import ImageGallery from 'react-image-gallery';
-
+import OutNow from './190523JBGINTERNALADS2.jpg';
+import GBGBANNER from './190523JBGINTERNALADS5_QVwQqkl.jpg';
+import  TOUCHHERER from './190523JBGINTERNALADS6_NZu8HSE.jpg';
 
 
 const images = [
     {
-      original: 'https://picsum.photos/id/1018/1000/600/',
+      original: OutNow,
       thumbnail: 'https://picsum.photos/id/1018/250/150/',
     },
     {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
+      original: GBGBANNER,
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
     },
     {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
+      original: TOUCHHERER,
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    }
+
   ];
 
 

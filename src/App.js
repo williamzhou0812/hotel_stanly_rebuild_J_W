@@ -175,12 +175,12 @@ function App() {
             <Route exact path={activityNamespace + "/3" + "/:id"} component={ActivityDestinationDetail3} />
             <Route exact path={activityNamespace + "/4" + "/:id"} component={ActivityDestinationDetail4} />
               
-              <Route exact path='/videos' component={mainComponent} />
+             <Route exact path='/videos' component={mainComponent} />
 
-          </Switch>
+            </Switch>
+          <Footer /> 
           </main>
 
-          <Footer /> 
     
     
 

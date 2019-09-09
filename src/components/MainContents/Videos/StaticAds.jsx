@@ -1,21 +1,13 @@
 import React from "react";
 import ImageGallery from 'react-image-gallery';
-import { isTSEnumMember } from "@babel/types";
-
+import AdvImgOne from './5-Coral_Sea_Hotels_118x85mm_Ad_interactive-01.jpg';
 
 const images = [
     {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      original: AdvImgOne,
+      thumbnail: '',
     },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
+ 
   ];
 
 
