@@ -28,7 +28,7 @@ import DiningDetail from './components/MainContents/Dining/DiningDetail';
 import DestinationDetail from './components/MainContents/Destination/DestinationDetail';
 import DestinationList from './components/MainContents/Destination/DestinationList';
 
-import { serviceNamespace, accomodationNamespace, destinationNamespace, mapListNamespace, diningNamespace } from './Constants';
+import { serviceNamespace, accomodationNamespace,activityNamespace , destinationNamespace, mapListNamespace, diningNamespace } from './Constants';
 
 // +++++
 
@@ -65,6 +65,19 @@ import FacilitieDetails from  './components/MainContents/OurHotel/FacilitieDetai
 
 import Meetings from './components/MainContents/OurHotel/Meetings';
 import MeetingDetails from './components/MainContents/OurHotel/MeetingDetails';
+
+// 5.9
+import ActivityList from './components/MainContents/Activity/ActivityList';
+
+import ActivityDestinationList1 from './components/MainContents/Activity/ActivityDestinationList1';
+import ActivityDestinationList2 from './components/MainContents/Activity/ActivityDestinationList2';
+import ActivityDestinationList3 from './components/MainContents/Activity/ActivityDestinationList3';
+import ActivityDestinationList4 from './components/MainContents/Activity/ActivityDestinationList4';
+
+import ActivityDestinationDetail1 from './components/MainContents/Activity/ActivityDestinationDetail1';
+import ActivityDestinationDetail2 from './components/MainContents/Activity/ActivityDestinationDetail2';
+import ActivityDestinationDetail3 from './components/MainContents/Activity/ActivityDestinationDetail3';
+import ActivityDestinationDetail4 from './components/MainContents/Activity/ActivityDestinationDetail4';
 
 import './App.css';
 
@@ -147,6 +160,19 @@ function App() {
               <Route exact path='/services/transport/passenger-airline-serviece' component={PassengerAirline} />
 
 
+              <Route exact path={activityNamespace} component={ActivityList} />
+          {/* <Route exact path={activityNamespace + "/:id"} component={ActivityDestinationList} /> */}
+
+            <Route exact path={activityNamespace + "/1"} component={ActivityDestinationList1} />
+            <Route exact path={activityNamespace + "/2"} component={ActivityDestinationList2} />
+            <Route exact path={activityNamespace + "/3"} component={ActivityDestinationList3} />
+            <Route exact path={activityNamespace + "/4"} component={ActivityDestinationList4} />
+
+            <Route exact path={activityNamespace + "/1" + "/:id"} component={ActivityDestinationDetail1} />
+            <Route exact path={activityNamespace + "/2" + "/:id"} component={ActivityDestinationDetail2} />
+            <Route exact path={activityNamespace + "/3" + "/:id"} component={ActivityDestinationDetail3} />
+            <Route exact path={activityNamespace + "/4" + "/:id"} component={ActivityDestinationDetail4} />
+              
               <Route exact path='/videos' component={mainComponent} />
 
           </Switch>

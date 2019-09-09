@@ -14,6 +14,7 @@ import {
     serviceNamespace,
     mapListNamespace,
     activityNamespace,
+
     airportInfoNamespace,
     shiftArray
 } from "../../../Constants";
@@ -42,7 +43,8 @@ class mainNav extends React.Component {
                 },
                 {
                     name: "MAPS",
-                    path: mapListNamespace,
+                    //   path: mapListNamespace,
+                    path: "/maps",
                     icon: MapListIcon,
                     iconWidth: "70px"
                 },
@@ -71,8 +73,8 @@ class mainNav extends React.Component {
                     iconWidth: "70px"
                 },
                 {
-                    name: "OUR HOTELS",
-                    path: '/ourhotel',
+                    name: "HOTELS",
+                    path: accomodationNamespace,
                     icon: AccommodationIcon,
                     iconWidth: "70px"
                 }
@@ -89,12 +91,12 @@ class mainNav extends React.Component {
         // const { pathname } = this.props.location;
         return (
             <div style={{ width: "100vw", height: "8vh" }}>
-                <div style={{ width: "100%", height: "100%", display: "flex" }}>
+                <div style={{ width: "100%", height: "100%", display: "flex", boxShadow: "2px 5px 10px black", position: "relative" }}>
                     {tabs.map((t, i) => {
                         return (
                             <div className="item-tab not-selected">
                                 <NavLink style={{ display: "inline-block", flexDirection: "column", width: "100%", height: "100%", textAlign: "center" }} to={t.path}>
-                                    <div style={{}}>
+                                    <div>
                                         <div style={{
                                             display: "inline-block",
                                             textAlign: "center"

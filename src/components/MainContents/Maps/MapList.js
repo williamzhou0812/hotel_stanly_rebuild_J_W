@@ -141,13 +141,9 @@ const styles = {
  
 class  MapList extends React.Component { 
 
-        constructor(props) {
-            super(props) 
-
-            this.state = {
-                showModal: false,
-              
-               data : [
+            state = {
+               
+                mapList : [
                          {
                             title: 'PAPUA NEW GUNIEA MAP',
                             img_url: PNG,
@@ -228,13 +224,13 @@ class  MapList extends React.Component {
 
                           }
                         
-                ]
-            }
+                ],
+                data: [],
+                map: false
+    }
 
-            this.openMap = this.openMap.bind(this);
-            this.openModal = this.openModal.bind(this);
-            this.closeModal = this.closeModal.bind(this);
-        }
+         
+        
 
 
 goUp = () => {
@@ -247,22 +243,53 @@ goDown = () => {
     // 
 }
 
-openModal() {
-    this.setState({showModal: true });
-    console.log(this.state.showModal);
-}
-closeModal() {
-    this.setState({ showModal: false });
-}
-ren
+
 
 closeMap = (index) => {
     //map close
+    this.setState({
+        mapList: [
+
+            ...this.state.mapList.slice(0, index),
+            {...this.state.mapList[index], map: false},
+            ...this.state.mapList.slice(index + 1)
+        ] 
+
+    })
     console.log('close Map ' + index)
 }
 
-     
-    openMap () {
+openMap  = (index) =>  {
+
+        // check click handel Index number 
+         console.log(index); 
+
+         // Stroe Singler data
+
+         let mapDetail = this.state.mapList[index];
+
+         // check MapDetail 
+
+         console.log(mapDetail)
+
+         // upData Currente State
+
+        this.setState({
+            mapList: [
+
+                ...this.state.mapList.slice(0, index),
+                {...this.state.mapList[index], map: true},
+                ...this.state.mapList.slice(index + 1)
+            ] 
+
+        })
+
+        
+       console.log(this.state.mapList);
+
+      //  data: mapDetail,
+            // map: true
+
         // get Array index id and show on the map 
     
         
@@ -279,19 +306,15 @@ closeMap = (index) => {
             
         //  })
         //  console.log(this.state)
-        this.setState({ showModal: true });
        
     }
     render() {
-        const { data } = this.state;
+        const { mapList } = this.state;
         const itemHeight = `${100 / SUBSECTION_LIST_ENTRIES}%`;
 
         return (
             <Fragment> 
-                {/* <button  type='button' onClick={() => this.openModal} >
-                    OPEN
-                </button> */}
-                
+               
                <div className="section--bottom--animation" 
                     style={{width:"100%", height:"100%", display:"flex"}}
                >    
@@ -351,8 +374,8 @@ closeMap = (index) => {
                                         marginRight: '-30px',
     
                                 }}>
-                                        { data.map((item, index)=> {
-                                            const isLastItem = index === data.length - 1;
+                                        { mapList.map((item, index)=> {
+                                            const isLastItem = index === mapList.length - 1;
     
                                                 return ( 
                                                     
@@ -365,7 +388,7 @@ closeMap = (index) => {
                                                             display:'flex',
                                         
                                                         }}
-                                                            onClick={this.openModal}
+                                                            onClick={() => this.openMap(index)}
                                                         >
                                                             <div 
                                                                 style={{
@@ -400,8 +423,8 @@ closeMap = (index) => {
     
                                                         </div>
                                                         <Modal 
-                                                                show={this.state.showModal}
-                                                                onHide={this.closeModal}
+                                                                show={mapList[index].map}
+                                                                onHide={() => this.closeMap(index)}
                                                                 dialogClassName="map-modal"
                                                             >
                                                                 <Modal.Body>
@@ -414,7 +437,7 @@ closeMap = (index) => {
                                                                     >
                                                                         <MuiThemeProvider>
                                                                             <CloseIcon 
-                                                                                onClick={this.closeModal}
+                                                                                onClick={() => this.closeMap(index)}
                                                                                 color="white"
                                                                                 style={{
                                                                                     padding: 0,

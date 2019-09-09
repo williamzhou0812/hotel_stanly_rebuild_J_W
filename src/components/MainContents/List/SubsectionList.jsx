@@ -3,6 +3,7 @@ import DownButton from "../../MainContents/Destination/icons/DownExploreButton.p
 import UpButton from "../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import MapModal from "../Maps/MapModal";
 import {
     SUBSECTION_LIST_ENTRIES,
     MediumOrange,
@@ -127,6 +128,7 @@ class SubsectionList extends React.Component {
 
                                         >
                                             <img
+                                                style={{ height: "100%" }}
                                                 className="leftSide-menu--img"
                                                 src={item.icon}
 
@@ -146,7 +148,7 @@ class SubsectionList extends React.Component {
                                     <SidebarMapModel
                                         item={item}
                                         mainTitle={mainTitle}
-                                    //  maps={maps}
+                                    // maps={maps}
                                     />
 
                                 );
@@ -216,7 +218,7 @@ class SubsectionList extends React.Component {
                             return (
 
                                 <Link
-
+                                    style={{ textDecoration: "none" }}
                                     to={`${namespace}/${index}`}
                                     key={`${item.id}-${index}`}
                                 // imageSrc={`${item.imgSrc}`}
@@ -228,7 +230,7 @@ class SubsectionList extends React.Component {
                                         display: "flex", alignItems: "center",
                                         borderBottom: "1px solid white"
                                     }}>
-                                        <div>
+                                        <div >
                                             <div style={{
                                                 backgroundImage: `url(${imageSrc})`,
                                                 backgroundSize:
@@ -240,7 +242,10 @@ class SubsectionList extends React.Component {
                                             </div>
                                         </div>
                                         {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
-                                        <div className="subSection--title"><div>{item.title}</div> <div style={{ fontSize: "1.7vw" }}>{item.subTitle}</div> </div>
+                                        <div className="subSection--title">
+                                            <div>{item.title}</div>
+                                            <div style={{ fontSize: "1.7vw" }}>{item.subTitle}
+                                            </div> </div>
                                     </div>
 
                                 </Link>

@@ -37,7 +37,7 @@ class DestinationDetail extends React.Component {
             id: 2,
             title: 'LAE',
             state: 'PAPUA NEW GUNIEA',
-            img_url: '/imgs/destination/D-DESTINATIONS-IMAGES_P2.jpg',
+            img_url: '/imgs/destination/D2-LAE-IMAGES2.jpg',
             mapImage: '/imgs/destination/maps/Port-Moresby-Map-PORTMORESBY.png',
             CityMap: '/imgs/destination/maps/PNG-Map-PORTMORESBY.png',
             url: destinationNamespace,
@@ -49,7 +49,7 @@ class DestinationDetail extends React.Component {
             id: 3,
             title: 'MADANG',
             state: 'PAPUA NEW GUNIEA',
-            img_url: '/imgs/destination/D-DESTINATIONS-IMAGES_P3.jpg',
+            img_url: '/imgs/destination/D3-MADANG-IMAGES.jpg',
             mapImage: '/imgs/destination/maps/Port-Moresby-Map-PORTMORESBY.png',
             CityMap: '/imgs/destination/maps/PNG-Map-PORTMORESBY.png',
             url: destinationNamespace,
@@ -61,7 +61,7 @@ class DestinationDetail extends React.Component {
             id: 4,
             title: 'MOUNT HAGEN',
             state: 'PAPUA NEW GUNIEA',
-            img_url: '/imgs/destination/D-DESTINATIONS-IMAGES_p4-.jpg',
+            img_url: '/imgs/destination/E3E_-_Mount_Hagen_Show.jpg',
             mapImage: '/imgs/destination/maps/Port-Moresby-Map-PORTMORESBY.png',
             CityMap: '/imgs/destination/maps/PNG-Map-PORTMORESBY.png',
             url: destinationNamespace,
@@ -88,7 +88,8 @@ class DestinationDetail extends React.Component {
             backgroundColor: LightBlueButtonBackground,
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+
         },
         mapButtonTextStyle: {
             fontSize: "2vw",
@@ -99,7 +100,7 @@ class DestinationDetail extends React.Component {
 
     render() {
 
-        let destinationsDetail = this.destinations[parseInt(this.props.match.params.id)]
+        let destinationsDetail = this.destinations[parseInt(this.props.match.params.id - 1)]
         return (
             <div
                 style={{
@@ -153,13 +154,7 @@ class DestinationDetail extends React.Component {
                             <div className="destination-main--details--bottom--left"
                             >
 
-                                <div
-
-                                    style={{
-
-                                        overflow: "scroll",
-
-                                    }}
+                                <div style={{ overflow: "Hidden" }}
                                 >
                                     <p>
                                         {destinationsDetail.description}
@@ -186,9 +181,9 @@ class DestinationDetail extends React.Component {
                                 </div>
                                 <div className="destination-main--details--bottom--right--btnContainer">
 
-                                    <div className="destination-main--details--bottom--right--btnContainer--exploreBtn">
+                                    {/* <div className="destination-main--details--bottom--right--btnContainer--exploreBtn">
                                         <span style={this.styles.mapButtonTextStyle}>EXPLORE</span>
-                                    </div>
+                                    </div> */}
                                     <div>
 
                                         <MapModal
@@ -210,7 +205,7 @@ class DestinationDetail extends React.Component {
                                             }
                                         />
                                     </div>
-                                    <div>
+                                    <div style={{}}>
 
                                         <MapModal
                                             buttonTitle={destinationsDetail.state + " map"}
