@@ -78,7 +78,7 @@ class SecurityDetails extends React.Component {
             id: 1,
             slideImages: '/imgs/service/S2C-Images_QTCDF7B.jpg',
             title: 'HERTZ (PORT MORESBY AIRPORT)',
-            img_url: '/imgs/transport/logoImg/S2LOGOS19-hertz.jpg',
+            img_url: '/imgs/service/transport/logoImg/S2LOGOS19-hertz.jpg',
             synopsis: 'Enjoy a day trip to the beautiful Variata National Park or a week-long getaway to explore more of this wonderful nation. Whatever your transport needs, Hertz car rentals has you covered.',
             contact: {
                 call: '+675 7363 0995',
@@ -91,7 +91,7 @@ class SecurityDetails extends React.Component {
             id: 2,
             slideImages: '/imgs/service/S2C-Images_QTCDF7B.jpg',
             title: 'BUDGET RENT A CAR',
-            img_url: '/imgs/transport/logoImg/S2LOGOS16-budget.jpg',
+            img_url: '/imgs/service/transport/logoImg/S2LOGOS16-budget.jpg',
             synopsis: 'Regardless of whether you\'re in PNG for leisure or business, Budget has all your car rental needs covered. “New Cars ... Old Fashioned Service.“  ',
             contact: {
                 call: '+675 323 6244',
@@ -104,7 +104,7 @@ class SecurityDetails extends React.Component {
             id: 3,
             slideImages: '/imgs/service/S2C-Images_QTCDF7B.jpg',
             title: 'EUROPCAR',
-            img_url: '/imgs/transport/logoImg/S2LOGOS17-europcar.jpg',
+            img_url: '/imgs/service/transport/logoImg/S2LOGOS17-europcar.jpg',
             synopsis: 'Europcar offers affordable and reliable car rentals for visitors to PNG. Explore more of the incredible landscapes and culture of this fascinating nation with Europcar.',
             contact: {
                 call: '',
@@ -130,7 +130,7 @@ class SecurityDetails extends React.Component {
             id: 5,
             slideImages: '/imgs/service/S2C-Images_QTCDF7B.jpg',
             title: 'TRAVELLERS RENT-A-CAR',
-            img_url: '/imgs/transport/logoImg/S2LOGOS21-travellers.jpg',
+            img_url: '/imgs/service/transport/logoImg/S2LOGOS21-travellers.jpg',
             synopsis: 'Travellers Rent-a-Car is a locally owned car rental company offering transport services to both leisure and executive travellers. Delivering the best rentals for PNG\'s road and climate conditions.',
             contact: {
                 call: '+675 422 3412',
@@ -143,7 +143,7 @@ class SecurityDetails extends React.Component {
             id: 6,
             slideImages: '/imgs/service/S2C-Images_QTCDF7B.jpg',
             title: 'FRANGIPANI',
-            img_url: '/imgs/transport/logoImg/S2LOGOS18-frang.jpg',
+            img_url: '/imgs/service/transport/logoImg/S2LOGOS18-frang.jpg',
             synopsis: 'Frangipani car hire provides a pleasurable and reliable experience when exploring the stunning and fascinating region of East New Britain. Customer service and satisfaction guaranteed.',
             contact: {
                 call: '+675 982 9311',
@@ -156,7 +156,7 @@ class SecurityDetails extends React.Component {
             id: 7,
             slideImages: '/imgs/service/S2C-Images_QTCDF7B.jpg',
             title: 'AVIS - NATIONWIDE RENT-A-CAR',
-            img_url: '/imgs/transport/logoImg/S2LOGOS15-avis.jpg',
+            img_url: '/imgs/service/transport/logoImg/S2LOGOS15-avis.jpg',
             synopsis: 'Frangipani car hire provides a pleasurable and reliable experience when exploring the stunning and fascinating region of East New Britain. Customer service and satisfaction guaranteed.',
             contact: {
                 call: '',
@@ -169,7 +169,7 @@ class SecurityDetails extends React.Component {
             id: 8,
             slideImages: '/imgs/service/S2C-Images_QTCDF7B.jpg',
             title: 'IZARHLAMBORN HIRE CARS',
-            img_url: '/imgs/transport/logoImg/S2LOGOS20-izarhlamborn.jpg',
+            img_url: '/imgs/service/transport/logoImg/S2LOGOS20-izarhlamborn.jpg',
             synopsis: 'A rental car service located in Madang.',
             contact: {
                 call: ' +675 422 0433',

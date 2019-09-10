@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Modal } from "react-bootstrap";
+import './Maps.scss';
 import {
     MAX_ZOOM_LEVEL,
     MAP_HEIGHT,
@@ -40,7 +41,7 @@ class MapModal extends React.Component {
         } = this.props;
         const { showModal } = this.state;
         return (
-            <div style={rootStyle}>
+            <div style={rootStyle} >
                 <div style={buttonStyle} onClick={this.openModal}>
                     <span style={textStyle}>
                         {!!buttonTitle
@@ -48,13 +49,14 @@ class MapModal extends React.Component {
                             : title.toUpperCase()}
                     </span>
                 </div>
-                <Modal
+                <Modal 
+                     className="modal-100"
                     show={showModal}
                     onHide={this.closeModal}
                     dialogClassName="map-modal"
                 >
                     <Modal.Body>
-                        <div style={{ position: "absolute", right: 0, top: 0 }}>
+                        <div style={{ width:"100%",  position: "absolute", right: 0, top: 0 }}>
                             <MuiThemeProvider>
                                 <CloseIcon
                                     onClick={this.closeModal}

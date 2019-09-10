@@ -145,7 +145,7 @@ const MeetingDetails = (props) => {
                     <div >
                         <Link
                             style={{ height: "14%", textDecoration: "none" }}
-                            to=''
+                            to='/ourhotel/meeting'
                         >
                             <div className="leftSide-menu--container">
                                 <img
@@ -162,7 +162,7 @@ const MeetingDetails = (props) => {
                                         className="menu-title"
                                   
                                     >
-                                        RETURN TO LIST
+                                        MEETING 
                                      </p>
                                     <p
                                         className="menu-title"

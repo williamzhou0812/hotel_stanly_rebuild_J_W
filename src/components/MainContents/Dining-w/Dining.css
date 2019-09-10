@@ -1,0 +1,39 @@
+.middle-top--right {
+  flex-basis: 50%;
+  background-color: #019ba7; }
+  .middle-top--right p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 1.7vw; }
+    @media (max-width: 479px) {
+      .middle-top--right p {
+        letter-spacing: 0; } }
+    @media (min-width: 480px) and (max-width: 599px) {
+      .middle-top--right p {
+        letter-spacing: 0; } }
+    @media (min-width: 600px) and (max-width: 900px) {
+      .middle-top--right p {
+        letter-spacing: 1px; } }
+    @media (min-width: 901px) and (max-width: 1070px) {
+      .middle-top--right p {
+        letter-spacing: 1px; } }
+  .middle-top--right span {
+    font-size: 1.7vw;
+    font-weight: bold; }
+    @media (max-width: 479px) {
+      .middle-top--right span {
+        letter-spacing: 0; } }
+    @media (min-width: 480px) and (max-width: 599px) {
+      .middle-top--right span {
+        letter-spacing: 0; } }
+
+.middle-bottom {
+  height: 92%;
+  flex-basis: 50%;
+  padding: 2% 2% 0 3%;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+  text-align: left;
+  overflow: scroll; }

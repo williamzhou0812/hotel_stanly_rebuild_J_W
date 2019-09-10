@@ -183,7 +183,7 @@ class DestinationDetail extends React.Component {
                                     {/* <div className="destination-main--details--bottom--right--btnContainer--exploreBtn">
                                         <span style={this.styles.mapButtonTextStyle}>EXPLORE</span>
                                     </div> */}
-                                    <div>
+                                    <div style={{marginBottom: "3%"}}>
 
                                         <MapModal
 

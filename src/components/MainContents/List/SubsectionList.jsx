@@ -183,7 +183,7 @@ class SubsectionList extends React.Component {
                         className="vertical-title"
 
                     >
-                        <span style={{ transform: "rotate(-90deg)" }}>
+                        <span style={{ transform: "rotate(-90deg)", whiteSpace: "nowrap" }}>
                             {sideTitle}
                         </span>
                     </div>
@@ -243,7 +243,7 @@ class SubsectionList extends React.Component {
                                         </div>
                                         {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
                                         <div className="subSection--title">
-                                            <div>{item.title}</div>
+                                            <div style={{fontSize: "2.1vw"}}>{item.title}</div>
                                             <div style={{ fontSize: "1.7vw" }}>{item.subTitle}
                                             </div> </div>
                                     </div>

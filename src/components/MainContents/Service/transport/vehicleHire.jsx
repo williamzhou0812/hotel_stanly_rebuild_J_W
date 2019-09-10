@@ -25,42 +25,42 @@ const vehicleHire_data = [
     {
         id: 1,
         title: 'HERTZ (PORT MORESBY AIRPORT)',
-        img_logo: '/imgs/transport/logoImg/S2LOGOS19.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS19.jpg'
     },
     {
         id: 2,
         title: 'BUDGET RENT A CAR',
-        img_logo: '/imgs/transport/logoImg/S2LOGOS16.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS16.jpg'
     },
     {
         id: 3,
         title: 'EUROPCAR',
-        img_logo: '/imgs/transport/logoImg/S2LOGOS17.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS17.jpg'
     },
     {
         id: 4,
         title: 'CITY CAB',
-        img_logo: '/imgs/transport/logoImg/S2LOGOS22.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS22.jpg'
     },
     {
         id: 5,
         title: 'TRAVELLERS RENT-A-CAR',
-        img_logo: '/imgs/transport/logoImg/S2LOGOS21.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS21.jpg'
     },
     {
         id: 6,
         title: 'FRANGIPANI',
-        img_logo: '/imgs/transport/logoImg/S2LOGOS18.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS18.jpg'
     },
     {
         id: 7,
         title: 'AVIS - NATIONWIDE RENT-A-CAR',
-        img_logo: '/imgs/transport /logoImg/S2LOGOS15.jpg'
+        img_logo: '/imgs/service/transport /logoImg/S2LOGOS15.jpg'
     },
     {
         id: 8,
         title: 'IZARHLAMBORN HIRE CARS',
-        img_logo: '/imgs/transport/logoImg/S2LOGOS20.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS20.jpg'
     }
 
 ]

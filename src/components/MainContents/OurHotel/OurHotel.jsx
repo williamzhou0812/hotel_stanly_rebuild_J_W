@@ -117,17 +117,17 @@ const OurHotel = (props) => {
     // const classes = useStyles(); 
   
     return (
-            <div style={{height: '54vh'}} >
-            <SectionList
-                    data={ourHotel}
-                    images={images}
-                    title="OUR HOTEL"
-                    namespace=""
-                    linkFunction={(_, item) => {
-                        return item.url;
-                    }}
-                    backgroundPositionValue="top"
-                ></SectionList>
+            <div style={{height: '54vh', whiteSpace:'nowrap' }} >
+              <SectionList
+                      data={ourHotel}
+                      images={images}
+                      title="OUR HOTEL"
+                      namespace=""
+                      linkFunction={(_, item) => {
+                          return item.url;
+                      }}
+                      backgroundPositionValue="top"
+                  ></SectionList>
             </div>
         // <div  className={classes.root}>
             

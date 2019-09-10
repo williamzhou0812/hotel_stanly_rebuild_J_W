@@ -93,7 +93,7 @@ function App() {
 
           <Switch>
 
-              <Route  exact  path='/' component={HotelWelcome} />
+              <Route  exact={true}  path='/' component={HotelWelcome} />
               
               <Route  exact path='/ourhotel' component={OurHotel} />
               <Route  exact path ='/ourhotel/roomsuite' component={RoomSuite}/>

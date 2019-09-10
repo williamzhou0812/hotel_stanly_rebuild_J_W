@@ -76,7 +76,6 @@ class DiningList extends React.Component {
     ];
 
     render() {
-        // const { restaurants } = this.props;
         return (
             <div
                 className="section--bottom--animation"
@@ -85,7 +84,7 @@ class DiningList extends React.Component {
                 <SubsectionList
                     numberOfEntries={4}
                     data={this.restaurants}
-                    // to={this.restaurants.url}
+
                     namespace="dining"
                     imageKey="logo"
                     isImageArray={false}
@@ -94,18 +93,7 @@ class DiningList extends React.Component {
                     ]}
                     sideTitle="DINING"
                     mainTitle="LIST OF RESTAURANTS"
-                //     renderText={this.restaurants => {
-                //         return (
-                //             <div>
-                //     <div className="subSection--link">
-                //         {this.restaurants.title.toUpperCase()}
-                //     </div>
-                //     <div className="subSection--link">
-                //         {this.restaurants.cuisine}
-                //     </div>
-                // </div>
-                //     );
-                // }}
+
                 >
 
                 </SubsectionList>
@@ -118,13 +106,3 @@ class DiningList extends React.Component {
 export default DiningList;
 
 
-// const mapStateToProps = ({ restaurantList }) => {
-//     const { restaurants } = restaurantList;
-//     return {
-//         restaurants
-//     };
-// };
-// export default connect(
-//     mapStateToProps,
-//     null
-// )(DiningList);

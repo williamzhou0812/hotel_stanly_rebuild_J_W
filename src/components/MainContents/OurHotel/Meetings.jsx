@@ -1,5 +1,6 @@
 import React from 'react';
 import SubsectionList from "../List/SubsectionList";
+import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
 
 import  MTWIL from './img_logo/meeting /Our_Hotel_Section_Images2_1ckFKEE-MT-WILHELM.jpg';
 import  MTVIC  from './img_logo/meeting /Our_Hotel_Section_Images2_unGoJbX-MT-VIC.jpg';
@@ -54,9 +55,9 @@ const Meetings = () => {
              isImageArray={true}
              
              sideButtons={[
-                 //{ title: "EVENTS", isLink: true, link: eventNamespace }
+                { title: "RETURN TO LIST", isLink: true, link: '/ourhotel', icon: RestaurantListicon }
              ]}
-             sideTitle="OUT HOTEL"
+             sideTitle="OUR HOTEL"
              mainTitle="MEETINGS"
              evenDetailsProps={ourhotel_Meeting}
         >

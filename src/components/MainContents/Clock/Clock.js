@@ -34,7 +34,7 @@ class Clock extends React.Component {
     render() {
         const { date, time } = this.state;
         return (
-            <div className="main-clock" style={{ display: "flex" }}>
+            <div className="main-clock" style={{ height:"100%", display: "flex", alignItems:"center" }}>
                 <div style={{ flex: 1, marginLeft: 15 }}>{time}</div>
                 <div>|</div>
                 <div style={{ flex: 1 }}>{date}</div>

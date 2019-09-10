@@ -1,5 +1,8 @@
 import React from 'react';
 import SubsectionList from "../List/SubsectionList";
+import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
+
+import { Link } from "react-router-dom";
 
 import StandTwin  from './img_logo/Our_Hotel_Section_Imagesstandard.jpg';
 import DeluxeKing  from './img_logo/Our_Hotel_Section_Images_Pres_d1uSXpj.jpg';
@@ -58,26 +61,25 @@ const ourhotel_room_suite = [
 
 const RoomSuite = () => {
     return (
-        <div style={{width:'100%', height: '100%'}}>
+        <div style={{width:'100%', height: '100%', whiteSpace: 'nowarp'}}>
           
-
-        <SubsectionList
-             numberOfEntries={4}
-             data={ourhotel_room_suite}
-             namespace={`/ourhotel/roomsuite`}
-            
-             imageKey="imageServiceType"
-             isImageArray={true}
-             
-             sideButtons={[
-                 //{ title: "EVENTS", isLink: true, link: eventNamespace }
-             ]}
-             sideTitle="OUT HOTEL"
-             mainTitle="ROOMS & SUITES"
-             evenDetailsProps={ourhotel_room_suite}
-        >
-            
-        </SubsectionList> 
+        
+            <SubsectionList
+                numberOfEntries={4}
+                data={ourhotel_room_suite}
+                namespace={`/ourhotel/roomsuite`}
+                
+                imageKey="imageServiceType"
+                isImageArray={true}
+                sideButtons={[
+                    { title: 'RETURN TO LIST', isLink: true, link: '/ourhotel', icon: RestaurantListicon}
+                ]}
+                sideTitle="OUR HOTEL"
+                mainTitle="ROOMS & SUITES"
+                evenDetailsProps={ourhotel_room_suite}
+            >
+                
+            </SubsectionList> 
 
         </div> 
     )

@@ -73,7 +73,7 @@ class mainNav extends React.Component {
                     iconWidth: "70px"
                 },
                 {
-                    name: "HOTELS",
+                    name: "Our HOTELS",
                     path: '/ourhotel',
                     icon: AccommodationIcon,
                     iconWidth: "70px"
@@ -99,7 +99,8 @@ class mainNav extends React.Component {
                                     <div>
                                         <div style={{
                                             display: "inline-block",
-                                            textAlign: "center"
+                                            textAlign: "center",
+                                            marginTop: "-7%"
                                         }}>
                                             <img
                                                 alt=""
@@ -109,8 +110,8 @@ class mainNav extends React.Component {
 
                                                     position: "relative",
                                                     width: !!t.iconWidth ? t.iconWidth : "50%",
-                                                    // padding: "2%",
-                                                    marginTop: "20%",
+                                                    height:"auto",
+                                                    marginBottom:"25%",
                                                     // margin: "0 auto",
                                                     display: "inline-block"
 

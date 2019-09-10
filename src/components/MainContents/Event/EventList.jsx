@@ -226,7 +226,7 @@ class EventList extends React.Component {
                     numberOfEntries={4}
                     data={this.events}
                     // imageSrc={this.eventData.imgSrc}
-                    to={this.events.url}
+                    to=''
                     namespace="events"
                     imageKey="imageServiceType"
                     isImageArray={true}

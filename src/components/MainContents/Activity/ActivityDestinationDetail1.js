@@ -61,6 +61,7 @@ class ActivityDestinationDetail1 extends React.Component {
             title: 'TUFI',
             img_url: '/imgs/activity/ACTIVITIES-DIVING-GALLERY_T.jpg',
             mapImage: './images/PNG-Map-TUFI.png',
+            overView: 'Tufi\’s underwater world lights up in a kaleidoscope of colour, offering great visibility all year round to explore its fjords and WWII wrecks. For reef diving, divers can try Black Rocks, Cyclone Cay, Stewarts Reef and Shark Tip. Wreck diving offers the renowned Blackjack site.',
             associate: 'Tufi Dive Resort',
             details: {
                 phone: '+675 323 3462',

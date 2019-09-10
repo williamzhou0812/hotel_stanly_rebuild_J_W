@@ -75,9 +75,10 @@ class EventDetail extends React.Component {
             id: 4,
             event_title: 'NATIONAL MASK FESTIVAL',
             img_url: '/imgs/events/Events_Images_P4.jpg',
+            mapImage: '',
             month: 'JULY',
             description: 'In July, the National Mask Festival in Rabaul brings the variety of the Papua New Guinean masks to one single celebration. The festival usually runs for four or five days and provides visitors with a fantastic array of performances including fire-eaters, singers, drummers, and more.',
-            detials: {
+            details: {
                 call: '675 982 8697',
                 website: 'www.enb.travel',
                 email: null,
@@ -90,9 +91,10 @@ class EventDetail extends React.Component {
             id: 5,
             event_title: 'MONA FESTIVAL',
             img_url: '/imgs/events/E3A_-_Mona_Festival_P5.jpg',
+            mapImage: '',
             month: 'JULY',
             description: 'Mona Festival, the largest cultural event in Bougainville, only launched in 2009. The festival is dedicated to the traditional warrior canoes called ‘Monas’. Occurring in July each year, this colourful festival is said to celebrate the cultural diversity and autonomy that inspires peace and reconciliation today.',
-            detials: {
+            details: {
                 call: '+675 71 626 393',
                 website: 'www.bougainville.travel',
                 email: 'bougainville.travel@abg.gov.pg',
@@ -106,7 +108,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P5.jpg',
             month: 'AUGUST',
             description: 'The Divine Word University Cultural Day is an annual event that sees students come together to perform and celebrate their cultural heritage.',
-            detials: {
+            details: {
                 call: '+675 422 2937',
                 website: 'www.dwu.ac.pg',
                 email: 'events@dwu.ac.pg',
@@ -120,7 +122,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P6.jpg',
             month: 'AUGUST',
             description: 'The Mount Hagen Show highlights the rich culture of the Highlands region in a wonderful display of sing-sings. The show attracts around 50,000 visitors each year and is one of PNG’s oldest shows, launching back in 1961. Occurring in August each year, the show provides an insight into the fascinating customs of the local tribes.',
-            detials: {
+            details: {
                 call: '+675 7308 1368',
                 website: 'www.papuanewguinea.travel',
                 email: 'howarigc@gmail.com',
@@ -135,7 +137,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P7.jpg',
             month: 'AUGUST',
             description: 'The Crocodile Festival is a three day event celebrating the local tribe’s cultural connection to the crocodile with the festival showcasing canoe racing and traditional performances.',
-            detials: {
+            details: {
                 call: '+675 7259 6349',
                 website: 'www.papuanewguinea.travel',
                 email: 'sepikjourneys.alois240@gmail.com',
@@ -150,7 +152,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P8.jpg',
             month: 'AUGUST',
             description: 'One common dialect dominates the Enga Province, which makes it a particular drawcard for those visiting PNG. The Enga Festival is a time when locals can demonstrate to outsiders just how amazing their culture is. Discover the Engans’ famous sand painting, which is unique to the area, and the fantastic sing-sing men.',
-            detials: {
+            details: {
                 call: '+675 7226 8610',
                 website: 'www.papuanewguinea.travel',
                 email: 'www.engashow.com',
@@ -165,7 +167,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P9.jpg',
             month: 'SEPTEMBER',
             description: 'Occurring in September, the Frangipani Festival celebrates Independence Day. See the famous Baining Fire Dance, sing-sings, a float parade and more.',
-            detials: {
+            details: {
                 call: '+675 982 8697',
                 website: 'www.enb.travel',
                 email: 'www.engashow.com',
@@ -180,7 +182,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P10.jpg',
             month: 'SEPTEMBER',
             description: 'The Hiri Moale Show has become a premier cultural event. Like everything in PNG, the show illustrates a rich and symbolic history that reflect on age-old stories and customs. During the show, Ela Beach comes to life with stilt houses, colourful canoes and hundreds of people singing, dancing and celebrating tradition.',
-            detials: {
+            details: {
                 call: '+675 320 0211',
                 website: 'www.enb.travel',
                 email: 'www.papuanewguinea.travel',
@@ -193,7 +195,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P11.jpg',
             month: 'SEPTEMBER',
             description: 'The Highlands region is famous for its primitive history, which included cannibalism and violent tribal wars. At the Goroka Show, descendants beat kundu drums and decorate themselves in unusual body paints and feathers to celebrate their unique heritage.',
-            detials: {
+            details: {
                 call: '675 532 2644',
                 website: 'www.gorokaevents.com',
                 email: 'gorokashow2014@gmail.com',
@@ -206,7 +208,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P12.jpg',
             month: 'OCTOBER',
             description: 'The Morobe Cultural Show is probably the most famous cultural show in PNG. It is held in October each year and provides visitors with agricultural information as well as showcases the largest group of sing-sings in PNG.',
-            detials: {
+            details: {
                 call: '+675 472 2887',
                 website: 'www.morobeshow.org.pg',
                 email: 'info@morobeshow.org.pg',
@@ -219,7 +221,7 @@ class EventDetail extends React.Component {
             img_url: '/imgs/events/Events_Images_P13.jpg',
             month: 'NOVEMBER',
             description: 'With its rich connection to the water, the people of Milne Bay celebrate a canoe festival in November each year. Visitors will see war canoes and locally-made kundu drums in all their glory.',
-            detials: {
+            details: {
                 call: '+675 641 1503',
                 website: null,
                 email: 'kenukundusponsor@kulamail.net',
@@ -413,30 +415,7 @@ class EventDetail extends React.Component {
                                 }}
                                 >
                                     <div style={{ height: "15%" }} />
-                                    {/* <div
-                                        className="middle-section--rightSide"
-                                        style={{
-                                            height: "38%",
-
-                                            letterSpacing: "1px",
-                                            overflow: "scroll",
-                                            display: "inline-table"
-                                        }}
-                                    >
-                                        {eventDetail.details.call && (
-                                            <p>CALL TODAY: {eventDetail.details.call} </p>
-                                        )}
-                                        {eventDetail.details.website && (
-                                            <p>WEBSITE: {eventDetail.details.website} </p>
-                                        )}
-                                        {eventDetail.details.email && (
-                                            <p>EMAIL: {eventDetail.details.email} </p>)}
-
-                                        {eventDetail.details.location && (
-                                            <p>LOCATION: {eventDetail.details.location} </p>
-                                        )}
-
-                                    </div> */}
+                                  
                                     <div className="middle-section--rightSide"
                                         style={{
                                             height: "38%",

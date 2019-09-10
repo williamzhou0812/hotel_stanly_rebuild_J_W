@@ -1,6 +1,4 @@
 import React from "react";
-//import * as actions from "../actions/dining";
-//import { connect } from "react-redux";
 import {
     DECIMAL_RADIX,
     diningNamespace,
@@ -33,11 +31,32 @@ class DiningDetail extends React.Component {
     closeMap() {
         this.setState({ map: false });
     }
+    // const properties = {
+    //     duration: 5000,
+    //     transitionDuration: 500,
+    //     infinite: true,
+    //     indicators: true,
+    //     arrows: true,
+    //     onChange: (oldIndex, newIndex) => {
+    //         console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+    //     }
+    // }
 
     styles = {
         horizontalVerticalCenter: {
             display: "flex",
             justifyContent: "center"
+        },
+        slider: {
+            height: "100%",
+            duration: 10000,
+            transitionDuration: 500,
+            infinite: "true",
+            indicators: "true",
+            arrows: "true",
+            onChange: (oldIndex, newIndex) => {
+                console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+            }
         }
     };
     restaurants = [
@@ -46,6 +65,7 @@ class DiningDetail extends React.Component {
             title: "THE CELLAR REASTAURANT",
             subTitle: "Continental, Indian & Steak",
             img_url: '/imgs/dining/restaurant_logos/R28-DININGLOGO_P.jpg',
+            mapImage: '/imgs/maps/R27-The-Cellar-Restaurant.png',
             imagesrc: '/imgs/dining/restaurant_logos/R28-DININGLOGO_FiAepOq.png',
             phone: '+675 302 8200',
             address: 'The Shady Rest Hotel, Taurama Road, Boroko',
@@ -60,14 +80,15 @@ class DiningDetail extends React.Component {
                 courtesy: 'Yes',
                 cards: 'MC,Visa',
                 price: 'Entree: K12, Main: K25, Dessert: K10',
-            }
-
+            },
+            slideImages: '/imgs/dining/R28-DININGIMAGES_P.jpg'
         },
         {
             id: 2,
             title: "ASIA AROMAS",
             subTitle: "Chinese & Thai",
             img_url: '/imgs/dining/restaurant_logos/R1-DININGLOGO-Portrait_pLBb5ny.jpg',
+            mapImage: '/imgs/maps/R1-Asia-Aromas-Map.png',
             Gimg: 'imgs/dining/R2-_DININGIMAGES_P.jpg',
             imagesrc: '/imgs/dining/restaurant_logos/R1-DININGLOGO-TEST4.png',
             phone: '+675 321 4780',
@@ -82,7 +103,13 @@ class DiningDetail extends React.Component {
                 cards: 'Amex,MC,Visa',
                 price: 'K16, Main: K30, Dessert: K12',
                 location: 'The SHady Rest Hotel, Taurama Road, Boroko',
-            }
+            },
+            slideImages: '/imgs/dining/R1-DININGImages_P.jpg'
+            // slideImages: [
+            //     '/imgs/dining/restaurant_logos/R2-DININGLOGO_P.jpg',
+            //     '/imgs/dining/restaurant_logos/R28-DININGLOGO_FiAepOq.png',
+            //     '/imgs/maps/R27-The-Cellar-Restaurant.png',
+            // ]
 
         },
         {
@@ -90,6 +117,7 @@ class DiningDetail extends React.Component {
             title: "CUPPA",
             subTitle: "Café Cuisine",
             img_url: '/imgs/dining/restaurant_logos/R2-DININGLOGO_P.jpg',
+            mapImage: '/imgs/maps/R2-Cuppa.png',
             imagesrc: '/imgs/dining/restaurant_logos/R2-DININGLOGO_FiAepOq.png',
             phone: '+675 302 8666',
             address: 'Shop G48, Vision City Megamall, 4027 Waigani, National Capital, Papua New Guinea',
@@ -104,7 +132,13 @@ class DiningDetail extends React.Component {
                 courtesy: 'Yes',
                 cards: 'Amex,MC,Visa',
                 price: 'Entree: K18, Main: K32, Dessert: K12',
-            }
+            },
+            slideImages: '/imgs/dining/R2-_DININGIMAGES_P.jpg'
+            // slideImages: [
+            //     '/imgs/dining/restaurant_logos/R2-DININGLOGO_P.jpg',
+            //     '/imgs/dining/restaurant_logos/R28-DININGLOGO_FiAepOq.png',
+            //     '/imgs/maps/R27-The-Cellar-Restaurant.png',
+            // ]
 
         },
     ];
@@ -158,7 +192,9 @@ class DiningDetail extends React.Component {
                 <div style={{ flex: 1, width: "100%", height: "54vh", backgroundColor: "rgb(5, 151, 165)" }}>
 
                     <div style={{ height: "50%" }}>
-                        <img src="./img/dining/R2-_DININGIMAGES_P.jpg"></img>
+                        <div style={{ height: "100%", width: "100%" }} className="slide-container">
+                            < img style={{ height: "100%", width: "100%" }} src={restaurantsDetail.slideImages} />
+                        </div>
                     </div>
                     <div style={{ height: "25%", display: "flex" }}>
                         <div className="main-top--left"
@@ -194,15 +230,13 @@ class DiningDetail extends React.Component {
                                 {restaurantsDetail.phone && (
                                     <p>CALL TODAY: {restaurantsDetail.phone}</p>
                                 )}
-                                {/* {restaurantsDetail.details.website && (
-                                    <p>{restaurantsDetail.details.website}</p>
-                                )} */}
+
                                 {restaurantsDetail.address && (
                                     <p>{restaurantsDetail.address}</p>
                                 )}
                             </div>
                             <div>
-                                {/* <button>{restaurantsDetail.title + "MAP"}</button> */}
+
                                 <div
                                     style={{
                                         //  height: "50%",
@@ -226,10 +260,10 @@ class DiningDetail extends React.Component {
                                                 "0px 0px 10px 1px rgba(0,0,0,0.5)",
                                             borderRadius: "5px"
                                         }}
-                                    // mapImage={
-                                    //     restaurantsDetail.mapRestaurant[0]
-                                    //         .mapImage
-                                    // }
+                                        mapImage={
+                                            restaurantsDetail
+                                                .mapImage
+                                        }
                                     />
                                 </div>
                             </div>
@@ -287,38 +321,8 @@ class DiningDetail extends React.Component {
                         </div>
                     </div>
                 </div>
-                {/* {restaurantsDetail.mapRestaurant.length > 0 && (
-                                <div
-                                    style={{
-                                        //  height: "50%",
-                                        padding: "0 5%"
-                                    }}
-                                >
-                                    <MapModal
-                                        buttonTitle={`${
-                                            restaurantsDetail.title
-                                            } MAP`}
-                                        title={restaurantsDetail.title}
-                                        buttonStyle={{
-                                            backgroundColor: HeavyOrange,
-                                            width: "100%",
-                                            // height: "50%",
-                                            padding: "3% 0",
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            alignItems: "center",
-                                            boxShadow:
-                                                "0px 0px 10px 1px rgba(0,0,0,0.5)",
-                                            borderRadius: "5px"
-                                        }}
-                                        mapImage={
-                                            restaurantsDetail.mapRestaurant[0]
-                                                .mapImage
-                                        }
-                                    />
-                                </div>
-                            )} */}
-            </div>
+
+            </div >
 
         );
     }

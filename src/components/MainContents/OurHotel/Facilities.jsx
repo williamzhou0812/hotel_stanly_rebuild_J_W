@@ -1,5 +1,6 @@
 import React from 'react';
 import SubsectionList from "../List/SubsectionList";
+import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
 
 import  ZENSPA from './img_logo/facilities/Our_Hotel_Section_Images6-zen-spa.jpg';
 import  FITENESSCENTER  from './img_logo/facilities/Our_Hotel_Section_Imagesgym_e5xGEtm-fitness-center.jpg';
@@ -54,9 +55,9 @@ const Facilities = () => {
              isImageArray={true}
              
              sideButtons={[
-                 //{ title: "EVENTS", isLink: true, link: eventNamespace }
+                 { title: "RETURN TO LIST", isLink: true, link: '/ourhotel', icon: RestaurantListicon }
              ]}
-             sideTitle="OUT HOTEL"
+             sideTitle="OUR HOTEL"
              mainTitle="FACILITIE"
              evenDetailsProps={ourhotel_Facilities}
         >

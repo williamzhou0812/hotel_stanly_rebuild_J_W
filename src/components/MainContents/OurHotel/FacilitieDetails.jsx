@@ -147,7 +147,7 @@ const FacilitieDetails = (props) => {
                     <div >
                         <Link
                             style={{ height: "14%", textDecoration: "none" }}
-                            to=''
+                            to='/ourhotel/facilities'
                         >
                             <div className="leftSide-menu--container">
                                 <img
@@ -164,7 +164,7 @@ const FacilitieDetails = (props) => {
                                         className="menu-title"
                                   
                                     >
-                                        RETURN TO LIST
+                                        FACILITIES
                                      </p>
                                     <p
                                         className="menu-title"
@@ -179,7 +179,8 @@ const FacilitieDetails = (props) => {
                     <div className="vertical-title ">
                         <span
                             style={{
-                                transform: "rotate(-90deg)"
+                                transform: "rotate(-90deg)",
+                                whiteSpace: 'nowrap'
                             }}
                         >
                             OUR HOTEL

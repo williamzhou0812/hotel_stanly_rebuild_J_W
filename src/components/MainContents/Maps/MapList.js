@@ -43,6 +43,8 @@ import BUKA from './mapsImg/BUKA-PNG-Map_y8cFpiC.png';
 import SubsectionList from "../List/SubsectionList";
 import { setServers } from "dns";
 
+import './Maps.scss';
+
 // BUKA MAP
 // Autonomous Region of Bougainville
 // const temp_mapList_Data = [
@@ -338,6 +340,7 @@ openMap  = (index) =>  {
                                     color:'white',
                                     fontSize: '40pt',
                                     fontWeight: 500,
+                                    fontSize: "4vw",
                                     letterSpacing: '10px'
                                 }}  
                             >
@@ -370,6 +373,7 @@ openMap  = (index) =>  {
                         <div   style={{height: '54vh', overflow:'hidden'}} >
                                 <div style={{
                                         height: '100%',
+                                      
                                         overflow:'auto',
                                         marginRight: '-30px',
     
@@ -379,7 +383,7 @@ openMap  = (index) =>  {
     
                                                 return ( 
                                                     
-                                                    <div style={{height: itemHeight}} 
+                                                    <div style={{height: itemHeight, margin: 0}} 
                                                          key={`${index}`}
                                                     >
                                                         <div style={{
@@ -414,7 +418,8 @@ openMap  = (index) =>  {
                                                                     display: "flex",
                                                                     flexDirection: "column",
                                                                     justifyContent: "center",
-                                                                    alignItems: "center"
+                                                                    alignItems: "center",
+                                                                    fontSize: "2.1vw"
                                                                 }}>
                                                                         {item.title.toUpperCase()}
                                                                  </div>
@@ -422,7 +427,7 @@ openMap  = (index) =>  {
                                                              </div>
     
                                                         </div>
-                                                        <Modal 
+                                                        <Modal  style={{margin:0, width:"100vw"}}
                                                                 show={mapList[index].map}
                                                                 onHide={() => this.closeMap(index)}
                                                                 dialogClassName="map-modal"
@@ -430,6 +435,7 @@ openMap  = (index) =>  {
                                                                 <Modal.Body>
                                                                     <div
                                                                         style={{ 
+                                                                    
                                                                             position: 'absolute',
                                                                             right: 0,
                                                                             top: 0

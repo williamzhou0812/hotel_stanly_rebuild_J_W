@@ -255,7 +255,7 @@ const DiningDetails = (props) => {
                                 height: "14%", 
                                 textDecoration: "none" 
                             }}
-                            to=''
+                            to='/ourhotel/dining'
                         >
                             <div  className="leftSide-menu--container">
                                 <img
@@ -291,7 +291,7 @@ const DiningDetails = (props) => {
                                 transform: "rotate(-90deg)"
                             }}
                         >
-                         DING
+                         DINING
                     </span>
                     </div>
 
