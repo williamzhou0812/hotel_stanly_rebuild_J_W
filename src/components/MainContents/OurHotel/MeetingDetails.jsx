@@ -4,10 +4,10 @@ import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
 import { Link } from "react-router-dom";
 
 
-import  MTWIL from './img_logo/meeting /Our_Hotel_Section_Images2_1ckFKEE-MT-WILHELM.jpg';
-import  MTVIC  from './img_logo/meeting /Our_Hotel_Section_Images2_unGoJbX-MT-VIC.jpg';
-import  KOKO  from './img_logo/meeting /Our_Hotel_Section_Imagesballroom2_EPgBbAS-KOKO.jpg';
-import  BOARDROOM from './img_logo/meeting /Our_Hotel_Section_Imagesmeeting4-boardroom.jpg';
+import  MTWIL from './img_logo/meeting/Our_Hotel_Section_Images2_1ckFKEE-MT-WILHELM.jpg';
+import  MTVIC  from './img_logo/meeting/Our_Hotel_Section_Images2_unGoJbX-MT-VIC.jpg';
+import  KOKO  from './img_logo/meeting/Our_Hotel_Section_Imagesballroom2_EPgBbAS-KOKO.jpg';
+import  BOARDROOM from './img_logo/meeting/Our_Hotel_Section_Imagesmeeting4-boardroom.jpg';
 
 
 

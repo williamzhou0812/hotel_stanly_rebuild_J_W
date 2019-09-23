@@ -55,7 +55,7 @@ const vehicleHire_data = [
     {
         id: 7,
         title: 'AVIS - NATIONWIDE RENT-A-CAR',
-        img_logo: '/imgs/service/transport /logoImg/S2LOGOS15.jpg'
+        img_logo: '/imgs/service/transport/logoImg/S2LOGOS15.jpg'
     },
     {
         id: 8,
