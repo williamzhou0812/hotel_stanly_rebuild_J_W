@@ -95,7 +95,7 @@ class mainNav extends React.Component {
                         width: "100%",
                         height: "100%",
                         display: "flex",
-                        boxShadow: "-10px 5px 10px black",
+                        boxShadow: "-5px 5px 10px black",
                         position: "relative",
                         zIndex: 6
                     }}
