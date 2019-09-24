@@ -34,6 +34,42 @@
   font-style: italic;
   src: url("./fonts/Arimo-RegularItalic.ttf") format("opentype"); }
 
+@font-face {
+  font-family: Metric;
+  font-weight: 100;
+  src: url("./fonts/Metric-Thin.otf") format("opentype"); }
+
+@font-face {
+  font-family: Metric;
+  font-weight: lighter;
+  src: url("./fonts/Metric-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: Metric;
+  font-weight: normal;
+  src: url("./fonts/Metric-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Metric;
+  font-weight: 500;
+  src: url("./fonts/Metric-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: Metric;
+  font-weight: 600;
+  src: url("./fonts/Metric-Semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Metric;
+  font-weight: bold;
+  src: url("./fonts/Metric-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Metric;
+  font-weight: bold;
+  font-style: italic;
+  src: url("./fonts/Metric-LightItalic.otf") format("opentype"); }
+    
 /*
 @font-face {
     font-family: The Braggest;
@@ -43,7 +79,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arimo; }
+  font-family: Metric; 
+  font-size: 14px;
+}
 
 h1,
 h2,
