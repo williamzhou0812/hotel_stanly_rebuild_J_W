@@ -118,10 +118,8 @@ class ExploreList extends React.Component {
                                             <div
                                                 className="explore--title"
                                                 style={{
-                                                    //  width: "68%",
                                                     ...this.styles
                                                         .horizontalVerticalCenter
-                                                    //    fontSize: "14pt"
                                                 }}
                                             >
                                                 {item.type}

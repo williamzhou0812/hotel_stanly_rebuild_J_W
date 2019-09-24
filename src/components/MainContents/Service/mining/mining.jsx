@@ -3,6 +3,8 @@ import DownButton from "../../../MainContents/Destination/icons/DownExploreButto
 import UpButton from "../../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
 import ServiceTypesIcon from "../icons/ServiceTypesIcon.png";
+import SubsectionList from "../../List/SubsectionList";
+
 import {
     SUBSECTION_LIST_ENTRIES,
     MediumOrange,
@@ -15,34 +17,41 @@ import {
     randomiseButKeepOrder,
     addNullItemToData
 } from "../../../../Constants";
-import "../../List/MainSectionList.scss";
-import { borderBottom } from "@material-ui/system";
+
+import { borderBottom, fontSize } from "@material-ui/system";
 import { lightBlue } from "@material-ui/core/colors";
 
-const essential_service_data = [
-    {
-        id: 0,
-        title: "BANKS",
-        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Bank.svg"
-    },
+const miningList = [
     {
         id: 1,
-        title: "MEDICAL SERVICE",
-        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Medical.svg"
+        title: "OFFICIAL DEPARTMENTS",
+        img_logo:
+            "/imgs/service/service_type_icons/Services_Icons-OfficialDepartments.svg",
+        url: "/services/mining/officialDepartment"
     },
     {
         id: 2,
-        title: "EMBASSIES & HIGH COMMISSIONS",
-        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Embassy.svg"
+        title: "MINES",
+        img_logo: "/imgs/service/service_type_icons/Services_Icons-Mines.svg",
+        url: "/services/mining/mines"
     },
     {
         id: 3,
-        title: "SECURITY",
-        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Security.svg"
+        title: "PETROLEUM & GAS",
+        img_logo:
+            "/imgs/service/service_type_icons/Services_Icons-Petroleum.svg",
+        url: "/services/mining/gas"
+    },
+    {
+        id: 4,
+        title: "AGRICULTURE",
+        img_logo:
+            "/imgs/service/service_type_icons/Services_Icons-Agriculture.svg",
+        url: "/services/mining/agriculture"
     }
 ];
 
-class Essential extends React.Component {
+class Mining extends React.Component {
     constructor(props) {
         super(props);
 
@@ -52,20 +61,6 @@ class Essential extends React.Component {
 
         this.goUp = this.goUp.bind(this);
         this.goDown = this.goDown.bind(this);
-    }
-    goUp() {
-        let items = essential_service_data.slice();
-        items = shiftArray(items, 1);
-        this.setState({
-            data: items
-        });
-    }
-    goDown() {
-        let items = essential_service_data.slice();
-        items = shiftArray(items, -1);
-        this.setState({
-            data: items
-        });
     }
     styles = {
         mainSectionRow: {
@@ -92,6 +87,11 @@ class Essential extends React.Component {
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
+        },
+        linkStyle: {
+            display: "flex",
+            width: "100%",
+            textDecoration: "none"
         }
     };
 
@@ -152,7 +152,7 @@ class Essential extends React.Component {
                                     ...this.styles.horizontalVerticalCenter
                                 }}
                             >
-                                ESSENTIAL SERVICES
+                                MINING & RESOURCES
                             </div>
                             <div
                                 className="main-section--upBtn"
@@ -174,12 +174,9 @@ class Essential extends React.Component {
                         <div className="main-section--middle">
                             <div style={{ ...this.styles.mainSectionRow }}>
                                 <Link
-                                    to={`/services/essential/banks`}
+                                    to={miningList[0].url}
                                     style={{
-                                        textDecoration: "none",
-                                        width: "100%",
-                                        height: "100%",
-                                        display: "flex"
+                                        ...this.styles.linkStyle
                                     }}
                                 >
                                     <div style={{ ...this.styles.mainIcon }}>
@@ -188,10 +185,7 @@ class Essential extends React.Component {
                                                 width: "100%",
                                                 height: "100%"
                                             }}
-                                            src={
-                                                essential_service_data[0]
-                                                    .svgIcon
-                                            }
+                                            src={miningList[0].img_logo}
                                             alt="Bank Icon"
                                         />
                                     </div>
@@ -201,7 +195,7 @@ class Essential extends React.Component {
                                         }}
                                     >
                                         <h4 style={{ color: "white" }}>
-                                            {essential_service_data[0].title}
+                                            {miningList[0].title}
                                         </h4>
                                     </div>
                                 </Link>
@@ -209,12 +203,9 @@ class Essential extends React.Component {
 
                             <div style={{ ...this.styles.mainSectionRow }}>
                                 <Link
-                                    to={`/services/essential/medical`}
+                                    to={miningList[1].url}
                                     style={{
-                                        textDecoration: "none",
-                                        width: "100%",
-                                        height: "100%",
-                                        display: "flex"
+                                        ...this.styles.linkStyle
                                     }}
                                 >
                                     <div style={{ ...this.styles.mainIcon }}>
@@ -223,10 +214,7 @@ class Essential extends React.Component {
                                                 width: "100%",
                                                 height: "100%"
                                             }}
-                                            src={
-                                                essential_service_data[1]
-                                                    .svgIcon
-                                            }
+                                            src={miningList[1].img_logo}
                                             alt="Medical Icon"
                                         />
                                     </div>
@@ -236,21 +224,15 @@ class Essential extends React.Component {
                                         }}
                                     >
                                         <h4 style={{ color: "white" }}>
-                                            {essential_service_data[1].title}
+                                            {miningList[1].title}
                                         </h4>
                                     </div>
                                 </Link>
                             </div>
-
                             <div style={{ ...this.styles.mainSectionRow }}>
                                 <Link
-                                    to={`/services/essential/embassy`}
-                                    style={{
-                                        textDecoration: "none",
-                                        width: "100%",
-                                        height: "100%",
-                                        display: "flex"
-                                    }}
+                                    to={miningList[2].url}
+                                    style={{ ...this.styles.linkStyle }}
                                 >
                                     <div style={{ ...this.styles.mainIcon }}>
                                         <img
@@ -258,10 +240,7 @@ class Essential extends React.Component {
                                                 width: "100%",
                                                 height: "100%"
                                             }}
-                                            src={
-                                                essential_service_data[2]
-                                                    .svgIcon
-                                            }
+                                            src={miningList[2].img_logo}
                                             alt="Medical Icon"
                                         />
                                     </div>
@@ -271,21 +250,16 @@ class Essential extends React.Component {
                                         }}
                                     >
                                         <h4 style={{ color: "white" }}>
-                                            {essential_service_data[2].title}
+                                            {miningList[2].title}
                                         </h4>
                                     </div>
                                 </Link>
                             </div>
-
                             <div style={{ ...this.styles.mainSectionRow }}>
                                 <Link
-                                    to={`/services/essential/security`}
-                                    style={{
-                                        textDecoration: "none",
-                                        width: "100%",
-                                        height: "100%",
-                                        display: "flex"
-                                    }}
+                                    // to={`/services/transport/passenger-airline-service`}
+                                    to={miningList[3].url}
+                                    style={{ ...this.styles.linkStyle }}
                                 >
                                     <div style={{ ...this.styles.mainIcon }}>
                                         <img
@@ -293,10 +267,7 @@ class Essential extends React.Component {
                                                 width: "100%",
                                                 height: "100%"
                                             }}
-                                            src={
-                                                essential_service_data[3]
-                                                    .svgIcon
-                                            }
+                                            src={miningList[3].img_logo}
                                             alt="Medical Icon"
                                         />
                                     </div>
@@ -306,7 +277,7 @@ class Essential extends React.Component {
                                         }}
                                     >
                                         <h4 style={{ color: "white" }}>
-                                            {essential_service_data[3].title}
+                                            {miningList[3].title}
                                         </h4>
                                     </div>
                                 </Link>
@@ -334,4 +305,5 @@ class Essential extends React.Component {
         );
     }
 }
-export default Essential;
+
+export default Mining;

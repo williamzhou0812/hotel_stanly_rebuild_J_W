@@ -25,7 +25,7 @@ import MapModal from './MapModal';
 
 import PNG from './mapsImg/Port-Moresby-Map-PORTMORESBY.png';
 import PORT_MORESBBY from './mapsImg/Port-Moresby-Map-PORTMORESBY.png';
-import PORT_MORESBBY_AIRPORT from './mapsImg/PortMoresbyAirportMap.png';
+// import PORT_MORESBBY_AIRPORT from './mapsImg/PortMoresbyAirportMap.png';
 import LAE_MAP from './mapsImg/Lae-Map-LAE.png';
 import MADANG_MAP from './mapsImg/Madang-Map-MADANG.png';
 
@@ -157,13 +157,13 @@ class  MapList extends React.Component {
                             map: false
 
                           },
-                          {
+                        //   {
                         
-                            title: 'PORT MORESBY MAP National Capital District',
-                            img_url: PORT_MORESBBY_AIRPORT,
-                            map: false
+                        //     title: 'PORT MORESBY MAP National Capital District',
+                        //     img_url: PORT_MORESBBY_AIRPORT,
+                        //     map: false
 
-                          },
+                        //   },
                           {
                         
                             title: 'LAE MAP Morobe',
