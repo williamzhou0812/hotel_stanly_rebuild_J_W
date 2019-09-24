@@ -13,6 +13,7 @@ import MapList from "./components/MainContents/Maps/MapList";
 import OurHotel from "./components/MainContents/OurHotel/OurHotel";
 
 import Footer from "./components/Footer/Footer";
+import StaticFooter from "./components/Footer/StaticFooter";
 
 import HotelWelcome from "./components/MainContents/Hotel/HotelWelcome";
 
@@ -351,6 +352,7 @@ function App() {
                     <Route exact path="/videos" component={mainComponent} />
                 </Switch>
                 <Footer />
+                <StaticFooter />
             </main>
         </Fragment>
     );

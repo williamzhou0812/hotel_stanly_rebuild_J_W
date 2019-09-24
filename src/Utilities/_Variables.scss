@@ -7,7 +7,7 @@ $LightBlue : rgba(73, 175, 189, 0.4);
 $LightBlueButtonBackground : rgb(1, 155, 167);
 $ExtraHeavyBlueGreen :rgb(5, 140, 155);
 $SelectedBorderColor :rgb(183, 223, 228);
-
+$DarkBlueBackground: #0d6d79;
 
 @mixin for-size($size){
     @if $size == small-phone {
