@@ -45,7 +45,7 @@ class HotelWelcome extends React.Component {
                             </div>
                             <div className="ourHotel-main--header--bottom"     
                             >
-                                THE STANLEY HOTEL AND SUITES
+                                THE STANLEY HOTEL &amp; SUITES
                                
                             </div>
                         </div>
