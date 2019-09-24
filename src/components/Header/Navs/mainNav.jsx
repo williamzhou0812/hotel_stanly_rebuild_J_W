@@ -119,7 +119,7 @@ class mainNav extends React.Component {
                                 >
                                     <div
                                         style={{
-                                            marginTop: "7%",
+                                            marginTop: "10%",
                                             height: "90px",
                                             width: "100%",
                                             display: "block"
@@ -145,8 +145,8 @@ class mainNav extends React.Component {
                                     <p
                                         style={{
                                             // height: "30%",
-                                            fontSize: "1.3vw",
-                                            fontWeight: "bold"
+                                            fontSize: "1.5vw",
+                                            fontWeight: "500"
                                         }}
                                     >
                                         {t.name}
