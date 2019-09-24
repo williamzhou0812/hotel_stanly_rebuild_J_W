@@ -4,7 +4,7 @@
 // next link show up the time and date
 
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import Clock from "../../../components/MainContents/Clock/Clock";
 
@@ -19,9 +19,13 @@ class SubNav extends React.Component {
           {/* <div className="subNav-container--search">
             <div></div>
           </div> */}
-          <div className="subNav-container--about">
-            <Link to="/hoteldetail">ABOUT OUR HOTEL</Link>
-          </div>
+          <NavLink 
+            className="subNav-container--about"
+            to="/hoteldetail" 
+            exact
+            activeClassName="subNav-container--about-active">
+             ABOUT OUR HOTEL
+          </NavLink>          
           <div className="subNav-container--clock">
             <Clock />
 
