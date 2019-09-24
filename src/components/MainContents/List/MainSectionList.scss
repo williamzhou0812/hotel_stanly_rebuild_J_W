@@ -99,9 +99,9 @@ span.info-span {
 }
 .middle-section {
     position: relative;
-    padding: 2% 0;
+    padding: 12px;
     color: white;
-    font-size: 2vw;
+    font-size: 2.45vw;
     letter-spacing: 5px;
     @include for-size(small-phone) {
         letter-spacing: 1px;
