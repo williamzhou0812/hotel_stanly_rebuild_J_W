@@ -182,6 +182,9 @@ span.info-span {
         @include for-size(tablet-landscape) {
             font-size: 1.5vw;
         }
+        div {
+            font-size: 21.6px;
+        }
     }
 
     &--rightSide {

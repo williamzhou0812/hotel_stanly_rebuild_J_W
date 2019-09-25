@@ -116,7 +116,7 @@ const ourhotel_room_suite = [
         img_url: Persidential,
         description: `Enjoy the grand living spaces, stunning top-floor views of the Own Stanley Mountain ranges and National Stadium from this expansive luxury suite in The Stanley Hotel & Suites.
 
-                        Elegant dining room that can seat up to 14 guests
+                        <u>Elegant</u> dining room that can seat up to 14 guests
                         Full kitchen for private dining and preparation
                         Complimentary access to Executive Club Lounge services and facilities
                         Expansive marble bathroom overlooking the mountains with double vanity, separate monsoon shower and oversized Jacuzzi bathtub for ultimate comfort
@@ -299,20 +299,13 @@ const RoomSuiteDetails = (props) => {
                                             display: "inline-table"
                                         }}
                                     >
-                                        <p
-
+                                        <div
+                                            dangerouslySetInnerHTML={{__html: _RoomSuiteDetails.description}}
                                             style={{
                                                 marginTop: 0,
                                                 marginBottom: 0
                                             }}
-                                        >
-                                            {/* <Markdown
-                                            // source={event.description}
-                                            source="dhj yru  ewkhrfkhr  kurhf a  yhgdf"
-                                        /> */}
-
-                                            {_RoomSuiteDetails.description}
-                                        </p>
+                                        ></div>
                                     </div>
                                 </div>
                                 <div style={{
