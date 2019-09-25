@@ -47,7 +47,8 @@ const ourhotel_Facilities = [
             <p>We can write you a training program or provide a Personal Trainer if desired.</p>`,
         details: {
             location: 'on Level 5',
-            openhour: '5:00 AM – 10PM'
+            openhour: '5:00 AM – 10PM',
+            openhour_title: 'Gym Hours'
         }
 
     },
@@ -62,7 +63,8 @@ const ourhotel_Facilities = [
         details: {
        
             location: 'on Level 5',
-            openhour: 'This area is open from 5am until 10pm.'
+            openhour: '',
+            note: 'This area is open from 5am until 10pm.'
         }
      
 
@@ -116,7 +118,6 @@ const FacilitieDetails = (props) => {
 
     const id = props.match.params.id;
     const _id = parseInt(id);
-    console.log(_id);
     const _facilitiesDetails = ourhotel_Facilities[_id];
 
     return (
@@ -279,9 +280,11 @@ const FacilitieDetails = (props) => {
                                             <p>Located: {_facilitiesDetails.details.location} </p>
                                         )}
                                         {_facilitiesDetails.details.openhour && (
-                                            <p>Open: {_facilitiesDetails.details.openhour} </p>
+                                            <p>{(_facilitiesDetails.details.openhour_title ? _facilitiesDetails.details.openhour_title : "Open")}: {_facilitiesDetails.details.openhour} </p>
                                         )}
-                                        
+                                        {_facilitiesDetails.details.note && (
+                                            <p> {_facilitiesDetails.details.note} </p>
+                                        )}
                                     </div>
 
                                 </div>
