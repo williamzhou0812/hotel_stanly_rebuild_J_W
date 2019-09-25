@@ -105,7 +105,7 @@ const ourhotel_room_suite = [
             size: '130sqm',
             bed: 'one Super King and One King',
             location: '20th Floor',
-            occpancy: 'Two Adults and One child, Or Four Adults'
+            occpancy: 'Two Adults and One child, or Four Adults'
         }
 
     },
@@ -125,7 +125,7 @@ const ourhotel_room_suite = [
             size: '340sqm',
             bed: 'One Super King and Two Queen',
             location: '20th Floor',
-            occpancy: 'Two Adults and Two Children or Four Adults'
+            occpancy: 'Two Adults and Two Children, or Four Adults'
         }
 
     }
