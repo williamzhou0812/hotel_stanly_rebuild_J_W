@@ -87,6 +87,19 @@ class mainNav extends React.Component {
 
     render() {
         const { tabs } = this.state;
+
+        const checkActive = (match, location) => {
+            //some additional logic to verify if current link is active
+            if(!location) return false;
+            const {pathname} = location;
+            if (!match) return false;
+            if (match.isExact)
+                return true;
+            if (pathname.indexOf(match.url) >= 0)
+                return true;
+            return pathname === "/";
+        }
+
         // const { pathname } = this.props.location;
         return (
             <div style={{ width: "100vw", height: "8vh" }}>
@@ -105,9 +118,8 @@ class mainNav extends React.Component {
                             <div className="item-tab not-selected">
                                 <NavLink
                                     to={t.path}
-                                    exact
                                     activeClassName="active-link"
-                                    // isActive={checkActive}
+                                    isActive={checkActive}
                                     style={{
                                         height: "100%",
                                         width: "100%",
