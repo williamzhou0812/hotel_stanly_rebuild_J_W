@@ -30,9 +30,9 @@ const ourhotel_Facilities = [
         id: 1,
         title: 'ZEN SPA',
         img_url: ZENSPA,
-        description: `Float away from all your cares and worries in this opulent and serene setting that promises to indulge the senses.<br/><br/>
-            The SPA has highly trained masseurs on staff who are experienced in a range of massage techniques such as Swedish, deep tissue and sports massage.<br/><br/> 
-            Combine your massage with a spa treatment to complete your pampering and relaxation.`,
+        description: `<p>Float away from all your cares and worries in this opulent and serene setting that promises to indulge the senses.</p>
+            <p>The SPA has highly trained masseurs on staff who are experienced in a range of massage techniques such as Swedish, deep tissue and sports massage.</p> 
+            <p>Combine your massage with a spa treatment to complete your pampering and relaxation.</p>`,
         details: {
             location: 'on Level 3',
             openhour: '10AM – 10PM'
