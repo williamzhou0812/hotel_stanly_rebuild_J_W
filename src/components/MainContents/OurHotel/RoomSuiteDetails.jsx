@@ -76,9 +76,11 @@ const ourhotel_room_suite = [
         title: 'CORNER SUITE',
         img_url: CornerSuite,
         description: `The Corner Suites feature a sumptuous living experience with views of Waigani skyline and the Owen Stanley Mountains. 
-                        Separate sleeping and living area
-                        Elegant stand-alone tub and glass-enclosed monsoon shower
-                        Complimentary access to Executive Club Lounge services and facilities`,
+                        <ul>
+                            <li>Separate sleeping and living area</li>
+                            <li>Elegant stand-alone tub and glass-enclosed monsoon shower</li>
+                            <li>Complimentary access to Executive Club Lounge services and facilities</li>
+                        </ul>`,
         details: {
             size: '68sqm',
             bed: 'One Super King',
@@ -95,12 +97,13 @@ const ourhotel_room_suite = [
         title: 'JUNIOR SUITE',
         img_url: JuniorSuite,
         description: `Luxuriously spacious, this elegant suite in The Stanley Hotel and Suites is ideal for work or entertaining and offers top-floor views of the pool area.
-
-                        A large dining room that can seat up to 8 guests.
-                        A kitchenette.
-                        Complimentary access to Executive Club Lounge services and facilities.
-                        The luxurious marble bathroom offers an extra-large soaking tub and separate walk-in shower.
-                        Direct lift access to/from the basement car park, and the ability to interconnect with the Presidential Suite *Only two rooms on this floor for the ultimate security`,
+                        <ul>
+                            <li>A large dining room that can seat up to 8 guests.</li>
+                            <li>A kitchenette.</li>
+                            <li>Complimentary access to Executive Club Lounge services and facilities.</li>
+                            <li>The luxurious marble bathroom offers an extra-large soaking tub and separate walk-in shower.</li>
+                            <li>Direct lift access to/from the basement car park, and the ability to interconnect with the Presidential Suite *Only two rooms on this floor for the ultimate security</li>
+                        </ul>`,
         details: {
             size: '130sqm',
             bed: 'one Super King and One King',
@@ -114,13 +117,14 @@ const ourhotel_room_suite = [
         title_img: '',
         title: 'PRESIDENTIAL SUITE',
         img_url: Persidential,
-        description: `Enjoy the grand living spaces, stunning top-floor views of the Own Stanley Mountain ranges and National Stadium from this expansive luxury suite in The Stanley Hotel & Suites.
-
-                        <u>Elegant</u> dining room that can seat up to 14 guests
-                        Full kitchen for private dining and preparation
-                        Complimentary access to Executive Club Lounge services and facilities
-                        Expansive marble bathroom overlooking the mountains with double vanity, separate monsoon shower and oversized Jacuzzi bathtub for ultimate comfort
-                        Direct lift access to/from the basement car park, and the ability to interconnect with the Junior Suite *Only two rooms on this floor for the ultimate security`,
+        description: `Enjoy the grand living spaces, stunning top-floor views of the Own Stanley Mountain ranges and National Stadium from this expansive luxury suite in The Stanley Hotel &amp; Suites.
+                        <ul>
+                            <li>Elegant dining room that can seat up to 14 guests</li>
+                            <li>Full kitchen for private dining and preparation</li>
+                            <li>Complimentary access to Executive Club Lounge services and facilities</li>
+                            <li>Expansive marble bathroom overlooking the mountains with double vanity, separate monsoon shower and oversized Jacuzzi bathtub for ultimate comfort</li>                        
+                            <li>Direct lift access to/from the basement car park, and the ability to interconnect with the Junior Suite *Only two rooms on this floor for the ultimate security</li>
+                        </ul>`,
         details: {
             size: '340sqm',
             bed: 'One Super King and Two Queen',
