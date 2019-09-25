@@ -31,7 +31,7 @@ const ourhotel_Meeting = [
         id: 1,
         title: 'BOARDROOM',
         img_url: BOARDROOM,
-        description: `he Boardroom conveniently located in the hotel lobby, next to the Business Centre, is perfectly suited for a business meeting or intimate discussions for up to 12 people.`,
+        description: `The Boardroom conveniently located in the hotel lobby, next to the Business Centre, is perfectly suited for a business meeting or intimate discussions for up to 12 people.`,
         details: {
             contact: '+675 302 8888 for more information'
         }
@@ -40,13 +40,11 @@ const ourhotel_Meeting = [
     },
     {
         id: 2,
-        title: 'MT WILHELM ROOMS',
+        title: 'MT WELHELM',
         img_url: MTWIL,
-        description: `A suite of smaller meeting rooms with direct access onto a large outdoor terrace.
-
-        Rooms have the flexibility to accommodation whatever your requirements may be; theatre, classroom, boardroom, u-shape, cabaret, banqueting or cocktail.
-        
-        The rooms can cater for meetings for 20 people or for you to 60 people.`,
+        description: `A suite of smaller meeting rooms with direct access onto a large outdoor terrace. 
+            Rooms have the flexibility to accommodation whatever your requirements may be; theatre, classroom, boardroom, u-shape, cabaret, banqueting or cocktail. 
+            The rooms can cater for meetings for 20 people or for you to 60 people.`,
         details: {
             contact: '+675 302 8888 for more information'
         }
@@ -55,13 +53,11 @@ const ourhotel_Meeting = [
     },
     {
         id: 3,
-        title: 'MT VICTORIA ROOMS',
+        title: 'MT VICTORIA',
         img_url: MTVIC,
-        description: `A suite of smaller meeting rooms featuring natural lighting.
-
-        Rooms have the flexibility to accommodation whatever your requirements may be; theatre, classroom, boardroom, u shape, cabaret, banqueting or cocktail.
-        
-        The rooms can cater for meetings for 20 people or for you to 60 people.`,
+        description: `A suite of smaller meeting rooms featuring natural lighting. 
+            Rooms have the flexibility to accommodation whatever your requirements may be; theatre, classroom, boardroom, u shape, cabaret, banqueting or cocktail. 
+            The rooms can cater for meetings for 20 people or for you to 60 people.`,
         details: {
             contact: '+675 302 8888 for more information'
         }
@@ -72,11 +68,12 @@ const ourhotel_Meeting = [
         id: 4,
         title: 'KOKODA BALLROOM',
         img_url: KOKO,
-        description: `The signature space of The Stanley’s Meeting Spaces; a 1630 square meter room is the largest column free banquet space in Port Moresby.
-
-        The Kokoda can be minimised to smaller zones in various configurations. Whether you are planning a grand wedding, an intimate cocktail party or an important seminar, The Stanley offers tailored packages for every occasion.`,
+        description: `The signature space of The Stanley’s Meeting Spaces; 
+            a 1630 square meter room is the largest column free banquet space in Port Moresby. 
+            The Kokoda can be minimised to smaller zones in various configurations. 
+            Whether you are planning a grand wedding, an intimate cocktail party or an important seminar, The Stanley offers tailored packages for every occasion.`,
         details: {
-            contact: ' +675 302 8888 for more information'
+            contact: '+675 302 8888 for more information'
         }
     
 
