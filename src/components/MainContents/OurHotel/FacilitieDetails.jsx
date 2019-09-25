@@ -43,8 +43,8 @@ const ourhotel_Facilities = [
         id: 2,
         title: 'FITNESS CENTRE',
         img_url: FITENESSCENTER,
-        description: `Located on the fifth level adjacent to the pool. We offer a full range of aerobic machines, free weights and cable weight equipment to please any gym junky, with a separate training room for group fitness sessions. 
-            We can write you a training program or provide a Personal Trainer if desired. `,
+        description: `<p>Located on the fifth level adjacent to the pool. We offer a full range of aerobic machines, free weights and cable weight equipment to please any gym junky, with a separate training room for group fitness sessions.</p> 
+            <p>We can write you a training program or provide a Personal Trainer if desired.</p>`,
         details: {
             location: 'on Level 5',
             openhour: '5:00 AM – 10PM'
@@ -55,10 +55,10 @@ const ourhotel_Facilities = [
         id: 3,
         title: 'THE POOL',
         img_url: THEPOOL,
-        description: `Enjoy the hotel’s 3,000 square meter pool deck area and pool boasting a 40-meter lap pool. 
-            Whether for leisure or fitness, this stylish outside area is the perfect place to relax and unwind. 
-            Why not pull up a deck chair and catch up on some much-loved reading? 
-            If you’re in need of some refreshments, the Pool Deck has all your needs covered, from delicious fish and chips to ice cream or an iced cold beverage.`,
+        description: `<p>Enjoy the hotel’s 3,000 square meter pool deck area and pool boasting a 40-meter lap pool.</p>
+            <p>Whether for leisure or fitness, this stylish outside area is the perfect place to relax and unwind. </p>
+            <p>Why not pull up a deck chair and catch up on some much-loved reading?</p>
+            <p>If you’re in need of some refreshments, the Pool Deck has all your needs covered, from delicious fish and chips to ice cream or an iced cold beverage.</p>`,
         details: {
        
             location: 'on Level 5',
@@ -71,9 +71,9 @@ const ourhotel_Facilities = [
         id: 4,
         title: 'OWEN\'S MARKET',
         img_url: WOMEMARKING,
-        description: `Did you forget to pack something? Owen’s market has everything you need! 
-            We stock anything from fresh produce, snacks, toiletries, drinks to fresh meat, food and beverage gourmet items, in-house made delicatessen and even our famous roast chicken! 
-            Location: Ground Floor Daily: 08:00 – 20:00`,
+        description: `<p>Did you forget to pack something? Owen’s market has everything you need!</p>
+        <p>We stock anything from fresh produce, snacks, toiletries, drinks to fresh meat, food and beverage gourmet items, in-house made delicatessen and even our famous roast chicken!</p>
+        <p>Location: Ground Floor Daily: 08:00 – 20:00</p>`,
         details: {
        
             location: 'the Ground Floor',
