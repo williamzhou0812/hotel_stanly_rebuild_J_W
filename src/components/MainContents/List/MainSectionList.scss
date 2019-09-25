@@ -119,8 +119,9 @@ span.info-span {
     &--title {
         color: white;
         //  font-size: 22px;
-        font-size: 2vw;
+        font-size: 2.45vw;
         letter-spacing: 5px;
+        font-weight: 400;
         @include for-size(small-phone) {
             letter-spacing: 1px;
             //  padding-top: 12px;
