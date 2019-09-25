@@ -32,7 +32,7 @@ const ourhotel_room_suite = [
         title_img: '',
         title: 'STANDARD TWIN',
         img_url: StandTwin,
-        description: 'All rooms come with two Queen-sized beds, a work desk, monsoon shower and face either north with a fabulous view overlooking the pool, or south overlooking the Owen Stanley Mountain Rang',
+        description: 'All rooms come with two Queen-sized beds, a work desk, monsoon shower and face either north with a fabulous view overlooking the pool, or south overlooking the Owen Stanley Mountain Range.',
         details: {
             size: '34sqm',
             bed: 'Two Queens',
