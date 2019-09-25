@@ -30,15 +30,12 @@ const ourhotel_Facilities = [
         id: 1,
         title: 'ZEN SPA',
         img_url: ZENSPA,
-        description: `Float away from all your cares and worries in this opulent and serene setting that promises to indulge the senses.
-
-        The SPA has highly trained masseurs on staff who are experienced in a range of massage techniques such as Swedish, deep tissue and sports massage.
-        
-        Combine your massage with a spa treatment to complete your pampering and relaxation.`,
+        description: `Float away from all your cares and worries in this opulent and serene setting that promises to indulge the senses. 
+            The SPA has highly trained masseurs on staff who are experienced in a range of massage techniques such as Swedish, deep tissue and sports massage. 
+            Combine your massage with a spa treatment to complete your pampering and relaxation.`,
         details: {
-     
-        location: 'on Level 3',
-        openhour: '5:00 AM – 10PM'
+            location: 'on Level 3',
+            openhour: '10AM – 10PM'
         }
         
     },
@@ -46,11 +43,9 @@ const ourhotel_Facilities = [
         id: 2,
         title: 'FITNESS CENTRE',
         img_url: FITENESSCENTER,
-        description: `Located on the fifth level adjacent to the pool. We offer a full range of aerobic machines, free weights and cable weight equipment to please any gym junky, with a separate training room for group fitness sessions.
-
-        We can write you a training program or provide a Personal Trainer if desired.`,
+        description: `Located on the fifth level adjacent to the pool. We offer a full range of aerobic machines, free weights and cable weight equipment to please any gym junky, with a separate training room for group fitness sessions. 
+            We can write you a training program or provide a Personal Trainer if desired. `,
         details: {
-    
             location: 'on Level 5',
             openhour: '5:00 AM – 10PM'
         }
@@ -60,12 +55,13 @@ const ourhotel_Facilities = [
         id: 3,
         title: 'THE POOL',
         img_url: THEPOOL,
-        description: `Enjoy the hotel’s 3,000 square meter pool deck area and pool boasting a 40-meter lap pool. Whether for leisure or fitness, this stylish outside area is the perfect place to relax and unwind. Why not pull up a deck chair and catch up on some much-loved reading?
-
-        If you’re in need of some refreshments, the Pool Deck has all your needs covered, from delicious fish and chips to ice cream or an iced cold beverage.`,
+        description: `Enjoy the hotel’s 3,000 square meter pool deck area and pool boasting a 40-meter lap pool. 
+            Whether for leisure or fitness, this stylish outside area is the perfect place to relax and unwind. 
+            Why not pull up a deck chair and catch up on some much-loved reading? 
+            If you’re in need of some refreshments, the Pool Deck has all your needs covered, from delicious fish and chips to ice cream or an iced cold beverage.`,
         details: {
        
-            location: 'level 5',
+            location: 'on Level 5',
             openhour: 'This area is open from 5am until 10pm.'
         }
      
@@ -75,13 +71,13 @@ const ourhotel_Facilities = [
         id: 4,
         title: 'OWEN\'S MARKET',
         img_url: WOMEMARKING,
-        description: `Did you forget to pack something? Owen’s market has everything you need!
-
-        We stock anything from fresh produce, snacks, toiletries, drinks to fresh meat, food and beverage gourmet items, in-house made delicatessen and even our famous roast chicken!`,
+        description: `Did you forget to pack something? Owen’s market has everything you need! 
+            We stock anything from fresh produce, snacks, toiletries, drinks to fresh meat, food and beverage gourmet items, in-house made delicatessen and even our famous roast chicken! 
+            Location: Ground Floor Daily: 08:00 – 20:00`,
         details: {
        
             location: 'the Ground Floor',
-            openhour: ' 08:00 – 20:00'
+            openhour: '08:00 – 20:00'
         }
     
 
