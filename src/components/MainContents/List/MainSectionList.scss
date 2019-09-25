@@ -188,8 +188,9 @@ span.info-span {
         text-align: left;
         overflow-wrap: break-word;
         word-wrap: break-word;
-        font-size: 1.7;
+        font-size: $p;
         letter-spacing: 1px;
+        line-height: 2.4vw;
         // padding-bottom: 1%;
         @include for-size(small-phone) {
             letter-spacing: 0px;

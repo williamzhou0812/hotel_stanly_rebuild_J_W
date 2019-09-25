@@ -317,10 +317,10 @@ const RoomSuiteDetails = (props) => {
                                 </div>
                                 <div style={{
                                     flexBasis: "50%",
-                                    padding: "1%  2%"
+                                    padding: "25px 0px 0px 25px"
                                 }}
                                 >
-                                    <div style={{ height: "15%" }} />
+                                    {false && <div style={{ height: "15%" }} />}
                                    
                                     <div className="middle-section--rightSide"
                                         style={{
