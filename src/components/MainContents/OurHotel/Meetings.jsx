@@ -20,14 +20,14 @@ const ourhotel_Meeting = [
     },
     {
         id: 2,
-        title: 'MT WILHELM ROOMS',
+        title: 'MT WELHELM',
         img_url: MTWIL,
        
 
     },
     {
         id: 3,
-        title: 'MT VICTORIA ROOMS',
+        title: 'MT VICTORIA',
         img_url: MTVIC,
      
 

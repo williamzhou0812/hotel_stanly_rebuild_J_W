@@ -162,7 +162,7 @@ const MeetingDetails = (props) => {
                                         className="menu-title"
                                   
                                     >
-                                        MEETING 
+                                        MEETINGS 
                                      </p>
                                     <p
                                         className="menu-title"
@@ -231,10 +231,11 @@ const MeetingDetails = (props) => {
                                         flexBasis: "50%",
                                         borderRight:
                                             "1px solid rgb(105,194,209)",
-                                        padding: "1% 1% 1% 4%"
+                                        padding: "25px 0px 0px 35px",
+                                        overflowY: "auto"
                                     }}
                                 >
-                                    <div
+                                    {false && (<div
                                         className="middle-section--innerTitle"
                                         style={{
                                             height: "15%"
@@ -242,7 +243,7 @@ const MeetingDetails = (props) => {
                                     >
                                       
                                         {/* <span>{eventDetail.month}</span> */}
-                                    </div>
+                                    </div>)}
                                     <div className="middle-section--leftSide"
                                         style={{
                                             height: "75%",
@@ -250,28 +251,21 @@ const MeetingDetails = (props) => {
                                             display: "inline-table"
                                         }}
                                     >
-                                        <p
-
+                                        <div
+                                            dangerouslySetInnerHTML={{__html: _facilitiesDetails.description}}
                                             style={{
                                                 marginTop: 0,
                                                 marginBottom: 0
                                             }}
-                                        >
-                                            {/* <Markdown
-                                            // source={event.description}
-                                            source="dhj yru  ewkhrfkhr  kurhf a  yhgdf"
-                                        /> */}
-
-                                            {_facilitiesDetails.description}
-                                        </p>
+                                        ></div>
                                     </div>
                                 </div>
                                 <div style={{
                                     flexBasis: "50%",
-                                    padding: "1%  2%"
+                                    padding: "25px 0px 0px 25px"
                                 }}
                                 >
-                                    <div style={{ height: "15%" }} />
+                                    {false && (<div style={{ height: "15%" }} />)}
                                    
                                     <div className="middle-section--rightSide"
                                         style={{
