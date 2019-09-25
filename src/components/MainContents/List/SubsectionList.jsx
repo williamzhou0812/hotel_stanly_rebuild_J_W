@@ -174,7 +174,7 @@ class SubsectionList extends React.Component {
                         }}
                         onClick={this.goUp}
                     >
-                        <img src={UpButton} style={{ width: "5%" }} alt="Up" />
+                        <img src={UpButton} style={{ width: "46.5px", height: "46.5px" }} alt="Up" />
                     </div>
                     <div
                         style={{
@@ -255,7 +255,7 @@ class SubsectionList extends React.Component {
                     >
                         <img
                             src={DownButton}
-                            style={{ width: "5%" }}
+                            style={{ width: "46.5px", height: "46.5px" }}
                             alt="Down"
                         />
                     </div>
