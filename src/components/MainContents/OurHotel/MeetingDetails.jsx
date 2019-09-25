@@ -115,8 +115,9 @@ const MeetingDetails = (props) => {
 
     const id = props.match.params.id;
     const _id = parseInt(id);
-    console.log(_id);
     const _facilitiesDetails = ourhotel_Meeting[_id];
+    const prev_id = (_id - 1 < 0) ?  ourhotel_Meeting.length -1 : _id - 1;
+    const next_id = (_id + 1 >= ourhotel_Meeting.length) ? 0 : _id + 1;
 
     return (
      <div
@@ -189,15 +190,16 @@ const MeetingDetails = (props) => {
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>
                             <div style={{ height: "13%", display: "flex" }}>
-                                <div
+                                
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                                   
+                                    to={'/ourhotel/meeting/' + prev_id}
                                 >
-                                    <span>PREVIOUS </span>
-                                </div>
+                                    <span>PREVIOUS</span>
+                                </Link>
                                 <div
                                     className="event-title"
                                     style={{
@@ -206,15 +208,16 @@ const MeetingDetails = (props) => {
                                 >
                                     <span>{_facilitiesDetails.title}</span>
                                 </div>
-                                <div
+                                
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                            
+                                    to={'/ourhotel/meeting/' + next_id}
                                 >
                                     <span>NEXT</span>
-                                </div>
+                                </Link>
                             </div>
                             <div
                                 style={{

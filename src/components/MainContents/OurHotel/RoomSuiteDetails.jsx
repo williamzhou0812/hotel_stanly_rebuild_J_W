@@ -170,6 +170,8 @@ const RoomSuiteDetails = (props) => {
     const _id = parseInt(id);
     console.log(_id);
     const _RoomSuiteDetails = ourhotel_room_suite[_id];
+    const prev_id = (_id - 1 < 0) ?  ourhotel_room_suite.length -1 : _id - 1;
+    const next_id = (_id + 1 >= ourhotel_room_suite.length) ? 0 : _id + 1;
 
     return (
      <div
@@ -243,15 +245,15 @@ const RoomSuiteDetails = (props) => {
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>
                             <div style={{ height: "13%", display: "flex" }}>
-                                <div
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                                   
+                                    to={'/ourhotel/roomsuite/' + prev_id}
                                 >
-                                    <span>PREVIOUS </span>
-                                </div>
+                                    <span>PREVIOUS</span>
+                                </Link>
                                 <div
                                     className="event-title"
                                     style={{
@@ -260,15 +262,15 @@ const RoomSuiteDetails = (props) => {
                                 >
                                     <span>{_RoomSuiteDetails.title}</span>
                                 </div>
-                                <div
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                            
+                                    to={'/ourhotel/roomsuite/' + next_id}
                                 >
                                     <span>NEXT</span>
-                                </div>
+                                </Link>
                             </div>
                             <div
                                 style={{

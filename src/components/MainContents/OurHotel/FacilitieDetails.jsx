@@ -16,8 +16,6 @@ import "./OurHotel.scss";
 
 
 import {
-    eventNamespace,
-    accomodationNamespace,
     HeavyOrange,
     LightBlueButtonBackground,
     ExtraHeavyBlueGreen,
@@ -119,6 +117,8 @@ const FacilitieDetails = (props) => {
     const id = props.match.params.id;
     const _id = parseInt(id);
     const _facilitiesDetails = ourhotel_Facilities[_id];
+    const prev_id = (_id - 1 < 0) ?  ourhotel_Facilities.length -1 : _id - 1;
+    const next_id = (_id + 1 >= ourhotel_Facilities.length) ? 0 : _id + 1;
 
     return (
      <div
@@ -192,15 +192,16 @@ const FacilitieDetails = (props) => {
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>
                             <div style={{ height: "13%", display: "flex" }}>
-                                <div
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                                   
+                                    to={'/ourhotel/facilities/' + prev_id}
                                 >
-                                    <span>PREVIOUS </span>
-                                </div>
+                                    <span>PREVIOUS</span>
+                                </Link>
+                                
                                 <div
                                     className="event-title"
                                     style={{
@@ -209,15 +210,15 @@ const FacilitieDetails = (props) => {
                                 >
                                     <span>{_facilitiesDetails.title}</span>
                                 </div>
-                                <div
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                            
+                                    to={'/ourhotel/facilities/' + next_id}
                                 >
                                     <span>NEXT</span>
-                                </div>
+                                </Link>
                             </div>
                             <div
                                 style={{

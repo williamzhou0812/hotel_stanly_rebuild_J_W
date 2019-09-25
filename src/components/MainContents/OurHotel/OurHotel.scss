@@ -29,7 +29,8 @@
 .event-nextPre-btn {
     flex-basis: 14%;
     background-color: rgb(101, 199, 197);
-    span {
+    color: white;
+    span{
         font-size: $p;
         letter-spacing: 2px;
 
@@ -50,6 +51,11 @@
             padding: 0;
         }
     }
+    
+}
+.event-nextPre-btn:hover, .event-nextPre-btn:active {
+    color: white;
+    text-decoration: none;
 }
 
 .event-main{
