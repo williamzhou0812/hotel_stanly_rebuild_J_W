@@ -282,7 +282,8 @@ const RoomSuiteDetails = (props) => {
                                         flexBasis: "50%",
                                         borderRight:
                                             "1px solid rgb(105,194,209)",
-                                        padding: "25px 0px 0px 35px"
+                                        padding: "25px 0px 0px 35px",
+                                        overflowY: "auto"
                                     }}
                                 >
                                 {false && (
