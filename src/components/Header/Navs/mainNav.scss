@@ -1,3 +1,5 @@
+@import "../../../Utilities/Variables";
+
 .item-tab {
     flex: 1;
     color: white;
@@ -6,129 +8,187 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    position: relative; }
-  
-  .not-selected {
+    position: relative;
+}
+
+.not-selected {
     background: #0d6d79;
-    border-style: none solid solid none;
-    border-color: #49afbd;
-    border-width: 2px; }
-    @media (max-width: 479px) {
-      .not-selected {
-        border-width: 1px; } }
-    @media (min-width: 480px) and (max-width: 599px) {
-      .not-selected {
-        border-width: 1px; } }
-    @media (min-width: 600px) and (max-width: 900px) {
-      .not-selected {
-        border-width: 2px; } }
-    @media (min-width: 901px) and (max-width: 1070px) {
-      .not-selected {
-        border-width: 2px; } }
-  
-  .left-selected,
-  .last-item {
+    // border-style: none solid solid none;
+    // border-color: #49afbd;
+    // border-width: 2px;
+}
+@media (max-width: 479px) {
+    .not-selected {
+        border-width: 1px;
+    }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+    .not-selected {
+        border-width: 1px;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .not-selected {
+        border-width: 2px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1070px) {
+    .not-selected {
+        border-width: 2px;
+    }
+}
+
+.left-selected,
+.last-item {
     background: #0d6d79;
     border-style: none none solid none;
     border-color: #49afbd;
-    border-width: 2px; }
-    @media (max-width: 479px) {
-      .left-selected,
-      .last-item {
-        border-width: 1px; } }
-    @media (min-width: 480px) and (max-width: 599px) {
-      .left-selected,
-      .last-item {
-        border-width: 1px; } }
-    @media (min-width: 600px) and (max-width: 900px) {
-      .left-selected,
-      .last-item {
-        border-width: 2px; } }
-    @media (min-width: 901px) and (max-width: 1070px) {
-      .left-selected,
-      .last-item {
-        border-width: 2px; } }
-  
-  .selected {
+    border-width: 2px;
+}
+@media (max-width: 479px) {
+    .left-selected,
+    .last-item {
+        border-width: 1px;
+    }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+    .left-selected,
+    .last-item {
+        border-width: 1px;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .left-selected,
+    .last-item {
+        border-width: 2px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1070px) {
+    .left-selected,
+    .last-item {
+        border-width: 2px;
+    }
+}
+
+.selected {
     position: relative;
     background: #dd7823;
     border-style: none solid solid solid;
     border-color: #b7dfe4;
-    border-width: 2px; }
-    @media (max-width: 479px) {
-      .selected {
-        border-width: 1px; } }
-    @media (min-width: 480px) and (max-width: 599px) {
-      .selected {
-        border-width: 1px; } }
-    @media (min-width: 600px) and (max-width: 900px) {
-      .selected {
-        border-width: 2px; } }
-    @media (min-width: 901px) and (max-width: 1070px) {
-      .selected {
-        border-width: 2px; } }
-  
-  .tab--name {
+    border-width: 2px;
+}
+@media (max-width: 479px) {
+    .selected {
+        border-width: 1px;
+    }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+    .selected {
+        border-width: 1px;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .selected {
+        border-width: 2px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1070px) {
+    .selected {
+        border-width: 2px;
+    }
+}
+
+.tab--name {
     position: absolute;
-    bottom: 10%; }
-    @media (max-width: 479px) {
-      .tab--name {
-        bottom: 8%; } }
-  
-  .tabName-container p {
+    bottom: 10%;
+}
+@media (max-width: 479px) {
+    .tab--name {
+        bottom: 8%;
+    }
+}
+
+.tabName-container p {
     padding: 0;
     margin: 0;
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 1px; }
-    @media (max-width: 479px) {
-      .tabName-container p {
-        font-size: 4px; } }
-    @media (min-width: 480px) and (max-width: 599px) {
-      .tabName-container p {
-        font-size: 6px; } }
-    @media (min-width: 600px) and (max-width: 900px) {
-      .tabName-container p {
-        font-size: 8px; } }
-    @media (min-width: 901px) and (max-width: 1070px) {
-      .tabName-container p {
-        font-size: 10px; } }
-  
-  .tab--icon {
-    position: absolute;
-    top: 20px;
-    margin-top:5%;
-  }
-    @media (min-width: 600px) and (max-width: 900px) {
-      .tab--icon {
+    letter-spacing: 1px;
+}
+@media (max-width: 479px) {
+    .tabName-container p {
+        font-size: 4px;
+    }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+    .tabName-container p {
+        font-size: 6px;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .tabName-container p {
+        font-size: 8px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1070px) {
+    .tabName-container p {
+        font-size: 10px;
+    }
+}
+
+.tab--icon {
+    // position: absolute;
+    // top: 20px;
+    // margin-top: 5%;
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .tab--icon {
         position: absolute;
-        top: 20px; } }
-    @media (min-width: 901px) and (max-width: 1070px) {
-      .tab--icon {
+        top: 20px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1070px) {
+    .tab--icon {
         position: absolute;
-        top: 20px; } }
-  
-  @media (max-width: 479px) {
+        top: 20px;
+    }
+}
+
+@media (max-width: 479px) {
     .icon-img {
-      width: 37% !important;
-      height: auto;
-      top: -3pt; } }
-  
-  @media (min-width: 480px) and (max-width: 599px) {
+        width: 37% !important;
+        height: auto;
+        top: -3pt;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
     .icon-img {
-      width: 45% !important;
-      height: auto;
-      top: 1pt; } }
-  
-  @media (min-width: 600px) and (max-width: 900px) {
+        width: 45% !important;
+        height: auto;
+        top: 1pt;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
     .icon-img {
-      width: 48% !important;
-      height: auto;
-      top: 4pt; } }
-  
-  @media (min-width: 901px) and (max-width: 1070px) {
+        width: 48% !important;
+        height: auto;
+        top: 4pt;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1070px) {
     .icon-img {
-      width: 55% !important;
-      height: auto;
-      top: 4pt; } }
-  
+        width: 55% !important;
+        height: auto;
+        top: 4pt;
+    }
+}
+
+.active-link {
+    background-color: $HeavyOrange;
+    border-color: rgb(183, 223, 228) !important;
+    border-width: 2px;
+    border-style: none solid solid solid !important;
+}

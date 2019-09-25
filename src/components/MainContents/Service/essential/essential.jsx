@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 import DownButton from "../../../MainContents/Destination/icons/DownExploreButton.png";
 import UpButton from "../../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
@@ -16,38 +16,37 @@ import {
     addNullItemToData
 } from "../../../../Constants";
 import "../../List/MainSectionList.scss";
-import { borderBottom } from '@material-ui/system';
-import { lightBlue } from '@material-ui/core/colors';
+import { borderBottom } from "@material-ui/system";
+import { lightBlue } from "@material-ui/core/colors";
 
 const essential_service_data = [
     {
         id: 0,
-        title: 'BANKS',
-        svgIcon: '/imgs/service/service_type_icons/Services_Icons-Bank.svg',
+        title: "BANKS",
+        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Bank.svg"
     },
     {
         id: 1,
-        title: 'MEDICAL SERVICE',
-        svgIcon: '/imgs/service/service_type_icons/Services_Icons-Medical.svg',
+        title: "MEDICAL SERVICE",
+        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Medical.svg"
     },
     {
         id: 2,
-        title: 'EMBASSIES & HIGH COMMISSIONS',
-        svgIcon: '/imgs/service/service_type_icons/Services_Icons-Embassy.svg'
+        title: "EMBASSIES & HIGH COMMISSIONS",
+        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Embassy.svg"
     },
     {
         id: 3,
-        title: 'SECURITY',
-        svgIcon: '/imgs/service/service_type_icons/Services_Icons-Security.svg'
+        title: "SECURITY",
+        svgIcon: "/imgs/service/service_type_icons/Services_Icons-Security.svg"
     }
-]
+];
 
 class Essential extends React.Component {
     constructor(props) {
         super(props);
 
         console.log(props.data);
-
 
         const { data, randomise } = this.props;
 
@@ -75,7 +74,7 @@ class Essential extends React.Component {
             justifyContent: "center",
             height: "25%",
             width: "100%",
-            borderBottom: "1px solid lightBlue",
+            borderBottom: "1px solid lightBlue"
         },
         mainIcon: {
             width: "25%",
@@ -87,14 +86,14 @@ class Essential extends React.Component {
             height: "100%",
             paddingLeft: "3%",
             alignItems: "center",
-            display: "flex",
+            display: "flex"
         },
         horizontalVerticalCenter: {
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
         }
-    }
+    };
 
     render() {
         const {
@@ -102,14 +101,11 @@ class Essential extends React.Component {
             sideButtons,
             sideTitle,
             mainTitle,
-            namespace,
+            namespace
         } = this.props;
         return (
             <div style={{ height: "54vh" }}>
-
-
-                < div style={{ width: "100%", height: "100%", display: "flex" }}>
-
+                <div style={{ width: "100%", height: "100%", display: "flex" }}>
                     <div
                         style={{
                             backgroundColor: HeavyOrange,
@@ -121,37 +117,31 @@ class Essential extends React.Component {
                             flexDirection: "column"
                         }}
                     >
-
-                        <div
-                        >
-                            <Link style={{ textDecoration: "none" }} to="/Services">
-                                <div
-                                    className="leftSide-menu--container"
-                                >
+                        <div>
+                            <Link
+                                style={{ textDecoration: "none" }}
+                                to="/Services"
+                            >
+                                <div className="leftSide-menu--container">
                                     <img
                                         className="leftSide-menu--img"
                                         src={ServiceTypesIcon}
                                         alt="SERVICE TYPES"
                                     />
-                                    <div
-                                        className="menu-title"
-                                    >
+                                    <div className="menu-title">
                                         SERVICE TYPES
-                                </div>
+                                    </div>
                                 </div>
                             </Link>
                         </div>
-                        <div
-                            className="vertical-title"
-
-                        >
+                        <div className="vertical-title">
                             <span style={{ transform: "rotate(-90deg)" }}>
                                 SERVICES
-                                </span>
+                            </span>
                         </div>
                     </div>
 
-                    <div className="main-section" >
+                    <div className="main-section">
                         <div className="main-section--top">
                             <div
                                 className="main-section--top--title"
@@ -160,12 +150,12 @@ class Essential extends React.Component {
                                     // backgroundColor: LightOrange,
 
                                     ...this.styles.horizontalVerticalCenter
-
                                 }}
                             >
                                 ESSENTIAL SERVICES
-                             </div>
-                            <div className="main-section--upBtn"
+                            </div>
+                            <div
+                                className="main-section--upBtn"
                                 style={{
                                     height: "6%",
                                     backgroundColor: MediumOrange,
@@ -173,62 +163,158 @@ class Essential extends React.Component {
                                 }}
                                 onClick={this.goUp}
                             >
-                                <img src={UpButton} style={{ width: "5%" }} alt="Up" />
+                                <img
+                                    src={UpButton}
+                                    style={{ width: "5%" }}
+                                    alt="Up"
+                                />
                             </div>
                         </div>
-
 
                         <div className="main-section--middle">
                             <div style={{ ...this.styles.mainSectionRow }}>
-                                <div style={{ ...this.styles.mainIcon }}>
-                                    <img style={{ width: "100%", height: "100%" }} src={essential_service_data[0].svgIcon}
-                                        alt="Bank Icon" />
-                                </div>
-                                <div style={{ ...this.styles.mainTitleContainer }}>
-                                    <Link to={`/services/essential/banks`} style={{ textDecoration: "none" }}>
-                                        <h4 style={{ color: "white" }}>{essential_service_data[0].title}</h4>
-                                    </Link>
-                                </div>
+                                <Link
+                                    to={`/services/essential/banks`}
+                                    style={{
+                                        textDecoration: "none",
+                                        width: "100%",
+                                        height: "100%",
+                                        display: "flex"
+                                    }}
+                                >
+                                    <div style={{ ...this.styles.mainIcon }}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "100%"
+                                            }}
+                                            src={
+                                                essential_service_data[0]
+                                                    .svgIcon
+                                            }
+                                            alt="Bank Icon"
+                                        />
+                                    </div>
+                                    <div
+                                        style={{
+                                            ...this.styles.mainTitleContainer
+                                        }}
+                                    >
+                                        <h4 style={{ color: "white" }}>
+                                            {essential_service_data[0].title}
+                                        </h4>
+                                    </div>
+                                </Link>
                             </div>
 
                             <div style={{ ...this.styles.mainSectionRow }}>
-                                <div style={{ ...this.styles.mainIcon }}>
-                                    <img style={{ width: "100%", height: "100%" }} src={essential_service_data[1].svgIcon}
-                                        alt="Medical Icon" />
-                                </div>
-                                <div style={{ ...this.styles.mainTitleContainer }}>
-                                    <Link to={`/services/essential/medical`} style={{ textDecoration: "none" }}>
-                                        <h4 style={{ color: "white" }}>{essential_service_data[1].title}</h4>
-                                    </Link>
-                                </div>
+                                <Link
+                                    to={`/services/essential/medical`}
+                                    style={{
+                                        textDecoration: "none",
+                                        width: "100%",
+                                        height: "100%",
+                                        display: "flex"
+                                    }}
+                                >
+                                    <div style={{ ...this.styles.mainIcon }}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "100%"
+                                            }}
+                                            src={
+                                                essential_service_data[1]
+                                                    .svgIcon
+                                            }
+                                            alt="Medical Icon"
+                                        />
+                                    </div>
+                                    <div
+                                        style={{
+                                            ...this.styles.mainTitleContainer
+                                        }}
+                                    >
+                                        <h4 style={{ color: "white" }}>
+                                            {essential_service_data[1].title}
+                                        </h4>
+                                    </div>
+                                </Link>
                             </div>
 
                             <div style={{ ...this.styles.mainSectionRow }}>
-                                <div style={{ ...this.styles.mainIcon }}>
-                                    <img style={{ width: "100%", height: "100%" }} src={essential_service_data[2].svgIcon}
-                                        alt="Medical Icon" />
-                                </div>
-                                <div style={{ ...this.styles.mainTitleContainer }}>
-                                    <Link to={`/services/essential/embassy`} style={{ textDecoration: "none" }}>
-                                        <h4 style={{ color: "white" }}>{essential_service_data[2].title}</h4>
-                                    </Link>
-                                </div>
+                                <Link
+                                    to={`/services/essential/embassy`}
+                                    style={{
+                                        textDecoration: "none",
+                                        width: "100%",
+                                        height: "100%",
+                                        display: "flex"
+                                    }}
+                                >
+                                    <div style={{ ...this.styles.mainIcon }}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "100%"
+                                            }}
+                                            src={
+                                                essential_service_data[2]
+                                                    .svgIcon
+                                            }
+                                            alt="Medical Icon"
+                                        />
+                                    </div>
+                                    <div
+                                        style={{
+                                            ...this.styles.mainTitleContainer
+                                        }}
+                                    >
+                                        <h4 style={{ color: "white" }}>
+                                            {essential_service_data[2].title}
+                                        </h4>
+                                    </div>
+                                </Link>
                             </div>
 
                             <div style={{ ...this.styles.mainSectionRow }}>
-                                <div style={{ ...this.styles.mainIcon }}>
-                                    <img style={{ width: "100%", height: "100%" }} src={essential_service_data[3].svgIcon}
-                                        alt="Medical Icon" />
-                                </div>
-                                <div style={{ ...this.styles.mainTitleContainer }}>
-                                    <Link to={`/services/essential/security`} style={{ textDecoration: "none" }}>
-                                        <h4 style={{ color: "white" }}>{essential_service_data[3].title}</h4>
-                                    </Link>
-                                </div>
+                                <Link
+                                    to={`/services/essential/security`}
+                                    style={{
+                                        textDecoration: "none",
+                                        width: "100%",
+                                        height: "100%",
+                                        display: "flex"
+                                    }}
+                                >
+                                    <div style={{ ...this.styles.mainIcon }}>
+                                        <img
+                                            style={{
+                                                width: "100%",
+                                                height: "100%"
+                                            }}
+                                            src={
+                                                essential_service_data[3]
+                                                    .svgIcon
+                                            }
+                                            alt="Medical Icon"
+                                        />
+                                    </div>
+                                    <div
+                                        style={{
+                                            ...this.styles.mainTitleContainer
+                                        }}
+                                    >
+                                        <h4 style={{ color: "white" }}>
+                                            {essential_service_data[3].title}
+                                        </h4>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
 
-                        <div className="main-section--bottom"
+                        <div
+                            className="main-section--bottom"
                             style={{
                                 height: "6%",
                                 backgroundColor: MediumOrange,
@@ -242,19 +328,10 @@ class Essential extends React.Component {
                                 alt="Down"
                             />
                         </div>
-
                     </div>
-
-
                 </div>
-
-
-            </div >
-
-
+            </div>
         );
     }
 }
 export default Essential;
-
-

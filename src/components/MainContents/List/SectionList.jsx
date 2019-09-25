@@ -77,7 +77,7 @@ class SectionList extends React.Component {
                 >
 
                     <div style={this.styles.upArrow} onClick={this.goUp}>
-                        <img src={UpButton} style={{ width: "50%" }} alt="Up" />
+                        <img src={UpButton} style={{ width: "76px", height: "76px" }} alt="Up" />
                     </div>
 
                     <div className="vertical-title">
@@ -88,7 +88,7 @@ class SectionList extends React.Component {
                     <div style={this.styles.downArrow} onClick={this.goDown}>
                         <img
                             src={DownButton}
-                            style={{ width: "50%" }}
+                            style={{ width: "76px", height: "76px" }}
                             alt="Down"
                         />
                     </div>

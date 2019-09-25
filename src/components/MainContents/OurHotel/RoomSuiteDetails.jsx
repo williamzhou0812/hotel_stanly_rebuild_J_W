@@ -32,7 +32,7 @@ const ourhotel_room_suite = [
         title_img: '',
         title: 'STANDARD TWIN',
         img_url: StandTwin,
-        description: 'All rooms come with two Queen-sized beds, a work desk, monsoon shower and face either north with a fabulous view overlooking the pool, or south overlooking the Owen Stanley Mountain Rang',
+        description: 'All rooms come with two Queen-sized beds, a work desk, monsoon shower and face either north with a fabulous view overlooking the pool, or south overlooking the Owen Stanley Mountain Range.',
         details: {
             size: '34sqm',
             bed: 'Two Queens',
@@ -76,9 +76,11 @@ const ourhotel_room_suite = [
         title: 'CORNER SUITE',
         img_url: CornerSuite,
         description: `The Corner Suites feature a sumptuous living experience with views of Waigani skyline and the Owen Stanley Mountains. 
-                        Separate sleeping and living area
-                        Elegant stand-alone tub and glass-enclosed monsoon shower
-                        Complimentary access to Executive Club Lounge services and facilities`,
+                        <ul>
+                            <li>Separate sleeping and living area</li>
+                            <li>Elegant stand-alone tub and glass-enclosed monsoon shower</li>
+                            <li>Complimentary access to Executive Club Lounge services and facilities</li>
+                        </ul>`,
         details: {
             size: '68sqm',
             bed: 'One Super King',
@@ -95,17 +97,18 @@ const ourhotel_room_suite = [
         title: 'JUNIOR SUITE',
         img_url: JuniorSuite,
         description: `Luxuriously spacious, this elegant suite in The Stanley Hotel and Suites is ideal for work or entertaining and offers top-floor views of the pool area.
-
-                        A large dining room that can seat up to 8 guests.
-                        A kitchenette.
-                        Complimentary access to Executive Club Lounge services and facilities.
-                        The luxurious marble bathroom offers an extra-large soaking tub and separate walk-in shower.
-                        Direct lift access to/from the basement car park, and the ability to interconnect with the Presidential Suite *Only two rooms on this floor for the ultimate security`,
+                        <ul>
+                            <li>A large dining room that can seat up to 8 guests.</li>
+                            <li>A kitchenette.</li>
+                            <li>Complimentary access to Executive Club Lounge services and facilities.</li>
+                            <li>The luxurious marble bathroom offers an extra-large soaking tub and separate walk-in shower.</li>
+                            <li>Direct lift access to/from the basement car park, and the ability to interconnect with the Presidential Suite *Only two rooms on this floor for the ultimate security</li>
+                        </ul>`,
         details: {
             size: '130sqm',
             bed: 'one Super King and One King',
             location: '20th Floor',
-            occpancy: 'Two Adults and One child, Or Four Adults'
+            occpancy: 'Two Adults and One child, or Four Adults'
         }
 
     },
@@ -114,18 +117,19 @@ const ourhotel_room_suite = [
         title_img: '',
         title: 'PRESIDENTIAL SUITE',
         img_url: Persidential,
-        description: `Enjoy the grand living spaces, stunning top-floor views of the Own Stanley Mountain ranges and National Stadium from this expansive luxury suite in The Stanley Hotel & Suites.
-
-                        Elegant dining room that can seat up to 14 guests
-                        Full kitchen for private dining and preparation
-                        Complimentary access to Executive Club Lounge services and facilities
-                        Expansive marble bathroom overlooking the mountains with double vanity, separate monsoon shower and oversized Jacuzzi bathtub for ultimate comfort
-                        Direct lift access to/from the basement car park, and the ability to interconnect with the Junior Suite *Only two rooms on this floor for the ultimate security`,
+        description: `Enjoy the grand living spaces, stunning top-floor views of the Own Stanley Mountain ranges and National Stadium from this expansive luxury suite in The Stanley Hotel &amp; Suites.
+                        <ul>
+                            <li>Elegant dining room that can seat up to 14 guests</li>
+                            <li>Full kitchen for private dining and preparation</li>
+                            <li>Complimentary access to Executive Club Lounge services and facilities</li>
+                            <li>Expansive marble bathroom overlooking the mountains with double vanity, separate monsoon shower and oversized Jacuzzi bathtub for ultimate comfort</li>                        
+                            <li>Direct lift access to/from the basement car park, and the ability to interconnect with the Junior Suite *Only two rooms on this floor for the ultimate security</li>
+                        </ul>`,
         details: {
             size: '340sqm',
             bed: 'One Super King and Two Queen',
             location: '20th Floor',
-            occpancy: 'Two Adults and Two Children or Four Adults'
+            occpancy: 'Two Adults and Two Children, or Four Adults'
         }
 
     }
@@ -166,6 +170,8 @@ const RoomSuiteDetails = (props) => {
     const _id = parseInt(id);
     console.log(_id);
     const _RoomSuiteDetails = ourhotel_room_suite[_id];
+    const prev_id = (_id - 1 < 0) ?  ourhotel_room_suite.length -1 : _id - 1;
+    const next_id = (_id + 1 >= ourhotel_room_suite.length) ? 0 : _id + 1;
 
     return (
      <div
@@ -208,7 +214,7 @@ const RoomSuiteDetails = (props) => {
                                         className="menu-title"
                                   
                                     >
-                                        ROOMS & SUITES
+                                        OUR ROOMS
                                      </p>
                                     <p
                                         className="menu-title"
@@ -239,15 +245,15 @@ const RoomSuiteDetails = (props) => {
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>
                             <div style={{ height: "13%", display: "flex" }}>
-                                <div
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                                   
+                                    to={'/ourhotel/roomsuite/' + prev_id}
                                 >
-                                    <span>PREVIOUS </span>
-                                </div>
+                                    <span>PREVIOUS</span>
+                                </Link>
                                 <div
                                     className="event-title"
                                     style={{
@@ -256,15 +262,15 @@ const RoomSuiteDetails = (props) => {
                                 >
                                     <span>{_RoomSuiteDetails.title}</span>
                                 </div>
-                                <div
+                                <Link
                                     className="event-nextPre-btn"
                                     style={{
                                         ...styles.horizontalVerticalCenter
                                     }}
-                            
+                                    to={'/ourhotel/roomsuite/' + next_id}
                                 >
                                     <span>NEXT</span>
-                                </div>
+                                </Link>
                             </div>
                             <div
                                 style={{
@@ -278,9 +284,11 @@ const RoomSuiteDetails = (props) => {
                                         flexBasis: "50%",
                                         borderRight:
                                             "1px solid rgb(105,194,209)",
-                                        padding: "1% 1% 1% 4%"
+                                        padding: "25px 0px 0px 35px",
+                                        overflowY: "auto"
                                     }}
                                 >
+                                {false && (
                                     <div
                                         className="middle-section--innerTitle"
                                         style={{
@@ -290,6 +298,7 @@ const RoomSuiteDetails = (props) => {
                                       
                                         {/* <span>{eventDetail.month}</span> */}
                                     </div>
+                                )}
                                     <div className="middle-section--leftSide"
                                         style={{
                                             height: "75%",
@@ -297,28 +306,21 @@ const RoomSuiteDetails = (props) => {
                                             display: "inline-table"
                                         }}
                                     >
-                                        <p
-
+                                        <div
+                                            dangerouslySetInnerHTML={{__html: _RoomSuiteDetails.description}}
                                             style={{
                                                 marginTop: 0,
                                                 marginBottom: 0
                                             }}
-                                        >
-                                            {/* <Markdown
-                                            // source={event.description}
-                                            source="dhj yru  ewkhrfkhr  kurhf a  yhgdf"
-                                        /> */}
-
-                                            {_RoomSuiteDetails.description}
-                                        </p>
+                                        ></div>
                                     </div>
                                 </div>
                                 <div style={{
                                     flexBasis: "50%",
-                                    padding: "1%  2%"
+                                    padding: "25px 0px 0px 25px"
                                 }}
                                 >
-                                    <div style={{ height: "15%" }} />
+                                    {false && <div style={{ height: "15%" }} />}
                                    
                                     <div className="middle-section--rightSide"
                                         style={{
