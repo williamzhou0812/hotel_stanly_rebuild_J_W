@@ -216,7 +216,7 @@ class SubsectionList extends React.Component {
                                                     alt={item.event_title}
                                                     style={{
                                                         width: "auto",
-                                                        height: "8vh"
+                                                        height: "9.3vh"
                                                     }}
                                                 />
                                             </div>
