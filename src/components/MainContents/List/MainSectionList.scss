@@ -165,6 +165,7 @@ span.info-span {
         text-align: left;
         font-size: $p;
         letter-spacing: 1px;
+        line-height: 2.4vw;
         overflow: scroll;
         @include for-size(small-phone) {
             letter-spacing: 0px;
