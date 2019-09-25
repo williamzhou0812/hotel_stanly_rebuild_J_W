@@ -278,9 +278,10 @@ const RoomSuiteDetails = (props) => {
                                         flexBasis: "50%",
                                         borderRight:
                                             "1px solid rgb(105,194,209)",
-                                        padding: "1% 1% 1% 4%"
+                                        padding: "20px 0px 0px 35px"
                                     }}
                                 >
+                                {false && (
                                     <div
                                         className="middle-section--innerTitle"
                                         style={{
@@ -290,6 +291,7 @@ const RoomSuiteDetails = (props) => {
                                       
                                         {/* <span>{eventDetail.month}</span> */}
                                     </div>
+                                )}
                                     <div className="middle-section--leftSide"
                                         style={{
                                             height: "75%",
