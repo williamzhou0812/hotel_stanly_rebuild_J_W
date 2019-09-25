@@ -32,8 +32,8 @@
     flex-basis: 14%;
     background-color: rgb(101, 199, 197);
     span {
-        font-size: $p;
-        letter-spacing: 2px;
+        font-size: 1.85vw;
+        letter-spacing: 3px;
 
         @include for-size(small-phone) {
             letter-spacing: 0px;
