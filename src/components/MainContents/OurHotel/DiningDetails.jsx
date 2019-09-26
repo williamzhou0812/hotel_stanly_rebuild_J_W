@@ -42,6 +42,7 @@ const ourhotel_Dinings = [
             location: "Located on the ground floor",
             cuisine: "Chinese & ThaiInternational Contemporary Cuisine",
             wifi: "Yes",
+            takeaway: "Yes",
             secure_parking: "Yes",
             transport: "Yes",
             cards: "Amex, MC, Visa",
@@ -406,15 +407,34 @@ const DiningDetails = props => {
                                             CUISINE: {_DingingsDetails.details.cuisine}
                                         </div>
                                     )}
-                                    {_DingingsDetails.details.wifi && (
+                                    <div style={{
+                                            display: "inline-table",
+                                            width: "40%"
+                                        }}>
+                                        <div>TAKEAWAY: {_DingingsDetails.details.takeaway} </div>
+                                    </div>
+                                    <div style={{
+                                            display: "inline-table",
+                                            width: "30%"
+                                        }}>
                                         <div>WIFI: {_DingingsDetails.details.wifi} </div>
+                                    </div>
+                                    <div style={{
+                                            display: "inline-table",
+                                            width: "30%"
+                                        }}>
+                                        <div>PARKING: {_DingingsDetails.details.secure_parking} </div>
+                                    </div>
+                                    
+                                    {_DingingsDetails.details.transport && (
+                                        <div>COURTESY TRANSPORT: {_DingingsDetails.details.transport} </div>
                                     )}
                                     {_DingingsDetails.details.cards && (
-                                        <div>CARDS: {_DingingsDetails.details.cards} </div>
+                                        <div>CARDS ACCEPTED: {_DingingsDetails.details.cards} </div>
                                     )}
                                     {_DingingsDetails.details.cards && (
                                         <div>
-                                            PRICE: {_DingingsDetails.details.price_guide}
+                                            PRICE GUIDE:<br/> {_DingingsDetails.details.price_guide}
                                         </div>
                                     )}
                                     
