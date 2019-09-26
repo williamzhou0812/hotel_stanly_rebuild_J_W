@@ -21,6 +21,7 @@ import MezzBar from "./img_logo/dinings/Our_Hotel_Section_Logo_Mezz.jpg";
 import ThePoolDeck from "./img_logo/dinings/Our_Hotel_Section_Logo_PoolBar.jpg";
 import ExecitiveClubLounge from "./img_logo/dinings/Our_Hotel_Section_Logo_ExecClub_2L7k0hP.jpg";
 import RainforestCafe from "./img_logo/dinings/R24-DININGLOGO_P-RINGFOREST.jpg";
+import GreenHausResImg1 from "./img_logo/dinings/details/Our Hotel Section_Imagesgreenhaus.jpg";
 
 import "../List/MainSectionList.scss";
 import "./OurHotel.scss";
@@ -29,33 +30,38 @@ const ourhotel_Dinings = [
     {
         id: 1,
         title_img: "",
-        title: "SILVER LEAF",
-        img_url: SilverLeaf,
+        title: "GREEN HAUS RESTAURANT",
+        img_url: GreenHausRes,
         description:
-            "If you’re seeking a fine dining experience, then look no further than Silver Leaf Restaurant. Boasting an opulent, modern interior, stunning views of Port Moresby complete this culinary experience where the quality of ingredients and flavours are unsurpassed. Monday to Saturday: 18:00 – 22:30 Sunday: closed",
+            `<p>Get your day off to a great start at Green Haus Restaurant, Port Moresby’s premier venue for casual dining. 
+            Green Haus offers healthy options, live cooking stations, artisan breads, New Guinean coffee and homemade pastries as well as some traditional breakfast classics. 
+            Enjoy a healthy start followed by a day of relaxing before returning to the Green Haus for an elegant buffet dinner.</p>
+            <p>Open breakfast, lunch and dinner from 6am to 10pm.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Level 19",
-            cuisine: "Fine Dining",
+            location: "Located on the ground floor",
+            cuisine: "Chinese & ThaiInternational Contemporary Cuisine",
             wifi: "Yes",
+            secure_parking: "Yes",
+            transport: "Yes",
             cards: "Amex, MC, Visa",
-            price_guide: "Entree: K50, Main: K95, Dessert: K50"
+            price_guide: "K40, Main: K75 , Dessert: K40"
         }
     },
     {
         id: 2,
         title_img: "",
-        title: "GREEN HAUS RESTAURANT",
-        img_url: GreenHausRes,
+        title: "RAINFOREST CAFE",
+        img_url: RainforestCafe,
         description:
-            "Dine in the opulence of the Green Haus Restaurant located at the Stanley Hotel & Suite. Enjoy pastries, artisan bread and the fruity flavours of locally grown coffee. A buffet dinner finishes off the day with a sumptuous choice of cuisines. Open for breakfast, lunch and dinner.",
+            "Boasting an airy, light interior, the Rainforest Café is a casual yet stylish place to grab a snack or coffee. Kick back and relax or grab a homemade pastry on the go. Open daily 6am to 6.30pm.",
         details: {
             call: "+675 302 8888",
             location: "the Ground Floor",
-            cuisine: "International Contemporary Cuisine",
+            cuisine: "Café Cuisine",
             wifi: "Yes",
             cards: "Amex, MC, Visa",
-            price_guide: "K40, Main: K75 , Dessert: K40"
+            price_guide: "K20, Main: K45, Dessert: K20"
         }
     },
     {
@@ -77,22 +83,6 @@ const ourhotel_Dinings = [
     {
         id: 4,
         title_img: "",
-        title: "MEZZ BAR",
-        img_url: MezzBar,
-        description:
-            "An elegant bar hidden away above level 19, Mezz Bar is the perfect place to start or finish your night. An extensive selection of carefully designed cocktails combined with international wines and premium whiskeys makes this bar a unique place to visit. Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.",
-        details: {
-            call: false,
-            location: "AMEX, MC, Visa",
-            cuisine: "BAR",
-            wifi: "YES",
-            cards: "AMEX, MC, Visa",
-            price_guide: false
-        }
-    },
-    {
-        id: 5,
-        title_img: "",
         title: "THE POOL DECK",
         img_url: ThePoolDeck,
         description:
@@ -104,6 +94,22 @@ const ourhotel_Dinings = [
             wifi: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
+        }
+    },
+    {
+        id: 5,
+        title_img: "",
+        title: "SILVER LEAF",
+        img_url: SilverLeaf,
+        description:
+            "If you’re seeking a fine dining experience, then look no further than Silver Leaf Restaurant. Boasting an opulent, modern interior, stunning views of Port Moresby complete this culinary experience where the quality of ingredients and flavours are unsurpassed. Monday to Saturday: 18:00 – 22:30 Sunday: closed",
+        details: {
+            call: "+675 302 8888",
+            location: "Level 19",
+            cuisine: "Fine Dining",
+            wifi: "Yes",
+            cards: "Amex, MC, Visa",
+            price_guide: "Entree: K50, Main: K95, Dessert: K50"
         }
     },
     {
@@ -121,23 +127,24 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         }
-    },
+    },    
     {
         id: 7,
         title_img: "",
-        title: "RAINFOREST CAFE",
-        img_url: RainforestCafe,
+        title: "MEZZ BAR",
+        img_url: MezzBar,
         description:
-            "Boasting an airy, light interior, the Rainforest Café is a casual yet stylish place to grab a snack or coffee. Kick back and relax or grab a homemade pastry on the go. Open daily 6am to 6.30pm.",
+            "An elegant bar hidden away above level 19, Mezz Bar is the perfect place to start or finish your night. An extensive selection of carefully designed cocktails combined with international wines and premium whiskeys makes this bar a unique place to visit. Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.",
         details: {
-            call: "+675 302 8888",
-            location: "the Ground Floor",
-            cuisine: "Café Cuisine",
-            wifi: "Yes",
-            cards: "Amex, MC, Visa",
-            price_guide: "K20, Main: K45, Dessert: K20"
+            call: false,
+            location: "AMEX, MC, Visa",
+            cuisine: "BAR",
+            wifi: "YES",
+            cards: "AMEX, MC, Visa",
+            price_guide: false
         }
     }
+    
 ];
 
 const styles = {
@@ -199,22 +206,20 @@ const renderImages = () => {
 const DiningDetails = props => {
     const id = props.match.params.id;
     const _id = parseInt(id);
-    console.log(_id);
     const _DingingsDetails = ourhotel_Dinings[_id];
+    const prev_id = (_id - 1 < 0) ?  ourhotel_Dinings.length -1 : _id - 1;
+    const next_id = (_id + 1 >= ourhotel_Dinings.length) ? 0 : _id + 1;
 
     return (
-        <div
-            style={{
+        <div style={{
                 width: "100%",
-                height: "100%",
                 height: "54vh",
                 display: "flex",
                 color: "white"
             }}
             className="section--bottom--animation"
         >
-            <div
-                lassName="vertical-side"
+            <div className="vertical-side"
                 style={{
                     backgroundColor: HeavyOrange,
                     width: "14%",
@@ -225,155 +230,206 @@ const DiningDetails = props => {
                     display: "flex"
                 }}
             >
-                <Link
-                    style={{
-                        height: "14%",
-                        textDecoration: "none"
-                    }}
-                    to="/ourhotel/dining"
-                >
-                    <div className="leftSide-menu--container">
-                        <img
-                            className="leftSide-menu--img"
-                            src={RestaurantListicon}
-                            alt="RestaurantListIcon"
-                        />
-                        <div
-                            style={{
-                                letterSpacing: "2px"
-                            }}
-                        >
-                            <p className="menu-title">RESTAURANT LIST</p>
-                            <p className="menu-title"></p>
+                <div >
+                    <Link
+                        style={{ height: "14%", textDecoration: "none" }}
+                        to='/ourhotel/meeting'
+                    >
+                        <div className="leftSide-menu--container">
+                            <img
+                                className="leftSide-menu--img"
+                                src={RestaurantListicon}
+                                alt="RestaurantListIcon"
+                            />
+                            <div
+                                style={{
+                                    letterSpacing: "2px"
+                                }}
+                            >
+                                <p
+                                    className="menu-title"
+                                
+                                >
+                                    MEETINGS 
+                                </p>
+                                <p
+                                    className="menu-title"
+                                
+                                >
+                                    
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </Link>
-
+                    </Link>
+                </div>
                 <div className="vertical-title ">
                     <span
                         style={{
                             transform: "rotate(-90deg)"
                         }}
                     >
-                        DINING
-                    </span>
+                        OUR HOTEL
+                </span>
                 </div>
             </div>
+            <div >
+                <div className='event-main'>
+                    <div style={{ height: "50%", width: "100%" }}>
+                        <img src={_DingingsDetails.img_url} style={{ height: '100%', width: '100%' }} />
 
-            <div style={{ flex: 1 }}>
-                {renderImages()}
-
-                <div style={{ height: "25%", width: "100%", display: "flex" }}>
+                    </div>
+                    <div style={{ height: "50%", width: "100%" }}>
                     <div
-                        style={{
-                            flexBasis: "50%",
-                            backgroundImage: `url(${_DingingsDetails.img_url})`,
-                            backgroundSize: "100%",
-                            backgroundPosition: "center"
-                        }}
-                    />
-
-                    <div
-                        style={{
-                            flexBasis: "50%",
-                            backgroundColor: LightBlueButtonBackground
-                        }}
-                    >
-                        <div
                             style={{
-                                height: "50%",
-                                display: "flex",
-                                flexDirection: "column",
-                                justifyContent: "flex-end",
-                                paddingBottom: "20px",
-                                paddingRight: "20px",
-                                overflowWrap: "break-word",
-                                wordBreak: "break-word",
-                                ...styles.horizontalVerticalCenter
+                                height: "57%",
+                                backgroundColor: ExtraHeavyBlueGreen,
+                                display: "flex"
                             }}
                         >
-                            {_DingingsDetails.details.call && (
-                                <p style={styles.contactDetailText}>
-                                    Call Today: {_DingingsDetails.details.call}
-                                </p>
-                            )}
+                            <div
+                                style={{
+                                    flexBasis: "50%",
+                                    borderRight:
+                                        "1px solid rgb(105,194,209)",
+                                    padding: "0px"
+                                }}
+                            >
+                                
+                                <div className="middle-section--leftSide"
+                                    style={{
+                                        height: "100%",
+                                        padding: "0px"
+                                    }}
+                                >
+                                    <div style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            backgroundImage: `url(${_DingingsDetails.img_url})`,
+                                            backgroundSize: "100%",
+                                            backgroundPosition: "center"
+                                        }}>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style={{
+                                flexBasis: "50%",
+                                padding: "25px 0px 0px 25px"
+                            }}
+                            >
+                                <div className="middle-section--rightSide"
+                                    style={{
+                                        height: "38%",
+                                        letterSpacing: "1px",
+                                        overflow: "scroll",
+                                        display: "inline-table"
+                                    }}
+                                >
+                                    {_DingingsDetails.details.call && (
+                                        <p className="contact-details">
+                                            Call Today: {_DingingsDetails.details.call}
+                                        </p>
+                                    )}
 
-                            {_DingingsDetails.details.location && (
-                                <p style={styles.contactDetailText}>
-                                    Location:
-                                    {_DingingsDetails.details.location}
-                                </p>
-                            )}
+                                    {_DingingsDetails.details.location && (
+                                        <p className="contact-details">
+                                            Location:
+                                            {_DingingsDetails.details.location}
+                                        </p>
+                                    )}
+
+                                    <div>Button
+                                        </div>
+                                
+                                </div>
+
+                            </div>
                         </div>
-                        {/* <div style={{   
-                                    height:"50%",
-                                    paddingLeft: 20,
-                                    paddingRight: 20
-                                  }} >
-                                    <h1>MapModel</h1>
+                        <div
+                            style={{
+                                height: "40%",
+                                backgroundColor: ExtraHeavyBlueGreen,
+                                display: "flex"
+                            }}
+                        >
+                            <div
+                                style={{
+                                    flexBasis: "50%",
+                                    borderRight:
+                                        "1px solid rgb(105,194,209)",
+                                    padding: "25px 0px 0px 35px",
+                                    overflowY: "auto"
+                                }}
+                            >
+                                {false && (<div
+                                    className="middle-section--innerTitle"
+                                    style={{
+                                        height: "15%"
+                                    }}
+                                >
+                                    
+                                    {/* <span>{eventDetail.month}</span> */}
+                                </div>)}
+                                <div className="middle-section--leftSide"
+                                    style={{
+                                        height: "75%",
+                                        overflow: "scroll",
+                                        display: "inline-table"
+                                    }}
+                                >
+                                    <div
+                                        dangerouslySetInnerHTML={{__html: _DingingsDetails.description}}
+                                        style={{
+                                            marginTop: 0,
+                                            marginBottom: 0
+                                        }}
+                                    ></div>
+                                </div>
+                            </div>
+                            <div style={{
+                                flexBasis: "50%",
+                                padding: "25px 0px 0px 25px"
+                            }}
+                            >
+                                {false && (<div style={{ height: "15%" }} />)}
+                                
+                                <div className="middle-section--rightSide"
+                                    style={{
+                                        height: "38%",
+                                        letterSpacing: "1px",
+                                        overflow: "scroll",
+                                        display: "inline-table",
+                                        // fontSize: "2vw"
+                                    }}
+                                >
+                                    {_DingingsDetails.details.cuisine && (
+                                        <div>
+                                            CUISINE: {_DingingsDetails.details.cuisine}
+                                        </div>
+                                    )}
+                                    {_DingingsDetails.details.wifi && (
+                                        <div>WIFI: {_DingingsDetails.details.wifi} </div>
+                                    )}
+                                    {_DingingsDetails.details.cards && (
+                                        <div>CARDS: {_DingingsDetails.details.cards} </div>
+                                    )}
+                                    {_DingingsDetails.details.cards && (
+                                        <div>
+                                            PRICE: {_DingingsDetails.details.price_guide}
+                                        </div>
+                                    )}
+                                    
+                                </div>
 
-                            </div> */}
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div
-                    style={{
-                        height: "25%",
-                        display: "flex",
-                        backgroundColor: ExtraHeavyBlueGreen
-                    }}
-                >
-                    <div
-                        style={{
-                            flexBasis: "50%",
-                            paddingTop: 20,
-                            paddingLeft: 35,
-                            paddingRight: 20,
-                            fontSize: "1.4vw",
-                            //lineHeight: "115%",
-                            // letterSpacing: "1px",
-                            textAlign: "left",
-                            overflowY: "auto"
-                            //  maxHeight: "400px",
-                        }}
-                    >
-                        {_DingingsDetails.description}
-                        {/* need find some makedown plugin */}
-                    </div>
-                    <div
-                        style={{
-                            flexBasis: "50%",
-                            paddingTop: 20,
-                            paddingLeft: 35,
-                            poddingRight: 20,
-                            fontSize: "1.4vw",
-                            lineHeight: "115%",
-                            letterSpacing: "1px",
-                            textAlign: "left"
-                        }}
-                    >
-                        {_DingingsDetails.details.cuisine && (
-                            <div>
-                                {" "}
-                                CUISINE: {_DingingsDetails.details.cuisine}{" "}
-                            </div>
-                        )}
-                        {_DingingsDetails.details.wifi && (
-                            <div>WIFI: {_DingingsDetails.details.wifi} </div>
-                        )}
-                        {_DingingsDetails.details.cards && (
-                            <div>CARDS: {_DingingsDetails.details.cards} </div>
-                        )}
-                        {_DingingsDetails.details.cards && (
-                            <div>
-                                PRICE: {_DingingsDetails.details.price_guide}{" "}
-                            </div>
-                        )}
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+
+
+            </div >
+        </div >
+       )
 };
 
 export default DiningDetails;
