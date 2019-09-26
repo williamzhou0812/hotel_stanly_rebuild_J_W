@@ -75,8 +75,8 @@ export const events = [
         description: 'One common dialect dominates the Enga Province, which makes it a particular drawcard for those visiting PNG. The Enga Festival is a time when locals can demonstrate to outsiders just how amazing their culture is. Discover the Engans’ famous sand painting, which is unique to the area, and the fantastic sing-sing men.',
         detials: {
             call: '+675 7226 8610',
-            website: 'www.papuanewguinea.travel',
-            email: 'www.engashow.com',
+            website: 'www.engashow.com',
+            email: 'contact@engashow.com',
             location: 'Wabag Town, Papua New Guniea'
         }
 
@@ -90,7 +90,7 @@ export const events = [
         description: 'The Crocodile Festival is a three day event celebrating the local tribe’s cultural connection to the crocodile with the festival showcasing canoe racing and traditional performances.',
         detials: {
             call: '+675 7259 6349',
-            website: 'www.papuanewguinea.travel',
+            website: '',
             email: 'sepikjourneys.alois240@gmail.com',
             location: 'Ambunti, Papua New Guniea'
         }
@@ -137,7 +137,7 @@ export const events = [
             call: '675 532 2644',
             website: 'www.gorokaevents.com',
             email: 'gorokashow2014@gmail.com',
-            location: 'Port Moresby, Papua New Guniea'
+            location: 'Goroka, Papua New Guniea'
         }
     },
     {
@@ -148,8 +148,8 @@ export const events = [
         description: 'The Hiri Moale Show has become a premier cultural event. Like everything in PNG, the show illustrates a rich and symbolic history that reflect on age-old stories and customs. During the show, Ela Beach comes to life with stilt houses, colourful canoes and hundreds of people singing, dancing and celebrating tradition.',
         detials: {
             call: '+675 320 0211',
-            website: 'www.enb.travel',
-            email: 'www.papuanewguinea.travel',
+            website: 'www.papuanewguinea.travel',
+            email: '',
             location: 'Port Moresby, Papua New Guniea'
         }
     },
