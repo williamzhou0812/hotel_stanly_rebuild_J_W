@@ -10,7 +10,8 @@ export const events = [
             website: null,
             email: 'info@sp.com.pg',
             location: 'Port Moresby, Papua New Guniea'
-        }
+        },
+        mapImage: "/imgs/events/maps/SP-SPORTS-AWARDS-MAP.png",
 
     },
     {
@@ -24,7 +25,8 @@ export const events = [
             website: null,
             email: null,
             location: 'Balimo, Papua New Guniea'
-        }
+        },
+        mapImage: "/imgs/events/maps/GOGODALA-CANOE-FESTIVAL-MAP.png",
     },
     {
         id: 3,
@@ -37,7 +39,8 @@ export const events = [
             website: 'www.madangfestival.org',
             email: 'madangfestival@gmail.com',
             location: 'Madang, Papua New Guniea'
-        }
+        },
+        mapImage: "/imgs/events/maps/THE-MADANG-FESTIVAL-MAP.png",
 
     },
     {
@@ -51,7 +54,8 @@ export const events = [
             website: 'www.bougainville.travel',
             email: 'bougainville.travel@abg.gov.pg',
             location: 'Buka, Papua New Guniea'
-        }
+        },
+        img_url: "/imgs/events/E3A_-_Mona_Festival_P5.jpg",
     },
     {
 
@@ -65,7 +69,8 @@ export const events = [
             website: 'www.enb.travel',
             email: '',
             location: 'Rabaul, Papua New Guniea'
-        }
+        },
+        mapImage: "",
     },
     {
         id: 6,
@@ -78,7 +83,8 @@ export const events = [
             website: 'www.engashow.com',
             email: 'contact@engashow.com',
             location: 'Wabag Town, Papua New Guniea'
-        }
+        },
+        mapImage: "",       
 
 
     },
@@ -93,7 +99,8 @@ export const events = [
             website: '',
             email: 'sepikjourneys.alois240@gmail.com',
             location: 'Ambunti, Papua New Guniea'
-        }
+        },
+        mapImage: "",
 
 
     },
@@ -109,7 +116,8 @@ export const events = [
             website: 'www.papuanewguinea.travel',
             email: 'howarigc@gmail.com',
             location: 'Mount Hagen, Papua New Guniea'
-        }
+        },
+        mapImage: "",
 
 
     },
@@ -125,7 +133,8 @@ export const events = [
             website: 'www.dwu.ac.pg',
             email: 'events@dwu.ac.pg',
             location: 'Madang Campus, Divine Word University, Papua New Guniea'
-        }
+        },
+        mapImage: "",
     },
     {
         id: 10,
@@ -138,7 +147,8 @@ export const events = [
             website: 'www.gorokaevents.com',
             email: 'gorokashow2014@gmail.com',
             location: 'Goroka, Papua New Guniea'
-        }
+        },
+        mapImage: "",
     },
     {
         id: 11,
@@ -151,7 +161,8 @@ export const events = [
             website: 'www.papuanewguinea.travel',
             email: '',
             location: 'Port Moresby, Papua New Guniea'
-        }
+        },
+        mapImage: "",
     },
     {
         id: 12,
@@ -164,7 +175,8 @@ export const events = [
             website: 'www.enb.travel',
             email: 'www.engashow.com',
             location: 'Rabaul, Papua New Guniea'
-        }
+        },
+        mapImage: "",
 
 
     },
@@ -181,7 +193,8 @@ export const events = [
             website: 'www.morobeshow.org.pg',
             email: 'info@morobeshow.org.pg',
             location: 'Lae, Papua New Guniea'
-        }
+        },
+        mapImage: "",
     },
     {
         id: 14,
@@ -194,6 +207,7 @@ export const events = [
             website: '',
             email: 'kenukundusponsor@kulamail.net',
             location: 'Alotau, Papua New Guniea'
-        }
+        },
+        mapImage: "",
     },
 ];
