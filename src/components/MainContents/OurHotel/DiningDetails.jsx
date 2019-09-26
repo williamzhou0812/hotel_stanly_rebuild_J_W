@@ -426,7 +426,8 @@ const DiningDetails = props => {
                                         height: "38%",
                                         letterSpacing: "1px",
                                         overflow: "scroll",
-                                        display: "inline-table"
+                                        display: "inline-table",
+                                        width: "100%"
                                         // fontSize: "2vw"
                                     }}
                                 >
