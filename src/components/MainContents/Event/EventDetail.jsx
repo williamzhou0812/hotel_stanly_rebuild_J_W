@@ -261,21 +261,23 @@ class EventDetail extends React.Component {
                                             </p>
                                         )}
                                     </div>
-                                    <div className="middle-section--btnContainer">
-                                        <div className="middle-section--btnContainer--btn">
-                                            <MapModal
-                                                buttonTitle="SHOW ON MAP"
-                                                title="Event Title"
-                                                buttonStyle={
-                                                    this.styles
-                                                        .mapOrFindButtonStyle
-                                                }
-                                                textStyle={
-                                                    this.styles
-                                                        .mapOrFindButtonText
-                                                }
-                                                mapImage={eventDetail.mapImage}
-                                            />
+                                    <div style={{marginTop: "-10px"}}>
+                                        <div className="middle-section--btnContainer">
+                                            <div className="middle-section--btnContainer--btn">
+                                                <MapModal
+                                                    buttonTitle="SHOW ON MAP"
+                                                    title="Event Title"
+                                                    buttonStyle={
+                                                        this.styles
+                                                            .mapOrFindButtonStyle
+                                                    }
+                                                    textStyle={
+                                                        this.styles
+                                                            .mapOrFindButtonText
+                                                    }
+                                                    mapImage={eventDetail.mapImage}
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
