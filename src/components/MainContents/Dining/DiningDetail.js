@@ -12,6 +12,9 @@ import { Link } from "react-router-dom";
 import RestaurantListIcon from "./icons/RestaurantListIcon.png";
 import MapModal from "../Maps/MapModal";
 import Markdown from "../../../MarkDown";
+import {restaurants } from "./DiningData";
+
+import "../List/MainSectionList.scss";
 import "./Dining.scss";
 
 class DiningDetail extends React.Component {
@@ -59,285 +62,245 @@ class DiningDetail extends React.Component {
             }
         }
     };
-    restaurants = [
-        {
-            id: 1,
-            title: "THE CELLAR REASTAURANT",
-            subTitle: "Continental, Indian & Steak",
-            img_url: "/imgs/dining/restaurant_logos/R28-DININGLOGO_P.jpg",
-            mapImage: "/imgs/maps/R27-The-Cellar-Restaurant.png",
-            imagesrc:
-                "/imgs/dining/restaurant_logos/R28-DININGLOGO_FiAepOq.png",
-            phone: "+675 302 8200",
-            address: "The Shady Rest Hotel, Taurama Road, Boroko",
-            synopsis:
-                "Boasting an exciting array of Asian and continental cuisine, The Cellar Restaurant is the place to be. Famous for its dosa lunches and all you can eat Curry Club Buffet, the restaurant is also known for its excellent coffee.",
-            email: null,
-            website: null,
-            guide: {
-                cuisine: "Continental, Indian & Steak",
-                takeaway: "Yes",
-                wifi: "Yes",
-                parking: "Yes",
-                courtesy: "Yes",
-                cards: "MC,Visa",
-                price: "Entree: K12, Main: K25, Dessert: K10"
-            },
-            slideImages: "/imgs/dining/R28-DININGIMAGES_P.jpg"
-        },
-        {
-            id: 2,
-            title: "ASIA AROMAS",
-            subTitle: "Chinese & Thai",
-            img_url:
-                "/imgs/dining/restaurant_logos/R1-DININGLOGO-Portrait_pLBb5ny.jpg",
-            mapImage: "/imgs/maps/R1-Asia-Aromas-Map.png",
-            Gimg: "imgs/dining/R2-_DININGIMAGES_P.jpg",
-            imagesrc: "/imgs/dining/restaurant_logos/R1-DININGLOGO-TEST4.png",
-            phone: "+675 321 4780",
-            address: "Steamships Plaza, Downtown, Port Moresby",
-            synopsis:
-                "Asia Aromas serves up a delicious blend of Thai and Chinese cuisine. Enjoy fine food, great service and spectacular views. Open Monday to Saturday, 11am to 2pm and 5pm to 10pm, and Sunday 10.30pm to 2.30pm.",
-            guide: {
-                cuisine: "Chinese & Thai",
-                takeaway: "Yes",
-                wifi: "No",
-                parking: "Yes",
-                courtesy: "No",
-                cards: "Amex,MC,Visa",
-                price: "K16, Main: K30, Dessert: K12",
-                location: "The SHady Rest Hotel, Taurama Road, Boroko"
-            },
-            slideImages: "/imgs/dining/R1-DININGImages_P.jpg"
-            // slideImages: [
-            //     '/imgs/dining/restaurant_logos/R2-DININGLOGO_P.jpg',
-            //     '/imgs/dining/restaurant_logos/R28-DININGLOGO_FiAepOq.png',
-            //     '/imgs/maps/R27-The-Cellar-Restaurant.png',
-            // ]
-        },
-        {
-            id: 3,
-            title: "CUPPA",
-            subTitle: "Café Cuisine",
-            img_url: "/imgs/dining/restaurant_logos/R2-DININGLOGO_P.jpg",
-            mapImage: "/imgs/maps/R2-Cuppa.png",
-            imagesrc: "/imgs/dining/restaurant_logos/R2-DININGLOGO_FiAepOq.png",
-            phone: "+675 302 8666",
-            address:
-                "Shop G48, Vision City Megamall, 4027 Waigani, National Capital, Papua New Guinea",
-            synopsis:
-                "Cuppa’s relaxed vibe offers the perfect place to catch up over great coffee. Enjoy refreshments such as Cuppa’s big breakfasts, pasta, soup, sandwiches and more. Open 7 days, 9am to 9pm. Free wifi available. ",
-            email: null,
-            website: null,
-            guide: {
-                cuisine: "Café Cuisine",
-                takeaway: "Yes",
-                wifi: "No",
-                parking: "Yes",
-                courtesy: "Yes",
-                cards: "Amex,MC,Visa",
-                price: "Entree: K18, Main: K32, Dessert: K12"
-            },
-            slideImages: "/imgs/dining/R2-_DININGIMAGES_P.jpg"
-            // slideImages: [
-            //     {'/imgs/dining/restaurant_logos/R2-DININGLOGO_P.jpg'},
-            //     {'/imgs/dining/restaurant_logos/R28-DININGLOGO_FiAepOq.png'},
-            //     {'/imgs/maps/R27-The-Cellar-Restaurant.png'},
-            // ]
-        }
-    ];
-
+    
     render() {
-        let restaurantsDetail = this.restaurants[
+        const id = this.props.match.params.id;
+        const _id = parseInt(id);
+        const _DingingsDetails = restaurants[_id];
+        
+        let restaurantsDetail = restaurants[
             parseInt(this.props.match.params.id)
         ];
         //   const { restaurant, status } = this.props;
         return (
-            <div
-                style={{
+            <div style={{
                     width: "100%",
-                    height: "100%",
+                    height: "54vh",
                     display: "flex",
                     color: "white"
                 }}
                 className="section--bottom--animation"
             >
-                <div
+                <div className="vertical-side"
                     style={{
                         backgroundColor: HeavyOrange,
                         width: "14%",
+                        height: "100%",
                         boxShadow: "9.899px 0px 7px 0px rgba(0,0,0,0.6)",
                         zIndex: 1,
-                        display: "flex",
-                        flexDirection: "column"
+                        flexDirection: "column",
+                        display: "flex"
                     }}
                 >
-                    <Link
-                        style={{
-                            textDecoration: "none"
-                        }}
-                        to={diningNamespace}
-                    >
-                        <div className="leftSide-menu--container">
-                            <img
-                                className="leftSide-menu--img"
-                                src={RestaurantListIcon}
-                                alt="Restaurant List Icon"
-                            />
-                            <div className="menu-title">RESTAURANT LIST</div>
-                        </div>
-                    </Link>
-                    <div className="vertical-title">
-                        <span style={{ transform: "rotate(-90deg)" }}>
+                    <div>
+                        <Link
+                            style={{ height: "14%", textDecoration: "none" }}
+                            to={diningNamespace}
+                        >
+                            <div className="leftSide-menu--container">
+                                <img
+                                    className="leftSide-menu--img"
+                                    src={RestaurantListIcon}
+                                    alt="Restaurant List Icon"
+                                />
+                                <div
+                                style={{
+                                    letterSpacing: "2px"
+                                }}
+                                >
+                                    <p
+                                        className="menu-title"
+                                    
+                                    >
+                                        RESTAURANT LIST 
+                                    </p>
+                                    <p
+                                        className="menu-title"
+                                    
+                                    >
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="vertical-title ">
+                        <span
+                            style={{
+                                transform: "rotate(-90deg)"
+                            }}
+                        >
                             DINING
                         </span>
                     </div>
                 </div>
+                <div >
+                    <div className='event-main'>
+                        <div style={{ height: "50%", width: "100%" }}>
+                            <img src={_DingingsDetails.img_url} style={{ height: '100%', width: '100%' }} />
 
-                <div
-                    style={{
-                        flex: 1,
-                        width: "100%",
-                        height: "54vh",
-                        backgroundColor: "rgb(5, 151, 165)"
-                    }}
-                >
-                    <div style={{ height: "50%" }}>
-                        <div
-                            style={{ height: "100%", width: "100%" }}
-                            className="slide-container"
-                        >
-                            <img
-                                style={{ height: "100%", width: "100%" }}
-                                src={restaurantsDetail.slideImages}
-                            />
                         </div>
-                    </div>
-                    <div style={{ height: "25%", display: "flex" }}>
-                        <div
-                            className="main-top--left"
-                            style={{
-                                flexBasis: "50%",
-                                backgroundImage: `url(${restaurantsDetail.img_url})`,
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                backgroundPosition: "center"
-                            }}
-                        />
-                        <div
-                            className="main-top--right"
-                            style={{
-                                flexBasis: "50%",
-                                backgroundColor: LightBlueButtonBackground
-                            }}
-                        >
+                        <div style={{ height: "50%", width: "100%" }}>
                             <div
                                 style={{
                                     height: "50%",
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    justifyContent: "flex-end",
-                                    paddingBottom: 20,
-                                    padding: "5%",
-
-                                    overflowWrap: "break-word",
-                                    wordWrap: "break-word",
-                                    ...this.styles.horizontalVerticalCenter
+                                    backgroundColor: ExtraHeavyBlueGreen,
+                                    display: "flex"
                                 }}
                             >
-                                {restaurantsDetail.phone && (
-                                    <p>CALL TODAY: {restaurantsDetail.phone}</p>
-                                )}
-
-                                {restaurantsDetail.address && (
-                                    <p>{restaurantsDetail.address}</p>
-                                )}
-                            </div>
-                            <div>
                                 <div
-                                    style={{
-                                        //  height: "50%",
-                                        padding: "0 5%"
-                                    }}
+                                style={{
+                                    flexBasis: "50%",
+                                    borderRight:
+                                        "1px solid rgb(105,194,209)",
+                                    padding: "0px"
+                                }}
                                 >
-                                    <MapModal
-                                        buttonTitle={`${restaurantsDetail.title} MAP`}
-                                        title={restaurantsDetail.title}
-                                        buttonStyle={{
-                                            backgroundColor: HeavyOrange,
-                                            width: "100%",
-                                            // height: "50%",
-                                            padding: "3% 0",
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            alignItems: "center",
-                                            boxShadow:
-                                                "0px 0px 10px 1px rgba(0,0,0,0.5)",
-                                            borderRadius: "5px"
+                                    
+                                    <div className="middle-section--leftSide"
+                                        style={{
+                                            height: "100%",
+                                            padding: "0px"
                                         }}
-                                        mapImage={restaurantsDetail.mapImage}
-                                    />
+                                    >
+                                        <div style={{
+                                                width: "100%",
+                                                height: "100%",
+                                                backgroundImage: `url(${_DingingsDetails.img_url})`,
+                                                backgroundSize: "100%",
+                                                backgroundPosition: "center"
+                                            }}>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style={{
+                                    flexBasis: "50%",
+                                    padding: "25px 0px 0px 25px"
+                                }}
+                                >
+                                    <div className="middle-section--rightSide"
+                                        style={{
+                                            height: "38%",
+                                            letterSpacing: "1px",
+                                            overflow: "scroll",
+                                            display: "inline-table"
+                                        }}
+                                    >
+                                        {_DingingsDetails.phone && (
+                                            <p className="contact-details">
+                                                Call Today: {_DingingsDetails.phone}
+                                            </p>
+                                        )}
+
+                                        {_DingingsDetails.address && (
+                                            <p className="contact-details">
+                                                {_DingingsDetails.address}
+                                            </p>
+                                        )}
+
+                                        <div>Button
+                                            </div>
+                                    
+                                    </div>
+
+                                </div>
+
                             </div>
-                        </div>
-                    </div>
-                    <div
-                        style={{ height: "25%" }}
-                        className="main-bottom"
-                        style={{ padding: "2%" }}
-                    >
-                        <div className="main-bottom--left">
-                            {restaurantsDetail.synopsis}
-                        </div>
-                        <div className="main-bottom--right">
-                            {restaurantsDetail.guide.cuisine && (
-                                <div>
-                                    CUISINE: {restaurantsDetail.guide.cuisine}
-                                </div>
-                            )}
                             <div
                                 style={{
-                                    display: "flex",
-                                    justifyContent: "space-between"
+                                    height: "50%",
+                                    backgroundColor: ExtraHeavyBlueGreen,
+                                    display: "flex"
                                 }}
                             >
-                                {restaurantsDetail.guide.takeaway && (
-                                    <span>
-                                        TAKEAWAY:{" "}
-                                        {restaurantsDetail.guide.takeaway}
-                                    </span>
-                                )}
-                                {restaurantsDetail.guide.wifi && (
-                                    <span>
-                                        WIFI: {restaurantsDetail.guide.wifi}
-                                    </span>
-                                )}
-                                {restaurantsDetail.guide.parking && (
-                                    <span>
-                                        PARKING:{" "}
-                                        {restaurantsDetail.guide.parking}
-                                    </span>
-                                )}
+                                <div
+                                    style={{
+                                        flexBasis: "50%",
+                                        padding: "25px 0px 0px 35px",
+                                        overflowY: "auto"
+                                    }}
+                                >
+                                    {false && (<div
+                                        className="middle-section--innerTitle"
+                                        style={{
+                                            height: "15%"
+                                        }}
+                                    >
+                                        
+                                        {/* <span>{eventDetail.month}</span> */}
+                                    </div>)}
+                                    <div className="middle-section--leftSide"
+                                        style={{
+                                            height: "75%",
+                                            overflow: "scroll",
+                                            display: "inline-table"
+                                        }}
+                                    >
+                                        <div
+                                            dangerouslySetInnerHTML={{__html: _DingingsDetails.synopsis}}
+                                            style={{
+                                                marginTop: 0,
+                                                marginBottom: 0
+                                            }}
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div style={{
+                                    flexBasis: "50%",
+                                    padding: "25px 0px 0px 25px"
+                                }}
+                                >
+                                    {false && (<div style={{ height: "15%" }} />)}
+                                    
+                                    <div className="middle-section--rightSide"
+                                        style={{
+                                            height: "38%",
+                                            letterSpacing: "1px",
+                                            overflow: "scroll",
+                                            display: "inline-table"
+                                            // fontSize: "2vw"
+                                        }}
+                                    >
+                                        {_DingingsDetails.guide.cuisine && (
+                                            <div>
+                                                CUISINE: {_DingingsDetails.guide.cuisine}
+                                            </div>
+                                        )}
+                                        <div style={{
+                                                display: "inline-table",
+                                                width: "35%"
+                                            }}>
+                                            <div>TAKEAWAY: {_DingingsDetails.guide.takeaway} </div>
+                                        </div>
+                                        <div style={{
+                                                display: "inline-table",
+                                                width: "30%"
+                                            }}>
+                                            <div>WIFI: {_DingingsDetails.guide.wifi} </div>
+                                        </div>
+                                        <div style={{
+                                                display: "inline-table",
+                                                width: "35%"
+                                            }}>
+                                            <div>PARKING: {_DingingsDetails.guide.parking} </div>
+                                        </div>
+                                        
+                                        {_DingingsDetails.guide.courtesy && (
+                                            <div>COURTESY TRANSPORT: {_DingingsDetails.guide.courtesy} </div>
+                                        )}
+                                        {_DingingsDetails.guide.cards && (
+                                            <div>CARDS ACCEPTED: {_DingingsDetails.guide.cards} </div>
+                                        )}
+                                        {_DingingsDetails.guide.price && (
+                                            <div>
+                                                PRICE GUIDE:<br/> {_DingingsDetails.guide.price}
+                                            </div>
+                                        )}
+                                        
+                                    </div>
+
+                                </div>
                             </div>
-                            {restaurantsDetail.guide.courtesy && (
-                                <div>
-                                    COURTESY TRANSPORT:{" "}
-                                    {restaurantsDetail.guide.courtesy}
-                                </div>
-                            )}
-                            {restaurantsDetail.guide.cards && (
-                                <div>
-                                    CARDS ACCEPTED:{" "}
-                                    {restaurantsDetail.guide.cards}
-                                </div>
-                            )}
-                            {restaurantsDetail.guide.price && (
-                                <div>
-                                    PRICE GUIDE:
-                                    <br />
-                                    {restaurantsDetail.guide.price}
-                                </div>
-                            )}
                         </div>
                     </div>
                 </div>

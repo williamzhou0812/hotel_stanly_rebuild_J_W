@@ -460,7 +460,7 @@ const DiningDetails = props => {
                                     {_DingingsDetails.details.cards && (
                                         <div>CARDS ACCEPTED: {_DingingsDetails.details.cards} </div>
                                     )}
-                                    {_DingingsDetails.details.cards && (
+                                    {_DingingsDetails.details.price_guide && (
                                         <div>
                                             PRICE GUIDE:<br/> {_DingingsDetails.details.price_guide}
                                         </div>
