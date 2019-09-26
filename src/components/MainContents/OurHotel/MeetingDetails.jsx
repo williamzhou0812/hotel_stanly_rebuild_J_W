@@ -277,7 +277,7 @@ const MeetingDetails = (props) => {
                                         }}
                                     >
                                         {_facilitiesDetails.details.contact && (
-                                            <p>Please contact : {_facilitiesDetails.details.contact} </p>
+                                            <p>Please contact {_facilitiesDetails.details.contact} </p>
                                         )}
                                        
                                         

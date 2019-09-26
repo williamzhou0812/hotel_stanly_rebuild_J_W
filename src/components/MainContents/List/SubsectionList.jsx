@@ -23,8 +23,6 @@ class SubsectionList extends React.Component {
     constructor(props) {
         super(props);
 
-        console.log(props.data);
-
         const { data, randomise } = this.props;
 
         this.state = {
@@ -233,7 +231,7 @@ class SubsectionList extends React.Component {
                                             </div>
                                             <div
                                                 style={{
-                                                    fontSize: "1.7vw",
+                                                    fontSize: "2.1vw",
                                                     whiteSpace: "nowrap"
                                                 }}
                                             >
