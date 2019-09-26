@@ -273,6 +273,8 @@ span.info-span {
                 }
             }
             span {
+                font-size: 20px !important;
+                font-weight: 500 !important;
                 display: inline-block;
                 @include for-size(small-phone) {
                     font-size: 6px !important;
