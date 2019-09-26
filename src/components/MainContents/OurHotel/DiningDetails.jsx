@@ -281,7 +281,7 @@ const DiningDetails = props => {
                     <div style={{ height: "50%", width: "100%" }}>
                     <div
                             style={{
-                                height: "57%",
+                                height: "50%",
                                 backgroundColor: ExtraHeavyBlueGreen,
                                 display: "flex"
                             }}
@@ -346,7 +346,7 @@ const DiningDetails = props => {
                         </div>
                         <div
                             style={{
-                                height: "40%",
+                                height: "50%",
                                 backgroundColor: ExtraHeavyBlueGreen,
                                 display: "flex"
                             }}
