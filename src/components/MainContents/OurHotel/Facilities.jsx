@@ -58,7 +58,7 @@ const Facilities = () => {
                  { title: "RETURN TO LIST", isLink: true, link: '/ourhotel', icon: RestaurantListicon }
              ]}
              sideTitle="OUR HOTEL"
-             mainTitle="FACILITIE"
+             mainTitle="FACILITIES"
              evenDetailsProps={ourhotel_Facilities}
         >
             
