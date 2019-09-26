@@ -29,7 +29,7 @@ import "./OurHotel.scss";
 const ourhotel_Dinings = [
     {
         id: 1,
-        title_img: "",
+        title_img: GreenHausResImg1,
         title: "GREEN HAUS RESTAURANT",
         img_url: GreenHausRes,
         description:
@@ -275,7 +275,7 @@ const DiningDetails = props => {
             <div >
                 <div className='event-main'>
                     <div style={{ height: "50%", width: "100%" }}>
-                        <img src={_DingingsDetails.img_url} style={{ height: '100%', width: '100%' }} />
+                        <img src={_DingingsDetails.title_img} style={{ height: '100%', width: '100%' }} />
 
                     </div>
                     <div style={{ height: "50%", width: "100%" }}>
