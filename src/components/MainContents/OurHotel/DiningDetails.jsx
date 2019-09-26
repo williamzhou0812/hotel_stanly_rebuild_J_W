@@ -355,8 +355,6 @@ const DiningDetails = props => {
                             <div
                                 style={{
                                     flexBasis: "50%",
-                                    borderRight:
-                                        "1px solid rgb(105,194,209)",
                                     padding: "25px 0px 0px 35px",
                                     overflowY: "auto"
                                 }}
@@ -398,7 +396,7 @@ const DiningDetails = props => {
                                         height: "38%",
                                         letterSpacing: "1px",
                                         overflow: "scroll",
-                                        display: "inline-table",
+                                        display: "inline-table"
                                         // fontSize: "2vw"
                                     }}
                                 >
