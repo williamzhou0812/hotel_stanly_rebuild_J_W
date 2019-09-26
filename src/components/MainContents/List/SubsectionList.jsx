@@ -23,8 +23,6 @@ class SubsectionList extends React.Component {
     constructor(props) {
         super(props);
 
-        console.log(props.data);
-
         const { data, randomise } = this.props;
 
         this.state = {
