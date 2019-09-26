@@ -266,7 +266,7 @@ class EventDetail extends React.Component {
                                             <div className="middle-section--btnContainer--btn">
                                                 <MapModal
                                                     buttonTitle="SHOW ON MAP"
-                                                    title="Event Title"
+                                                    title={eventDetail.title}
                                                     buttonStyle={
                                                         this.styles
                                                             .mapOrFindButtonStyle
