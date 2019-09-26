@@ -198,7 +198,7 @@ class EventDetail extends React.Component {
                                             height: "15%"
                                         }}
                                     >
-                                        <span>{eventDetail.subTitle}</span>
+                                        <span>{eventDetail.subTitle.toUpperCase()}</span>
                                     </div>
                                     <div
                                         className="middle-section--leftSide"
