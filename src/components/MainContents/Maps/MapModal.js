@@ -64,7 +64,11 @@ class MapModal extends React.Component {
                                     style={{
                                         padding: 0,
                                         height: 32,
-                                        width: 32
+                                        width: 32,
+                                        color: "white",
+                                        float: "right",
+                                        marginRight: "20px",
+                                        marginTop: "20px"
                                     }}
                                 />
                             </MuiThemeProvider>
