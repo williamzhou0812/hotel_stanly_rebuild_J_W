@@ -22,6 +22,12 @@ import ThePoolDeck from "./img_logo/dinings/Our_Hotel_Section_Logo_PoolBar.jpg";
 import ExecitiveClubLounge from "./img_logo/dinings/Our_Hotel_Section_Logo_ExecClub_2L7k0hP.jpg";
 import RainforestCafe from "./img_logo/dinings/R24-DININGLOGO_P-RINGFOREST.jpg";
 import GreenHausResImg1 from "./img_logo/dinings/details/Our Hotel Section_Imagesgreenhaus.jpg";
+import RainforestCafeImg1 from "./img_logo/dinings/details/Our Hotel Section_Imagesrainforest.jpg";
+import MonsoonLoungBarImg1 from "./img_logo/dinings/details/Our Hotel Section_Imagesmonsoon.jpg";
+import TheePoolDeckImg1 from "./img_logo/dinings/details/Our Hotel Section_Imagespool2.jpg";
+import SilverLeafImg1 from "./img_logo/dinings/details/Our Hotel Section_ImagesDining.jpg";
+import ExecutiveClubLoungeImg1 from "./img_logo/dinings/details/Our Hotel Section_Images4.jpg";
+import MezzBarImg1 from "./img_logo/dinings/details/Our Hotel Section_Images3.jpg";
 
 import "../List/MainSectionList.scss";
 import "./OurHotel.scss";
@@ -51,96 +57,121 @@ const ourhotel_Dinings = [
     },
     {
         id: 2,
-        title_img: "",
-        title: "RAINFOREST CAFE",
+        title_img: RainforestCafeImg1,
+        title: "RAIN FOREST CAFE",
         img_url: RainforestCafe,
         description:
-            "Boasting an airy, light interior, the Rainforest Café is a casual yet stylish place to grab a snack or coffee. Kick back and relax or grab a homemade pastry on the go. Open daily 6am to 6.30pm.",
+            `<p>Flooded with natural light, The Rain Forest Cafe is an ideal meeting place for social and business interactions. 
+            The cafe serves up endless options to tempt your taste buds with homemade cakes, muffins, pastries, cookies and great coffee.</p>
+            <p>Open daily 6am to 6.30pm.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "the Ground Floor",
+            location: "Located on the ground floor",
             cuisine: "Café Cuisine",
             wifi: "Yes",
+            takeaway: "Yes",
+            secure_parking: "Yes",
+            transport: "Yes",
             cards: "Amex, MC, Visa",
             price_guide: "K20, Main: K45, Dessert: K20"
         }
     },
     {
         id: 3,
-        title_img: "",
-        title: "MONSOON LOUNGE & BAR",
+        title_img: MonsoonLoungBarImg1,
+        title: "MONSOON LOUNGE AND BAR",
         img_url: MonsoonLoungeBar,
         description:
-            "Offering relaxation and comfort along with a lively atmosphere, Monsoon Lounge is a sophisticated yet casual place for a drink with friends or just a different night out. Full table service, an extensive cocktail list and a delicious food menu designed from our culinary team places Monsoon among the top venues in Port Moresby. Open daily from 3pm until late.",
+            `<p>Offering relaxation and comfort along with a lively atmosphere, Monsoon Lounge is a sophisticated yet casual place for a drink with friends or just a different night out. Full table service, an extensive cocktail list and a delicious food menu designed from our culinary team places Monsoon among the top venues in Port Moresby</p>
+            <p>Open daily from 3pm until late.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "the Ground Floor",
-            cuisine: "BAR & COCKTAIL LOUNGE",
+            location: "Located on the ground floor",
+            cuisine: "Bar/Cocktail lounge",
             wifi: "Yes",
+            takeaway: "No",
+            secure_parking: "Yes",
+            transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
         }
     },
     {
         id: 4,
-        title_img: "",
+        title_img: TheePoolDeckImg1,
         title: "THE POOL DECK",
         img_url: ThePoolDeck,
         description:
-            "A casual dining experience to rival a day at the beach, The Pool Deck enables guests to recover from a long work day or simply relax in a luxurious setting. The Pool Bar is open weekdays 11am to 7pm and weekends 11am to 9.30pm.",
+            `<p>A casual dining experience to rival a day at the beach, The Pool Deck enables guests to recover from a long work day or simply relax in a luxurious setting</p>
+            <p>The Pool Bar is open weekdays 11am to 7pm and weekends 11am to 9.30pm.</p>`,
         details: {
             call: " +675 302 8888",
-            location: "on Level 5",
-            cuisine: false,
+            location: "Located on the level 5",
+            cuisine: "Bar/Cocktail lounge",
             wifi: "Yes",
+            takeaway: "No",
+            secure_parking: "Yes",
+            transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
         }
     },
     {
         id: 5,
-        title_img: "",
+        title_img: SilverLeafImg1,
         title: "SILVER LEAF",
         img_url: SilverLeaf,
         description:
-            "If you’re seeking a fine dining experience, then look no further than Silver Leaf Restaurant. Boasting an opulent, modern interior, stunning views of Port Moresby complete this culinary experience where the quality of ingredients and flavours are unsurpassed. Monday to Saturday: 18:00 – 22:30 Sunday: closed",
+            `<p>With lavish interiors and breathtaking views of the city, our fine dining restaurant is the place for any occasion. This 60 seater restaurant provides guests with an unprecedented dining experience offering simplicity, quality and consistency in all aspects of food, wine and service. Open Monday to Saturday 6pm to 10pm and closed on Sundays. Bookings are essential - email dine@thestanleypng.com or contact the hotel operator. A smart casual dress code for guests dining at Silver Leaf must be adhered to.</p>
+            <p>Bookings are essential - email dine@thestanleypng.com or contact the hotel operator. A smart casual dress code for guests dining at Silver Leaf must be adhered to.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Level 19",
+            location: "Located on level 19",
             cuisine: "Fine Dining",
             wifi: "Yes",
+            takeaway: "No",
+            secure_parking: "Yes",
+            transport: "Yes",
             cards: "Amex, MC, Visa",
             price_guide: "Entree: K50, Main: K95, Dessert: K50"
         }
     },
     {
         id: 6,
-        title_img: "",
+        title_img: ExecutiveClubLoungeImg1,
         title: "EXECITIVE CLUB LOUNGE",
         img_url: ExecitiveClubLounge,
         description:
-            "The Executive Lounge provides complimentary additional services and facilities for guests who are private members or staying on Executive Lounge Floors and in elegant suites. These services include breakfast, and evening beverages and canapes. The Club lounge is open during the day for guests to work or relax in.",
+            `<p>The Executive Lounge provides complimentary additional services and facilities for guests who are private members or staying on Executive Lounge Floors and in elegant suites. These services include breakfast, and evening beverages and canapés.</p>
+            <p>The Club lounge is open during the day for guests to work or relax in.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "on Level 19",
-            cuisine: false,
+            location: "Located on level 19",
+            cuisine: "Bar, Casual dining",
             wifi: "Yes",
+            takeaway: "No",
+            secure_parking: "Yes",
+            transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
         }
     },    
     {
         id: 7,
-        title_img: "",
+        title_img: MezzBarImg1,
         title: "MEZZ BAR",
         img_url: MezzBar,
         description:
-            "An elegant bar hidden away above level 19, Mezz Bar is the perfect place to start or finish your night. An extensive selection of carefully designed cocktails combined with international wines and premium whiskeys makes this bar a unique place to visit. Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.",
+            `<p>An elegant bar hidden away above level 19, Mezz Bar is the perfect place to start or finish your night. An extensive selection of carefully designed cocktails combined with international wines and premium whiskeys makes this bar a unique place to visit.</p>
+            <p>Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.</p>`,
         details: {
             call: false,
-            location: "AMEX, MC, Visa",
-            cuisine: "BAR",
-            wifi: "YES",
+            location: "Located on level 19",
+            cuisine: "Bar",
+            wifi: "Yes",
+            takeaway: "No",
+            secure_parking: "Yes",
+            transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
         }
@@ -234,7 +265,7 @@ const DiningDetails = props => {
                 <div >
                     <Link
                         style={{ height: "14%", textDecoration: "none" }}
-                        to='/ourhotel/meeting'
+                        to='/ourhotel/dining'
                     >
                         <div className="leftSide-menu--container">
                             <img
@@ -251,7 +282,7 @@ const DiningDetails = props => {
                                     className="menu-title"
                                 
                                 >
-                                    MEETINGS 
+                                    DINING 
                                 </p>
                                 <p
                                     className="menu-title"
@@ -333,7 +364,6 @@ const DiningDetails = props => {
 
                                     {_DingingsDetails.details.location && (
                                         <p className="contact-details">
-                                            Location:
                                             {_DingingsDetails.details.location}
                                         </p>
                                     )}
@@ -407,7 +437,7 @@ const DiningDetails = props => {
                                     )}
                                     <div style={{
                                             display: "inline-table",
-                                            width: "40%"
+                                            width: "35%"
                                         }}>
                                         <div>TAKEAWAY: {_DingingsDetails.details.takeaway} </div>
                                     </div>
@@ -419,7 +449,7 @@ const DiningDetails = props => {
                                     </div>
                                     <div style={{
                                             display: "inline-table",
-                                            width: "30%"
+                                            width: "35%"
                                         }}>
                                         <div>PARKING: {_DingingsDetails.details.secure_parking} </div>
                                     </div>
