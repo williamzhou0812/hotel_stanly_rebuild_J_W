@@ -231,7 +231,7 @@ class SubsectionList extends React.Component {
                                             </div>
                                             <div
                                                 style={{
-                                                    fontSize: "1.7vw",
+                                                    fontSize: "2.25vw",
                                                     whiteSpace: "nowrap"
                                                 }}
                                             >
