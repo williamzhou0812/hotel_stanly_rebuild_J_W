@@ -14,6 +14,7 @@ import MapModal from "../Maps/MapModal";
 import Markdown from "../../../MarkDown";
 import {restaurants } from "./DiningData";
 
+
 import "../List/MainSectionList.scss";
 import "./Dining.scss";
 
@@ -60,6 +61,23 @@ class DiningDetail extends React.Component {
             onChange: (oldIndex, newIndex) => {
                 console.log(`slide transition from ${oldIndex} to ${newIndex}`);
             }
+        },
+        mapOrFindButtonStyle: {
+            backgroundColor: HeavyOrange,
+            display: "flex",
+            width: "100%",
+            padding: "4% 0",
+            display: "inline-bock",
+            marginTop: "-5%",
+            borderRadius: "5px",
+            boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
+            color: "white",
+            justifyContent: "center"
+        },
+        mapOrFindButtonText: {
+            letterSpacing: "2px",
+            fontSize: "18px",
+            fontWeight: "bold"
         }
     };
     
@@ -198,8 +216,26 @@ class DiningDetail extends React.Component {
                                             </p>
                                         )}
 
-                                        <div>Button
+                                        {_DingingsDetails.mapImage && (
+                                        <div style={{marginTop: "70px"}}>
+                                            <div className="middle-section--btnContainer">
+                                                <div className="middle-section--btnContainer--btn">
+                                                    <MapModal
+                                                        buttonTitle="SHOW ON MAP"
+                                                        title={_DingingsDetails.title}
+                                                        buttonStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonStyle
+                                                        }
+                                                        textStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonText
+                                                        }
+                                                        mapImage={_DingingsDetails.mapImage}
+                                                    />
+                                                </div>
                                             </div>
+                                        </div>)}
                                     
                                     </div>
 
