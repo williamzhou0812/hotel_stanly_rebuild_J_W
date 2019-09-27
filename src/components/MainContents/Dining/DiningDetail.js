@@ -216,6 +216,7 @@ class DiningDetail extends React.Component {
                                             </p>
                                         )}
 
+                                        {_DingingsDetails.mapImage && (
                                         <div style={{marginTop: "70px"}}>
                                             <div className="middle-section--btnContainer">
                                                 <div className="middle-section--btnContainer--btn">
@@ -234,7 +235,7 @@ class DiningDetail extends React.Component {
                                                     />
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>)}
                                     
                                     </div>
 

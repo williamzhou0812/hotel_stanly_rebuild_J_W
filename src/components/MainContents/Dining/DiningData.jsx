@@ -639,7 +639,7 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K8, Main: K30, Dessert: K11',
     },
-    mapImage: '/imgs/dining/maps/xxxx'
+    mapImage: ''
 
 },
 {
@@ -662,7 +662,7 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K35, Main: K49, Dessert: K35',
     },
-    mapImage: '/imgs/dining/maps/xxxx'
+    mapImage: ''
 
 },
 {
@@ -685,7 +685,7 @@ export const restaurants = [{
         cards: 'Amex, Visa',
         price: 'Entree: K19, Main: K60, Dessert: K20',
     },
-    mapImage: '/imgs/dining/maps/xxxx'
+    mapImage: ''
 
 },
 {
@@ -708,7 +708,7 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K15, Main: K49, Dessert: K25',
     },
-    mapImage: '/imgs/dining/maps/xxxx'
+    mapImage: ''
 
 },
 {
@@ -731,7 +731,7 @@ export const restaurants = [{
         cards: 'MC',
         price: 'Entree: K5, Main: K50, Dessert: K15',
     },
-    mapImage: '/imgs/dining/maps/xxxx'
+    mapImage: ''
 
 }/*,
 {

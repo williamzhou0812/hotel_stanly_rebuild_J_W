@@ -14,6 +14,8 @@ import {
     LightOrange
 } from "../../../Constants";
 
+import MapModal from "../Maps/MapModal";
+
 import SilverLeaf from "./img_logo/dinings/R25-DININGLOGO_P-silver-leaf.jpg";
 import GreenHausRes from "./img_logo/dinings/R18-DININGLOGO_P-green_haus_res.jpg";
 import MonsoonLoungeBar from "./img_logo/dinings/Our_Hotel_Section_Logo_Monsoon.jpg";
@@ -53,7 +55,8 @@ const ourhotel_Dinings = [
             transport: "Yes",
             cards: "Amex, MC, Visa",
             price_guide: "K40, Main: K75 , Dessert: K40"
-        }
+        },
+        mapImage: '/imgs/dining/maps/R17-Green-Haus.png'
     },
     {
         id: 2,
@@ -74,7 +77,8 @@ const ourhotel_Dinings = [
             transport: "Yes",
             cards: "Amex, MC, Visa",
             price_guide: "K20, Main: K45, Dessert: K20"
-        }
+        },
+        mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png'
     },
     {
         id: 3,
@@ -94,7 +98,8 @@ const ourhotel_Dinings = [
             transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
-        }
+        },
+        mapImage: ''
     },
     {
         id: 4,
@@ -114,7 +119,8 @@ const ourhotel_Dinings = [
             transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
-        }
+        },
+        mapImage: ''
     },
     {
         id: 5,
@@ -134,7 +140,8 @@ const ourhotel_Dinings = [
             transport: "Yes",
             cards: "Amex, MC, Visa",
             price_guide: "Entree: K50, Main: K95, Dessert: K50"
-        }
+        },
+        mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png'
     },
     {
         id: 6,
@@ -154,7 +161,8 @@ const ourhotel_Dinings = [
             transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
-        }
+        },
+        mapImage: ''
     },    
     {
         id: 7,
@@ -174,7 +182,8 @@ const ourhotel_Dinings = [
             transport: "Yes",
             cards: "AMEX, MC, Visa",
             price_guide: false
-        }
+        },
+        mapImage: ''
     }
     
 ];
@@ -192,6 +201,23 @@ const styles = {
         lineHeight: "130%",
         letterSpacing: "2px",
         fontSize: "0.8rem"
+    },
+    mapOrFindButtonStyle: {
+        backgroundColor: HeavyOrange,
+        display: "flex",
+        width: "100%",
+        padding: "4% 0",
+        display: "inline-bock",
+        marginTop: "-5%",
+        borderRadius: "5px",
+        boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
+        color: "white",
+        justifyContent: "center"
+    },
+    mapOrFindButtonText: {
+        letterSpacing: "2px",
+        fontSize: "18px",
+        fontWeight: "bold"
     }
 };
 
@@ -368,8 +394,26 @@ const DiningDetails = props => {
                                         </p>
                                     )}
 
-                                    <div>Button
+                                    {_DingingsDetails.mapImage && (
+                                    <div style={{marginTop: "70px"}}>
+                                        <div className="middle-section--btnContainer">
+                                            <div className="middle-section--btnContainer--btn">
+                                                <MapModal
+                                                    buttonTitle="SHOW ON MAP"
+                                                    title={_DingingsDetails.title}
+                                                    buttonStyle={
+                                                        styles
+                                                            .mapOrFindButtonStyle
+                                                    }
+                                                    textStyle={
+                                                        styles
+                                                            .mapOrFindButtonText
+                                                    }
+                                                    mapImage={_DingingsDetails.mapImage}
+                                                />
+                                            </div>
                                         </div>
+                                    </div>)}
                                 
                                 </div>
 
