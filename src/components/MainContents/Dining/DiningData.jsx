@@ -17,7 +17,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K16, Main: K30, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R1-Asia-Aromas-Map.png'
 
 },
 {
@@ -39,7 +40,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K18, Main: K32, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R2-Cuppa.png'
 
 },
 {
@@ -61,7 +63,8 @@ export const restaurants = [{
         courtesy: '',
         cards: '',
         price: '',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R3-Hosi-Ramen.png'
 
 },
 {
@@ -83,7 +86,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'MC, Visa',
         price: 'Entree: K25, Main: K70, Dessert: K26',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R4-Happy-Dumplings.png'
 
 },
 {
@@ -105,7 +109,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K22, Main: K48, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R5-Korean-Gardens.png'
 
 },
 {
@@ -127,7 +132,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'MC, Visa',
         price: 'Entree: K13, Main: K45, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R6-Yellow-Captain-Pizza.png'
 
 },
 {
@@ -149,7 +155,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'MC, Visa, JBC',
         price: 'Entree: K32, Main: K68, Dessert: K22 ',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R7-Hog\'s-Breath-Cafe.png'
 
 },
 {
@@ -171,7 +178,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K18, Main: K30, Dessert: K22',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R8-Beachside-Brasserie.png'
 
 },
 {
@@ -193,7 +201,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K48, Main: K91, Dessert: K35',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R9-Crowne-Plaza-Hotel.png'
 
 },
 {
@@ -215,7 +224,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa, JBC',
         price: 'Entree: K28, Main: K88, Dessert: K10',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R10-Daikoku.png'
 
 },
 {
@@ -237,7 +247,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'MC, Visa, JBC',
         price: 'Entree: K20, Main: K30, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R11-Dynasty-Seafood.png'
 
 },
 {
@@ -259,7 +270,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K12, Main: K30, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R12-Fu-Gui-Village.png'
 
 },
 {
@@ -281,7 +293,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K20, Main: K40, Dessert: K22 ',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R13-Fusion-Bistro.png'
 
 },
 {
@@ -303,7 +316,8 @@ export const restaurants = [{
         courtesy: 'Yes - To and from airport',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K30, Main: K60, Dessert: K30',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R14-Gateway-Hotel.png'
 
 },
 {
@@ -325,7 +339,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K15, Main: K28, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R15-Grand-Palace.png'
 
 },
 {
@@ -347,7 +362,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K30, Main: K65, Dessert: K26 ',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R16-Grand-Brasserie.png'
 
 },
 {
@@ -369,7 +385,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K40, Main: K75 , Dessert: K40',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R17-Green-Haus.png'
 
 },
 {
@@ -391,7 +408,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'MC, Visa',
         price: 'Entree: K16, Main: K29, Dessert: K10',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R18-Imperial-Chinese-Restaurant.png'
 
 },
 {
@@ -413,7 +431,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'MC, Visa ',
         price: 'Entree: K20, Main: K50, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R19-Laguna-Hotel.png'
 
 },
 {
@@ -435,7 +454,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K10, Main: K30, Dessert: K8',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R20-Magi-Seafood-Restaurant.png'
 
 },
 {
@@ -457,7 +477,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'MC, Visa',
         price: 'Entree: K6, Main: K17',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R21-Mr-Mike\'s-Pizza.png'
 
 },
 {
@@ -479,7 +500,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K12, Main: K20, Dessert: K10',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R22-Port-Moresby-NAture-Park-Cafe.png'
 
 },
 {
@@ -501,7 +523,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K20, Main: K45, Dessert: K20',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png'
 
 },
 {
@@ -523,7 +546,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K50, Main: K95, Dessert: K50',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png'
 
 },
 {
@@ -545,7 +569,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K20, Main: K50, Dessert: K15',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R25-Tandoor-on-the-Harbour.png'
 
 },
 {
@@ -567,7 +592,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K20, Main: K39, Dessert: K12',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R26-Tasty-Bite.png'
 
 },
 {
@@ -589,7 +615,8 @@ export const restaurants = [{
         courtesy: 'Yes',
         cards: 'MC, Visa',
         price: 'Entree: K12, Main: K25, Dessert: K10',
-    }
+    },
+    mapImage: '/imgs/dining/maps/R27-The-Cellar-Restaurant.png'
 
 },
 {
@@ -611,7 +638,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'MC, Visa',
         price: 'Entree: K8, Main: K30, Dessert: K11',
-    }
+    },
+    mapImage: '/imgs/dining/maps/xxxx'
 
 },
 {
@@ -633,7 +661,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa',
         price: 'Entree: K35, Main: K49, Dessert: K35',
-    }
+    },
+    mapImage: '/imgs/dining/maps/xxxx'
 
 },
 {
@@ -655,7 +684,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, Visa',
         price: 'Entree: K19, Main: K60, Dessert: K20',
-    }
+    },
+    mapImage: '/imgs/dining/maps/xxxx'
 
 },
 {
@@ -677,7 +707,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K15, Main: K49, Dessert: K25',
-    }
+    },
+    mapImage: '/imgs/dining/maps/xxxx'
 
 },
 {
@@ -699,7 +730,8 @@ export const restaurants = [{
         courtesy: 'No',
         cards: 'MC',
         price: 'Entree: K5, Main: K50, Dessert: K15',
-    }
+    },
+    mapImage: '/imgs/dining/maps/xxxx'
 
 }/*,
 {
@@ -721,7 +753,8 @@ export const restaurants = [{
         courtesy: '',
         cards: '',
         price: '',
-    }
+    },
+    mapImage: '/imgs/dining/maps/xxxx'
 
 }*/
 ];
