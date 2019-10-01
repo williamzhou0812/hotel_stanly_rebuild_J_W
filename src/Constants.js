@@ -31,6 +31,7 @@ export const LightBlue = "rgba(73, 175, 189, 0.4)";
 export const LightBlueButtonBackground = "rgb(1, 155, 167)";
 export const ExtraHeavyBlueGreen = "rgb(5, 140, 155)";
 export const SelectedBorderColor = "rgb(183, 223, 228)";
+export const LightBlueGreen = "rgb(1, 155, 167)";
 
 
 

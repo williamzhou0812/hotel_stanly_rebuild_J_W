@@ -11,7 +11,7 @@ import {
     HeavyOrange,
     LightBlueButtonBackground,
     ExtraHeavyBlueGreen,
-    LightOrange
+    LightBlueGreen
 } from "../../../Constants";
 
 import MapModal from "../Maps/MapModal";
@@ -341,7 +341,7 @@ const DiningDetails = props => {
                     <div
                             style={{
                                 height: "50%",
-                                backgroundColor: ExtraHeavyBlueGreen,
+                                backgroundColor: LightBlueGreen,
                                 display: "flex"
                             }}
                         >
