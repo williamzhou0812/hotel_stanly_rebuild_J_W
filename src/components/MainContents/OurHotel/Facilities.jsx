@@ -59,7 +59,8 @@ const Facilities = () => {
              ]}
              sideTitle="OUR HOTEL"
              mainTitle="FACILITIES"
-             evenDetailsProps={ourhotel_Facilities}
+             evenDetailsProps={ourhotel_Facilities}             
+             thumbnailStyle={{ width: "316px", height: "207px"}}
         >
             
         </SubsectionList> 
