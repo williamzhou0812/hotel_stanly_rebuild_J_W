@@ -55,7 +55,7 @@ export const events = [
             email: 'bougainville.travel@abg.gov.pg',
             location: 'Buka, Papua New Guniea'
         },
-        img_url: "/imgs/events/E3A_-_Mona_Festival_P5.jpg",
+        mapImage: "",
     },
     {
 
