@@ -206,7 +206,7 @@ const styles = {
         backgroundColor: HeavyOrange,
         display: "flex",
         width: "100%",
-        padding: "4% 0",
+        padding: "4% 2%",
         display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
@@ -217,7 +217,9 @@ const styles = {
     mapOrFindButtonText: {
         letterSpacing: "2px",
         fontSize: "18px",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        paddingLeft: "10px",
+        paddingRight: "10px"
     }
 };
 
@@ -399,7 +401,7 @@ const DiningDetails = props => {
                                         <div className="middle-section--btnContainer">
                                             <div className="middle-section--btnContainer--btn">
                                                 <MapModal
-                                                    buttonTitle="SHOW ON MAP"
+                                                    buttonTitle={_DingingsDetails.title.toUpperCase() + " MAP"}
                                                     title={_DingingsDetails.title}
                                                     buttonStyle={
                                                         styles
