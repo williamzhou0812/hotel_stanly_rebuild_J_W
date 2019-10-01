@@ -106,8 +106,7 @@ class DestinationDetail extends React.Component {
                             <div
                                 className="destination-main--details--bottom--right"
                                 style={{
-                                    flexBasis: "50%",
-                                    padding: "1%  2%"
+                                    flexBasis: "50%"
                                 }}
                             >
                                 <div className="destination-main--details--bottom--right--info">

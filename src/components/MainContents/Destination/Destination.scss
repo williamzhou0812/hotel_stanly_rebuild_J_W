@@ -29,6 +29,7 @@
       display: flex;
       &--left {
         width: 50%;
+        margin-top: 10px;
         p {
           display: inline-block;
           font-size: 1.85vw;
@@ -39,6 +40,7 @@
       &--right {
         width: 48%;
         margin-left: 2%;
+        margin-top: 10px;
         &--info {
           height: 40%;
           letter-spacing: 1px;
@@ -61,7 +63,9 @@
         }
         p {
           display: block;
-          margin-bottom: 1%;
+          font-size: 1.85vw;
+          letter-spacing: 1px;
+          line-height: 2.4vw;
         }
       }
     }
