@@ -187,7 +187,7 @@ class SubsectionList extends React.Component {
                             return (
                                 <Link
                                     style={{ textDecoration: "none" }}
-                                    to={`${namespace}/${index}`}
+                                    to={`${namespace}/${item.id}`}
                                     key={`${item.id}-${index}`}
                                     // imageSrc={`${item.imgSrc}`}
                                     // backgroundImage={ `url(${

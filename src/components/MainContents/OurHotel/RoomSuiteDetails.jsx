@@ -168,10 +168,12 @@ const RoomSuiteDetails = (props) => {
 
     const id = props.match.params.id;
     const _id = parseInt(id);
-    console.log(_id);
-    const _RoomSuiteDetails = ourhotel_room_suite[_id];
-    const prev_id = (_id - 1 < 0) ?  ourhotel_room_suite.length -1 : _id - 1;
-    const next_id = (_id + 1 >= ourhotel_room_suite.length) ? 0 : _id + 1;
+    const _RoomSuiteDetails = ourhotel_room_suite.find(item => item.id == _id);
+    const currentIdx = ourhotel_room_suite.indexOf(_RoomSuiteDetails);
+    const prev_idx = (currentIdx - 1 < 0) ?  ourhotel_room_suite.length -1 : currentIdx - 1;
+    const next_idx = (currentIdx + 1 >= ourhotel_room_suite.length) ? 0 : currentIdx + 1;
+    const prev_id = ourhotel_room_suite[prev_idx].id;
+    const next_id = ourhotel_room_suite[next_idx].id;
 
     return (
      <div
