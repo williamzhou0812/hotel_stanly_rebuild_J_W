@@ -59,7 +59,8 @@ class SubsectionList extends React.Component {
             sideButtons,
             sideTitle,
             mainTitle,
-            namespace
+            namespace,
+            thumbnailStyle = { width: "auto", height: "9.3vh"}
         } = this.props;
         const itemHeight = `${100 / numberOfEntries}%`;
         let toRender = data.slice();
@@ -212,10 +213,7 @@ class SubsectionList extends React.Component {
                                                 <img
                                                     src={item.img_url}
                                                     alt={item.event_title}
-                                                    style={{
-                                                        width: "29.2vw",
-                                                        height: "10.8vh"
-                                                    }}
+                                                    style={thumbnailStyle}
                                                 />
                                             </div>
                                         </div>
