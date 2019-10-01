@@ -41,8 +41,8 @@ class DestinationDetail extends React.Component {
             justifyContent: "center"
         },
         mapButtonTextStyle: {
-            fontSize: "2vw",
-            fontWeight: "bold"
+            fontSize: "20px",
+            fontWeight: "500"
         }
     };
 
@@ -124,7 +124,7 @@ class DestinationDetail extends React.Component {
                                     )}
                                 </div>
                                 <div className="destination-main--details--bottom--right--btnContainer">
-                                    <div style={{ marginBottom: "3%" }}>
+                                    <div style={{ marginBottom: "6%" }}>
                                         <MapModal
                                             buttonTitle={
                                                 destinationsDetail.title +
