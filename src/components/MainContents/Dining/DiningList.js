@@ -27,6 +27,7 @@ class DiningList extends React.Component {
                     ]}
                     sideTitle="DINING"
                     mainTitle="LIST OF RESTAURANTS"
+                    thumbnailStyle={{ width: "316px", height: "207px"}}
 
                 >
 
