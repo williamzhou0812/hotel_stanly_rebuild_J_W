@@ -29,9 +29,9 @@ class DestinationDetail extends React.Component {
             justifyContent: "center"
         },
         mapButtonStyle: {
-            width: "100%",
+            width: "85%",
             //  height: "100%",
-            padding: "2%",
+            padding: "3%",
             marginBottom: "5%",
             borderRadius: "5px",
             boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -127,24 +127,6 @@ class DestinationDetail extends React.Component {
                                     <div style={{ marginBottom: "6%" }}>
                                         <MapModal
                                             buttonTitle={
-                                                destinationsDetail.title +
-                                                " map"
-                                            }
-                                            title={destinationsDetail.title}
-                                            buttonStyle={
-                                                this.styles.mapButtonStyle
-                                            }
-                                            textStyle={
-                                                this.styles.mapButtonTextStyle
-                                            }
-                                            mapImage={
-                                                destinationsDetail.mapImage
-                                            }
-                                        />
-                                    </div>
-                                    <div style={{}}>
-                                        <MapModal
-                                            buttonTitle={
                                                 destinationsDetail.state +
                                                 " map"
                                             }
@@ -160,6 +142,25 @@ class DestinationDetail extends React.Component {
                                             }
                                         />
                                     </div>
+                                    <div style={{}}>
+                                        <MapModal
+                                            buttonTitle={
+                                                destinationsDetail.title +
+                                                " map"
+                                            }
+                                            title={destinationsDetail.title}
+                                            buttonStyle={
+                                                this.styles.mapButtonStyle
+                                            }
+                                            textStyle={
+                                                this.styles.mapButtonTextStyle
+                                            }
+                                            mapImage={
+                                                destinationsDetail.mapImage
+                                            }
+                                        />
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
