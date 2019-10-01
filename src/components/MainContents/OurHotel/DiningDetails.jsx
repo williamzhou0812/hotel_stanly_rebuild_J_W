@@ -206,7 +206,7 @@ const styles = {
         backgroundColor: HeavyOrange,
         display: "flex",
         width: "100%",
-        padding: "4% 2%",
+        padding: "5% 0",
         display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
@@ -218,8 +218,7 @@ const styles = {
         letterSpacing: "2px",
         fontSize: "18px",
         fontWeight: "bold",
-        paddingLeft: "10px",
-        paddingRight: "10px"
+        marginTop: "4px"
     }
 };
 
