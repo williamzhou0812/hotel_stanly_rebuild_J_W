@@ -70,7 +70,7 @@ class DestinationDetail extends React.Component {
                                 src={AllAreas}
                                 alt="All Areas Icon"
                             />
-                            <div className="menu-title">BACK TO OVERVIEW</div>
+                            <div className="menu-title">ALL AREAS</div>
                         </div>
                     </Link>
                     <div className="vertical-title">
