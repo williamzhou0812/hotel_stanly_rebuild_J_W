@@ -213,8 +213,8 @@ class SubsectionList extends React.Component {
                                                     src={item.img_url}
                                                     alt={item.event_title}
                                                     style={{
-                                                        width: "auto",
-                                                        height: "9.3vh"
+                                                        width: "29.2vw",
+                                                        height: "10.8vh"
                                                     }}
                                                 />
                                             </div>
