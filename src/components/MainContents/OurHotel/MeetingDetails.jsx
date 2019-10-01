@@ -115,9 +115,12 @@ const MeetingDetails = (props) => {
 
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _facilitiesDetails = ourhotel_Meeting[_id];
-    const prev_id = (_id - 1 < 0) ?  ourhotel_Meeting.length -1 : _id - 1;
-    const next_id = (_id + 1 >= ourhotel_Meeting.length) ? 0 : _id + 1;
+    const _facilitiesDetails = ourhotel_Meeting.find(item => item.id == _id);
+    const currentIdx = ourhotel_Meeting.indexOf(_facilitiesDetails);
+    const prev_idx = (currentIdx - 1 < 0) ?  ourhotel_Meeting.length -1 : currentIdx - 1;
+    const next_idx = (currentIdx + 1 >= ourhotel_Meeting.length) ? 0 : currentIdx + 1;
+    const prev_id = ourhotel_Meeting[prev_idx].id;
+    const next_id = ourhotel_Meeting[next_idx].id;
 
     return (
      <div

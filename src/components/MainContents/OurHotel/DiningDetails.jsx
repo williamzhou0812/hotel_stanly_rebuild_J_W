@@ -265,9 +265,9 @@ const renderImages = () => {
 const DiningDetails = props => {
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _DingingsDetails = ourhotel_Dinings[_id];
-    const prev_id = (_id - 1 < 0) ?  ourhotel_Dinings.length -1 : _id - 1;
-    const next_id = (_id + 1 >= ourhotel_Dinings.length) ? 0 : _id + 1;
+    const _DingingsDetails = ourhotel_Dinings.find(item => item.id == _id);
+    const currentIdx = ourhotel_Dinings.indexOf(_DingingsDetails);
+    
 
     return (
         <div style={{

@@ -84,12 +84,8 @@ class DiningDetail extends React.Component {
     render() {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
-        const _DingingsDetails = restaurants[_id];
+        const _DingingsDetails = restaurants.find(item => item.id == _id);;
         
-        let restaurantsDetail = restaurants[
-            parseInt(this.props.match.params.id)
-        ];
-        //   const { restaurant, status } = this.props;
         return (
             <div style={{
                     width: "100%",
