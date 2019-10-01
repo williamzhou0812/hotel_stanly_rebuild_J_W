@@ -36,7 +36,7 @@ class EventList extends React.Component {
                         //{ title: "EVENTS", isLink: true, link: eventNamespace }
                     ]}
                     sideTitle="EVENTS"
-                    mainTitle="CALENDAR"
+                    mainTitle="CALENDAR OF EVENTS"
                     evenDetailsProps={this.events}
 
                 >

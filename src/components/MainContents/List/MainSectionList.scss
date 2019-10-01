@@ -207,6 +207,7 @@ span.info-span {
         font-size: $p;
         letter-spacing: 1px;
         line-height: 2.4vw;
+        width: 95%;
         // padding-bottom: 1%;
         @include for-size(small-phone) {
             letter-spacing: 0px;

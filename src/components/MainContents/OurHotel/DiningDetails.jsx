@@ -11,7 +11,7 @@ import {
     HeavyOrange,
     LightBlueButtonBackground,
     ExtraHeavyBlueGreen,
-    LightOrange
+    LightBlueGreen
 } from "../../../Constants";
 
 import MapModal from "../Maps/MapModal";
@@ -206,7 +206,7 @@ const styles = {
         backgroundColor: HeavyOrange,
         display: "flex",
         width: "100%",
-        padding: "4% 0",
+        padding: "5% 0",
         display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
@@ -217,7 +217,8 @@ const styles = {
     mapOrFindButtonText: {
         letterSpacing: "2px",
         fontSize: "18px",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginTop: "4px"
     }
 };
 
@@ -264,9 +265,9 @@ const renderImages = () => {
 const DiningDetails = props => {
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _DingingsDetails = ourhotel_Dinings[_id];
-    const prev_id = (_id - 1 < 0) ?  ourhotel_Dinings.length -1 : _id - 1;
-    const next_id = (_id + 1 >= ourhotel_Dinings.length) ? 0 : _id + 1;
+    const _DingingsDetails = ourhotel_Dinings.find(item => item.id == _id);
+    const currentIdx = ourhotel_Dinings.indexOf(_DingingsDetails);
+    
 
     return (
         <div style={{
@@ -340,7 +341,7 @@ const DiningDetails = props => {
                     <div
                             style={{
                                 height: "50%",
-                                backgroundColor: ExtraHeavyBlueGreen,
+                                backgroundColor: LightBlueGreen,
                                 display: "flex"
                             }}
                         >
@@ -399,7 +400,7 @@ const DiningDetails = props => {
                                         <div className="middle-section--btnContainer">
                                             <div className="middle-section--btnContainer--btn">
                                                 <MapModal
-                                                    buttonTitle="SHOW ON MAP"
+                                                    buttonTitle={_DingingsDetails.title.toUpperCase() + " MAP"}
                                                     title={_DingingsDetails.title}
                                                     buttonStyle={
                                                         styles
