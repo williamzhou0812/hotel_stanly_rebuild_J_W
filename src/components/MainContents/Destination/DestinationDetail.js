@@ -129,13 +129,13 @@ class DestinationDetail extends React.Component {
                                 <div className="destination-main--details--bottom--right--info">
                                     {destinationsDetail.province && (
                                         <p>
-                                            PROVINCE:{" "}
+                                            <span className="label">PROVINCE:</span>{" "}
                                             {destinationsDetail.province}{" "}
                                         </p>
                                     )}
                                     {destinationsDetail.airport && (
                                         <p>
-                                            CLOSEST AIRPORT:{" "}
+                                            <span className="label">CLOSEST AIRPORT:</span>{" "}
                                             {destinationsDetail.airport}{" "}
                                         </p>
                                     )}
