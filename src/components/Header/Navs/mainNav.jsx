@@ -115,7 +115,7 @@ class mainNav extends React.Component {
                 >
                     {tabs.map((t, i) => {
                         return (
-                            <div className="item-tab not-selected">
+                            <div key={i} className="item-tab not-selected">
                                 <NavLink
                                     to={t.path}
                                     activeClassName="active-link"
