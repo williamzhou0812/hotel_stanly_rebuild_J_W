@@ -46,6 +46,29 @@ class DestinationDetail extends React.Component {
         }
     };
 
+    renderImages(destination) {
+        const {  images } = destination;
+        if (images.length > 1) {
+            return imageGallery(images, "100%", "27vh");
+        }
+        else if (images.length == 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        }
+        else {
+            return (
+                <div
+                    style={{
+                        backgroundColor: HeavyOrange,
+                        height: "100%",
+                        padding: "30px"
+                    }}
+                >
+                    <h1>NO IMAGE FOR THIS RESTAURANT</h1>
+                </div>
+            );
+        }
+    }
+
     render() {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
@@ -85,13 +108,7 @@ class DestinationDetail extends React.Component {
                         className="destination-main--topImg"
                         style={{ height: "50%", width: "100%" }}
                     >
-                        <img
-                            src={destinationsDetail.img_url}
-                            style={{ height: "100%", width: "100%" }}
-                        />
-                        {/* {imageGallery(destinationsDetail.img_url,
-                                "100%",
-                                "27vh")} */}
+                         {this.renderImages(destinationsDetail)}
                     </div>
                     <div className="destination-main--details">
                         <div className="destination-main--details--top-title">
