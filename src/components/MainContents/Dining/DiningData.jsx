@@ -676,7 +676,7 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K8, Main: K30, Dessert: K11',
     },
-    mapImage: '',
+    mapImage: '/imgs/dining/maps/R28-Lea-Travellers-Inn.png',
     images: [         { imageFile: '/imgs/dining/R-Dining/R28-HeaderImage_P.jpg' }     ]
 
 },
@@ -700,7 +700,7 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K35, Main: K49, Dessert: K35',
     },
-    mapImage: '',
+    mapImage: '/imgs/dining/maps/R29-Lea-International-Hotel.png',
     images: [         { imageFile: '/imgs/dining/R-Dining/R29-HeaderImage_P.jpg' },
     { imageFile: '/imgs/dining/R-Dining/R29-HeaderImage_P2.jpg' },
     { imageFile: '/imgs/dining/R-Dining/R29-HeaderImage_P3.jpg' },
@@ -727,7 +727,7 @@ export const restaurants = [{
         cards: 'Amex, Visa',
         price: 'Entree: K19, Main: K60, Dessert: K20',
     },
-    mapImage: '',
+    mapImage: '/imgs/dining/maps/R30-Bungaraya-Restaurant.png',
     images: [         { imageFile: '/imgs/dining/R-Dining/R30-HeaderImage_P.jpg' },
     { imageFile: '/imgs/dining/R-Dining/R30-HeaderImage_P2.jpg' }     ]
 
@@ -752,7 +752,7 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K15, Main: K49, Dessert: K25',
     },
-    mapImage: '',
+    mapImage: '/imgs/dining/maps/R31-Lae-City-Hotel.png',
     images: [         { imageFile: '/imgs/dining/R-Dining/R31-HeaderImage_P.jpg' }     ]
 
 },
@@ -776,7 +776,7 @@ export const restaurants = [{
         cards: 'MC',
         price: 'Entree: K5, Main: K50, Dessert: K15',
     },
-    mapImage: '',
+    mapImage: '/imgs/dining/maps/R32-Golden-Aviat.png',
     images: [         { imageFile: '/imgs/dining/R-Dining/R32-HeaderImage_P.jpg' }     ]
 
 }/*,
