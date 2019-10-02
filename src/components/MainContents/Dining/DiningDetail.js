@@ -81,6 +81,46 @@ class DiningDetail extends React.Component {
         }
     };
     
+    renderImages(restaurant) {
+        const {  images } = restaurant;
+        if (images.length > 1) {
+            return imageGallery(images, "100%", "27vh");
+        }
+        else if (images.length == 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        }
+        else {
+            return (
+                <div
+                    style={{
+                        backgroundColor: HeavyOrange,
+                        height: "100%",
+                        padding: "30px"
+                    }}
+                >
+                    <h1>NO IMAGE FOR THIS RESTAURANT</h1>
+                </div>
+            );
+        }
+        /*
+        if (images.length > 1) {
+            return imageGallery(images, "100%", "27vh");
+        } else if (images.length === 1) {
+            return (
+                <div
+                    style={{
+                        height: "50%",
+                        backgroundImage: `url(${images[0].imageFile})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center"
+                    }}
+                />
+            );
+        } else {
+           
+        }*/
+    }
+    
     render() {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
@@ -151,8 +191,7 @@ class DiningDetail extends React.Component {
                 <div >
                     <div className='event-main'>
                         <div style={{ height: "50%", width: "100%" }}>
-                            <img src={_DingingsDetails.img_url} style={{ height: '100%', width: '100%' }} />
-
+                            {this.renderImages(_DingingsDetails)}
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>
                             <div
