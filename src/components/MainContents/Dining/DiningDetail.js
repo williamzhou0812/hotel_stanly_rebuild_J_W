@@ -102,23 +102,6 @@ class DiningDetail extends React.Component {
                 </div>
             );
         }
-        /*
-        if (images.length > 1) {
-            return imageGallery(images, "100%", "27vh");
-        } else if (images.length === 1) {
-            return (
-                <div
-                    style={{
-                        height: "50%",
-                        backgroundImage: `url(${images[0].imageFile})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center"
-                    }}
-                />
-            );
-        } else {
-           
-        }*/
     }
     
     render() {

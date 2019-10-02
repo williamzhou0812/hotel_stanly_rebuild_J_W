@@ -56,7 +56,11 @@ const ourhotel_Dinings = [
             cards: "Amex, MC, Visa",
             price_guide: "K40, Main: K75 , Dessert: K40"
         },
-        mapImage: '/imgs/dining/maps/R17-Green-Haus.png'
+        mapImage: '/imgs/dining/maps/R17-Green-Haus.png',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus2.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus3.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus4.jpg' }     ]
     },
     {
         id: 2,
@@ -78,7 +82,8 @@ const ourhotel_Dinings = [
             cards: "Amex, MC, Visa",
             price_guide: "K20, Main: K45, Dessert: K20"
         },
-        mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png'
+        mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2B-Rain Forest/Our Hotel Section_Imagesrainforest.jpg' }     ]
     },
     {
         id: 3,
@@ -99,7 +104,10 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2C-Monsoon/Our Hotel Section_Imagesmonsoon.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2C-Monsoon/Our Hotel Section_ImagesMonsoon2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2C-Monsoon/Our Hotel Section_Imagesmonsoon3.jpg' }      ]
     },
     {
         id: 4,
@@ -120,7 +128,8 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2D-Pool Cafe/Our Hotel Section_Imagespool2.jpg' }     ]
     },
     {
         id: 5,
@@ -141,7 +150,14 @@ const ourhotel_Dinings = [
             cards: "Amex, MC, Visa",
             price_guide: "Entree: K50, Main: K95, Dessert: K50"
         },
-        mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png'
+        mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_ImagesDining.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_ImagesDining2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf3.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf4.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf5.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf6.jpg' }     ]
     },
     {
         id: 6,
@@ -162,7 +178,8 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2F-Executive club/Our Hotel Section_Images4.jpg' }     ]
     },    
     {
         id: 7,
@@ -183,7 +200,8 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2G-Mezz Bar/Our Hotel Section_Images3.jpg' }     ]
     }
     
 ];
@@ -233,34 +251,29 @@ const images = [
 ];
 
 /// Image Garllery
-const renderImages = () => {
+const renderImages = (restaurant) => {
+    const {  images } = restaurant;
     if (images.length > 1) {
         return imageGallery(images, "100%", "27vh");
-    } else if (images.length === 1) {
+    }
+    else if (images.length == 1) {
+        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+    }
+    else {
         return (
             <div
                 style={{
-                    height: "50%",
-                    backgroundImage: `url(${images[0].imageFile})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center"
-                }}
-            />
-        );
-    } else {
-        return (
-            <div
-                style={{
-                    height: "50%",
                     backgroundColor: HeavyOrange,
-                    ...styles.horizontalVerticalCenter
+                    height: "100%",
+                    padding: "30px"
                 }}
             >
-                <h1>NO IMAGE FOR THIS RESAURANT </h1>
+                <h1>NO IMAGE FOR THIS RESTAURANT</h1>
             </div>
         );
     }
-};
+}
+
 
 const DiningDetails = props => {
     const id = props.match.params.id;
@@ -334,8 +347,7 @@ const DiningDetails = props => {
             <div >
                 <div className='event-main'>
                     <div style={{ height: "50%", width: "100%" }}>
-                        <img src={_DingingsDetails.title_img} style={{ height: '100%', width: '100%' }} />
-
+                        {renderImages(_DingingsDetails)}
                     </div>
                     <div style={{ height: "50%", width: "100%" }}>
                     <div
