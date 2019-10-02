@@ -50,7 +50,7 @@ const ourhotel_Dinings = [
             location: "Located on the ground floor",
             cuisine: "Chinese & ThaiInternational Contemporary Cuisine",
             wifi: "Yes",
-            takeaway: "Yes",
+            takeaway: "No",
             secure_parking: "Yes",
             transport: "Yes",
             cards: "Amex, MC, Visa",
@@ -151,13 +151,13 @@ const ourhotel_Dinings = [
             price_guide: "Entree: K50, Main: K95, Dessert: K50"
         },
         mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png',
-        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_ImagesDining.jpg' } ,
-        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_ImagesDining2.jpg' } ,
-        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf2.jpg' } ,
-        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf3.jpg' } ,
-        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf4.jpg' } ,
-        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf5.jpg' } ,
-        { imageFile: '/imgs/ourHotel/H2-Dining/Our Hotel Section_Imagessilverleaf6.jpg' }     ]
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_ImagesDining.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_ImagesDining2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf3.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf4.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf5.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf6.jpg' }     ]
     },
     {
         id: 6,
