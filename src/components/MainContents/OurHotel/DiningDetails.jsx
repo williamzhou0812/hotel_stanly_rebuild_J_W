@@ -137,7 +137,7 @@ const ourhotel_Dinings = [
         title: "SILVER LEAF",
         img_url: SilverLeaf,
         description:
-            `<p>With lavish interiors and breathtaking views of the city, our fine dining restaurant is the place for any occasion. This 60 seater restaurant provides guests with an unprecedented dining experience offering simplicity, quality and consistency in all aspects of food, wine and service. Open Monday to Saturday 6pm to 10pm and closed on Sundays. Bookings are essential - email dine@thestanleypng.com or contact the hotel operator. A smart casual dress code for guests dining at Silver Leaf must be adhered to.</p>
+            `<p>With lavish interiors and breathtaking views of the city, our fine dining restaurant is the place for any occasion. This 60 seater restaurant provides guests with an unprecedented dining experience offering simplicity, quality and consistency in all aspects of food, wine and service. Open Monday to Saturday 6pm to 10pm and closed on Sundays.</p>
             <p>Bookings are essential - email dine@thestanleypng.com or contact the hotel operator. A smart casual dress code for guests dining at Silver Leaf must be adhered to.</p>`,
         details: {
             call: "+675 302 8888",
