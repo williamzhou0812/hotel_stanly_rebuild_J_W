@@ -357,7 +357,7 @@ export function imageGallery(
                         className="image-gallery-left-nav"
                         onClick={onClick}
                         color={HeavyOrange}
-                        style={{ padding: 0, height: 64, width: 64 }}
+                        style={{ padding: 0, height: 64, width: 64, color: HeavyOrange }}
                     />
                 )}
                 renderRightNav={(onClick, _disabled) => (
@@ -365,7 +365,7 @@ export function imageGallery(
                         className="image-gallery-right-nav"
                         onClick={onClick}
                         color={HeavyOrange}
-                        style={{ padding: 0, height: 64, width: 64 }}
+                        style={{ padding: 0, height: 64, width: 64, color: HeavyOrange }}
                     />
                 )}
                 renderPlayPauseButton={(onClick, isPlaying) => {
@@ -375,7 +375,7 @@ export function imageGallery(
                                 className="image-gallery-play-button active"
                                 onClick={onClick}
                                 color={HeavyOrange}
-                                style={{ padding: 0, height: 64, width: 64 }}
+                                style={{ padding: 0, height: 64, width: 64, color: HeavyOrange }}
                             />
                         );
                     } else {
@@ -384,7 +384,7 @@ export function imageGallery(
                                 className="image-gallery-play-button"
                                 onClick={onClick}
                                 color={HeavyOrange}
-                                style={{ padding: 0, height: 64, width: 64 }}
+                                style={{ padding: 0, height: 64, width: 64, color: HeavyOrange }}
                             />
                         );
                     }
