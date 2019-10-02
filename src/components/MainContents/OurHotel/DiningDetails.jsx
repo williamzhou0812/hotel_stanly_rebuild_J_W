@@ -73,7 +73,7 @@ const ourhotel_Dinings = [
             <p>Open daily 6am to 6.30pm.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on the ground floor",
+            location: "Located on the Ground Floor",
             cuisine: "Café Cuisine",
             wifi: "Yes",
             takeaway: "Yes",
@@ -95,7 +95,7 @@ const ourhotel_Dinings = [
             <p>Open daily from 3pm until late.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on the ground floor",
+            location: "Located on the Ground Floor",
             cuisine: "Bar/Cocktail lounge",
             wifi: "Yes",
             takeaway: "No",
@@ -119,7 +119,7 @@ const ourhotel_Dinings = [
             <p>The Pool Bar is open weekdays 11am to 7pm and weekends 11am to 9.30pm.</p>`,
         details: {
             call: " +675 302 8888",
-            location: "Located on the level 5",
+            location: "Located on Level 5",
             cuisine: "Bar/Cocktail lounge",
             wifi: "Yes",
             takeaway: "No",
@@ -141,7 +141,7 @@ const ourhotel_Dinings = [
             <p>Bookings are essential - email dine@thestanleypng.com or contact the hotel operator. A smart casual dress code for guests dining at Silver Leaf must be adhered to.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on level 19",
+            location: "Located on Level 19",
             cuisine: "Fine Dining",
             wifi: "Yes",
             takeaway: "No",
@@ -169,7 +169,7 @@ const ourhotel_Dinings = [
             <p>The Club lounge is open during the day for guests to work or relax in.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on level 19",
+            location: "Located on Level 19",
             cuisine: "Bar, Casual dining",
             wifi: "Yes",
             takeaway: "No",
@@ -191,7 +191,7 @@ const ourhotel_Dinings = [
             <p>Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.</p>`,
         details: {
             call: false,
-            location: "Located on level 19",
+            location: "Located on Level 19",
             cuisine: "Bar",
             wifi: "Yes",
             takeaway: "No",
