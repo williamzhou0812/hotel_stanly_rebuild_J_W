@@ -18,7 +18,10 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K16, Main: K30, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R1-Asia-Aromas-Map.png'
+    mapImage: '/imgs/dining/maps/R1-Asia-Aromas-Map.png',
+    images: [
+        { imageFile: '/imgs/dining/R-Dining/R1-HeaderImages_P.jpg' }
+    ]
 
 },
 {
@@ -41,7 +44,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K18, Main: K32, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R2-Cuppa.png'
+    mapImage: '/imgs/dining/maps/R2-Cuppa.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R2-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -64,7 +68,8 @@ export const restaurants = [{
         cards: '',
         price: '',
     },
-    mapImage: '/imgs/dining/maps/R3-Hosi-Ramen.png'
+    mapImage: '/imgs/dining/maps/R3-Hosi-Ramen.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R3-HeaderImages_P.jpg' }     ]
 
 },
 {
@@ -87,7 +92,8 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K25, Main: K70, Dessert: K26',
     },
-    mapImage: '/imgs/dining/maps/R4-Happy-Dumplings.png'
+    mapImage: '/imgs/dining/maps/R4-Happy-Dumplings.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R4-HeaderImages_P.jpg' }     ]
 
 },
 {
@@ -110,7 +116,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K22, Main: K48, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R5-Korean-Gardens.png'
+    mapImage: '/imgs/dining/maps/R5-Korean-Gardens.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R5-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -133,7 +140,8 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K13, Main: K45, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R6-Yellow-Captain-Pizza.png'
+    mapImage: '/imgs/dining/maps/R6-Yellow-Captain-Pizza.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R6-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -156,7 +164,8 @@ export const restaurants = [{
         cards: 'MC, Visa, JBC',
         price: 'Entree: K32, Main: K68, Dessert: K22 ',
     },
-    mapImage: '/imgs/dining/maps/R7-Hog\'s-Breath-Cafe.png'
+    mapImage: '/imgs/dining/maps/R7-Hog\'s-Breath-Cafe.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R7-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -179,7 +188,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K18, Main: K30, Dessert: K22',
     },
-    mapImage: '/imgs/dining/maps/R8-Beachside-Brasserie.png'
+    mapImage: '/imgs/dining/maps/R8-Beachside-Brasserie.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R8-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -202,7 +212,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K48, Main: K91, Dessert: K35',
     },
-    mapImage: '/imgs/dining/maps/R9-Crowne-Plaza-Hotel.png'
+    mapImage: '/imgs/dining/maps/R9-Crowne-Plaza-Hotel.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R9-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -225,7 +236,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa, JBC',
         price: 'Entree: K28, Main: K88, Dessert: K10',
     },
-    mapImage: '/imgs/dining/maps/R10-Daikoku.png'
+    mapImage: '/imgs/dining/maps/R10-Daikoku.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R10-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -248,7 +260,8 @@ export const restaurants = [{
         cards: 'MC, Visa, JBC',
         price: 'Entree: K20, Main: K30, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R11-Dynasty-Seafood.png'
+    mapImage: '/imgs/dining/maps/R11-Dynasty-Seafood.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R11- HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -271,7 +284,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K12, Main: K30, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R12-Fu-Gui-Village.png'
+    mapImage: '/imgs/dining/maps/R12-Fu-Gui-Village.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R12- HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -294,7 +308,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K20, Main: K40, Dessert: K22 ',
     },
-    mapImage: '/imgs/dining/maps/R13-Fusion-Bistro.png'
+    mapImage: '/imgs/dining/maps/R13-Fusion-Bistro.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R13- HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -317,7 +332,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K30, Main: K60, Dessert: K30',
     },
-    mapImage: '/imgs/dining/maps/R14-Gateway-Hotel.png'
+    mapImage: '/imgs/dining/maps/R14-Gateway-Hotel.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R14-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -340,7 +356,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K15, Main: K28, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R15-Grand-Palace.png'
+    mapImage: '/imgs/dining/maps/R15-Grand-Palace.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R15-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -363,7 +380,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K30, Main: K65, Dessert: K26 ',
     },
-    mapImage: '/imgs/dining/maps/R16-Grand-Brasserie.png'
+    mapImage: '/imgs/dining/maps/R16-Grand-Brasserie.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R16-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -386,7 +404,12 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K40, Main: K75 , Dessert: K40',
     },
-    mapImage: '/imgs/dining/maps/R17-Green-Haus.png'
+    mapImage: '/imgs/dining/maps/R17-Green-Haus.png',
+    images: [  { imageFile: '/imgs/dining/R-Dining/R17-HeaderImage_P.jpg' },
+        { imageFile: '/imgs/dining/R-Dining/R17-HeaderImage_P2.jpg' },
+        { imageFile: '/imgs/dining/R-Dining/R17-HeaderImage_P3.jpg' }  ,
+        { imageFile: '/imgs/dining/R-Dining/R17-HeaderImage_P4.jpg' }     
+    ]
 
 },
 {
@@ -409,7 +432,9 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K16, Main: K29, Dessert: K10',
     },
-    mapImage: '/imgs/dining/maps/R18-Imperial-Chinese-Restaurant.png'
+    mapImage: '/imgs/dining/maps/R18-Imperial-Chinese-Restaurant.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R18-HeaderImage_P.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R18-HeaderImage_P2.jpg' }     ]
 
 },
 {
@@ -432,7 +457,8 @@ export const restaurants = [{
         cards: 'MC, Visa ',
         price: 'Entree: K20, Main: K50, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R19-Laguna-Hotel.png'
+    mapImage: '/imgs/dining/maps/R19-Laguna-Hotel.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R19-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -455,7 +481,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K10, Main: K30, Dessert: K8',
     },
-    mapImage: '/imgs/dining/maps/R20-Magi-Seafood-Restaurant.png'
+    mapImage: '/imgs/dining/maps/R20-Magi-Seafood-Restaurant.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R20-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -478,7 +505,8 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K6, Main: K17',
     },
-    mapImage: '/imgs/dining/maps/R21-Mr-Mike\'s-Pizza.png'
+    mapImage: '/imgs/dining/maps/R21-Mr-Mike\'s-Pizza.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R21-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -501,7 +529,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K12, Main: K20, Dessert: K10',
     },
-    mapImage: '/imgs/dining/maps/R22-Port-Moresby-NAture-Park-Cafe.png'
+    mapImage: '/imgs/dining/maps/R22-Port-Moresby-NAture-Park-Cafe.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R22-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -524,7 +553,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K20, Main: K45, Dessert: K20',
     },
-    mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png'
+    mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R23-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -547,7 +577,11 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K50, Main: K95, Dessert: K50',
     },
-    mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png'
+    mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R24-HeaderImage_P.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R24-HeaderImage_P2.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R24-HeaderImage_P3.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R24-HeaderImage_P4.jpg' }     ]
 
 },
 {
@@ -570,7 +604,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K20, Main: K50, Dessert: K15',
     },
-    mapImage: '/imgs/dining/maps/R25-Tandoor-on-the-Harbour.png'
+    mapImage: '/imgs/dining/maps/R25-Tandoor-on-the-Harbour.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R25-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -593,7 +628,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K20, Main: K39, Dessert: K12',
     },
-    mapImage: '/imgs/dining/maps/R26-Tasty-Bite.png'
+    mapImage: '/imgs/dining/maps/R26-Tasty-Bite.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R26-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -616,7 +652,8 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K12, Main: K25, Dessert: K10',
     },
-    mapImage: '/imgs/dining/maps/R27-The-Cellar-Restaurant.png'
+    mapImage: '/imgs/dining/maps/R27-The-Cellar-Restaurant.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R27-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -639,7 +676,8 @@ export const restaurants = [{
         cards: 'MC, Visa',
         price: 'Entree: K8, Main: K30, Dessert: K11',
     },
-    mapImage: ''
+    mapImage: '/imgs/dining/maps/R28-Lea-Travellers-Inn.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R28-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -662,7 +700,11 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa',
         price: 'Entree: K35, Main: K49, Dessert: K35',
     },
-    mapImage: ''
+    mapImage: '/imgs/dining/maps/R29-Lea-International-Hotel.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R29-HeaderImage_P.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R29-HeaderImage_P2.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R29-HeaderImage_P3.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R29-HeaderImage_P4.jpg' }     ]
 
 },
 {
@@ -685,7 +727,9 @@ export const restaurants = [{
         cards: 'Amex, Visa',
         price: 'Entree: K19, Main: K60, Dessert: K20',
     },
-    mapImage: ''
+    mapImage: '/imgs/dining/maps/R30-Bungaraya-Restaurant.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R30-HeaderImage_P.jpg' },
+    { imageFile: '/imgs/dining/R-Dining/R30-HeaderImage_P2.jpg' }     ]
 
 },
 {
@@ -708,7 +752,8 @@ export const restaurants = [{
         cards: 'Amex, MC, Visa ',
         price: 'Entree: K15, Main: K49, Dessert: K25',
     },
-    mapImage: ''
+    mapImage: '/imgs/dining/maps/R31-Lae-City-Hotel.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R31-HeaderImage_P.jpg' }     ]
 
 },
 {
@@ -731,7 +776,8 @@ export const restaurants = [{
         cards: 'MC',
         price: 'Entree: K5, Main: K50, Dessert: K15',
     },
-    mapImage: ''
+    mapImage: '/imgs/dining/maps/R32-Golden-Aviat.png',
+    images: [         { imageFile: '/imgs/dining/R-Dining/R32-HeaderImage_P.jpg' }     ]
 
 }/*,
 {

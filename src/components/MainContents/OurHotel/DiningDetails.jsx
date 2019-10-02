@@ -47,16 +47,20 @@ const ourhotel_Dinings = [
             <p>Open breakfast, lunch and dinner from 6am to 10pm.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on the ground floor",
-            cuisine: "Chinese & ThaiInternational Contemporary Cuisine",
+            location: "Located on the Ground Floor",
+            cuisine: "International Contemporary Cuisine",
             wifi: "Yes",
-            takeaway: "Yes",
+            takeaway: "No",
             secure_parking: "Yes",
             transport: "Yes",
             cards: "Amex, MC, Visa",
             price_guide: "K40, Main: K75 , Dessert: K40"
         },
-        mapImage: '/imgs/dining/maps/R17-Green-Haus.png'
+        mapImage: '/imgs/dining/maps/R17-Green-Haus.png',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus2.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus3.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2A-Green Haus/Our Hotel Section_Imagesgreenhaus4.jpg' }     ]
     },
     {
         id: 2,
@@ -69,7 +73,7 @@ const ourhotel_Dinings = [
             <p>Open daily 6am to 6.30pm.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on the ground floor",
+            location: "Located on the Ground Floor",
             cuisine: "Café Cuisine",
             wifi: "Yes",
             takeaway: "Yes",
@@ -78,7 +82,8 @@ const ourhotel_Dinings = [
             cards: "Amex, MC, Visa",
             price_guide: "K20, Main: K45, Dessert: K20"
         },
-        mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png'
+        mapImage: '/imgs/dining/maps/R23-Rainforest-Cafe.png',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2B-Rain Forest/Our Hotel Section_Imagesrainforest.jpg' }     ]
     },
     {
         id: 3,
@@ -90,7 +95,7 @@ const ourhotel_Dinings = [
             <p>Open daily from 3pm until late.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on the ground floor",
+            location: "Located on the Ground Floor",
             cuisine: "Bar/Cocktail lounge",
             wifi: "Yes",
             takeaway: "No",
@@ -99,7 +104,10 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2C-Monsoon/Our Hotel Section_Imagesmonsoon.jpg' },
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2C-Monsoon/Our Hotel Section_ImagesMonsoon2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2C-Monsoon/Our Hotel Section_Imagesmonsoon3.jpg' }      ]
     },
     {
         id: 4,
@@ -111,7 +119,7 @@ const ourhotel_Dinings = [
             <p>The Pool Bar is open weekdays 11am to 7pm and weekends 11am to 9.30pm.</p>`,
         details: {
             call: " +675 302 8888",
-            location: "Located on the level 5",
+            location: "Located on Level 5",
             cuisine: "Bar/Cocktail lounge",
             wifi: "Yes",
             takeaway: "No",
@@ -120,7 +128,8 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2D-Pool Cafe/Our Hotel Section_Imagespool2.jpg' }     ]
     },
     {
         id: 5,
@@ -128,11 +137,11 @@ const ourhotel_Dinings = [
         title: "SILVER LEAF",
         img_url: SilverLeaf,
         description:
-            `<p>With lavish interiors and breathtaking views of the city, our fine dining restaurant is the place for any occasion. This 60 seater restaurant provides guests with an unprecedented dining experience offering simplicity, quality and consistency in all aspects of food, wine and service. Open Monday to Saturday 6pm to 10pm and closed on Sundays. Bookings are essential - email dine@thestanleypng.com or contact the hotel operator. A smart casual dress code for guests dining at Silver Leaf must be adhered to.</p>
+            `<p>With lavish interiors and breathtaking views of the city, our fine dining restaurant is the place for any occasion. This 60 seater restaurant provides guests with an unprecedented dining experience offering simplicity, quality and consistency in all aspects of food, wine and service. Open Monday to Saturday 6pm to 10pm and closed on Sundays.</p>
             <p>Bookings are essential - email dine@thestanleypng.com or contact the hotel operator. A smart casual dress code for guests dining at Silver Leaf must be adhered to.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on level 19",
+            location: "Located on Level 19",
             cuisine: "Fine Dining",
             wifi: "Yes",
             takeaway: "No",
@@ -141,7 +150,14 @@ const ourhotel_Dinings = [
             cards: "Amex, MC, Visa",
             price_guide: "Entree: K50, Main: K95, Dessert: K50"
         },
-        mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png'
+        mapImage: '/imgs/dining/maps/R24-Silver-Leaf-Restaurant.png',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_ImagesDining.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_ImagesDining2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf2.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf3.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf4.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf5.jpg' } ,
+        { imageFile: '/imgs/ourHotel/H2-Dining/H2E-Silverleaf/Our Hotel Section_Imagessilverleaf6.jpg' }     ]
     },
     {
         id: 6,
@@ -153,7 +169,7 @@ const ourhotel_Dinings = [
             <p>The Club lounge is open during the day for guests to work or relax in.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on level 19",
+            location: "Located on Level 19",
             cuisine: "Bar, Casual dining",
             wifi: "Yes",
             takeaway: "No",
@@ -162,7 +178,8 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2F-Executive club/Our Hotel Section_Images4.jpg' }     ]
     },    
     {
         id: 7,
@@ -174,7 +191,7 @@ const ourhotel_Dinings = [
             <p>Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.</p>`,
         details: {
             call: false,
-            location: "Located on level 19",
+            location: "Located on Level 19",
             cuisine: "Bar",
             wifi: "Yes",
             takeaway: "No",
@@ -183,7 +200,8 @@ const ourhotel_Dinings = [
             cards: "AMEX, MC, Visa",
             price_guide: false
         },
-        mapImage: ''
+        mapImage: '',
+        images: [         { imageFile: '/imgs/ourHotel/H2-Dining/H2G-Mezz Bar/Our Hotel Section_Images3.jpg' }     ]
     }
     
 ];
@@ -233,34 +251,29 @@ const images = [
 ];
 
 /// Image Garllery
-const renderImages = () => {
+const renderImages = (restaurant) => {
+    const {  images } = restaurant;
     if (images.length > 1) {
         return imageGallery(images, "100%", "27vh");
-    } else if (images.length === 1) {
+    }
+    else if (images.length == 1) {
+        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+    }
+    else {
         return (
             <div
                 style={{
-                    height: "50%",
-                    backgroundImage: `url(${images[0].imageFile})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center"
-                }}
-            />
-        );
-    } else {
-        return (
-            <div
-                style={{
-                    height: "50%",
                     backgroundColor: HeavyOrange,
-                    ...styles.horizontalVerticalCenter
+                    height: "100%",
+                    padding: "30px"
                 }}
             >
-                <h1>NO IMAGE FOR THIS RESAURANT </h1>
+                <h1>NO IMAGE FOR THIS RESTAURANT</h1>
             </div>
         );
     }
-};
+}
+
 
 const DiningDetails = props => {
     const id = props.match.params.id;
@@ -334,8 +347,7 @@ const DiningDetails = props => {
             <div >
                 <div className='event-main'>
                     <div style={{ height: "50%", width: "100%" }}>
-                        <img src={_DingingsDetails.title_img} style={{ height: '100%', width: '100%' }} />
-
+                        {renderImages(_DingingsDetails)}
                     </div>
                     <div style={{ height: "50%", width: "100%" }}>
                     <div
