@@ -73,6 +73,22 @@ class DestinationDetail extends React.Component {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
         let destinationsDetail = destinations.find(item => item.id == _id);
+        let mapInfo = [];
+        if (destinationsDetail.CityMap) {
+            mapInfo.push({
+                title: destinationsDetail.state,
+                buttonTitle: destinationsDetail.state + " map",
+                mapImage: destinationsDetail.CityMap
+            });
+        }
+        if (destinationsDetail.mapImage) {
+            mapInfo.push({
+                title: destinationsDetail.title,
+                buttonTitle: destinationsDetail.title + " map",
+                mapImage: destinationsDetail.mapImage
+            });
+        }
+
         return (
             <div
                 style={{
@@ -141,43 +157,29 @@ class DestinationDetail extends React.Component {
                                     )}
                                 </div>
                                 <div className="destination-main--details--bottom--right--btnContainer">
-                                    <div style={{ marginBottom: "6%" }}>
-                                        <MapModal
-                                            buttonTitle={
-                                                destinationsDetail.state +
-                                                " map"
-                                            }
-                                            title={destinationsDetail.state}
-                                            buttonStyle={
-                                                this.styles.mapButtonStyle
-                                            }
-                                            textStyle={
-                                                this.styles.mapButtonTextStyle
-                                            }
-                                            mapImage={
-                                                destinationsDetail.CityMap
-                                            }
-                                        />
-                                    </div>
-                                    <div style={{}}>
-                                        <MapModal
-                                            buttonTitle={
-                                                destinationsDetail.title +
-                                                " map"
-                                            }
-                                            title={destinationsDetail.title}
-                                            buttonStyle={
-                                                this.styles.mapButtonStyle
-                                            }
-                                            textStyle={
-                                                this.styles.mapButtonTextStyle
-                                            }
-                                            mapImage={
-                                                destinationsDetail.mapImage
-                                            }
-                                        />
-                                    </div>
-                                    
+                                   {mapInfo.map((item, index)=>{
+                                       const firstStyle = (index == 0) ? { marginBottom: "6%" } : {};
+                                       return (
+                                        <div key={index} style={firstStyle}>
+                                            <MapModal
+                                                buttonTitle={
+                                                    item.buttonTitle
+                                                }
+                                                title={item.title}
+                                                buttonStyle={
+                                                    this.styles.mapButtonStyle
+                                                }
+                                                textStyle={
+                                                    this.styles.mapButtonTextStyle
+                                                }
+                                                mapImage={
+                                                    item.mapImage
+                                                }
+                                            />
+                                        </div>
+                                       )
+                                   })}
+                                   
                                 </div>
                             </div>
                         </div>
