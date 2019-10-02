@@ -47,8 +47,8 @@ const ourhotel_Dinings = [
             <p>Open breakfast, lunch and dinner from 6am to 10pm.</p>`,
         details: {
             call: "+675 302 8888",
-            location: "Located on the ground floor",
-            cuisine: "Chinese & ThaiInternational Contemporary Cuisine",
+            location: "Located on the Ground Floor",
+            cuisine: "International Contemporary Cuisine",
             wifi: "Yes",
             takeaway: "No",
             secure_parking: "Yes",
