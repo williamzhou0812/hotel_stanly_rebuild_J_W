@@ -161,7 +161,7 @@ class ActivityDestinationDetail extends React.Component {
                         backgroundColor: "rgb(5, 151, 165)"
                     }}
                 >
-                    <div style={{ height: "40%" }}>
+                    <div style={{ height: "42%" }}>
                         <div
                             style={{ height: "100%", width: "100%" }}
                             className="slide-container"
