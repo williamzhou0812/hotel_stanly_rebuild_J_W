@@ -37,6 +37,7 @@ class ActivityDestinationList extends React.Component {
                     sideTitle="ACTIVITIES"
                     mainTitle={activity.title}
                     maps={destinations.mapActivity}
+                    thumbnailStyle={{ width: "316px", height: "137.3px"}}
                 ></SubsectionList>
             </div>
         );
