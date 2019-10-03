@@ -16,14 +16,29 @@ import "./Activity.scss";
 import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
 import mapIcon from "../../../components/MainContents/icons/MapIcon.png";
 import divingIcon from "../../../components/MainContents/icons/DIVING.svg";
+import { activities } from "./ActivityData";
 
-class ActivityDestinationDetail1 extends React.Component {
+class ActivityDestinationDetail extends React.Component {
     constructor(props) {
         super(props);
+
+        // get current activtity and destination
+        const id = props.match.params.id;
+        const _id = parseInt(id);
+        const activity = activities.find(item => item.id == _id);
+        const { destinations } = activity;
+        const subid = props.match.params.subid;
+        const _subid = parseInt(subid);
+        const destination = destinations.find(item => item.id == _subid);
+
+        // set state
         this.state = {
             activeId: 0,
-            L: this.divingList.length - 1,
-            count: 0
+            L: destinations.length - 1,
+            count: 0,
+            activity,
+            destinations,
+            destination
         };
     }
 
@@ -73,178 +88,8 @@ class ActivityDestinationDetail1 extends React.Component {
         }
     }
 
-    divingList = [
-        {
-            id: 1,
-            title: "PORT MORESBY",
-            img_url: "/imgs/activity/ACTIVITIES-DIVING-GALLERY_P.jpg",
-            mapActivity: "./images/maps/activities/A1-map.png",
-            overView:
-                " Susie’s Bommie, located just fifteen minutes from Port Moresby, is touted as world class because of its spectacular coral reef garden. With a seamount protruding 30 metres from the seabed, the site attracts a diverse range of marine life from the pygmy seahorse to pelagic varieties of fish. Other dives worth checking out are Pumpkin Patch, MV Pacific Gas, End Bommie and Eastern Fields.",
-
-            details: [
-                {
-                    associate: "The Dive Centre",
-                    phone: "+675 7202 1200",
-                    email: "info@divecentre.com.pg",
-                    website: "www.divecentre.com.pg"
-                }
-            ]
-        },
-        {
-            id: 2,
-            title: "MADANG",
-            img_url: "/imgs/activity/ACTIVITIES-DIVING-GALLERY_T.jpg",
-            mapActivity: "./images/maps/activities/A1-map.png",
-            overView:
-                "Madang serves up an exciting dive at Planet Rock which features a volcanic seamount and a number of amazing sea creatures such as the renowned clown fish, hammerhead sharks and pelagic species. Magic Passage is the most popular site for divers to the region. The combination of fish such as rainbowfish, bannerfish and silvery jacks provides a cavalcade of stunning colour along with the hard and soft corals.",
-
-            details: [
-                {
-                    associate: "Jais Aben Resort",
-                    phone: "+675 423 3111",
-                    email: "jaisaben@global.net.pg",
-                    website: "www.jaisabenresort.com"
-                },
-                {
-                    associate: "Niugini Dive Adventures",
-                    phone: "+675 422 2655",
-                    email: "nda@mtspng.com",
-                    website: "www.niuginidive.com"
-                }
-            ]
-        },
-
-        {
-            id: 3,
-            title: "TUFI",
-            img_url: "/imgs/activity/ACTIVITIES-DIVING-GALLERY_P2.jpg",
-            mapActivity: "./images/maps/activities/A1-map.png",
-            overView:
-                "Tufi’s underwater world lights up in a kaleidoscope of colour, offering great visibility all year round to explore its fjords and WWII wrecks. For reef diving, divers can try Black Rocks, Cyclone Cay, Stewarts Reef and Shark Tip. Wreck diving offers the renowned Blackjack site.",
-
-            details: [
-                {
-                    associate: "Tufi Dive Resort",
-                    phone: "+675 323 3462",
-                    email: "reservations@tufiresort.com",
-                    website: "www.tufidive.com"
-                }
-            ]
-        },
-        {
-            id: 4,
-            title: " MILNE BAY",
-            img_url: "/imgs/activity/ACTIVITIES-DIVING-GALLERY_P3.jpg",
-            mapActivity: "./images/maps/activities/A1-map.png",
-            overView:
-                " Like most sites in PNG, Tania’s Reef in Milnes Bay is flush with colourful",
-
-            details: [
-                {
-                    associate: "Doini Island Plantation Resort",
-                    phone: "+61 434 060 530",
-                    email: "teresa.levy@rocketmail.com",
-                    website: "www.doiniisland.com"
-                },
-                {
-                    associate: "Tawali Resort",
-                    phone: "+675 7364 0607",
-                    email: "reservations@tawali.com",
-                    website: "www.tawali.com"
-                }
-            ]
-        },
-        {
-            id: 5,
-            title: " WEST NEW BRITAIN - Kimbe Bay",
-            img_url: "/imgs/activity/ACTIVITIES-DIVING-GALLERY_P4.jpg",
-            mapActivity: "./images/maps/activities/A1-map.png",
-            overView:
-                "Zero is the most accessible wreck in West New Britain. In WWII, the aircraft ran out of fuel and was force-landed close to shore so that the pilot could alight safely. The wreck stayed hidden for almost 57 years and was eventually discovered by a spear fisherman. Other popular sites include South Emma, Fathers Reef and Susan’s  Reef which offer reef diving among brightly coloured coral, red whip gorgonians and other amazing sea creatures. ",
-
-            details: [
-                {
-                    associate: "Walindi Resort",
-                    phone: "+675 7234 8460",
-                    email: "resort@walindifebrina.com",
-                    website: "www.walindifebrina.com"
-                },
-                {
-                    associate: "Liamo Reef Resort",
-                    phone: "+675  983 4368",
-                    email: "reservations@liamoreefresort.com",
-                    website: "www.liamoreefresort.com"
-                }
-            ]
-        },
-        {
-            id: 6,
-            title: " EAST NEW BRITAIN - KOKOPO",
-            img_url: "/imgs/activity/ACTIVITIES-DIVING-GALLERY_P5.jpg",
-            mapActivity: "./images/maps/activities/A1-map.png",
-            overView:
-                "The WWII wrecks that litter the reefs surrounding East New Britain offer excellent visibility all year round. Simpson Harbour is excellent for war wrecks and the Beehives also offer great diving. The most accessible wreck  in the region is Zero which lies within proximity to Walindi. South Emma, Fathers Reef and Susans Reef all offer their own unique reef diving among brightly coloured coral, red whip gorgonians and other amazing sea creatures.",
-
-            details: [
-                {
-                    associate: "Rabaul-Kokopo Dive",
-                    phone: "+675 7947 4892",
-                    email: "admin@rabaul-kokopodive.com",
-                    website: "rabaul-kokopodive.com"
-                },
-                {
-                    associate: "Kokopo Beach Bungalow Resort",
-                    phone: "+675 982 8788",
-                    email: "reservations@kbb.com.pg",
-                    website: "www.kbb.com.pg"
-                },
-                {
-                    associate: "Rapopo Plantation Resort",
-                    phone: "+675 982 9944",
-                    email: "reservations@rapopo.com",
-                    website: "www.rapopo.com"
-                }
-            ]
-        },
-        {
-            id: 7,
-            title: "NEW IRELAND - KAVIENG",
-            img_url: "/imgs/activity/ACTIVITIES-DIVING-GALLERY_P6.jpg",
-            mapActivity: "./images/maps/activities/A1-map.png",
-            overView:
-                "Diving spots are plentiful in the region, with WWII wrecks dotted throughout Kavieng Harbour. Near Nusa Island lies the famed Echuca Patch and Der Yang wreck. Between the north of New Ireland and New Hanover, the region is flush with superb dive sites. Albatross Passage, New Ireland’s most renowned dive site, features stunning marine life.",
-
-            details: [
-                {
-                    associate: "Lissenung Resort",
-                    phone: "+675 7234 5834",
-                    email: "info@lissenung.com",
-                    website: "www.lissenung.com"
-                },
-                {
-                    associate: "Nusa Island Retreat",
-                    phone: "+675 7231 8302",
-                    email: "info@nusaislandretreat.com",
-                    website: "www.nusaislandretreat.com"
-                },
-                {
-                    associate: "Niugini Dive Adventures",
-                    phone: "+675 422 2655",
-                    email: "nda@madangresort.com",
-                    website: "www.niuginidive.com"
-                }
-            ]
-        }
-    ];
-
     render() {
-        const divingDetail = this.divingList[
-            parseInt(this.props.match.params.id)
-        ];
-        //   const { restaurant, status } = this.props;
-        // const { divingList } = this.state;
-
+        const { destination } = this.state;
         return (
             <div
                 style={{
@@ -332,7 +177,7 @@ class ActivityDestinationDetail1 extends React.Component {
                         >
                             <img
                                 style={{ height: "100%", width: "100%" }}
-                                src={divingDetail.img_url}
+                                src={destination.img_url}
                             />
                         </div>
                     </div>
@@ -381,7 +226,7 @@ class ActivityDestinationDetail1 extends React.Component {
                                         margin: "0 auto"
                                     }}
                                 >
-                                    {divingDetail.title}
+                                    {destination.title}
                                 </span>
                             </div>
                             <Link
@@ -396,136 +241,136 @@ class ActivityDestinationDetail1 extends React.Component {
                         </div>
 
                         <div className="activity-main-middle--description">
-                            <p>{divingDetail.overView}</p>
+                            <p>{destination.overView}</p>
                         </div>
                         <div className="activity-main-middle--moreInfo">
                             <span>FOR MORE INFORMATION CONTACT:</span>
                         </div>
                     </div>
                     <div className="activity-main-bottom">
-                        {divingDetail.details.length === 1 && (
+                        {destination.details.length === 1 && (
                             <div className="activity-main-bottom--D1">
                                 <div>
                                     <span>
-                                        {divingDetail.details[0].associate.toUpperCase()}
+                                        {destination.details[0].associate.toUpperCase()}
                                     </span>
                                 </div>
                                 <div>
                                     <span>
-                                        PH: {divingDetail.details[0].phone}
+                                        PH: {destination.details[0].phone}
                                     </span>
                                     <span>
-                                        W: {divingDetail.details[0].website}
+                                        W: {destination.details[0].website}
                                     </span>
                                 </div>
                                 <div>
-                                    <span>{divingDetail.details[0].email}</span>
+                                    <span>{destination.details[0].email}</span>
                                 </div>
                             </div>
                         )}
-                        {divingDetail.details.length === 2 && (
+                        {destination.details.length === 2 && (
                             <div style={{ height: "100%" }}>
                                 <div className="activity-main-bottom--D2">
                                     <div>
                                         <span>
-                                            {divingDetail.details[0].associate.toUpperCase()}
+                                            {destination.details[0].associate.toUpperCase()}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            PH: {divingDetail.details[0].phone}
+                                            PH: {destination.details[0].phone}
                                         </span>
                                         <span>
-                                            W: {divingDetail.details[0].website}
+                                            W: {destination.details[0].website}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            {divingDetail.details[0].email}
+                                            {destination.details[0].email}
                                         </span>
                                     </div>
                                 </div>
                                 <div className="activity-main-bottom--D2">
                                     <div>
                                         <span>
-                                            {divingDetail.details[1].associate.toUpperCase()}
+                                            {destination.details[1].associate.toUpperCase()}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            PH: {divingDetail.details[1].phone}
+                                            PH: {destination.details[1].phone}
                                         </span>
                                         <span>
-                                            W: {divingDetail.details[1].website}
+                                            W: {destination.details[1].website}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            {divingDetail.details[1].email}
+                                            {destination.details[1].email}
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         )}
-                        {divingDetail.details.length === 3 && (
+                        {destination.details.length === 3 && (
                             <div style={{ height: "100%" }}>
                                 <div className="activity-main-bottom--D3">
                                     <div>
                                         <span>
-                                            {divingDetail.details[0].associate.toUpperCase()}
+                                            {destination.details[0].associate.toUpperCase()}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            PH: {divingDetail.details[0].phone}
+                                            PH: {destination.details[0].phone}
                                         </span>
                                         <span>
-                                            W: {divingDetail.details[0].website}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            {divingDetail.details[0].email}
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="activity-main-bottom--D3">
-                                    <div>
-                                        <span>
-                                            {divingDetail.details[1].associate.toUpperCase()}
+                                            W: {destination.details[0].website}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            PH: {divingDetail.details[1].phone}
-                                        </span>
-                                        <span>
-                                            W: {divingDetail.details[1].website}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            {divingDetail.details[1].email}
+                                            {destination.details[0].email}
                                         </span>
                                     </div>
                                 </div>
                                 <div className="activity-main-bottom--D3">
                                     <div>
                                         <span>
-                                            {divingDetail.details[2].associate.toUpperCase()}
+                                            {destination.details[1].associate.toUpperCase()}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            PH: {divingDetail.details[2].phone}
+                                            PH: {destination.details[1].phone}
                                         </span>
                                         <span>
-                                            W: {divingDetail.details[2].website}
+                                            W: {destination.details[1].website}
                                         </span>
                                     </div>
                                     <div>
                                         <span>
-                                            {divingDetail.details[2].email}
+                                            {destination.details[1].email}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="activity-main-bottom--D3">
+                                    <div>
+                                        <span>
+                                            {destination.details[2].associate.toUpperCase()}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            PH: {destination.details[2].phone}
+                                        </span>
+                                        <span>
+                                            W: {destination.details[2].website}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            {destination.details[2].email}
                                         </span>
                                     </div>
                                 </div>
@@ -537,4 +382,4 @@ class ActivityDestinationDetail1 extends React.Component {
         );
     }
 }
-export default ActivityDestinationDetail1;
+export default ActivityDestinationDetail;

@@ -22,7 +22,7 @@ class ActivityDestinationList extends React.Component {
                 <SubsectionList
                     numberOfEntries={4}
                     data={destinations}
-                    namespace={activityNamespace + _id}
+                    namespace={activityNamespace + '/' + _id }
                     imageKey="logo"
                     isImageArray={false}
                     sideButtons={[

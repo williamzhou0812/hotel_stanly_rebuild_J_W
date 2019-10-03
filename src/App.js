@@ -90,10 +90,7 @@ import ActivityList from "./components/MainContents/Activity/ActivityList";
 
 import ActivityDestinationList from "./components/MainContents/Activity/ActivityDestinationList";
 
-import ActivityDestinationDetail1 from "./components/MainContents/Activity/ActivityDestinationDetail1";
-import ActivityDestinationDetail2 from "./components/MainContents/Activity/ActivityDestinationDetail2";
-import ActivityDestinationDetail3 from "./components/MainContents/Activity/ActivityDestinationDetail3";
-import ActivityDestinationDetail4 from "./components/MainContents/Activity/ActivityDestinationDetail4";
+import ActivityDestinationDetail from "./components/MainContents/Activity/ActivityDestinationDetail";
 import PassengerAirline from "./components/MainContents/Service/transport/passengerAirline";
 import PassengerAirlineDetail from "./components/MainContents/Service/transport/subpages/passengerAirlineDetail";
 
@@ -314,24 +311,10 @@ function App() {
                     
                     <Route
                         exact
-                        path={activityNamespace + "/1" + "/:id"}
-                        component={ActivityDestinationDetail1}
+                        path={activityNamespace + "/:id/:subid"}
+                        component={ActivityDestinationDetail}
                     />
-                    <Route
-                        exact
-                        path={activityNamespace + "/2" + "/:id"}
-                        component={ActivityDestinationDetail2}
-                    />
-                    <Route
-                        exact
-                        path={activityNamespace + "/3" + "/:id"}
-                        component={ActivityDestinationDetail3}
-                    />
-                    <Route
-                        exact
-                        path={activityNamespace + "/4" + "/:id"}
-                        component={ActivityDestinationDetail4}
-                    />
+                    
                     <Route exact path="/videos" component={mainComponent} />
                 </Switch>
                 <Footer />
