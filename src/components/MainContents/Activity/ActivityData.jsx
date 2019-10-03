@@ -170,24 +170,80 @@ export const activities = [
         url: activityNamespace,
         destinations: divingList,
         map_image: '/imgs/activity/A1-Diving/Map/MAP_Diving.png',
-        icon: divingIcon
+        icon: divingIcon,
+        images: [
+            { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P.jpg' },
+            { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P2.jpg' },
+            { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P3.jpg' },
+            { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P4.jpg' },
+            { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P5.jpg' },
+            { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P6.jpg' },
+            { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P7.jpg' }
+        ]
     },
     {
         id: 2,
         title: 'SURFING',
         url: activityNamespace,
-        map_image: ''
+        map_image: '',
+        icon: divingIcon,
+        images: [
+            { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P.jpg' },
+            { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P2.jpg' },
+            { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P3.jpg' },
+            { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P4.jpg' },
+            { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P5.jpg' },
+        ]
     },
     {
         id: 3,
         title: 'FISHING',
         url: activityNamespace,
-        map_image: ''
+        map_image: '',
+        icon: divingIcon,
+        images: [
+            { imageFile: '/imgs/activity/A3-Fishing/ACTIVITIES-FISHING-GALLERYIMAGES_P.jpg' },
+            
+        ]
     },
     {
         id: 4,
         title: 'TREKKING',
         url: activityNamespace,
-        map_image: ''
+        map_image: '',
+        icon: divingIcon,
+        images: [
+            { imageFile: '/imgs/activity/A4-Trekking/ACTIVITIES-TREKKING-GALLERYIMAGES_P.jpg' },
+        ]
+    },
+    {
+        id: 5,
+        title: 'BIRDWATCHING',
+        url: activityNamespace,
+        map_image: '',
+        icon: divingIcon,
+        images: [
+            { imageFile: '/imgs/activity/A5-Birwatching/ACTIVITIES-BIRDWATCHING-GALLERYIMAGES_P.jpg' }
+        ]
+    },
+    {
+        id: 6,
+        title: 'CULTURE',
+        url: activityNamespace,
+        map_image: '',
+        icon: divingIcon,
+        images: [
+            { imageFile: '/imgs/activity/A6-Culture/ACTIVITIES-CULTURE-GALLERYIMAGES_P.jpg' }
+        ]
+    },
+    {
+        id: 7,
+        title: 'ATTRACTIONS',
+        url: activityNamespace,
+        map_image: '',
+        icon: divingIcon,
+        images: [
+            { imageFile: '/imgs/activity/A7-Attractions/ACTIVITIES-ATTRACTIONS-GALLERYIMAGES_P.jpg' }
+        ]
     }
 ]

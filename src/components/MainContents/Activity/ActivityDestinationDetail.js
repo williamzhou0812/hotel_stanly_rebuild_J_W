@@ -23,23 +23,10 @@ class ActivityDestinationDetail extends React.Component {
     constructor(props) {
         super(props);
 
-        // get current activtity and destination
-        const id = props.match.params.id;
-        const _id = parseInt(id);
-        const activity = activities.find(item => item.id == _id);
-        const { destinations } = activity;
-        const subid = props.match.params.subid;
-        const _subid = parseInt(subid);
-        const destination = destinations.find(item => item.id == _subid);
-
+       
         // set state
         this.state = {
-            activeId: 0,
-            L: destinations.length - 1,
-            count: 0,
-            activity,
-            destinations,
-            destination
+
         };
     }
 
@@ -66,31 +53,47 @@ class ActivityDestinationDetail extends React.Component {
         }
     };
 
-    getNextLink() {
-        var count = parseInt(`${this.props.match.params.id}`);
-        count = count + 1;
 
-        if (count > this.state.L) {
-            // count = 0;
-            return `${activityNamespace + "/1"}/0`;
-        } else {
-            return `${activityNamespace + "/1"}/${count}`;
+    /// Image Garllery
+    renderImages(activity) {
+        const {  images } = activity;
+        if (images.length > 1) {
+            return imageGallery(images, "100%", "22.7vh");
         }
-    }
-
-    getPrevLink() {
-        var count = parseInt(`${this.props.match.params.id}`);
-        count = count - 1;
-
-        if (count < 1) {
-            return `${activityNamespace + "/1"}/${this.state.L}`;
-        } else {
-            return `${activityNamespace + "/1"}/${count}`;
+        else if (images.length == 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        }
+        else {
+            return (
+                <div
+                    style={{
+                        backgroundColor: HeavyOrange,
+                        height: "100%",
+                        padding: "30px"
+                    }}
+                >
+                    <h1>NO IMAGE FOR THIS ACTIVITY</h1>
+                </div>
+            );
         }
     }
 
     render() {
-        const { destination, activity } = this.state;
+         // get current activtity and destination
+         const id = this.props.match.params.id;
+         const _id = parseInt(id);
+         const activity = activities.find(item => item.id == _id);
+         const { destinations } = activity;
+         const subid = this.props.match.params.subid;
+         const _subid = parseInt(subid);
+         const destination = destinations.find(item => item.id == _subid);
+
+        const currentIdx = destinations.indexOf(destination);
+        const prev_idx = (currentIdx - 1 < 0) ?  destinations.length -1 : currentIdx - 1;
+        const next_idx = (currentIdx + 1 >= destinations.length) ? 0 : currentIdx + 1;
+        const prev_id = destinations[prev_idx].id;
+        const next_id = destinations[next_idx].id;
+
         return (
             <div
                 style={{
@@ -166,10 +169,8 @@ class ActivityDestinationDetail extends React.Component {
                             style={{ height: "100%", width: "100%" }}
                             className="slide-container"
                         >
-                            <img
-                                style={{ height: "100%", width: "100%" }}
-                                src={destination.img_url}
-                            />
+                            {this.renderImages(activity)}
+                           
                         </div>
                     </div>
 
@@ -186,7 +187,7 @@ class ActivityDestinationDetail extends React.Component {
                                 ...this.styles.horizontalVerticalCenter
                             }}
                         >
-                            <span> DIVING</span>
+                            <span>{activity.title.toUpperCase()}</span>
                         </div>
                         <div
                             style={{
@@ -196,7 +197,7 @@ class ActivityDestinationDetail extends React.Component {
                             }}
                         >
                             <Link
-                                to={this.getPrevLink()}
+                                to={'/activities/' + activity.id + '/' + prev_id}
                                 className="event-nextPre-btn"
                                 style={{
                                     ...this.styles.horizontalVerticalCenter
@@ -221,7 +222,7 @@ class ActivityDestinationDetail extends React.Component {
                                 </span>
                             </div>
                             <Link
-                                to={this.getNextLink()}
+                                to={'/activities/' + activity.id + '/' + next_id}
                                 className="event-nextPre-btn"
                                 style={{
                                     ...this.styles.horizontalVerticalCenter
