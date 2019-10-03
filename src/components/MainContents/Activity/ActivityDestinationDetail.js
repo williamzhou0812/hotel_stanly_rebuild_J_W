@@ -144,7 +144,7 @@ class ActivityDestinationDetail extends React.Component {
                             <img
                                 className="leftSide-menu--img"
                                 src={activity.icon}
-                                alt="Diving Icon"
+                                alt="Activity Icon"
                             />
                             <div className="menu-title">{activity.title} AREAS</div>
                         </div>
