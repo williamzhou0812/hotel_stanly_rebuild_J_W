@@ -125,9 +125,10 @@ class SubsectionList extends React.Component {
                             } else if (item.isMap) {
                                 return (
                                     <SidebarMapModel
+                                        key={index}
                                         item={item}
                                         mainTitle={mainTitle}
-                                        // maps={maps}
+                                        mapImage={item.map}
                                     />
                                 );
                             } else {

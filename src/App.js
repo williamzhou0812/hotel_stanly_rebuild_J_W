@@ -88,10 +88,7 @@ import MeetingDetails from "./components/MainContents/OurHotel/MeetingDetails";
 // 5.9
 import ActivityList from "./components/MainContents/Activity/ActivityList";
 
-import ActivityDestinationList1 from "./components/MainContents/Activity/ActivityDestinationList1";
-import ActivityDestinationList2 from "./components/MainContents/Activity/ActivityDestinationList2";
-import ActivityDestinationList3 from "./components/MainContents/Activity/ActivityDestinationList3";
-import ActivityDestinationList4 from "./components/MainContents/Activity/ActivityDestinationList4";
+import ActivityDestinationList from "./components/MainContents/Activity/ActivityDestinationList";
 
 import ActivityDestinationDetail1 from "./components/MainContents/Activity/ActivityDestinationDetail1";
 import ActivityDestinationDetail2 from "./components/MainContents/Activity/ActivityDestinationDetail2";
@@ -311,24 +308,10 @@ function App() {
                     />
                     <Route
                         exact
-                        path={activityNamespace + "/1"}
-                        component={ActivityDestinationList1}
+                        path={activityNamespace + "/:id"}
+                        component={ActivityDestinationList}
                     />
-                    <Route
-                        exact
-                        path={activityNamespace + "/2"}
-                        component={ActivityDestinationList2}
-                    />
-                    <Route
-                        exact
-                        path={activityNamespace + "/3"}
-                        component={ActivityDestinationList3}
-                    />
-                    <Route
-                        exact
-                        path={activityNamespace + "/4"}
-                        component={ActivityDestinationList4}
-                    />
+                    
                     <Route
                         exact
                         path={activityNamespace + "/1" + "/:id"}

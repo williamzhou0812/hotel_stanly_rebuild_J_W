@@ -8,8 +8,8 @@ export const maps = [
     {
         id: 2,
         title: "PORT MORESBY AIRPORT",
-        img_url: "/imgs/maps/mapsImg/Port-Moresby-Map-PORTMORESBY.png",
-        mapImage: "/imgs/maps/mapsImg/Port-Moresby-Map-PORTMORESBY.png"
+        img_url: "/imgs/maps/mapsImg/PortMoresbyAirportMap.png",
+        mapImage: "/imgs/maps/mapsImg/PortMoresbyAirportMap.png"
     },
     {
         id: 3,
