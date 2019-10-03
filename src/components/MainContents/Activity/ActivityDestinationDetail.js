@@ -12,10 +12,11 @@ import {
 } from "../../../Constants";
 import { Link } from "react-router-dom";
 import ActivityListIcon from "./icons/ActivityListIcon.png";
+import SidebarMapModel from "../Maps/SidebarMapModel";
 import "./Activity.scss";
 import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
 import mapIcon from "../../../components/MainContents/icons/MapIcon.png";
-import divingIcon from "../../../components/MainContents/icons/DIVING.svg";
+
 import { activities } from "./ActivityData";
 
 class ActivityDestinationDetail extends React.Component {
@@ -89,7 +90,7 @@ class ActivityDestinationDetail extends React.Component {
     }
 
     render() {
-        const { destination } = this.state;
+        const { destination, activity } = this.state;
         return (
             <div
                 style={{
@@ -122,11 +123,16 @@ class ActivityDestinationDetail extends React.Component {
                                 src={activityListIcon}
                                 alt="All ACTIVITIES Icon"
                             />
-                            <div className="menu-title">All ACTIVITIES</div>
+                            <div className="menu-title">ALL ACTIVITIES</div>
                         </div>
                     </Link>
+                    <SidebarMapModel
+                        item={{ title: activity.title + " MAP", icon: mapIcon, isMap: true, map: activity.map_image }}
+                        mainTitle={activity.title}
+                        mapImage={activity.map_image}
+                    />
                     <Link
-                        to="/activities/1"
+                        to={"/activities/" + activity.id}
                         style={{
                             textDecoration: "none"
                         }}
@@ -134,25 +140,10 @@ class ActivityDestinationDetail extends React.Component {
                         <div className="leftSide-menu--container">
                             <img
                                 className="leftSide-menu--img"
-                                src={mapIcon}
-                                alt="DIVING MAP"
-                            />
-                            <div className="menu-title">DIVING MAP</div>
-                        </div>
-                    </Link>
-                    <Link
-                        to="/activities/1"
-                        style={{
-                            textDecoration: "none"
-                        }}
-                    >
-                        <div className="leftSide-menu--container">
-                            <img
-                                className="leftSide-menu--img"
-                                src={divingIcon}
+                                src={activity.icon}
                                 alt="Diving Icon"
                             />
-                            <div className="menu-title">DIVING AREAS</div>
+                            <div className="menu-title">{activity.title} AREAS</div>
                         </div>
                     </Link>
                     <div className="vertical-title">

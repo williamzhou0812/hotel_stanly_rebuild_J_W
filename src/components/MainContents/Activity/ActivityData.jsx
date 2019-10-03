@@ -1,5 +1,5 @@
 import { activityNamespace } from '../../../Constants';
-
+import divingIcon from ".././icons/DIVING.svg";
 
 
 export const divingList =  [
@@ -169,7 +169,8 @@ export const activities = [
         title: 'DIVING',
         url: activityNamespace,
         destinations: divingList,
-        map_image: '/imgs/activity/A1-Diving/Map/MAP_Diving.png'
+        map_image: '/imgs/activity/A1-Diving/Map/MAP_Diving.png',
+        icon: divingIcon
     },
     {
         id: 2,
