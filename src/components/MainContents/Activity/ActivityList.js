@@ -9,17 +9,11 @@ import AV3 from './images/ACTIVITIES-FISHING-GALLERYIMAGES_P.jpg';
 import { activities } from './ActivityData';
 
 class ActivityList extends React.Component {
-    
-
-    images = [
-        AV1,
-        AV2,
-        AV3,
-        AV4
-    ];
-
+   
     render() {
-
+        const images = activities.map(item => {
+            return item.images[0].imageFile
+        });
         return (
             <div
                 className="section--bottom--animation"
@@ -27,7 +21,7 @@ class ActivityList extends React.Component {
             >
                 <SectionList
                     data={activities}
-                    images={this.images}
+                    images={images}
                     title="ACTIVITIES"
                     namespace="activities"
                 // namespace={this.activities.title}
