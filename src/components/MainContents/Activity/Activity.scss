@@ -97,13 +97,16 @@
     }
 
     &--description {
-        height: 63%;
+        height: 43%;
         background-color: $ExtraHeavyBlueGreen;
         text-align: left;
         letter-spacing: 1px;
-        font-size: $p;
-        padding: 3%;
-        overflow: hidden;
+        font-size: 20px;
+        line-height: 130%;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        overflow: scroll;
         @include for-size(small-phone) {
             letter-spacing: 0px !important;
         }
