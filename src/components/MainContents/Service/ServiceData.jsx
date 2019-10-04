@@ -10,6 +10,15 @@ import CommissionsIcon from "../icons/Services_Icons-Embassy.svg";
 import MedicalIcon from "../icons/Services_Icons-Medical.svg";
 import SecurityIcon from "../icons/Services_Icons-Security.svg";
 
+import FreightIcon from "../icons/Services_Icons-Freight.svg";
+import CarHireIcon from "../icons/Services_Icons-CarHire.svg";
+import AirTransportIcon from "../icons/Services_Icons-AirTransport-05.svg";
+
+import MinesIcon from "../icons/Services Icons-Mines.svg";
+import OfficialDepartmentsIcon from "../icons/Services Icons-OfficialDepartments.svg";
+import AricultureIcon from "../icons/Services_Icons-Agriculture.svg";
+import PetroleumIcon from "../icons/Services_Icons-Petroleum.svg";
+
 
 export const essentialData = [
     {
@@ -56,32 +65,28 @@ export const essentialData = [
 
 export const transportData = [
     {
-        id: "Fright",
+        id: "AirTransportService",
+        serviceTypes: "transport",
+        title: "AIR TRANSPORT SERVICES (PASSNEGER)",
+        url: transportNamespace + "/:serid",
+        img_url: AirTransportIcon,
+        isIcon: true
+    },
+    {
+        id: "FreightServices",
         serviceTypes: "transport",
         title: "FREIGHT SERVICES",
         url: transportNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: FreightIcon,
+        isIcon: true
     },
     {
-        id: "Airline",
-        serviceTypes: "transport",
-        title: "PASSENGER AIRLINE SERVICES",
-        url: transportNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
-    },
-    {
-        id: "Hire",
+        id: "VehicleHire",
         serviceTypes: "transport",
         title: "VEHICLE HIRE",
         url: transportNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
-    },
-    {
-        id: "TransportInfo",
-        serviceTypes: "transport",
-        title: "MORE INFO",
-        url: transportNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: CarHireIcon,
+        isIcon: true
     }
 ];
 
@@ -91,28 +96,32 @@ export const  miningData = [
         serviceTypes: "mining",
         title: "MINES",
         url: miningNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: MinesIcon,
+        isIcon: true
     },
     {
-        id: "Agriculture",
+        id: "OfficialDepartments",
         serviceTypes: "mining",
-        title: "AGRICULTURE",
+        title: "OFFICIAL DEPARTMENTS",
         url: miningNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: OfficialDepartmentsIcon,
+        isIcon: true
     },
     {
         id: "Petroleum",
         serviceTypes: "mining",
-        title: "PETROLEUM & GAS",
+        title: "PETROLEUM & GAS IN PNG",
         url: miningNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: PetroleumIcon,
+        isIcon: true
     },
     {
-        id: "Departments",
+        id: "Argiculture",
         serviceTypes: "mining",
-        title: "OFFICIAL DEPARTMENTS",
+        title: "AGRICULTURE",
         url: miningNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: AricultureIcon,
+        isIcon: true
     }
 ];
 
