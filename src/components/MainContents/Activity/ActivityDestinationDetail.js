@@ -206,7 +206,7 @@ class ActivityDestinationDetail extends React.Component {
                                 style={{
                                     flexBasis: "72%",
                                     textAlign: "center",
-                                    paddingTop: "10px"
+                                    paddingTop: "12px"
                                 }}
                             >
                                 <span
