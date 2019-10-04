@@ -208,8 +208,8 @@ class SubsectionList extends React.Component {
                                         <div>
                                             {item.isIcon && (
                                                 <div style={thumbnailStyle}>
-                                                    <div style={this.props.iconStyle}>
-                                                    <img src={item.img_url} style={{ width: '100%', height: 'auto'}}/>
+                                                    <div >
+                                                    <img src={item.img_url} style={this.props.iconStyle}/>
                                                     </div>
                                                 </div>
                                             )}

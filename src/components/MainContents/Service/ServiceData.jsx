@@ -5,6 +5,10 @@ import {
     miningNamespace
 } from "../../../Constants";
 import BankIcon from "../icons/Services_Icons-Bank.svg";
+import EmbassyIcon from "../icons/Services_Icons-Embassy.svg";
+import CommissionsIcon from "../icons/Services_Icons-Embassy.svg";
+import MedicalIcon from "../icons/Services_Icons-Medical.svg";
+import SecurityIcon from "../icons/Services_Icons-Security.svg";
 
 
 export const essentialData = [
@@ -21,21 +25,32 @@ export const essentialData = [
         serviceTypes: "essentials",
         title: "EMBASSIES",
         url: essentialNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: EmbassyIcon,
+        isIcon: true
+    },
+    {
+        id: "HighCommissions",
+        serviceTypes: "essentials",
+        title: "HIGH COMMISIONS",
+        url: essentialNamespace + "/:serid",
+        img_url: CommissionsIcon,
+        isIcon: true
+    },
+    {
+        id: "EmergencyMedicalServices",
+        serviceTypes: "essentials",
+        title: "EMERGENCY MEDICAL SERVICES",
+        url: essentialNamespace + "/:serid",
+        img_url: MedicalIcon,
+        isIcon: true
     },
     {
         id: "Security",
         serviceTypes: "essentials",
         title: "SECURITY",
         url: essentialNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
-    },
-    {
-        id: "Medical",
-        serviceTypes: "essentials",
-        title: "MEDICAL",
-        url: essentialNamespace + "/:serid",
-        imgSrc: "./icons/._Services_Icons-Medical.svg"
+        img_url: SecurityIcon,
+        isIcon: true
     }
 ];
 
