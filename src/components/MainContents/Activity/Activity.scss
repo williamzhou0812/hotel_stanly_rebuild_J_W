@@ -11,9 +11,10 @@
         //  background-color: $MediumOrange;
         background-color: $LightOrange;
         span {
-            //font-size: 38px;
-            font-size: 3.2vw;
+            
+            font-size: 40px;
             letter-spacing: 3px;
+            padding-top: 10px;
             @include for-size(small-phone) {
                 letter-spacing: 0px;
             }
