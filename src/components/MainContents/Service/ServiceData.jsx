@@ -125,7 +125,71 @@ export const  miningData = [
     }
 ];
 
-export const retailData = []
+export const retailData = [
+    {
+        id: 1,
+        serviceTypes: "retail",
+        title: "BRIAN BELL",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4A-BrianBell.jpg'
+    },
+    {
+        id: 2,
+        serviceTypes: "retail",
+        title: "KEYNOTE MUSIC",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4B-KeynoteMusic.jpg'
+    },
+    {
+        id: 3,
+        serviceTypes: "retail",
+        title: "STRICKLAND REAL ESATE",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4C-StricklandRealEstate.jpg'
+    },
+    {
+        id: 4,
+        serviceTypes: "retail",
+        title: "PRYDE FURNITURE",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4D-PrydeFurniture.jpg'
+    },
+    {
+        id: 5,
+        serviceTypes: "retail",
+        title: "RH TRADING",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4E-RHTrading.jpg'
+    },
+    {
+        id: 6,
+        serviceTypes: "retail",
+        title: "BNG TRADING",
+        url: miningNamespace + "/:serid",
+        img_url:'/imgs/service/Retail/Retail/S4F-BNGTrading.jpg'
+    },
+    {
+        id: 7,
+        serviceTypes: "retail",
+        title: "PACIFIC PALMS PROPERTY",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4G-PacificPalms.jpg'
+    },
+    {
+        id: 8,
+        serviceTypes: "retail",
+        title: "VISION CITY MEGA MALL",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4H-VisionCity.jpg'
+    },
+    {
+        id: 9,
+        serviceTypes: "retail",
+        title: "MADNESS PHOTOGRAPHY",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4I-MadnessPhotography.jpg'
+    },
+]
 
 export const services = [
 
