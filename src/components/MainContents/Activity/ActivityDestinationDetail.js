@@ -238,137 +238,36 @@ class ActivityDestinationDetail extends React.Component {
                         <div className="activity-main-middle--moreInfo">
                             <span>FOR MORE INFORMATION CONTACT:</span>
                         </div>
-                    </div>
-                    <div className="activity-main-bottom">
-                        {destination.details.length === 1 && (
-                            <div className="activity-main-bottom--D1">
-                                <div>
-                                    <span>
-                                        {destination.details[0].associate.toUpperCase()}
-                                    </span>
-                                </div>
-                                <div>
-                                    <span>
-                                        PH: {destination.details[0].phone}
-                                    </span>
-                                    <span>
-                                        W: {destination.details[0].website}
-                                    </span>
-                                </div>
-                                <div>
-                                    <span>{destination.details[0].email}</span>
-                                </div>
-                            </div>
-                        )}
-                        {destination.details.length === 2 && (
-                            <div style={{ height: "100%" }}>
-                                <div className="activity-main-bottom--D2">
-                                    <div>
-                                        <span>
-                                            {destination.details[0].associate.toUpperCase()}
-                                        </span>
+                        <div className="activity-main-bottom">
+
+
+
+                            {destination.details.map((info, index) => {
+                                const info_class = (destination.details.length == 1) ? 'single' : 'multiple';
+                                return (
+                                    <div className={info_class}>
+                                        <div className="info-name">
+                                            <span>
+                                                {info.associate.toUpperCase()}
+                                                </span>
+                                        </div>
+                                        <div className="info-contact">
+                                            <span>
+                                                PH: {info.Phone}
+                                            </span>
+                                            <span>
+                                                W: {info.website}
+                                            </span>
+                                        </div>
+                                        <div className="info-email">
+                                            <span>E: {info.email}</span>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <span>
-                                            PH: {destination.details[0].phone}
-                                        </span>
-                                        <span>
-                                            W: {destination.details[0].website}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            {destination.details[0].email}
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="activity-main-bottom--D2">
-                                    <div>
-                                        <span>
-                                            {destination.details[1].associate.toUpperCase()}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            PH: {destination.details[1].phone}
-                                        </span>
-                                        <span>
-                                            W: {destination.details[1].website}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            {destination.details[1].email}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                        {destination.details.length === 3 && (
-                            <div style={{ height: "100%" }}>
-                                <div className="activity-main-bottom--D3">
-                                    <div>
-                                        <span>
-                                            {destination.details[0].associate.toUpperCase()}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            PH: {destination.details[0].phone}
-                                        </span>
-                                        <span>
-                                            W: {destination.details[0].website}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            {destination.details[0].email}
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="activity-main-bottom--D3">
-                                    <div>
-                                        <span>
-                                            {destination.details[1].associate.toUpperCase()}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            PH: {destination.details[1].phone}
-                                        </span>
-                                        <span>
-                                            W: {destination.details[1].website}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            {destination.details[1].email}
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="activity-main-bottom--D3">
-                                    <div>
-                                        <span>
-                                            {destination.details[2].associate.toUpperCase()}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            PH: {destination.details[2].phone}
-                                        </span>
-                                        <span>
-                                            W: {destination.details[2].website}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            {destination.details[2].email}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
+                                )
+                            })}
+                            
+                        </div>
+                    </div>                    
                 </div>
             </div>
         );

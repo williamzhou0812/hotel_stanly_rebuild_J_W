@@ -798,12 +798,12 @@ export const divingList = [
         overView:
             "Susie’s Bommie, located just fifteen minutes from Port Moresby, is touted as world class because of its spectacular coral reef garden. With a seamount protruding 30 metres from the seabed, the site attracts a diverse range of marine life from the pygmy seahorse to pelagic varieties of fish. Other dives worth checking out are Pumpkin Patch, MV Pacific Gas, End Bommie and Eastern Fields.",
 
-        details: {
+        details: [{
             associate: "The Dive Centre",
             Phone: "+675 7202 1200",
             email: "info@divecentre.com.pg",
             website: "www.divecentre.com.pg"
-        }
+        }]
     },
     {
         id: 2,
@@ -837,12 +837,12 @@ export const divingList = [
         overView:
             "Tufi’s underwater world lights up in a kaleidoscope of colour, offering great visibility all year round to explore its fjords and WWII wrecks. For reef diving, divers can try Black Rocks, Cyclone Cay, Stewarts Reef and Shark Tip. Wreck diving offers the renowned Blackjack site.",
 
-        details: {
+        details: [{
             associate: "Tufi Dive Resort",
             Phone: "+675 323 3462",
             email: "reservations@tufiresort.com",
             website: "www.tufidive.com"
-        }
+        }]
     },
     {
         id: 4,
