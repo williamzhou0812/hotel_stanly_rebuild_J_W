@@ -24,6 +24,7 @@ import "./MainSectionList.scss";
 import { Modal } from "react-bootstrap";
 import ReactImageMagnify from 'react-image-magnify';
 
+
 class SubsectionMapList extends React.Component {
     constructor(props) {
         super(props);
@@ -81,6 +82,7 @@ class SubsectionMapList extends React.Component {
             namespace,
             thumbnailStyle = { width: "auto", height: "9.3vh"}
         } = this.props;
+        
         const itemHeight = `${100 / numberOfEntries}%`;
         let toRender = data.slice();
         // if (data.length < numberOfEntries) {
@@ -202,8 +204,11 @@ class SubsectionMapList extends React.Component {
                         }}
                     >
                         {data.map((item, index) => {
-                            let imageSrc = null;
-
+                            const thumbnailBgStyle = { 
+                                ...thumbnailStyle, 
+                                backgroundImage: 'url(\'' + item.img_url + '\')',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center center'}
                             return (
                                 
                                 <div key={index}
@@ -215,19 +220,10 @@ class SubsectionMapList extends React.Component {
                                     }}
                                 >
                                     <div>
-                                        <div
-                                            style={{
-                                                backgroundImage: `url(${imageSrc})`,
-                                                backgroundSize: "cover",
-                                                backgroundPosition: "center"
-                                            }}
-                                        >
-                                            <img
-                                                src={item.img_url}
-                                                alt={item.event_title}
-                                                style={thumbnailStyle}
-                                            />
+                                        <div style={thumbnailBgStyle}>
+                                            
                                         </div>
+                                       
                                     </div>
                                     {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
                                     <div className="subSection--title">
