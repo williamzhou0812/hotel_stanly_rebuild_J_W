@@ -1,5 +1,4 @@
 import React from "react";
-//import { connect } from "react-redux";
 import {
     miningNamespace,
     essentialNamespace,
@@ -8,106 +7,49 @@ import {
     getServiceTypeListBasedLocation,
     getServiceTypeDetailBasedLocation,
     serviceNamespace
-} from "../../Constants";
+} from "../../../Constants";
+import ListIcon from "../icons/ListIcon.png";
 import SubsectionList from "../List/SubsectionList";
 import ServiceTypesIcon from "../Dining/icons/RestaurantListIcon.png";
-
+import { services } from "./ServiceData";
 class ServiceTypeList extends React.Component {
     constructor(props) {
         super(props);
     }
-    essentialData = [
-        {
-            id: "Banks",
-            serviceTypes: "essentials",
-            title: "BANKS",
-            url: essentialNamespace + "/:serid",
-            imgSrc: "./icons/MinesResources.png"
-        },
-        {
-            id: "Embassies",
-            serviceTypes: "essentials",
-            title: "EMBASSIES",
-            url: essentialNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "Security",
-            serviceTypes: "essentials",
-            title: "SECURITY",
-            url: essentialNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "Medical",
-            serviceTypes: "essentials",
-            title: "MEDICAL",
-            url: essentialNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        }
-    ];
-    transportData = [
-        {
-            id: "Fright",
-            serviceTypes: "transport",
-            title: "FREIGHT SERVICES",
-            url: transportNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "Airline",
-            serviceTypes: "transport",
-            title: "PASSENGER AIRLINE SERVICES",
-            url: transportNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "Hire",
-            serviceTypes: "transport",
-            title: "VEHICLE HIRE",
-            url: transportNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "TransportInfo",
-            serviceTypes: "transport",
-            title: "MORE INFO",
-            url: transportNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        }
-    ];
-    miningData = [
-        {
-            id: "Mines",
-            serviceTypes: "mining",
-            title: "MINES",
-            url: miningNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "Agriculture",
-            serviceTypes: "mining",
-            title: "AGRICULTURE",
-            url: miningNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "Petroleum",
-            serviceTypes: "mining",
-            title: "PETROLEUM & GAS",
-            url: miningNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        },
-        {
-            id: "Departments",
-            serviceTypes: "mining",
-            title: "OFFICIAL DEPARTMENTS",
-            url: miningNamespace + "/:serid",
-            imgSrc: "./icons/._Services_Icons-Medical.svg"
-        }
-    ];
-
+    
     render() {
+        const service_name = this.props.match.params.servicename;
+        const service = services.find(item => item.name == service_name);
+        const { service_types } = service;
+       
+        return (
+            <div
+                className="section--bottom--animation"
+                style={{ width: "100%", height: "100%", color: "white" }}
+            >
+                <SubsectionList
+                    numberOfEntries={4}
+                    data={service_types}
+
+                    namespace={service.url}
+                    imageKey="logo"
+                    isImageArray={false}
+                    sideButtons={[
+                        { title: "SERVICE TYPES", isLink: true, link: serviceNamespace, icon: ListIcon }
+                    ]}
+                    sideTitle="SERVICES"
+                    mainTitle={service.title.toUpperCase()}
+                    thumbnailStyle={{ width: "316px", height: "207px"}}
+
+                >
+
+                </SubsectionList>
+
+            </div >
+        );
+
+
+        /*
         if (this.props.location.pathname.includes(transportNamespace)) {
             // const essentialData =
             return (
@@ -183,7 +125,7 @@ class ServiceTypeList extends React.Component {
             );
         } else {
             return <div>gggggg</div>;
-        }
+        }*/
     }
 }
 export default ServiceTypeList;

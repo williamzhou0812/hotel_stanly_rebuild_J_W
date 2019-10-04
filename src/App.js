@@ -22,7 +22,7 @@ import EventList from "./components/MainContents/Event/EventList";
 import EventDetail from "./components/MainContents/Event/EventDetail";
 
 import ServiceInitialList from "./components/MainContents/Service/ServiceInitialList";
-
+import ServiceTypeList from "./components/MainContents/Service/ServiceTypeList";
 // new improt J
 import DiningList from "./components/MainContents/Dining/DiningList";
 import DiningDetail from "./components/MainContents/Dining/DiningDetail";
@@ -173,8 +173,8 @@ function App() {
                     <Route exact path="/maplist" component={MapList} />
                     <Route
                         exact
-                        path="/services/essential"
-                        component={Essential}
+                        path="/services/:servicename"
+                        component={ServiceTypeList}
                     />
                     <Route
                         exact
@@ -214,11 +214,7 @@ function App() {
                         path="/services/essential/security/:id"
                         component={SecurityDetails}
                     />
-                    <Route
-                        exact
-                        path="/services/transport"
-                        component={Transport}
-                    />
+                  
                     <Route
                         exact
                         path="/services/transport/vehicle-hire"
@@ -249,7 +245,6 @@ function App() {
                         path="/services/transport/passenger-airline-service/:id"
                         component={PassengerAirlineDetail}
                     />
-                    <Route exact path="/services/mining" component={Mining} />
                     <Route
                         exact
                         path="/services/mining/gas"
@@ -286,11 +281,7 @@ function App() {
                         component={agricultureDetail}
                     />
 
-                    <Route
-                        exact
-                        path="/services/retail"
-                        component={retailList}
-                    />
+                  
                     <Route
                         exact
                         path="/services/retail/:id"
