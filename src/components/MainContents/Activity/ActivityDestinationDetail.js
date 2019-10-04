@@ -200,19 +200,22 @@ class ActivityDestinationDetail extends React.Component {
                                     ...this.styles.horizontalVerticalCenter
                                 }}
                             >
-                                <span>PREVIOUS EVENT</span>
+                                <span>PREVIOUS LOCATION</span>
                             </Link>
                             <div
                                 style={{
                                     flexBasis: "72%",
-                                    textAlign: "center"
+                                    textAlign: "center",
+                                    paddingTop: "10px"
                                 }}
                             >
                                 <span
                                     style={{
-                                        fontSize: "2.8vw",
-                                        fontWeight: "bold",
-                                        margin: "0 auto"
+                                        fontSize: "35px",
+                                        fontWeight: "500",
+                                        margin: "0 auto",
+                                        paddingTop: "10px",
+                                        letterSpacing: "5px"
                                     }}
                                 >
                                     {destination.title}
@@ -225,7 +228,7 @@ class ActivityDestinationDetail extends React.Component {
                                     ...this.styles.horizontalVerticalCenter
                                 }}
                             >
-                                <span>NEXT EVENT</span>
+                                <span>NEXT LOCATION</span>
                             </Link>
                         </div>
 
