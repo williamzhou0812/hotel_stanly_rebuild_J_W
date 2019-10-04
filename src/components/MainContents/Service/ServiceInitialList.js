@@ -6,31 +6,20 @@ import {
     retailNamespace
 } from "../../../Constants";
 
-import EssentialServiceHeader from "./images/EssentialServices.jpg";
-import MinesHeader from "./images/MinesResources.jpg";
-import RetailHeader from "./images/RetailServices.jpg";
-import TransportHeader from "./images/CarHireTransport.jpg";
 import SectionList from "../List/SectionList";
+import { services } from "./ServiceData";
 
 class ServiceInitialList extends React.Component {
-    services = [
-        { id: 1, title: "ESSENTIAL SERVICES", url: essentialNamespace },
-        { id: 2, title: "CAR HIRE & TRANSPORT", url: transportNamespace },
-        { id: 3, title: "MINING & RESOURCES", url: miningNamespace },
-        { id: 4, title: "RETAIL & SERVICES", url: retailNamespace }
-    ];
-    images = [
-        EssentialServiceHeader,
-        TransportHeader,
-        MinesHeader,
-        RetailHeader
-    ];
+    
     render() {
+        const images = services.map(item => {
+            return item.image_url
+        });
         return (
             <div style={{ height: "54vh" }}>
                 <SectionList
-                    data={this.services}
-                    images={this.images}
+                    data={services}
+                    images={images}
                     title="SERVICES"
                     namespace=""
                     linkFunction={(_, item) => {
