@@ -39,7 +39,7 @@ class ServiceTypeList extends React.Component {
                     sideTitle="SERVICES"
                     mainTitle={service.title.toUpperCase()}
                     thumbnailStyle={{ width: "316px", height: "207px"}}
-                    iconStyle={{width: '180px', height:'auto', marginLeft: '90px', marginTop: '60px'}}
+                    iconStyle={{width: '170px', height:'auto', marginLeft: '80px', marginTop: '50px'}}
                 >
 
                 </SubsectionList>
