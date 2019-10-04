@@ -38,7 +38,7 @@ class EventList extends React.Component {
                     sideTitle="EVENTS"
                     mainTitle="CALENDAR OF EVENTS"
                     evenDetailsProps={this.events}
-
+                    thumbnailStyle={{ width: "316px", height: "138px"}}
                 >
 
                 </SubsectionList>
