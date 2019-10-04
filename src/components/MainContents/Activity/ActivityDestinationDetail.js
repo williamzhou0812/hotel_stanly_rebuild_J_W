@@ -189,8 +189,7 @@ class ActivityDestinationDetail extends React.Component {
                         </div>
                         <div
                             style={{
-                                height: "13%",
-                                width: "100%",
+                                height: "11%",
                                 display: "flex"
                             }}
                         >
