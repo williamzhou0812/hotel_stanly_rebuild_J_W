@@ -176,14 +176,14 @@ class ActivityDestinationDetail extends React.Component {
 
                     <div
                         className="activity-main-middle"
-                        style={{ height: "40%" }}
+                        style={{ height: "58%" }}
                     >
                         <div
                             className="activity-main-middle--title"
                             style={{
-                                //  height: "15%",
-                                //  backgroundColor: LightOrange,
-
+                                fontSize: '40px',
+                                letterSpacing: "3px",
+                                height: '16%',
                                 ...this.styles.horizontalVerticalCenter
                             }}
                         >
