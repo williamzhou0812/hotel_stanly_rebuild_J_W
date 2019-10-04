@@ -184,6 +184,7 @@ class ActivityDestinationDetail extends React.Component {
                                 fontSize: '40px',
                                 letterSpacing: "3px",
                                 height: '16%',
+                                paddingTop: '10px',
                                 ...this.styles.horizontalVerticalCenter
                             }}
                         >
