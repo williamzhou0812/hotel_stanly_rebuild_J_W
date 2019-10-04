@@ -4,6 +4,7 @@ import {
     transportNamespace,
     miningNamespace
 } from "../../../Constants";
+import BankIcon from "../icons/Services_Icons-Bank.svg";
 
 
 export const essentialData = [
@@ -12,7 +13,8 @@ export const essentialData = [
         serviceTypes: "essentials",
         title: "BANKS",
         url: essentialNamespace + "/:serid",
-        imgSrc: "./icons/MinesResources.png"
+        img_url: BankIcon,
+        isIcon: true
     },
     {
         id: "Embassies",

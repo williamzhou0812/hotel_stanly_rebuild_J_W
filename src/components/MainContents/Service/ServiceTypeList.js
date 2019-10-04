@@ -10,7 +10,6 @@ import {
 } from "../../../Constants";
 import ListIcon from "../icons/ListIcon.png";
 import SubsectionList from "../List/SubsectionList";
-import ServiceTypesIcon from "../Dining/icons/RestaurantListIcon.png";
 import { services } from "./ServiceData";
 class ServiceTypeList extends React.Component {
     constructor(props) {
@@ -40,7 +39,7 @@ class ServiceTypeList extends React.Component {
                     sideTitle="SERVICES"
                     mainTitle={service.title.toUpperCase()}
                     thumbnailStyle={{ width: "316px", height: "207px"}}
-
+                    iconStyle={{width: '200px', height:'auto', paddingLeft: '20px', paddingTop: '20px'}}
                 >
 
                 </SubsectionList>
@@ -48,84 +47,6 @@ class ServiceTypeList extends React.Component {
             </div >
         );
 
-
-        /*
-        if (this.props.location.pathname.includes(transportNamespace)) {
-            // const essentialData =
-            return (
-                <div style={{ height: "54vh" }}>
-                    <SubsectionList
-                        numberOfEntries={4}
-                        data={this.transportData}
-                        imageSrc={this.transportData.imgSrc}
-                        to={this.transportData.url}
-                        namespace="transport"
-                        imageKey="imageServiceType"
-                        isImageArray={true}
-                        sideButtons={[
-                            {
-                                title: "SERVICE TYPES",
-                                icon: ServiceTypesIcon,
-                                isLink: true,
-                                link: serviceNamespace
-                            }
-                        ]}
-                        sideTitle="SERVICES"
-                        mainTitle="Transport SERVICES"
-                    />
-                </div>
-            );
-        } else if (this.props.location.pathname.includes(essentialNamespace)) {
-            return (
-                <div style={{ height: "54vh" }}>
-                    <SubsectionList
-                        numberOfEntries={4}
-                        data={this.essentialData}
-                        imageSrc={this.essentialData.imgSrc}
-                        to={this.essentialData.url}
-                        namespace="essential"
-                        imageKey="imageServiceType"
-                        isImageArray={true}
-                        sideButtons={[
-                            {
-                                title: "SERVICE TYPES",
-                                icon: ServiceTypesIcon,
-                                isLink: true,
-                                link: serviceNamespace
-                            }
-                        ]}
-                        sideTitle="SERVICES"
-                        mainTitle="ESSENIIAL SERVICES"
-                    />
-                </div>
-            );
-        } else if (this.props.location.pathname.includes(miningNamespace)) {
-            return (
-                <div style={{ height: "54vh" }}>
-                    <SubsectionList
-                        numberOfEntries={4}
-                        data={this.miningData}
-                        imageSrc={this.miningData.imgSrc}
-                        to={this.miningData.url}
-                        namespace="mining"
-                        imageKey="imageServiceType"
-                        isImageArray={true}
-                        sideButtons={[
-                            {
-                                title: "SERVICE TYPES",
-                                icon: ServiceTypesIcon,
-                                isLink: true,
-                                link: serviceNamespace
-                            }
-                        ]}
-                        sideTitle="SERVICES"
-                        mainTitle="MINING SERVICES"
-                    />
-                </div>
-            );
-        } else {
-            return <div>gggggg</div>;
-        }*/
     }
 }
 export default ServiceTypeList;

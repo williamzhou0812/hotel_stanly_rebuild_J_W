@@ -190,6 +190,7 @@ class SubsectionList extends React.Component {
                                 backgroundImage: 'url(\'' + item.img_url + '\')',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center center'}
+                
                             return (
                                 <Link
                                     style={{ textDecoration: "none" }}
@@ -205,10 +206,20 @@ class SubsectionList extends React.Component {
                                         }}
                                     >
                                         <div>
-                                            <div
+                                            {item.isIcon && (
+                                                <div style={thumbnailStyle}>
+                                                    <div style={this.props.iconStyle}>
+                                                    <img src={item.img_url} style={{ width: '100%', height: 'auto'}}/>
+                                                    </div>
+                                                </div>
+                                            )}
+                                            {!item.isIcon && (
+                                                <div
                                                 style={thumbnailBgStyle}
                                             >
                                             </div>
+                                            )}
+                                           
                                         </div>
                                         {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
                                         <div className="subSection--title">
