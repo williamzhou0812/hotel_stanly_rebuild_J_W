@@ -31,7 +31,7 @@ const MapList = (props) => {
             ]}
             sideTitle="MAPS"
             mainTitle="LIST OF MAPS"
-            thumbnailStyle={{ width: "316px", height: "207px"}}
+            thumbnailStyle={{ width: "306px", height: "138.2px"}}
 
         >
 
