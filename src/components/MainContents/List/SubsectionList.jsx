@@ -184,17 +184,18 @@ class SubsectionList extends React.Component {
                         }}
                     >
                         {data.map((item, index) => {
-                            let imageSrc = null;
-
+                            
+                            const thumbnailBgStyle = { 
+                                ...thumbnailStyle, 
+                                backgroundImage: 'url(\'' + item.img_url + '\')',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center center'}
                             return (
                                 <Link
                                     style={{ textDecoration: "none" }}
                                     to={`${namespace}/${item.id}`}
                                     key={`${item.id}-${index}`}
-                                    // imageSrc={`${item.imgSrc}`}
-                                    // backgroundImage={ `url(${
-                                    // images[index]
-                                    // })`}
+                                
                                 >
                                     <div
                                         style={{
@@ -205,17 +206,8 @@ class SubsectionList extends React.Component {
                                     >
                                         <div>
                                             <div
-                                                style={{
-                                                    backgroundImage: `url(${imageSrc})`,
-                                                    backgroundSize: "cover",
-                                                    backgroundPosition: "center"
-                                                }}
+                                                style={thumbnailBgStyle}
                                             >
-                                                <img
-                                                    src={item.img_url}
-                                                    alt={item.event_title}
-                                                    style={thumbnailStyle}
-                                                />
                                             </div>
                                         </div>
                                         {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
