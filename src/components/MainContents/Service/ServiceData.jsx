@@ -35,7 +35,7 @@ export const serviceInfoData = [
         phone: "+675 320 1212",
         website: "www.bsp.com.pg",
         email: "servicebsp@bsp.com.pg",
-        description: `"BSP is the leading bank in Papua New Guinea and the Pacific region with branches also in Fiji, Solomon Islands, Samoa, Tong, Cook Islands and Vanuatu. BSP PNG operates 42 full service branches,  13 Premium Service Centres, 42 sub branches, 239 Agencies, 301 ATM’s and over 9,700 EFTPOS terminals nationwide. BSP offers state-of-the-art mobile and internet banking services, providing access to business and personal banking anytime, anywhere – 24/7. "`,
+        description: `BSP is the leading bank in Papua New Guinea and the Pacific region with branches also in Fiji, Solomon Islands, Samoa, Tong, Cook Islands and Vanuatu. BSP PNG operates 42 full service branches,  13 Premium Service Centres, 42 sub branches, 239 Agencies, 301 ATM’s and over 9,700 EFTPOS terminals nationwide. BSP offers state-of-the-art mobile and internet banking services, providing access to business and personal banking anytime, anywhere – 24/7.`,
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES.jpg",
         mapImage: "",
         images: [

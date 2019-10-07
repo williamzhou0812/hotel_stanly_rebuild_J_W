@@ -2,7 +2,7 @@ import React from "react";
 import {
     getServiceTypeListBasedLocation,
     DECIMAL_RADIX,
-    getServiceTypeDetailBasedLocation,
+    LightBlueGreen,
     imageGallery,
     HeavyOrange,
     serviceNamespace,
@@ -167,29 +167,59 @@ class ServiceDetail extends React.Component {
                         <div style={{ height: "42%", width: "100%" }}>
                             {this.renderImages(service_details)}
                         </div>
-                        <div
-                            style={{
-                                height: "58%"
-                            }}
-                        >
-                            <div style={{ height: "26%", display: "flex" }}>
+                        <div style={{ height: "58%", width: "100%" }}>
+                            <div
+                                style={{
+                                    height: "26%",
+                                    backgroundColor: LightBlueGreen,
+                                    display: "flex"
+                                }}
+                            >
                                 <div
-                                    style={{
-                                        flexBasis: "33%",
-                                        backgroundImage: `url(${
-                                            service_details.img_url
-                                        })`,
-                                        backgroundSize: "cover",
-                                        backgroundPosition: "center",
-                                        borderWidth: "1px",
-                                        borderStyle:
-                                            "solid solid solid none",
-                                        borderColor: "rgb(8,152,163)"
-                                    }}
-                                />
-                                <div className="services-title">
-                                    <h3>{service_details.title.toUpperCase()}</h3>
+                                style={{
+                                    flexBasis: "33%",
+                                    borderRight:
+                                        "1px solid rgb(105,194,209)",
+                                    padding: "0px"
+                                }}
+                                >
+                                    
+                                    <div className="middle-section--leftSide"
+                                        style={{
+                                            height: "100%",
+                                            padding: "0px"
+                                        }}
+                                    >
+                                        <div style={{
+                                                width: "100%",
+                                                height: "100%",
+                                                backgroundImage: `url(${service_details.img_url})`,
+                                                backgroundSize: "100%",
+                                                backgroundPosition: "center"
+                                            }}>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style={{
+                                    flexBasis: "50%",
+                                    padding: "25px 0px 0px 25px"
+                                }}
+                                >
+                                    <div className="middle-section--rightSide"
+                                        style={{
+                                            height: "100%",
+                                            letterSpacing: "1px",
+                                            fontSize: "28px",
+                                            marginTop:"10%",
+                                            marginLeft: "8%"
+                                        }}
+                                    >
+                                        {service_details.title.toUpperCase()}
+                                    
+                                    </div>
+
+                                </div>
+
                             </div>
                             <div
                                 style={{
@@ -200,14 +230,21 @@ class ServiceDetail extends React.Component {
                             >
                                 <div
                                     style={{
-                                        width: "50%",
-                                        padding: "3% 5% 0 5%",
-                                        borderRight:
-                                            "2px solid rgb(103,195,209)"
+                                        flexBasis: "50%",
+                                        padding: "25px 0px 0px 35px",
+                                        overflowY: "auto"
                                     }}
                                 >
-                                    <div
-                                        className="middle-section--leftSide"
+                                    {false && (<div
+                                        className="middle-section--innerTitle"
+                                        style={{
+                                            height: "15%"
+                                        }}
+                                    >
+                                        
+                                        {/* <span>{eventDetail.month}</span> */}
+                                    </div>)}
+                                    <div className="middle-section--leftSide"
                                         style={{
                                             height: "75%",
                                             overflow: "scroll",
@@ -221,19 +258,23 @@ class ServiceDetail extends React.Component {
                                                 marginBottom: 0
                                             }}
                                         ></div>
-                                        
                                     </div>
                                 </div>
-                                <div
-                                    style={{
-                                        width: "50%",
-                                        padding: "3% 5% 0 5%"
-                                    }}
+                                <div style={{
+                                    flexBasis: "50%",
+                                    padding: "25px 0px 0px 25px"
+                                }}
                                 >
-                                    <div
-                                        className="middle-section--rightSide"
+                                    {false && (<div style={{ height: "15%" }} />)}
+                                    
+                                    <div className="middle-section--rightSide"
                                         style={{
-                                            height: "78%"
+                                            height: "38%",
+                                            letterSpacing: "1px",
+                                            overflow: "scroll",
+                                            display: "inline-table",
+                                            width: "100%"
+                                            // fontSize: "2vw"
                                         }}
                                     >
                                         {service_details.phone && (
@@ -255,11 +296,6 @@ class ServiceDetail extends React.Component {
                                         {service_details.address && (
                                             <p>{service_details.address}</p>
                                         )}
-                                    </div>
-                                    <div
-                                        className="seeMap-btn"
-                                        style={{ height: "20%" }}
-                                    >
                                         {false && /*service[serviceTypeData.mapKey]
                                             .length > 0 &&*/ (
                                             <MapModal
@@ -290,6 +326,7 @@ class ServiceDetail extends React.Component {
                                             />
                                         )}
                                     </div>
+
                                 </div>
                             </div>
                         </div>
