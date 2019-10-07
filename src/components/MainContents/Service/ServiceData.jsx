@@ -324,7 +324,7 @@ export const serviceInfoData = [
         website: "www.medevac.com.pg",
         email: "operations@medevac.com.au",
         description: `Medevac Pacific Services offers first-rate medical evacuation and medical assistance. The organisation also  offers aero-medical services throughout the PNG region.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1D-Medical-Services/S1-IMAGES19.jpg",
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
@@ -340,7 +340,7 @@ export const serviceInfoData = [
         website: "www.emspng.com",
         email: "emspng@emspng.com",
         description: `EMS Assist delivers specialised pre-hospital care in a mobile environment. It has 3 core focus areas in its medical care program are: • Emergency care in the community • Emergency care during transportation • Emergency care on arrival at the health care facility`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1D-Medical-Services/S1-IMAGES20.jpg",
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
@@ -356,7 +356,7 @@ export const serviceInfoData = [
         website: "N/A",
         email: "N/A",
         description: `Located in Port Moresby, PNG Chiropractic is there to help with any chiropractic needs.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1D-Medical-Services/S1-IMAGES21.jpg",
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
@@ -372,7 +372,7 @@ export const serviceInfoData = [
         website: "www.the-corps.com.pg",
         email: "coachofficemanager@gdsspng.com",
         description: `Corps Security has been providing security solutions in PNG since 1996 to some of the most high profile entities in the country. Corps Security has successfully provided its services to a range of sectors including finance, construction, diplomatic, commercial, retail and industrial. `,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1E-Security/S1-IMAGES22.jpg",
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
@@ -388,7 +388,7 @@ export const serviceInfoData = [
         website: "guarddogpng.com",
         email: "enquires@gdsspng.com",
         description: `Guard Dog Security / NADZAB Airport Coach Service offers: • Executive personal protection/body guard • V.I.P. executive car available • Armed security personnel • Air-conditioning • Drop off to your home or hotel • Guaranteed pick up no matter how late your flight is delayed • Tours by arrangement`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1E-Security/S1-IMAGES23.jpg",
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
@@ -404,7 +404,7 @@ export const serviceInfoData = [
         website: "www.g4s.com.pg",
         email: "ENQUIRIES@PG.G4S.COM",
         description: `G4S is an international security solutions organisation which offers a range of security services and systems.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1E-Security/S1-IMAGES24.jpg",
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
@@ -420,10 +420,10 @@ export const serviceInfoData = [
         website: "www.blackswanss.com",
         email: "bookings@blackswanss.com",
         description: `Black Swan VIP Services transports travellers in and around PNG safely, in comfort, and on time. Download the app or call us directly to secure your transport or book in advance and your VIP car will be waiting for you when you arrive. From meeting to meeting, day and night, Black Swan will securely transport you wherever you need to go. Find us in the app store or call us on 75200200. You can also book via email on bookings@blackswanss.com`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1E-Security/",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
+            { imageFile: '' }
         ]
 
     },
