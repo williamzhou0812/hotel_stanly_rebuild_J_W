@@ -188,7 +188,7 @@ const ourhotel_Dinings = [
         img_url: MezzBar,
         description:
             `<p>An elegant bar hidden away above level 19, Mezz Bar is the perfect place to start or finish your night. An extensive selection of carefully designed cocktails combined with international wines and premium whiskeys makes this bar a unique place to visit.</p>
-            <p>Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.</p>`,
+            <p>Open Monday to Saturday 3pm until late and closed on Sundays.</p><p>Smart casual dress code.</p>`,
         details: {
             call: false,
             location: "Located on Level 19",

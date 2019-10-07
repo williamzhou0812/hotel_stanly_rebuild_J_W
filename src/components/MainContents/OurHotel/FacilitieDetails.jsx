@@ -73,7 +73,7 @@ const ourhotel_Facilities = [
         img_url: WOMEMARKING,
         description: `<p>Did you forget to pack something? Owen’s market has everything you need!</p>
         <p>We stock anything from fresh produce, snacks, toiletries, drinks to fresh meat, food and beverage gourmet items, in-house made delicatessen and even our famous roast chicken!</p>
-        <p>Location: Ground Floor Daily: 08:00 – 20:00</p>`,
+        `,
         details: {
        
             location: 'the Ground Floor',

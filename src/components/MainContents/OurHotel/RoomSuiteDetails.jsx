@@ -3,13 +3,6 @@ import React from 'react';
 import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
 import { Link } from "react-router-dom";
 
-import StandTwin  from './img_logo/Our_Hotel_Section_Imagesstandard.jpg';
-import DeluxeKing  from './img_logo/Our_Hotel_Section_ImagesDeluxe.jpg';
-import ExedutiveKing  from './img_logo/Our_Hotel_Section_Images_AuBae3aKing.jpg';
-import CornerSuite from './img_logo/Our Hotel Section_Imagessuite.jpg';
-import JuniorSuite from './img_logo/Our_Hotel_Section_Images-JUNIOR-SUITE.jpg';
-import Persidential from './img_logo/Our_Hotel_Section_Images_Pres_d1uSXpj.jpg';
-
 
 import '../List/MainSectionList.scss';
 import "./OurHotel.scss";
@@ -18,7 +11,7 @@ import "./OurHotel.scss";
 
 import {
     eventNamespace,
-    accomodationNamespace,
+    imageGallery,
     HeavyOrange,
     LightBlueButtonBackground,
     ExtraHeavyBlueGreen,
@@ -31,28 +24,32 @@ const ourhotel_room_suite = [
         id: 1,
         title_img: '',
         title: 'STANDARD TWIN',
-        img_url: StandTwin,
         description: 'All rooms come with two Queen-sized beds, a work desk, monsoon shower and face either north with a fabulous view overlooking the pool, or south overlooking the Owen Stanley Mountain Range.',
         details: {
             size: '34sqm',
             bed: 'Two Queens',
             location: 'From 5th to 8th floors',
             occpancy: 'Two adults and Two children, or Three adults'
-        }
+        },
+        images: [
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1A-Standard/Our Hotel Section_Imagesstandard.jpg' }
+        ]
        
     },
     {
         id: 2,
         title_img: '',
         title: 'DELUXE KING',
-        img_url: DeluxeKing,
         description: 'Our modern Deluxe rooms come with one King-sized bed, a work desk, a spacious bathroom with monsoon shower head and offer views of either the pool or Waigani skyline at night and the Owen Stanley Mountain Range in the morning.',
         details: {
             size: '34sqm',
             bed: 'One King',
             location: 'From 9th to 12th floors',
             occpancy: 'Two Adults'
-        }
+        },
+        images: [
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1B-Deluxe/Our Hotel Section_ImagesDeluxe' }
+        ]
        
 
     },
@@ -60,21 +57,23 @@ const ourhotel_room_suite = [
         id: 3,
         title_img: '',
         title: 'EXECUTIVE KING',
-        img_url: ExedutiveKing,
         description: 'Located on high floors and the rooms come with one King-sized bed, a work desk, a spacious bathroom with monsoon shower head and offer views of either the pool or Waigani skyline at night and the Owen Stanley Mountain Range in the morning. Guests receive access to the Executive Club Lounge services and facilities.',
         details: {
             size: '34sqm',
             bed: 'One King',
             location: 'From 14th to 18th floors',
             occpancy: 'Two Adults'
-        }
+        },
+        images: [
+         //   { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1C-Executive/Our Hotel Section_Images.jpg' },
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1C-Executive/Our Hotel Section_Images5.jpg' }
+        ]
 
     },
     {
         id: 4,
         title_img: '',
         title: 'CORNER SUITE',
-        img_url: CornerSuite,
         description: `The Corner Suites feature a sumptuous living experience with views of Waigani skyline and the Owen Stanley Mountains. 
                         <ul>
                             <li>Separate sleeping and living area</li>
@@ -86,7 +85,11 @@ const ourhotel_room_suite = [
             bed: 'One Super King',
             location: 'From 5th to 18th floors',
             occpancy: 'Two Adults'
-        }
+        },
+        images: [
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1D-Corner/Our Hotel Section_ImagesCorner.jpg' },
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1D-Corner/Our Hotel Section_Imagessuite.jpg' }
+        ]
 
        
 
@@ -95,7 +98,6 @@ const ourhotel_room_suite = [
         id: 5,
         title_img: '',
         title: 'JUNIOR SUITE',
-        img_url: JuniorSuite,
         description: `Luxuriously spacious, this elegant suite in The Stanley Hotel and Suites is ideal for work or entertaining and offers top-floor views of the pool area.
                         <ul>
                             <li>A large dining room that can seat up to 8 guests.</li>
@@ -109,14 +111,16 @@ const ourhotel_room_suite = [
             bed: 'one Super King and One King',
             location: '20th Floor',
             occpancy: 'Two Adults and One child, or Four Adults'
-        }
+        },
+        images: [
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1E-Junior/Our Hotel Section_Images.jpg' }
+        ]
 
     },
     {
         id: 6,
         title_img: '',
         title: 'PRESIDENTIAL SUITE',
-        img_url: Persidential,
         description: `Enjoy the grand living spaces, stunning top-floor views of the Own Stanley Mountain ranges and National Stadium from this expansive luxury suite in The Stanley Hotel &amp; Suites.
                         <ul>
                             <li>Elegant dining room that can seat up to 14 guests</li>
@@ -130,7 +134,11 @@ const ourhotel_room_suite = [
             bed: 'One Super King and Two Queen',
             location: '20th Floor',
             occpancy: 'Two Adults and Two Children, or Four Adults'
-        }
+        },
+        images: [
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1F-Presidential/Our Hotel Section_Images_Pres.jpg' },
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1F-Presidential/Our Hotel Section_Imagespresidential.jpg' }
+        ]
 
     }
 ]
@@ -163,6 +171,33 @@ const styles = {
     },
     removePaddingMargin: { margin: 0, padding: 0 }
 };
+
+
+
+/// Image Garllery
+const renderImages = (rooms) => {
+    const {  images } = rooms;
+    if (images.length > 1) {
+        return imageGallery(images, "100%", "27vh");
+    }
+    else if (images.length == 1) {
+        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+    }
+    else {
+        return (
+            <div
+                style={{
+                    backgroundColor: HeavyOrange,
+                    height: "100%",
+                    padding: "30px"
+                }}
+            >
+                <h1>NO IMAGE FOR THIS ROOM</h1>
+            </div>
+        );
+    }
+}
+
 
 const RoomSuiteDetails = (props) => {
 
@@ -242,8 +277,7 @@ const RoomSuiteDetails = (props) => {
                 <div >
                     <div className='event-main'>
                         <div style={{ height: "50%", width: "100%" }}>
-                            <img src={_RoomSuiteDetails.img_url} style={{ height: '100%', width: '100%' }} />
-
+                            {renderImages(_RoomSuiteDetails)}
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>
                             <div style={{ height: "13%", display: "flex" }}>

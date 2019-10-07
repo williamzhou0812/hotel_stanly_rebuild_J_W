@@ -121,8 +121,8 @@ const styles = {
 
 
 /// Image Garllery
-const renderImages = (restaurant) => {
-    const {  images } = restaurant;
+const renderImages = (meeting) => {
+    const {  images } = meeting;
     if (images.length > 1) {
         return imageGallery(images, "100%", "27vh");
     }
