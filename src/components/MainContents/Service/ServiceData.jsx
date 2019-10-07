@@ -420,10 +420,10 @@ export const serviceInfoData = [
         website: "www.blackswanss.com",
         email: "bookings@blackswanss.com",
         description: `Black Swan VIP Services transports travellers in and around PNG safely, in comfort, and on time. Download the app or call us directly to secure your transport or book in advance and your VIP car will be waiting for you when you arrive. From meeting to meeting, day and night, Black Swan will securely transport you wherever you need to go. Find us in the app store or call us on 75200200. You can also book via email on bookings@blackswanss.com`,
-        img_url: "/imgs/service/S1-Essential-Services/S1E-Security/",
+        img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
         ]
 
     },
@@ -436,10 +436,10 @@ export const serviceInfoData = [
         website: "airniugini.com.pg",
         email: "telephonesales@airniugini.com.pg",
         description: `Air Niugini offers daily services to Cairns and Brisbane, twice weekly services to Sydney and direct services to Singapore, Hong Kong, Manila, Cebu, Bali, Tokyo, Honiara and Fiji.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
         ]
 
     },
@@ -452,10 +452,10 @@ export const serviceInfoData = [
         website: "www.pngair.com.pg",
         email: "pngair@pngair.com.pg",
         description: `PNG Air proudly connects people throughout PNG with its air service. Everything PNG Air does, is for your security and comfort.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS4.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
         ]
 
     },
@@ -468,10 +468,10 @@ export const serviceInfoData = [
         website: "www.helifix.com.pg",
         email: "info@helifix.com.pg",
         description: `Helifix is an aviation operator that provides helicopter and aircraft charters along with maintenance services throughout PNG.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS6.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
         ]
 
     },
@@ -484,10 +484,10 @@ export const serviceInfoData = [
         website: "heliscope.net",
         email: "info@heliscope.net",
         description: `HeliScope is a reliable and safe helicopter charter operator which specialises in construction, gas and oil exploration, and aeromedical and passenger services.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS7.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
         ]
 
     },
@@ -500,10 +500,10 @@ export const serviceInfoData = [
         website: "https://maf.org.au/countries/png/",
         email: "MAF-PapuaNewGuinea@maf.org",
         description: `The Mission Aviation Fellowship provides vital aeromedical and charter services for much of PNG's remote, rural regions. `,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS8.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
         ]
 
     },
@@ -516,10 +516,10 @@ export const serviceInfoData = [
         website: "http://www.tropicair.com.pg",
         email: "info@tropicair.com.pg",
         description: `Tropicair is a safe and reliable charter operator offering an efficient, affordable charter service with modern safe aircrafts for private and commercial use. `,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS10.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
         ]
 
     },
@@ -532,10 +532,10 @@ export const serviceInfoData = [
         website: "www.dhl.com",
         email: "N/A",
         description: `DHL offers domestic and international freight services as well as logistical and facilitation services for e-commerce businesses. Open Monday to Friday 8am-5pm, and Saturday 8am-12pm.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS11.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
         ]
 
     },
@@ -548,10 +548,10 @@ export const serviceInfoData = [
         website: "www.gfspng.com",
         email: "",
         description: `GFS offers transport and logistics services to the gas and petroleum industry in PNG. Professional, efficient and expedient.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS12.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
         ]
 
     },
@@ -564,10 +564,10 @@ export const serviceInfoData = [
         website: "www.ipigroup.com.pg",
         email: "IPIGROUP@ipigroup.com.pg",
         description: `With its many clients in mind, the iPi Group offers tailor-made logistics solutions for transport, warehousing and catering. Call today!`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS13.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
         ]
 
     },
@@ -580,10 +580,10 @@ export const serviceInfoData = [
         website: "www.tnt.kenmore.com.pg",
         email: "sales@pngaf.com.pg",
         description: `TNT Air Cargo offers PNG businesses express delivery services both domestically and internationally. Domestic routes include Port Moresby, Lae, Goroka, Mt Hagen, Tabubil, Lihir Island, Rabaul, Madang, Wewak, Kavieng, Buka, Alotau, Popondetta, Kimbe, Manus, Vanimo and Kiunga.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS14.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
         ]
 
     },
@@ -596,10 +596,10 @@ export const serviceInfoData = [
         website: "http://www.michaelshauliers.net",
         email: "michaelshauliers777@gmail.com.au",
         description: `Over-dimensional & Heavy Haulage Specialists! Safe delivery on time! - Kenworth Heavy Duty Freight Trucks - Largest stockists of 30 floats/low loaders - Mercedes Benz (6x6) off-road heavy duty freight trucks - Largest stockists of diesel fuel tanker trucks For all your heavy haulage logistic requirements in PNG`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
         ]
 
     },
@@ -612,10 +612,10 @@ export const serviceInfoData = [
         website: "www.avis.com.pg",
         email: "reservations@avis.com.pg",
         description: `Avis makes travelling in PNG an easy and pleasurable experience. Offering the latest Toyota models, Avis offers great customer service and competitive rates. After hours emergency service also available. `,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS15.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
@@ -628,10 +628,10 @@ export const serviceInfoData = [
         website: "www.budget.com.pg",
         email: "reservations@budget.com.pg",
         description: `Regardless of whether you're in PNG for leisure or business, Budget has all your car rental needs covered. “New Cars ... Old Fashioned Service.”`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS16.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
@@ -644,10 +644,10 @@ export const serviceInfoData = [
         website: "www.europcar.com.au/places/papua-new-guinea",
         email: "N/A",
         description: `Europcar offers affordable and reliable car rentals for visitors to PNG. Explore more of the incredible landscapes and culture of this fascinating nation with Europcar.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS17.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
@@ -660,10 +660,10 @@ export const serviceInfoData = [
         website: "www.facebook.com/pg/Frangipani-Car-Hires",
         email: "N/A",
         description: `Frangipani car hire provides a pleasurable and reliable experience when exploring the stunning and fascinating region of East New Britain. Customer service and satisfaction guaranteed. `,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS18.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
@@ -676,10 +676,10 @@ export const serviceInfoData = [
         website: "www.hertz.com.au/p/hire-a-car/papua-new-guinea",
         email: "N/A",
         description: `Enjoy a day trip to the beautiful Variata National Park or a week-long getaway to explore more of this wonderful nation. Whatever your transport needs, Hertz car rentals has you covered.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS19.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
@@ -692,10 +692,10 @@ export const serviceInfoData = [
         website: "N/A",
         email: "N/A",
         description: `A Rental car service located in Madang`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS20.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
@@ -708,10 +708,10 @@ export const serviceInfoData = [
         website: "travellersrentacar.com",
         email: "travellersrentacar@reservations.com",
         description: `Travellers Rent-a-Car is a locally owned car rental company offering transport services to both leisure and executive travellers. Delivering the best rentals for PNG's road and climate conditions.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS21.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
@@ -724,10 +724,10 @@ export const serviceInfoData = [
         website: "N/A",
         email: "N/A",
         description: `City Cab is Mt Hagen's sole taxi service.`,
-        img_url: "",
+        img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS22.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
         ]
 
     },
