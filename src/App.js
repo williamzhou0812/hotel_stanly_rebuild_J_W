@@ -23,6 +23,8 @@ import EventDetail from "./components/MainContents/Event/EventDetail";
 
 import ServiceInitialList from "./components/MainContents/Service/ServiceInitialList";
 import ServiceTypeList from "./components/MainContents/Service/ServiceTypeList";
+import ServiceDetail from "./components/MainContents/Service/ServiceDetail";
+import ServiceList from "./components/MainContents/Service/ServiceList"
 // new improt J
 import DiningList from "./components/MainContents/Dining/DiningList";
 import DiningDetail from "./components/MainContents/Dining/DiningDetail";
@@ -178,6 +180,19 @@ function App() {
                     />
                     <Route
                         exact
+                        path="/services/:servicename/:subservicename"
+                        component={ServiceList}
+                    />
+
+                    <Route
+                        exact
+                        path="/services/:servicename/:subservicename/:detailid"
+                        component={ServiceDetail}
+                    />
+
+                    {/*
+                    <Route
+                        exact
                         path="/services/essential/banks"
                         component={Banks}
                     />
@@ -280,13 +295,9 @@ function App() {
                         path="/services/mining/agriculture"
                         component={agricultureDetail}
                     />
-
+*/}
                   
-                    <Route
-                        exact
-                        path="/services/retail/:id"
-                        component={retailDetail}
-                    />
+                   
 
                     {/* --------------------------------- */}
                     <Route

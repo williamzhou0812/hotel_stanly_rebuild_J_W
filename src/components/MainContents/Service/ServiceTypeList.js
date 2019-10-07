@@ -30,7 +30,7 @@ class ServiceTypeList extends React.Component {
                     numberOfEntries={4}
                     data={service_types}
 
-                    namespace={service.url}
+                    namespace={service.sub_url}
                     imageKey="logo"
                     isImageArray={false}
                     sideButtons={[
