@@ -84,10 +84,10 @@ export const serviceInfoData = [
         website: "pg.china-embassy.org",
         email: "chineemb_pg@mfa.gov.cn",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES4.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -100,10 +100,10 @@ export const serviceInfoData = [
         website: "www.ambafrance-pg.org",
         email: "cad.port-moresby-amba@diplomatie.gouv.fr",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES5.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -116,10 +116,10 @@ export const serviceInfoData = [
         website: "www.kemlu.go.id/portmoresby",
         email: "kbripom@daltron.com.pg",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES6.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -132,10 +132,10 @@ export const serviceInfoData = [
         website: "www.png.emb-japan.go.jp",
         email: "sceoj@pm.mofa.go.jp, infeoj@pm.mofa.go.jp",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES7.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -148,10 +148,10 @@ export const serviceInfoData = [
         website: "pg.usembassy.gov",
         email: "N/A",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES8.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -164,10 +164,10 @@ export const serviceInfoData = [
         website: "www.thaiconsulate.org.pg",
         email: "enquiries@thaiconsulate.org.pg",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES9.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -180,10 +180,10 @@ export const serviceInfoData = [
         website: "N/A",
         email: "portmoresby.pe@dfa.gov.ph",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES10.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -196,10 +196,10 @@ export const serviceInfoData = [
         website: "png.mofa.go.kr",
         email: "embpng@mofa.go.kr",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES11.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -212,10 +212,10 @@ export const serviceInfoData = [
         website: "www.png.embassy.gov.au",
         email: "consular.portmoresby@dfat.gov.au",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES12.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -228,10 +228,10 @@ export const serviceInfoData = [
         website: "ukinpng.fco.gov.uk",
         email: "uk.inpng@fco.gov.uk",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES13.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -244,10 +244,10 @@ export const serviceInfoData = [
         website: "png.foreignaffairs.gov.fj",
         email: "rakaie@fijihighcom.org.pg",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES14.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -260,10 +260,10 @@ export const serviceInfoData = [
         website: "www.nzembassy.com/papua-new-guinea",
         email: "nzhcpmy@mfat.govt.nz",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES15.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -276,10 +276,10 @@ export const serviceInfoData = [
         website: "N/A",
         email: "sihicomm@daltron.com.pg",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES16.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -292,10 +292,10 @@ export const serviceInfoData = [
         website: "http://www.hcipom.in/",
         email: "hc.pmoresby@mea.gov.in",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES17.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -308,10 +308,10 @@ export const serviceInfoData = [
         website: "www.kln.gov.my/web/png_port-moresby/",
         email: "mwportmoresby@kln.gov.my",
         description: `Call or visit your embassy if you experience any travel issues.`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES18.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ]
 
     },
@@ -327,7 +327,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
         ]
 
     },
@@ -343,7 +343,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
         ]
 
     },
@@ -359,7 +359,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
         ]
 
     },
@@ -375,7 +375,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
         ]
 
     },
@@ -391,7 +391,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
         ]
 
     },
@@ -407,7 +407,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
         ]
 
     },
@@ -423,7 +423,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
         ]
 
     },
