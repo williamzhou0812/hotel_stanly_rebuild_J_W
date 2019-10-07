@@ -23,26 +23,7 @@ import ListIcon from "../icons/ListIcon.png";
 class ServiceDetail extends React.Component {
     constructor(props) {
         super(props);
-        /*
-        const data = this.retrieveData();
-        this.state = {
-            serviceType:
-                data.serviceTypes && data.serviceType && data.status
-                    ? data.serviceType
-                    : null,
-            service:
-                data.serviceTypes &&
-                data.serviceType &&
-                data.service &&
-                data.status
-                    ? data.service
-                    : null,
-            status: data.status,
-            map: false
-        };
-        this.openMap = this.openMap.bind(this);
-        this.closeMap = this.closeMap.bind(this);
-        */
+       
     }
     
     openMap() {
@@ -139,7 +120,7 @@ class ServiceDetail extends React.Component {
                         <div className="leftSide-menu--container">
                             <img
                                 className="leftSide-menu--img"
-                                src={ListIcon}
+                                src={service.icon}
                                 alt="Service Type Icon"
                             />
                             <div className="menu-title ">
@@ -196,7 +177,7 @@ class ServiceDetail extends React.Component {
                                     style={{
                                         flexBasis: "33%",
                                         backgroundImage: `url(${
-                                            service.logo
+                                            service_details.img_url
                                         })`,
                                         backgroundSize: "cover",
                                         backgroundPosition: "center",
@@ -228,10 +209,18 @@ class ServiceDetail extends React.Component {
                                     <div
                                         className="middle-section--leftSide"
                                         style={{
-                                            height: "100%"
+                                            height: "75%",
+                                            overflow: "scroll",
+                                            display: "inline-table"
                                         }}
                                     >
-                                    temp service.description
+                                        <div
+                                            dangerouslySetInnerHTML={{__html: service_details.description}}
+                                            style={{
+                                                marginTop: 0,
+                                                marginBottom: 0
+                                            }}
+                                        ></div>
                                         
                                     </div>
                                 </div>
@@ -247,24 +236,24 @@ class ServiceDetail extends React.Component {
                                             height: "78%"
                                         }}
                                     >
-                                        {service.phone && (
+                                        {service_details.phone && (
                                             <p>
-                                                CALL TODAY: {service.phone}
+                                                CALL TODAY: {service_details.phone}
                                             </p>
                                         )}
-                                        {service.website && (
+                                        {service_details.website && (
                                             <p>
                                                 WEB:{" "}
                                                 {removeHttp(
-                                                    service.website
+                                                    service_details.website
                                                 )}
                                             </p>
                                         )}
-                                        {service.email && (
-                                            <p>EMAIL: {service.email}</p>
+                                        {service_details.email && (
+                                            <p>EMAIL: {service_details.email}</p>
                                         )}
-                                        {service.address && (
-                                            <p>{service.address}</p>
+                                        {service_details.address && (
+                                            <p>{service_details.address}</p>
                                         )}
                                     </div>
                                     <div

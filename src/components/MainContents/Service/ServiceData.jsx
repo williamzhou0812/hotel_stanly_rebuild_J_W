@@ -39,7 +39,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1A-Header-Images_P.jpg' }
         ]
 
     },
@@ -55,7 +55,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES2.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1A-Header-Images_P.jpg' }
         ]
 
     },
@@ -71,7 +71,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES3.jpg",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/S1-Essential-Services/S1A-Header-Images_P.jpg' }
         ]
 
     },
