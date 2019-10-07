@@ -84,14 +84,13 @@ class ServiceDetail extends React.Component {
     render() {
         // get service details
         const service_name = this.props.match.params.servicename;
-        const service = services.find(item => item.name === service_name);
+        const service = services.find(item => item.name == service_name);
         const { service_types } = service;
         const sub_service_name = this.props.match.params.subservicename;
-        const sub_service = (sub_service_name === 'none') ? null : service_types.find(item => item.name === sub_service_name);
+        const sub_service = service_types.find(item => item.id === sub_service_name);
+        const sub_service_info_list = sub_service.services;
         const detail_id = parseInt(this.props.match.params.detailid);
-        const service_details = (sub_service_name === 'none') ? 
-            service_types.find(item => item.id === detail_id) :
-            sub_service.find(item => item.id === detail_id);
+        const service_details = sub_service_info_list.find(item => item.id === detail_id);
 
 
         return (
