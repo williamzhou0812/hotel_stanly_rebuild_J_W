@@ -232,7 +232,9 @@ class ServiceDetail extends React.Component {
                                     style={{
                                         flexBasis: "50%",
                                         padding: "25px 0px 0px 35px",
-                                        overflowY: "auto"
+                                        overflowY: "auto",
+                                        borderRight:
+                                                "1px solid rgb(105,194,209)",
                                     }}
                                 >
                                     {false && (<div
