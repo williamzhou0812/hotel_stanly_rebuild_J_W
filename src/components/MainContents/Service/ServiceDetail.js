@@ -164,7 +164,7 @@ class ServiceDetail extends React.Component {
                 </div>
                 {service_details && (
                     <div className='event-main'>
-                        <div style={{ height: "50%", width: "100%" }}>
+                        <div style={{ height: "42%", width: "100%" }}>
                             {this.renderImages(service_details)}
                         </div>
                         <div
