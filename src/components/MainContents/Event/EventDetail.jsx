@@ -267,7 +267,7 @@ class EventDetail extends React.Component {
                                             </p>
                                         )}
                                     </div>
-                                    <div style={{marginTop: "-10px"}}>
+                                    <div style={{marginTop: "-80px"}}>
                                         <div className="middle-section--btnContainer">
                                             <div className="middle-section--btnContainer--btn">
                                                 <MapModal
