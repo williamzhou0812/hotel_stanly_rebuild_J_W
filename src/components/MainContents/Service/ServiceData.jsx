@@ -36,7 +36,7 @@ export const serviceInfoData = [
         website: "www.bsp.com.pg",
         email: "servicebsp@bsp.com.pg",
         description: `"BSP is the leading bank in Papua New Guinea and the Pacific region with branches also in Fiji, Solomon Islands, Samoa, Tong, Cook Islands and Vanuatu. BSP PNG operates 42 full service branches,  13 Premium Service Centres, 42 sub branches, 239 Agencies, 301 ATM’s and over 9,700 EFTPOS terminals nationwide. BSP offers state-of-the-art mobile and internet banking services, providing access to business and personal banking anytime, anywhere – 24/7. "`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES.jpg",
         mapImage: "",
         images: [
             { imageFile: '' }
@@ -52,7 +52,7 @@ export const serviceInfoData = [
         website: "www.anz.com/papuanewguinea/en/personal/",
         email: "cshdpg@anz.com",
         description: `"Spanning 28 markets across the Asia Pacific, ANZ provides a range of banking solutions. Talk to ANZ about your banking needs today."`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES2.jpg",
         mapImage: "",
         images: [
             { imageFile: '' }
@@ -68,7 +68,7 @@ export const serviceInfoData = [
         website: "https://www.westpac.com.pg",
         email: "N/A",
         description: `"Westpac Bank provides a range of banking solutions. Talk to Westpac Bank about your banking needs today."`,
-        img_url: "",
+        img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES3.jpg",
         mapImage: "",
         images: [
             { imageFile: '' }

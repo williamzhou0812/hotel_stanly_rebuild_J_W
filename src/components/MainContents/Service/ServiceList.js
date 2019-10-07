@@ -40,7 +40,7 @@ class ServiceList extends React.Component {
 
                     namespace={service.sub_url + '/' +sub_service_name}
                     imageKey="logo"
-                    isImageArray={false}
+                    isImageArray={true}
                     sideButtons={[
                         { title: "SERVICE TYPES", isLink: true, link: serviceNamespace, icon: ListIcon },
                         { title: service.title.toUpperCase(), isLink: true, link: service.sub_url, icon: service.icon }
