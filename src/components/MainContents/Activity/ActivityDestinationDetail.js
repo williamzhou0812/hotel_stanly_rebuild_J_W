@@ -245,7 +245,7 @@ class ActivityDestinationDetail extends React.Component {
                             {destination.details.map((info, index) => {
                                 const info_class = (destination.details.length == 1) ? 'single' : 'multiple';
                                 return (
-                                    <div className={info_class}>
+                                    <div key={index} className={info_class}>
                                         <div className="info-name">
                                             <span>
                                                 {info.associate.toUpperCase()}

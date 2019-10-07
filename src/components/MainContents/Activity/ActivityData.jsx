@@ -1,5 +1,12 @@
 import { activityNamespace } from '../../../Constants';
 import divingIcon from ".././icons/DIVING.svg";
+import attractionsIcon from ".././icons/ATTRACTIONS.svg";
+import surfingIcon from ".././icons/SURFING.svg";
+import cultureIcon from ".././icons/Culture.svg";
+import birdwatchingIcon from ".././icons/BIRDWATCHING.svg";
+import trekkingIcon from ".././icons/TREKKING.svg";
+import fishingIcon from ".././icons/FISHING.svg";
+
 
 export const attractionsList=[
     {
@@ -974,7 +981,7 @@ export const activities = [
         url: activityNamespace,
         destinations: surfingList,
         map_image: '',
-        icon: divingIcon,
+        icon: surfingIcon,
         images: [
             { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P.jpg' },
             { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P2.jpg' },
@@ -989,7 +996,7 @@ export const activities = [
         url: activityNamespace,
         destinations: fishingList,
         map_image: '',
-        icon: divingIcon,
+        icon: fishingIcon,
         images: [
             { imageFile: '/imgs/activity/A3-Fishing/ACTIVITIES-FISHING-GALLERYIMAGES_P.jpg' },
 
@@ -1001,7 +1008,7 @@ export const activities = [
         url: activityNamespace,
         destinations: trekkingList,
         map_image: '',
-        icon: divingIcon,
+        icon: trekkingIcon,
         images: [
             { imageFile: '/imgs/activity/A4-Trekking/ACTIVITIES-TREKKING-GALLERYIMAGES_P.jpg' },
         ]
@@ -1012,7 +1019,7 @@ export const activities = [
         url: activityNamespace,
         destinations: birdwatchingList,
         map_image: '',
-        icon: divingIcon,
+        icon: birdwatchingIcon,
         images: [
             { imageFile: '/imgs/activity/A5-Birwatching/ACTIVITIES-BIRDWATCHING-GALLERYIMAGES_P.jpg' }
         ]
@@ -1023,7 +1030,7 @@ export const activities = [
         url: activityNamespace,
         destinations: cultureList, 
         map_image: '',
-        icon: divingIcon,
+        icon: cultureIcon,
         images: [
             { imageFile: '/imgs/activity/A6-Culture/ACTIVITIES-CULTURE-GALLERYIMAGES_P.jpg' }
         ]
@@ -1034,7 +1041,7 @@ export const activities = [
         url: activityNamespace,
         destinations: attractionsList,
         map_image: '',
-        icon: divingIcon,
+        icon: attractionsIcon,
         images: [
             { imageFile: '/imgs/activity/A7-Attractions/ACTIVITIES-ATTRACTIONS-GALLERYIMAGES_P.jpg' }
         ]
