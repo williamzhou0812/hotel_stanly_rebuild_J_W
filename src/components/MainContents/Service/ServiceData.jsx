@@ -51,7 +51,7 @@ export const serviceInfoData = [
         phone: "+675 321 1079",
         website: "www.anz.com/papuanewguinea/en/personal/",
         email: "cshdpg@anz.com",
-        description: `"Spanning 28 markets across the Asia Pacific, ANZ provides a range of banking solutions. Talk to ANZ about your banking needs today."`,
+        description: `Spanning 28 markets across the Asia Pacific, ANZ provides a range of banking solutions. Talk to ANZ about your banking needs today.`,
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES2.jpg",
         mapImage: "",
         images: [
@@ -67,7 +67,7 @@ export const serviceInfoData = [
         phone: "+675 322 0888",
         website: "https://www.westpac.com.pg",
         email: "N/A",
-        description: `"Westpac Bank provides a range of banking solutions. Talk to Westpac Bank about your banking needs today."`,
+        description: `Westpac Bank provides a range of banking solutions. Talk to Westpac Bank about your banking needs today.`,
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES3.jpg",
         mapImage: "",
         images: [
@@ -83,7 +83,7 @@ export const serviceInfoData = [
         phone: "+675 325 9827",
         website: "pg.china-embassy.org",
         email: "chineemb_pg@mfa.gov.cn",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -99,7 +99,7 @@ export const serviceInfoData = [
         phone: "+675 321 5550",
         website: "www.ambafrance-pg.org",
         email: "cad.port-moresby-amba@diplomatie.gouv.fr",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -115,7 +115,7 @@ export const serviceInfoData = [
         phone: "+675 325 3116",
         website: "www.kemlu.go.id/portmoresby",
         email: "kbripom@daltron.com.pg",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -131,7 +131,7 @@ export const serviceInfoData = [
         phone: "+675 321 1800",
         website: "www.png.emb-japan.go.jp",
         email: "sceoj@pm.mofa.go.jp, infeoj@pm.mofa.go.jp",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -147,7 +147,7 @@ export const serviceInfoData = [
         phone: "+675 321 1455",
         website: "pg.usembassy.gov",
         email: "N/A",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -163,7 +163,7 @@ export const serviceInfoData = [
         phone: "+675 323 8330",
         website: "www.thaiconsulate.org.pg",
         email: "enquiries@thaiconsulate.org.pg",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -179,7 +179,7 @@ export const serviceInfoData = [
         phone: "+675 325 6577",
         website: "N/A",
         email: "portmoresby.pe@dfa.gov.ph",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -195,7 +195,7 @@ export const serviceInfoData = [
         phone: "+675 321 5822",
         website: "png.mofa.go.kr",
         email: "embpng@mofa.go.kr",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -211,7 +211,7 @@ export const serviceInfoData = [
         phone: "+675 7090 0100 (24 Hours)",
         website: "www.png.embassy.gov.au",
         email: "consular.portmoresby@dfat.gov.au",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -227,7 +227,7 @@ export const serviceInfoData = [
         phone: "+675 303 7600",
         website: "ukinpng.fco.gov.uk",
         email: "uk.inpng@fco.gov.uk",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -243,7 +243,7 @@ export const serviceInfoData = [
         phone: "+675 321 1914",
         website: "png.foreignaffairs.gov.fj",
         email: "rakaie@fijihighcom.org.pg",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -259,7 +259,7 @@ export const serviceInfoData = [
         phone: "+675 325 9444",
         website: "www.nzembassy.com/papua-new-guinea",
         email: "nzhcpmy@mfat.govt.nz",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -275,7 +275,7 @@ export const serviceInfoData = [
         phone: "+675 323 4333",
         website: "N/A",
         email: "sihicomm@daltron.com.pg",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -291,7 +291,7 @@ export const serviceInfoData = [
         phone: "+675 321 4291",
         website: "http://www.hcipom.in/",
         email: "hc.pmoresby@mea.gov.in",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -307,7 +307,7 @@ export const serviceInfoData = [
         phone: "+675 325 2076",
         website: "www.kln.gov.my/web/png_port-moresby/",
         email: "mwportmoresby@kln.gov.my",
-        description: `"Call or visit your embassy if you experience any travel issues."`,
+        description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -323,7 +323,7 @@ export const serviceInfoData = [
         phone: "+675 323 5626",
         website: "www.medevac.com.pg",
         email: "operations@medevac.com.au",
-        description: `"Medevac Pacific Services offers first-rate medical evacuation and medical assistance. The organisation also  offers aero-medical services throughout the PNG region."`,
+        description: `Medevac Pacific Services offers first-rate medical evacuation and medical assistance. The organisation also  offers aero-medical services throughout the PNG region.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -339,7 +339,7 @@ export const serviceInfoData = [
         phone: "+675 1567",
         website: "www.emspng.com",
         email: "emspng@emspng.com",
-        description: `"EMS Assist delivers specialised pre-hospital care in a mobile environment. It has 3 core focus areas in its medical care program are: • Emergency care in the community • Emergency care during transportation • Emergency care on arrival at the health care facility"`,
+        description: `EMS Assist delivers specialised pre-hospital care in a mobile environment. It has 3 core focus areas in its medical care program are: • Emergency care in the community • Emergency care during transportation • Emergency care on arrival at the health care facility`,
         img_url: "",
         mapImage: "",
         images: [
@@ -355,7 +355,7 @@ export const serviceInfoData = [
         phone: "+675 325 8466",
         website: "N/A",
         email: "N/A",
-        description: `"Located in Port Moresby, PNG Chiropractic is there to help with any chiropractic needs."`,
+        description: `Located in Port Moresby, PNG Chiropractic is there to help with any chiropractic needs.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -371,7 +371,7 @@ export const serviceInfoData = [
         phone: "+675 323 4473",
         website: "www.the-corps.com.pg",
         email: "coachofficemanager@gdsspng.com",
-        description: `"Corps Security has been providing security solutions in PNG since 1996 to some of the most high profile entities in the country. Corps Security has successfully provided its services to a range of sectors including finance, construction, diplomatic, commercial, retail and industrial. "`,
+        description: `Corps Security has been providing security solutions in PNG since 1996 to some of the most high profile entities in the country. Corps Security has successfully provided its services to a range of sectors including finance, construction, diplomatic, commercial, retail and industrial. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -387,7 +387,7 @@ export const serviceInfoData = [
         phone: "+675 323 1811",
         website: "guarddogpng.com",
         email: "enquires@gdsspng.com",
-        description: `"Guard Dog Security / NADZAB Airport Coach Service offers: • Executive personal protection/body guard • V.I.P. executive car available • Armed security personnel • Air-conditioning • Drop off to your home or hotel • Guaranteed pick up no matter how late your flight is delayed • Tours by arrangement"`,
+        description: `Guard Dog Security / NADZAB Airport Coach Service offers: • Executive personal protection/body guard • V.I.P. executive car available • Armed security personnel • Air-conditioning • Drop off to your home or hotel • Guaranteed pick up no matter how late your flight is delayed • Tours by arrangement`,
         img_url: "",
         mapImage: "",
         images: [
@@ -403,7 +403,7 @@ export const serviceInfoData = [
         phone: "+675 305 8300",
         website: "www.g4s.com.pg",
         email: "ENQUIRIES@PG.G4S.COM",
-        description: `"G4S is an international security solutions organisation which offers a range of security services and systems."`,
+        description: `G4S is an international security solutions organisation which offers a range of security services and systems.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -419,7 +419,7 @@ export const serviceInfoData = [
         phone: "+675 752 00200",
         website: "www.blackswanss.com",
         email: "bookings@blackswanss.com",
-        description: `"Black Swan VIP Services transports travellers in and around PNG safely, in comfort, and on time. Download the app or call us directly to secure your transport or book in advance and your VIP car will be waiting for you when you arrive. From meeting to meeting, day and night, Black Swan will securely transport you wherever you need to go. Find us in the app store or call us on 75200200. You can also book via email on bookings@blackswanss.com"`,
+        description: `Black Swan VIP Services transports travellers in and around PNG safely, in comfort, and on time. Download the app or call us directly to secure your transport or book in advance and your VIP car will be waiting for you when you arrive. From meeting to meeting, day and night, Black Swan will securely transport you wherever you need to go. Find us in the app store or call us on 75200200. You can also book via email on bookings@blackswanss.com`,
         img_url: "",
         mapImage: "",
         images: [
@@ -435,7 +435,7 @@ export const serviceInfoData = [
         phone: "+675 327 3444",
         website: "airniugini.com.pg",
         email: "telephonesales@airniugini.com.pg",
-        description: `"Air Niugini offers daily services to Cairns and Brisbane, twice weekly services to Sydney and direct services to Singapore, Hong Kong, Manila, Cebu, Bali, Tokyo, Honiara and Fiji."`,
+        description: `Air Niugini offers daily services to Cairns and Brisbane, twice weekly services to Sydney and direct services to Singapore, Hong Kong, Manila, Cebu, Bali, Tokyo, Honiara and Fiji.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -451,7 +451,7 @@ export const serviceInfoData = [
         phone: "+675 7373 7100 ",
         website: "www.pngair.com.pg",
         email: "pngair@pngair.com.pg",
-        description: `"PNG Air proudly connects people throughout PNG with its air service. Everything PNG Air does, is for your security and comfort."`,
+        description: `PNG Air proudly connects people throughout PNG with its air service. Everything PNG Air does, is for your security and comfort.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -467,7 +467,7 @@ export const serviceInfoData = [
         phone: "+675 323 3968",
         website: "www.helifix.com.pg",
         email: "info@helifix.com.pg",
-        description: `"Helifix is an aviation operator that provides helicopter and aircraft charters along with maintenance services throughout PNG."`,
+        description: `Helifix is an aviation operator that provides helicopter and aircraft charters along with maintenance services throughout PNG.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -483,7 +483,7 @@ export const serviceInfoData = [
         phone: "+675 323 0662",
         website: "heliscope.net",
         email: "info@heliscope.net",
-        description: `"HeliScope is a reliable and safe helicopter charter operator which specialises in construction, gas and oil exploration, and aeromedical and passenger services."`,
+        description: `HeliScope is a reliable and safe helicopter charter operator which specialises in construction, gas and oil exploration, and aeromedical and passenger services.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -499,7 +499,7 @@ export const serviceInfoData = [
         phone: "+675 545 1477",
         website: "https://maf.org.au/countries/png/",
         email: "MAF-PapuaNewGuinea@maf.org",
-        description: `"The Mission Aviation Fellowship provides vital aeromedical and charter services for much of PNG's remote, rural regions. "`,
+        description: `The Mission Aviation Fellowship provides vital aeromedical and charter services for much of PNG's remote, rural regions. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -515,7 +515,7 @@ export const serviceInfoData = [
         phone: "+675 311 2673",
         website: "http://www.tropicair.com.pg",
         email: "info@tropicair.com.pg",
-        description: `"Tropicair is a safe and reliable charter operator offering an efficient, affordable charter service with modern safe aircrafts for private and commercial use. "`,
+        description: `Tropicair is a safe and reliable charter operator offering an efficient, affordable charter service with modern safe aircrafts for private and commercial use. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -531,7 +531,7 @@ export const serviceInfoData = [
         phone: "+675 302 6555",
         website: "www.dhl.com",
         email: "N/A",
-        description: `"DHL offers domestic and international freight services as well as logistical and facilitation services for e-commerce businesses. Open Monday to Friday 8am-5pm, and Saturday 8am-12pm."`,
+        description: `DHL offers domestic and international freight services as well as logistical and facilitation services for e-commerce businesses. Open Monday to Friday 8am-5pm, and Saturday 8am-12pm.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -547,7 +547,7 @@ export const serviceInfoData = [
         phone: "+675 320 1040",
         website: "www.gfspng.com",
         email: "",
-        description: `"GFS offers transport and logistics services to the gas and petroleum industry in PNG. Professional, efficient and expedient."`,
+        description: `GFS offers transport and logistics services to the gas and petroleum industry in PNG. Professional, efficient and expedient.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -563,7 +563,7 @@ export const serviceInfoData = [
         phone: "+675 475 1400",
         website: "www.ipigroup.com.pg",
         email: "IPIGROUP@ipigroup.com.pg",
-        description: `"With its many clients in mind, the iPi Group offers tailor-made logistics solutions for transport, warehousing and catering. Call today!"`,
+        description: `With its many clients in mind, the iPi Group offers tailor-made logistics solutions for transport, warehousing and catering. Call today!`,
         img_url: "",
         mapImage: "",
         images: [
@@ -579,7 +579,7 @@ export const serviceInfoData = [
         phone: "+675 325 2411",
         website: "www.tnt.kenmore.com.pg",
         email: "sales@pngaf.com.pg",
-        description: `"TNT Air Cargo offers PNG businesses express delivery services both domestically and internationally. Domestic routes include Port Moresby, Lae, Goroka, Mt Hagen, Tabubil, Lihir Island, Rabaul, Madang, Wewak, Kavieng, Buka, Alotau, Popondetta, Kimbe, Manus, Vanimo and Kiunga."`,
+        description: `TNT Air Cargo offers PNG businesses express delivery services both domestically and internationally. Domestic routes include Port Moresby, Lae, Goroka, Mt Hagen, Tabubil, Lihir Island, Rabaul, Madang, Wewak, Kavieng, Buka, Alotau, Popondetta, Kimbe, Manus, Vanimo and Kiunga.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -595,7 +595,7 @@ export const serviceInfoData = [
         phone: "+675 4723482 / 4727502",
         website: "http://www.michaelshauliers.net",
         email: "michaelshauliers777@gmail.com.au",
-        description: `"Over-dimensional & Heavy Haulage Specialists! Safe delivery on time! - Kenworth Heavy Duty Freight Trucks - Largest stockists of 30 floats/low loaders - Mercedes Benz (6x6) off-road heavy duty freight trucks - Largest stockists of diesel fuel tanker trucks For all your heavy haulage logistic requirements in PNG"`,
+        description: `Over-dimensional & Heavy Haulage Specialists! Safe delivery on time! - Kenworth Heavy Duty Freight Trucks - Largest stockists of 30 floats/low loaders - Mercedes Benz (6x6) off-road heavy duty freight trucks - Largest stockists of diesel fuel tanker trucks For all your heavy haulage logistic requirements in PNG`,
         img_url: "",
         mapImage: "",
         images: [
@@ -611,7 +611,7 @@ export const serviceInfoData = [
         phone: "+675 324 9400 ",
         website: "www.avis.com.pg",
         email: "reservations@avis.com.pg",
-        description: `"Avis makes travelling in PNG an easy and pleasurable experience. Offering the latest Toyota models, Avis offers great customer service and competitive rates. After hours emergency service also available. "`,
+        description: `Avis makes travelling in PNG an easy and pleasurable experience. Offering the latest Toyota models, Avis offers great customer service and competitive rates. After hours emergency service also available. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -627,7 +627,7 @@ export const serviceInfoData = [
         phone: "+675 323 6244",
         website: "www.budget.com.pg",
         email: "reservations@budget.com.pg",
-        description: `"Regardless of whether you're in PNG for leisure or business, Budget has all your car rental needs covered. “New Cars ... Old Fashioned Service.”"`,
+        description: `Regardless of whether you're in PNG for leisure or business, Budget has all your car rental needs covered. “New Cars ... Old Fashioned Service.”`,
         img_url: "",
         mapImage: "",
         images: [
@@ -643,7 +643,7 @@ export const serviceInfoData = [
         phone: "+675 342 2273",
         website: "www.europcar.com.au/places/papua-new-guinea",
         email: "N/A",
-        description: `"Europcar offers affordable and reliable car rentals for visitors to PNG. Explore more of the incredible landscapes and culture of this fascinating nation with Europcar."`,
+        description: `Europcar offers affordable and reliable car rentals for visitors to PNG. Explore more of the incredible landscapes and culture of this fascinating nation with Europcar.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -659,7 +659,7 @@ export const serviceInfoData = [
         phone: "+675 982 9311",
         website: "www.facebook.com/pg/Frangipani-Car-Hires",
         email: "N/A",
-        description: `"Frangipani car hire provides a pleasurable and reliable experience when exploring the stunning and fascinating region of East New Britain. Customer service and satisfaction guaranteed. "`,
+        description: `Frangipani car hire provides a pleasurable and reliable experience when exploring the stunning and fascinating region of East New Britain. Customer service and satisfaction guaranteed. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -675,7 +675,7 @@ export const serviceInfoData = [
         phone: "+675 7363 0995",
         website: "www.hertz.com.au/p/hire-a-car/papua-new-guinea",
         email: "N/A",
-        description: `"Enjoy a day trip to the beautiful Variata National Park or a week-long getaway to explore more of this wonderful nation. Whatever your transport needs, Hertz car rentals has you covered."`,
+        description: `Enjoy a day trip to the beautiful Variata National Park or a week-long getaway to explore more of this wonderful nation. Whatever your transport needs, Hertz car rentals has you covered.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -691,7 +691,7 @@ export const serviceInfoData = [
         phone: "+675 422 0433",
         website: "N/A",
         email: "N/A",
-        description: `"A Rental car service located in Madang"`,
+        description: `A Rental car service located in Madang`,
         img_url: "",
         mapImage: "",
         images: [
@@ -707,7 +707,7 @@ export const serviceInfoData = [
         phone: "+675 422 3412",
         website: "travellersrentacar.com",
         email: "travellersrentacar@reservations.com",
-        description: `"Travellers Rent-a-Car is a locally owned car rental company offering transport services to both leisure and executive travellers. Delivering the best rentals for PNG's road and climate conditions."`,
+        description: `Travellers Rent-a-Car is a locally owned car rental company offering transport services to both leisure and executive travellers. Delivering the best rentals for PNG's road and climate conditions.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -723,7 +723,7 @@ export const serviceInfoData = [
         phone: "+675 690 4431",
         website: "N/A",
         email: "N/A",
-        description: `"City Cab is Mt Hagen's sole taxi service."`,
+        description: `City Cab is Mt Hagen's sole taxi service.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -739,7 +739,7 @@ export const serviceInfoData = [
         phone: "+675 321 7711",
         website: "www.newcrest.com.au",
         email: "corporateaffairs@newcrest.com.au",
-        description: `"Located within the New Ireland Province, Newcrest's Lihir operation has produced over 10 million ounces of gold since its inception back in 1997. It remains one of the most prolific gold mines in PNG today.  "`,
+        description: `Located within the New Ireland Province, Newcrest's Lihir operation has produced over 10 million ounces of gold since its inception back in 1997. It remains one of the most prolific gold mines in PNG today.  `,
         img_url: "",
         mapImage: "",
         images: [
@@ -755,7 +755,7 @@ export const serviceInfoData = [
         phone: "+675 276 2010",
         website: "www.stbarbara.com.au",
         email: "info@stbarbara.com.au",
-        description: `"Simberi Gold Company Limited is located in the New Ireland Province on an island within the Tabar Group. Due to its volcanic composition, the island elevates dramatically around the shoreline and attracts high rain falls. The mining operations currently centres around the eastern part of the island which extends 2,560 hectares in total. "`,
+        description: `Simberi Gold Company Limited is located in the New Ireland Province on an island within the Tabar Group. Due to its volcanic composition, the island elevates dramatically around the shoreline and attracts high rain falls. The mining operations currently centres around the eastern part of the island which extends 2,560 hectares in total. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -771,7 +771,7 @@ export const serviceInfoData = [
         phone: "+675 547 9500",
         website: "www.barrick.com",
         email: "N/A",
-        description: `"Located in the Enga Province, approximately 130 kilometres from the township of Mount Hagen, the Porgera Joint Venture is an operational gold mine 95% owned by Barrick (Niugini) Limited."`,
+        description: `Located in the Enga Province, approximately 130 kilometres from the township of Mount Hagen, the Porgera Joint Venture is an operational gold mine 95% owned by Barrick (Niugini) Limited.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -787,7 +787,7 @@ export const serviceInfoData = [
         phone: "+675 321 3522",
         website: "www.oktedi.com",
         email: "enquiry.tabubil@oktedi.com",
-        description: `"Ok Tedi Mining Limited is one of the most proliferate copper, gold and silver mines in PNG. Located in the Star Mountains in the Western Province, the company ships ore from the township of Kiunga down the Fly River to the coast."`,
+        description: `Ok Tedi Mining Limited is one of the most proliferate copper, gold and silver mines in PNG. Located in the Star Mountains in the Western Province, the company ships ore from the township of Kiunga down the Fly River to the coast.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -803,7 +803,7 @@ export const serviceInfoData = [
         phone: "+675 329 9277",
         website: "www.petrominpng.com.pg",
         email: "contact@petrominpng.com.pg",
-        description: `"Petromin PNG Holdings Limited is an independent business created to oversee the mineral and petroleum industry and ensure that state and indigenous interests are maximised."`,
+        description: `Petromin PNG Holdings Limited is an independent business created to oversee the mineral and petroleum industry and ensure that state and indigenous interests are maximised.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -819,7 +819,7 @@ export const serviceInfoData = [
         phone: "+675 478 5000",
         website: "www.morobejv.com",
         email: "mmj.media@morobejv.com",
-        description: `"Morobe Mining Joint Ventures was established back in 2008 and operates in the Morobe Province.  "`,
+        description: `Morobe Mining Joint Ventures was established back in 2008 and operates in the Morobe Province.  `,
         img_url: "",
         mapImage: "",
         images: [
@@ -835,7 +835,7 @@ export const serviceInfoData = [
         phone: "+675 422 2888",
         website: "www.ramunico.com",
         email: "info@mccgrd.com",
-        description: `"Established back in 2005, Ramu NiCo Management oversees the Ramu Nickel Joint Venture which focuses on nickel mining in the Madang Province. "`,
+        description: `Established back in 2005, Ramu NiCo Management oversees the Ramu Nickel Joint Venture which focuses on nickel mining in the Madang Province. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -851,7 +851,7 @@ export const serviceInfoData = [
         phone: "+61 8 6144 0588",
         website: "www.kulagold.com.au",
         email: "info@kulagold.com.au",
-        description: `"Woodlark Island Gold Project is a gold mine located on Woodlark Island located in the Milne Bay Province."`,
+        description: `Woodlark Island Gold Project is a gold mine located on Woodlark Island located in the Milne Bay Province.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -867,7 +867,7 @@ export const serviceInfoData = [
         phone: "+675 7100 2451",
         website: "www.k92mining.com",
         email: "site@k92mining.com",
-        description: `"K92 Mining is a gold mine operation located in the Eastern Highlands Province of PNG."`,
+        description: `K92 Mining is a gold mine operation located in the Eastern Highlands Province of PNG.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -883,7 +883,7 @@ export const serviceInfoData = [
         phone: "+61 2 9241 4224 ",
         website: "www.cratergold.com.au",
         email: "info@cratergold.com.au",
-        description: `"Crater Gold Mining manages two gold mining projects in PNG, one at Fergusson Island and the other at Crater Mountain. "`,
+        description: `Crater Gold Mining manages two gold mining projects in PNG, one at Fergusson Island and the other at Crater Mountain. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -899,7 +899,7 @@ export const serviceInfoData = [
         phone: "+675 321 3057",
         website: "www.pngcci.org.pg",
         email: "N/A",
-        description: `"The Papua New Guinea Chamber of Commerce and Industry Inc. (PNGCCI) is an government body that is committed to the development of trade and commerce in PNG."`,
+        description: `The Papua New Guinea Chamber of Commerce and Industry Inc. (PNGCCI) is an government body that is committed to the development of trade and commerce in PNG.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -915,7 +915,7 @@ export const serviceInfoData = [
         phone: "+675 321 2817",
         website: "www.facebook.com/pg/PngDepartmentOfLabourIndustrialRelation",
         email: "N/A",
-        description: `"Department of Labour and Industrial Relations is a PNG body that strives to create positive industrial relations and support work opportunities throughout the region. "`,
+        description: `Department of Labour and Industrial Relations is a PNG body that strives to create positive industrial relations and support work opportunities throughout the region. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -931,7 +931,7 @@ export const serviceInfoData = [
         phone: "+675 322 7664",
         website: "N/A",
         email: "N/A",
-        description: `"The Department of Mineral Policy and Geohazards Management is a government body that oversees mining legislation and the management of geohazards."`,
+        description: `The Department of Mineral Policy and Geohazards Management is a government body that oversees mining legislation and the management of geohazards.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -947,7 +947,7 @@ export const serviceInfoData = [
         phone: "+675 321 3511",
         website: "www.mra.gov.pg",
         email: "info@mra.gov.pg",
-        description: `"The Mineral Resources Authority is a government body formed to assist and approve exploration applications for the benefit of PNG and business operators undertaking exploration.  "`,
+        description: `The Mineral Resources Authority is a government body formed to assist and approve exploration applications for the benefit of PNG and business operators undertaking exploration.  `,
         img_url: "",
         mapImage: "",
         images: [
@@ -963,7 +963,7 @@ export const serviceInfoData = [
         phone: "+675 321 7311",
         website: "www.ipa.gov.pg",
         email: "ispd@ipa.gov.pg/clarence@ipa.gov.pg",
-        description: `"The Investment Promotion Authority is a government body that incentivises exploration in PNG. The organisation also oversees the Intellectual Property Office, Securities Commission and Companies Office."`,
+        description: `The Investment Promotion Authority is a government body that incentivises exploration in PNG. The organisation also oversees the Intellectual Property Office, Securities Commission and Companies Office.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -979,7 +979,7 @@ export const serviceInfoData = [
         phone: "+675 321 2988",
         website: "www.pngchamberminpet.com.pg",
         email: "info@pngchamberminpet.com.pg",
-        description: `"The PNG Chamber of Mines and Petroleum is an official body overseeing the interests of those within the mining and petroleum sector."`,
+        description: `The PNG Chamber of Mines and Petroleum is an official body overseeing the interests of those within the mining and petroleum sector.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -995,7 +995,7 @@ export const serviceInfoData = [
         phone: "+675 322 4200",
         website: "www.petroleum.gov.pg",
         email: "N/A",
-        description: `"The Department of Petroleum is a government body that provides current information about the petroleum and energy industries in PNG as well as conducts research and sets policies to manage activities."`,
+        description: `The Department of Petroleum is a government body that provides current information about the petroleum and energy industries in PNG as well as conducts research and sets policies to manage activities.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1011,7 +1011,7 @@ export const serviceInfoData = [
         phone: "+675 322 5599",
         website: "www.oilsearch.com",
         email: "N/A",
-        description: `"Oil Search was established in back in 1929 and manages the operation of all of PNG’s established oil fields."`,
+        description: `Oil Search was established in back in 1929 and manages the operation of all of PNG’s established oil fields.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1027,7 +1027,7 @@ export const serviceInfoData = [
         phone: "+675 309 711",
         website: "pnglng.com",
         email: "N/A",
-        description: `"ExxonMobile PNG manages the PNG LNG project which is developing a commercial industry for gas resources in the region. "`,
+        description: `ExxonMobile PNG manages the PNG LNG project which is developing a commercial industry for gas resources in the region. `,
         img_url: "",
         mapImage: "",
         images: [
@@ -1043,7 +1043,7 @@ export const serviceInfoData = [
         phone: "+675 4743299",
         website: "www.nbpol.com.pg",
         email: "rbeerwald@rai.com.pg",
-        description: `"Ramu Sugar, PNG's only locally grown and manufactured sugar, is operated by Ramu Agri Industries Ltd (RAIL). Aside from sugar, the company also produces Ramu Premium Beef, Ramu Palm Oil and Ramu Ethanol."`,
+        description: `Ramu Sugar, PNG's only locally grown and manufactured sugar, is operated by Ramu Agri Industries Ltd (RAIL). Aside from sugar, the company also produces Ramu Premium Beef, Ramu Palm Oil and Ramu Ethanol.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1059,7 +1059,7 @@ export const serviceInfoData = [
         phone: "+675 982 9027",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1075,7 +1075,7 @@ export const serviceInfoData = [
         phone: "+675 5421999",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1091,7 +1091,7 @@ export const serviceInfoData = [
         phone: "+675 472 3200",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1107,7 +1107,7 @@ export const serviceInfoData = [
         phone: "+675 325 8469",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1123,7 +1123,7 @@ export const serviceInfoData = [
         phone: "+675 325 5411",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1139,7 +1139,7 @@ export const serviceInfoData = [
         phone: "+675 422 1899",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1155,7 +1155,7 @@ export const serviceInfoData = [
         phone: "+675 532 1622",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1171,7 +1171,7 @@ export const serviceInfoData = [
         phone: "+675 325 5411",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1187,7 +1187,7 @@ export const serviceInfoData = [
         phone: "+675 325 5411",
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
-        description: `"Everything for your home and outdoors! Retail Wholesale Everything for your home"`,
+        description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1203,7 +1203,7 @@ export const serviceInfoData = [
         phone: "+675 325 8049",
         website: "www.keynote.com.pg",
         email: "sales@keynote.com.pg",
-        description: `"Keynote Music is your one stop music stop: • Piano & digital keyboards • Guitars, amplifiers & accessories • Brass, woodwind, percussion instruments & accessories • Pro audio • Background music systems – design, installation & service • Public address systems (portable to large) – design, sales & service"`,
+        description: `Keynote Music is your one stop music stop: • Piano & digital keyboards • Guitars, amplifiers & accessories • Brass, woodwind, percussion instruments & accessories • Pro audio • Background music systems – design, installation & service • Public address systems (portable to large) – design, sales & service`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1219,7 +1219,7 @@ export const serviceInfoData = [
         phone: "+675 320 0944",
         website: "www.sre.com.pg",
         email: "info@sre.com.pg",
-        description: `"Strickland Real Estate offers a variety of services: • Real Estate • Consultants • Sales • Rent Collection • Property Management • General Maintenance • Leasing • Residential, Industrial, Commercial"`,
+        description: `Strickland Real Estate offers a variety of services: • Real Estate • Consultants • Sales • Rent Collection • Property Management • General Maintenance • Leasing • Residential, Industrial, Commercial`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1235,7 +1235,7 @@ export const serviceInfoData = [
         phone: "+675 325 4233 ",
         website: "www.pryde.com.pg",
         email: "info@pryde.com.pg",
-        description: `"Pryde Furniture is the pryde of Papua New Guinea: • Home products • Furniture & timber products • Office fitouts • Curtains & blinds • Flooring"`,
+        description: `Pryde Furniture is the pryde of Papua New Guinea: • Home products • Furniture & timber products • Office fitouts • Curtains & blinds • Flooring`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1251,7 +1251,7 @@ export const serviceInfoData = [
         phone: "+675 302 8511",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `"RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Sunday 8:00am - 9:00pm"`,
+        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Sunday 8:00am - 9:00pm`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1267,7 +1267,7 @@ export const serviceInfoData = [
         phone: "+675 325 1122",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `"RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Wednesday, Saturday & Sunday 8:00am - 7:30pm; Thursday & Friday 8:00am - 8:00pm "`,
+        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Wednesday, Saturday & Sunday 8:00am - 7:30pm; Thursday & Friday 8:00am - 8:00pm `,
         img_url: "",
         mapImage: "",
         images: [
@@ -1283,7 +1283,7 @@ export const serviceInfoData = [
         phone: "+675 325 1538 ",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `"RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday – Sunday 8:00am – 7:00pm"`,
+        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday – Sunday 8:00am – 7:00pm`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1299,7 +1299,7 @@ export const serviceInfoData = [
         phone: "+675 472 3328",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `"RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Friday 8:00am - 5:00pm; Saturday 8:00am - 12:00pm "`,
+        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Friday 8:00am - 5:00pm; Saturday 8:00am - 12:00pm `,
         img_url: "",
         mapImage: "",
         images: [
@@ -1315,7 +1315,7 @@ export const serviceInfoData = [
         phone: "+675 323 3366",
         website: "www.bngtrading.com.pg",
         email: "pomsalesadmin@bngtrading.com.pg",
-        description: `"Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps."`,
+        description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1331,7 +1331,7 @@ export const serviceInfoData = [
         phone: "+675 472 4850",
         website: "www.bngtrading.com.pg",
         email: "laecustomerservice01@bngtrading.com.pg",
-        description: `"Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps."`,
+        description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1347,7 +1347,7 @@ export const serviceInfoData = [
         phone: "+675 982 8561",
         website: "www.bngtrading.com.pg",
         email: "bngkpomgr@global.net.pg",
-        description: `"Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps."`,
+        description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1363,7 +1363,7 @@ export const serviceInfoData = [
         phone: "+675 7190 9926 ",
         website: "www.bngtrading.com.pg",
         email: "N/A",
-        description: `"Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps."`,
+        description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1379,7 +1379,7 @@ export const serviceInfoData = [
         phone: "N/A",
         website: "www.pacificpalmsproperty.com.pg",
         email: "property@pacificpalmsproperty.com.pg",
-        description: `"Now you can meet in private and work in world class surroundings at Pacific Palms Property's latest development, Harbourside West Tower Serviced Offices, on the waterfront in downtown Port Moresby. Choose from a range of contemporary offices with modern, quality furnishings available on an hourly, daily or monthly basis at very reasonable rates. There is 24 hour security with ample, safe, on-site basement parking for peace of mind. Our staff are well trained and ready to assist with efficient administrative support and the offices are supported with quality amenities for your convenience, including a modern kitchen, breakout areas, meeting and training rooms, reception services, printers, security and housekeeping, leaving you free to concentrate on your business."`,
+        description: `Now you can meet in private and work in world class surroundings at Pacific Palms Property's latest development, Harbourside West Tower Serviced Offices, on the waterfront in downtown Port Moresby. Choose from a range of contemporary offices with modern, quality furnishings available on an hourly, daily or monthly basis at very reasonable rates. There is 24 hour security with ample, safe, on-site basement parking for peace of mind. Our staff are well trained and ready to assist with efficient administrative support and the offices are supported with quality amenities for your convenience, including a modern kitchen, breakout areas, meeting and training rooms, reception services, printers, security and housekeeping, leaving you free to concentrate on your business.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1395,7 +1395,7 @@ export const serviceInfoData = [
         phone: "+675 302 8555",
         website: "www.visioncity.com.pg",
         email: "N/A",
-        description: `"Vision City Mega Mall is a modern, secure shopping mall in Port Moresby catering to all your shopping needs."`,
+        description: `Vision City Mega Mall is a modern, secure shopping mall in Port Moresby catering to all your shopping needs.`,
         img_url: "",
         mapImage: "",
         images: [
@@ -1411,7 +1411,7 @@ export const serviceInfoData = [
         phone: "N/A",
         website: "www.madnessphotography.com.au",
         email: "ness@madnessphotography.com.au",
-        description: `"Need to stand out from the crowd?"`,
+        description: `Need to stand out from the crowd?`,
         img_url: "",
         mapImage: "",
         images: [
