@@ -48,7 +48,7 @@ const ourhotel_room_suite = [
             occpancy: 'Two Adults'
         },
         images: [
-            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1B-Deluxe/Our Hotel Section_ImagesDeluxe' }
+            { imageFile: '/imgs/ourHotel/H1-Rooms and Suites/H1B-Deluxe/Our Hotel Section_ImagesDeluxe.jpg' }
         ]
        
 
