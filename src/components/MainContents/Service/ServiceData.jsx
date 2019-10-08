@@ -339,7 +339,7 @@ export const serviceInfoData = [
         phone: "+675 1567",
         website: "www.emspng.com",
         email: "emspng@emspng.com",
-        description: `EMS Assist delivers specialised pre-hospital care in a mobile environment. It has 3 core focus areas in its medical care program are: • Emergency care in the community • Emergency care during transportation • Emergency care on arrival at the health care facility`,
+        description: `EMS Assist delivers specialised pre-hospital care in a mobile environment. It has 3 core focus areas in its medical care program are: <br/>• Emergency care in the community <br/>• Emergency care during transportation <br/>• Emergency care on arrival at the health care facility`,
         img_url: "/imgs/service/S1-Essential-Services/S1D-Medical-Services/S1-IMAGES20.jpg",
         mapImage: "",
         images: [
@@ -387,7 +387,7 @@ export const serviceInfoData = [
         phone: "+675 323 1811",
         website: "guarddogpng.com",
         email: "enquires@gdsspng.com",
-        description: `Guard Dog Security / NADZAB Airport Coach Service offers: • Executive personal protection/body guard • V.I.P. executive car available • Armed security personnel • Air-conditioning • Drop off to your home or hotel • Guaranteed pick up no matter how late your flight is delayed • Tours by arrangement`,
+        description: `Guard Dog Security / NADZAB Airport Coach Service offers: <br/>• Executive personal protection/body guard <br/>• V.I.P. executive car available <br/>• Armed security personnel <br/>• Air-conditioning <br/>• Drop off to your home or hotel <br/>• Guaranteed pick up no matter how late your flight is delayed <br/>• Tours by arrangement`,
         img_url: "/imgs/service/S1-Essential-Services/S1E-Security/S1-IMAGES23.jpg",
         mapImage: "",
         images: [
@@ -595,7 +595,7 @@ export const serviceInfoData = [
         phone: "+675 4723482 / 4727502",
         website: "http://www.michaelshauliers.net",
         email: "michaelshauliers777@gmail.com.au",
-        description: `Over-dimensional & Heavy Haulage Specialists! Safe delivery on time! - Kenworth Heavy Duty Freight Trucks - Largest stockists of 30 floats/low loaders - Mercedes Benz (6x6) off-road heavy duty freight trucks - Largest stockists of diesel fuel tanker trucks For all your heavy haulage logistic requirements in PNG`,
+        description: `Over-dimensional & Heavy Haulage Specialists! Safe delivery on time! <br/>- Kenworth Heavy Duty Freight Trucks <br/>- Largest stockists of 30 floats/low loaders <br/>- Mercedes Benz (6x6) off-road heavy duty freight trucks <br/>- Largest stockists of diesel fuel tanker trucks For all your heavy haulage logistic requirements in PNG`,
         img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/",
         mapImage: "",
         images: [
@@ -627,7 +627,7 @@ export const serviceInfoData = [
         phone: "+675 323 6244",
         website: "www.budget.com.pg",
         email: "reservations@budget.com.pg",
-        description: `Regardless of whether you're in PNG for leisure or business, Budget has all your car rental needs covered. “New Cars ... Old Fashioned Service.”`,
+        description: `Regardless of whether you're in PNG for leisure or business, Budget has all your car rental needs covered. <br/>“New Cars ... Old Fashioned Service.”`,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS16.jpg",
         mapImage: "",
         images: [
@@ -1203,7 +1203,7 @@ export const serviceInfoData = [
         phone: "+675 325 8049",
         website: "www.keynote.com.pg",
         email: "sales@keynote.com.pg",
-        description: `Keynote Music is your one stop music stop: • Piano & digital keyboards • Guitars, amplifiers & accessories • Brass, woodwind, percussion instruments & accessories • Pro audio • Background music systems – design, installation & service • Public address systems (portable to large) – design, sales & service`,
+        description: `Keynote Music is your one stop music stop: <br/>• Piano & digital keyboards <br/>• Guitars, amplifiers & accessories <br/>• Brass, woodwind, percussion instruments & accessories <br/>• Pro audio <br/>• Background music systems – design, installation & service <br/>• Public address systems (portable to large) – design, sales & service`,
         img_url: "/imgs/service/Retail/S4B-KeynoteMusic.jpg",
         mapImage: "",
         images: [
@@ -1219,7 +1219,7 @@ export const serviceInfoData = [
         phone: "+675 320 0944",
         website: "www.sre.com.pg",
         email: "info@sre.com.pg",
-        description: `Strickland Real Estate offers a variety of services: • Real Estate • Consultants • Sales • Rent Collection • Property Management • General Maintenance • Leasing • Residential, Industrial, Commercial`,
+        description: `Strickland Real Estate offers a variety of services: <br/>• Real Estate <br/>• Consultants <br/>• Sales <br/>• Rent Collection <br/>• Property Management <br/>• General Maintenance <br/>• Leasing <br/>• Residential, Industrial, Commercial`,
         img_url: "/imgs/service/Retail/S4C-StricklandRealEstate.jpg",
         mapImage: "",
         images: [
@@ -1235,7 +1235,7 @@ export const serviceInfoData = [
         phone: "+675 325 4233 ",
         website: "www.pryde.com.pg",
         email: "info@pryde.com.pg",
-        description: `Pryde Furniture is the pryde of Papua New Guinea: • Home products • Furniture & timber products • Office fitouts • Curtains & blinds • Flooring`,
+        description: `Pryde Furniture is the pryde of Papua New Guinea: <br/>• Home products <br/>• Furniture & timber products <br/>• Office fitouts <br/>• Curtains & blinds <br/>• Flooring`,
         img_url: "/imgs/service/Retail/S4D-PrydeFurniture.jpg",
         mapImage: "",
         images: [
@@ -1251,7 +1251,7 @@ export const serviceInfoData = [
         phone: "+675 302 8511",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Sunday 8:00am - 9:00pm`,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday to Sunday 8:00am - 9:00pm`,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [
@@ -1267,7 +1267,7 @@ export const serviceInfoData = [
         phone: "+675 325 1122",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Wednesday, Saturday & Sunday 8:00am - 7:30pm; Thursday & Friday 8:00am - 8:00pm `,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday to Wednesday, Saturday & Sunday 8:00am - 7:30pm; Thursday & Friday 8:00am - 8:00pm `,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [
@@ -1283,7 +1283,7 @@ export const serviceInfoData = [
         phone: "+675 325 1538 ",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday – Sunday 8:00am – 7:00pm`,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday – Sunday 8:00am – 7:00pm`,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [
@@ -1299,7 +1299,7 @@ export const serviceInfoData = [
         phone: "+675 472 3328",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: • Groceries • Fruit and vegetables • Meat & seafood • Deli goods • Dairy • Beverages • Fashion apparel  • Hardware & garden products • Sports equipment • Toys Open Monday to Friday 8:00am - 5:00pm; Saturday 8:00am - 12:00pm `,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday to Friday 8:00am - 5:00pm; Saturday 8:00am - 12:00pm `,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [

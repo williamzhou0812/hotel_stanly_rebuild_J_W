@@ -255,7 +255,7 @@ class ServiceDetail extends React.Component {
                                 <div
                                     style={{
                                         flexBasis: "50%",
-                                        padding: "35px 50px",
+                                        padding: "35px 20px 35px 50px",
                                         overflowY: "auto",
                                         borderRight:
                                                 "1px solid rgb(105,194,209)",
@@ -289,7 +289,7 @@ class ServiceDetail extends React.Component {
                                 </div>
                                 <div style={{
                                     flexBasis: "50%",
-                                    padding: "35px 50px",
+                                    padding: "35px 20px 35px 50px",
                                     overflowY: "auto",
                                 }}
                                 >
