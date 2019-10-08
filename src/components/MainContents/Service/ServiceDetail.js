@@ -289,7 +289,8 @@ class ServiceDetail extends React.Component {
                                 </div>
                                 <div style={{
                                     flexBasis: "50%",
-                                    padding: "35px 50px"
+                                    padding: "35px 50px",
+                                    overflowY: "auto",
                                 }}
                                 >
                                     {false && (<div style={{ height: "15%" }} />)}
