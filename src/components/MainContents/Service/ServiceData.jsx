@@ -1063,7 +1063,8 @@ export const serviceInfoData = [
         img_url: "/imgs/service/Retail/S4A-BrianBell.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
         ]
 
     },
@@ -1415,7 +1416,9 @@ export const serviceInfoData = [
         img_url: "/imgs/service/Retail/S4I-MadnessPhotography.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/Retail/S4I-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/Retail/S4I-HeaderImage2.jpg' },
+            { imageFile: '/imgs/service/Retail/S4I-HeaderImage3.jpg' }
         ]
 
     },
