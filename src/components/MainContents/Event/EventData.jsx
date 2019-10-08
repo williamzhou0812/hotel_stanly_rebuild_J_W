@@ -173,7 +173,7 @@ export const events = [
         details: {
             call: '+675 982 8697',
             website: 'www.enb.travel',
-            email: 'www.engashow.com',
+            email: 'susie@rabaulhotel.com.pg',
             location: 'Rabaul, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/FRANGIPANI-FESTIVAL-MAP-01.png",
