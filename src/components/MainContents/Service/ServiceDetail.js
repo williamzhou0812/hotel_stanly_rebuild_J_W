@@ -275,7 +275,8 @@ class ServiceDetail extends React.Component {
                                             dangerouslySetInnerHTML={{__html: service_details.description}}
                                             style={{
                                                 marginTop: 0,
-                                                marginBottom: 0
+                                                marginBottom: 0,
+                                                lineHeight: '28px'
                                             }}
                                         ></div>
                                     </div>
@@ -293,7 +294,8 @@ class ServiceDetail extends React.Component {
                                             letterSpacing: "1px",
                                             overflow: "scroll",
                                             display: "inline-table",
-                                            width: "100%"
+                                            width: "100%",
+                                            lineHeight: '28px'
                                             // fontSize: "2vw"
                                         }}
                                     >
