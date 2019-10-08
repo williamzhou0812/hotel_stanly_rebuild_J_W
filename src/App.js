@@ -25,6 +25,8 @@ import ServiceInitialList from "./components/MainContents/Service/ServiceInitial
 import ServiceTypeList from "./components/MainContents/Service/ServiceTypeList";
 import ServiceDetail from "./components/MainContents/Service/ServiceDetail";
 import ServiceList from "./components/MainContents/Service/ServiceList"
+import ServiceBranch from "./components/MainContents/Service/ServiceBranch";
+
 // new improt J
 import DiningList from "./components/MainContents/Dining/DiningList";
 import DiningDetail from "./components/MainContents/Dining/DiningDetail";
@@ -178,6 +180,13 @@ function App() {
                         path="/services/:servicename"
                         component={ServiceTypeList}
                     />
+
+                    <Route
+                        exact
+                        path="/services/retail/:subservicename"
+                        component={ServiceBranch}
+                    />   
+
                     <Route
                         exact
                         path="/services/:servicename/:subservicename"
