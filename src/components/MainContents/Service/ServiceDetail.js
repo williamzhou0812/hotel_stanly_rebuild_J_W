@@ -128,6 +128,24 @@ class ServiceDetail extends React.Component {
                             </div>
                         </div>
                     </Link>
+                    <Link
+                        style={{
+                            //  height: "14%",
+                            textDecoration: "none"
+                        }}
+                        to={service.url}
+                    >
+                        <div className="leftSide-menu--container">
+                            <img
+                                className="leftSide-menu--img"
+                                src={sub_service.img_url}
+                                alt="Service Type Icon"
+                            />
+                            <div className="menu-title ">
+                                {sub_service.title}
+                            </div>
+                        </div>
+                    </Link>
                     {false && (
                         <Link
                             style={{
