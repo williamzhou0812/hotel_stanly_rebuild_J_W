@@ -202,7 +202,7 @@ class DiningDetail extends React.Component {
                                         <div style={{
                                                 width: "100%",
                                                 height: "100%",
-                                                backgroundImage: `url(${_DingingsDetails.img_url})`,
+                                                backgroundImage: `url('${_DingingsDetails.img_url}')`,
                                                 backgroundSize: "100%",
                                                 backgroundPosition: "center"
                                             }}>

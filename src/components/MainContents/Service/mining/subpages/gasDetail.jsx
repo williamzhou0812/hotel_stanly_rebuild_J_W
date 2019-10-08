@@ -203,7 +203,7 @@ class PetroleumgasDetail extends React.Component {
                                 className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${petroleumgasDetail.img_url})`,
+                                    backgroundImage: `url('${petroleumgasDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

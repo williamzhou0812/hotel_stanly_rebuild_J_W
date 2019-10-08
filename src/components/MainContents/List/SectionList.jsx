@@ -118,9 +118,9 @@ class SectionList extends React.Component {
                                         style={{
                                             width: "100%",
                                             height: "33.33333%",
-                                            backgroundImage: `url(${
+                                            backgroundImage: `url('${
                                                 images[index]
-                                                })`,
+                                                }')`,
                                             //    backgroundImage: `url(${item.images})`,
                                             backgroundPosition: "center center",
                                             backgroundRepeat: "no-repeat",

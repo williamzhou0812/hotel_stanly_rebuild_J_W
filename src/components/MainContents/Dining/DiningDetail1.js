@@ -57,7 +57,7 @@ class DiningDetail extends React.Component {
                 <div
                     style={{
                         height: "50%",
-                        backgroundImage: `url(${images[0].imageFile})`,
+                        backgroundImage: `url('${images[0].imageFile}')`,
                         backgroundSize: "cover",
                         backgroundPosition: "center"
                     }}
@@ -133,7 +133,7 @@ class DiningDetail extends React.Component {
                             <div
                                 style={{
                                     flexBasis: "50%",
-                                    backgroundImage: `url(${restaurant.logo})`,
+                                    backgroundImage: `url('${restaurant.logo}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

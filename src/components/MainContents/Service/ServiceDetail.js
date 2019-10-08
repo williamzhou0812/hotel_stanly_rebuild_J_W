@@ -211,7 +211,7 @@ class ServiceDetail extends React.Component {
                                         <div style={{
                                                 width: "100%",
                                                 height: "100%",
-                                                backgroundImage: `url(${service_details.img_url})`,
+                                                backgroundImage: `url('${service_details.img_url}')`,
                                                 backgroundSize: "100%",
                                                 backgroundPosition: "center"
                                             }}>

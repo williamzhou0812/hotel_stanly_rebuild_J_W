@@ -209,7 +209,7 @@ class SecurityDetails extends React.Component {
                             <div className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${securityDetail.img_url})`,
+                                    backgroundImage: `url('${securityDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

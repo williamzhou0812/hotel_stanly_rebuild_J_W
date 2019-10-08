@@ -210,7 +210,7 @@ class MediclServiceDetails extends React.Component {
                             <div className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${medicalDetail.img_url})`,
+                                    backgroundImage: `url('${medicalDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

@@ -78,7 +78,7 @@ class ServiceBranch extends React.Component {
                 <div
                     style={{
                         height: "42%",
-                        backgroundImage: `url(${images[0].imageFile})`,
+                        backgroundImage: `url('${images[0].imageFile}')`,
                         backgroundSize: "cover",
                         backgroundPosition: "center"
                     }}
@@ -190,7 +190,7 @@ class ServiceBranch extends React.Component {
                             <div
                                 style={{
                                     flexBasis: "33%",
-                                    backgroundImage: `url(${branch.logo})`,
+                                    backgroundImage: `url('${branch.logo}')`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                     borderWidth: "1px",

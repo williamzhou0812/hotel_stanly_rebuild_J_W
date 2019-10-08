@@ -74,7 +74,7 @@ class HotelDetail extends React.Component {
                 <div
                     style={{
                         height: "42%",
-                        backgroundImage: `url(${images[0].imageFile})`,
+                        backgroundImage: `url('${images[0].imageFile}')`,
                         backgroundSize: "cover",
                         backgroundPosition: "center"
                     }}
@@ -248,9 +248,9 @@ class HotelDetail extends React.Component {
                                 <div
                                     style={{
                                         flexBasis: "33%",
-                                        backgroundImage: `url(${
+                                        backgroundImage: `url('${
                                             accommodation.logo
-                                        })`,
+                                        }')`,
                                         backgroundSize: "cover",
                                         backgroundPosition: "center"
                                     }}
