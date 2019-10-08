@@ -14,6 +14,11 @@ class ActivityDestinationList extends React.Component {
         const activity = activities.find(item => item.id == _id);
         const { destinations } = activity;
 
+        // change title to Upper case
+        const mod_destinations = destinations.map( item => {
+            return { ...item, title: item.title.toUpperCase()}
+        })
+
         return (
             <div
                 className="section--bottom--animation"
@@ -21,7 +26,7 @@ class ActivityDestinationList extends React.Component {
             >
                 <SubsectionList
                     numberOfEntries={4}
-                    data={destinations}
+                    data={mod_destinations}
                     namespace={activityNamespace + '/' + _id }
                     imageKey="logo"
                     isImageArray={false}

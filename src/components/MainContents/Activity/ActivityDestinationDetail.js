@@ -218,7 +218,7 @@ class ActivityDestinationDetail extends React.Component {
                                         letterSpacing: "5px"
                                     }}
                                 >
-                                    {destination.title}
+                                    {destination.title.toUpperCase()}
                                 </span>
                             </div>
                             <Link
