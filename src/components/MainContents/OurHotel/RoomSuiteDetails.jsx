@@ -108,7 +108,7 @@ const ourhotel_room_suite = [
                         </ul>`,
         details: {
             size: '130sqm',
-            bed: 'one Super King and One King',
+            bed: 'One Super King and One King',
             location: '20th Floor',
             occpancy: 'Two Adults and One child, or Four Adults'
         },
