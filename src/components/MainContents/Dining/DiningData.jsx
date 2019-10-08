@@ -226,7 +226,7 @@ export const restaurants = [{
     address: 'Harbour City, Downtown, Port Moresby',
     synopsis: `<p>For a special place to dine, you can’t go past Daikoku. Boasting Japanese Teppan-yaki this is as much about the fabulous food as it is about the experience. The restaurant is Japanese owned so your experience is guaranteed to be an authentic one.</p>`,
     email: null,
-    website: null,
+    website: 'www.daikokupng.com/',
     guide: {
         cuisine: 'Japanese Teppan-Yaki Steak House',
         takeaway: 'Yes',

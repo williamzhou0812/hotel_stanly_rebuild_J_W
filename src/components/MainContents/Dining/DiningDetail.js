@@ -227,6 +227,11 @@ class DiningDetail extends React.Component {
                                                 Call Today: {_DingingsDetails.phone}
                                             </p>
                                         )}
+                                        {_DingingsDetails.website && (
+                                            <p className="contact-details">
+                                                {_DingingsDetails.website}
+                                            </p>
+                                        )}
 
                                         {_DingingsDetails.address && (
                                             <p className="contact-details">
