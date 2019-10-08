@@ -61,12 +61,12 @@ export const restaurants = [{
     website: null,
     guide: {
         cuisine: 'Japanese',
-        takeaway: '',
-        wifi: '',
-        parking: '',
-        courtesy: '',
-        cards: '',
-        price: '',
+        takeaway: 'No',
+        wifi: 'No',
+        parking: 'No',
+        courtesy: 'No',
+        cards: '-',
+        price: '-',
     },
     mapImage: '/imgs/dining/maps/R3-Hosi-Ramen.png',
     images: [         { imageFile: '/imgs/dining/R-Dining/R3-HeaderImages_P.jpg' }     ]
