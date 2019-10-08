@@ -146,7 +146,7 @@ class ActivityDestinationDetail extends React.Component {
                                 src={activity.icon}
                                 alt="Activity Icon"
                             />
-                            <div className="menu-title">{activity.title} AREAS</div>
+                            <div className="menu-title">{activity.title}</div>
                         </div>
                     </Link>
                     <div className="vertical-title">
