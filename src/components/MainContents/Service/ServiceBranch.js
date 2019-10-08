@@ -251,7 +251,9 @@ class ServiceBranch extends React.Component {
                                 </div>
                                 <div style={{
                                     flexBasis: "67%",
-                                    padding: "0px 0px 0px 10px"
+                                    padding: "0px 0px 0px 10px",
+                                    border: "1px solid rgb(183, 223, 228",
+                                    borderRightStyle: 'none'
                                 }}
                                 >
                                     <div className="middle-section--rightSide"
@@ -339,7 +341,7 @@ class ServiceBranch extends React.Component {
                                                         .horizontalVerticalCenter,
                                                     backgroundColor: LightBlueButtonBackground,
                                                     // fontSize: "20px",
-                                                    fontSize: "1.5vw",
+                                                    fontSize: "20px",
                                                     letterSpacing: "2px"
                                                     // paddingTop: "10px"
                                                 }}
@@ -355,7 +357,7 @@ class ServiceBranch extends React.Component {
                                                     backgroundColor:
                                                         "rgb(75,175,188)",
                                                     color: "rgb(0,109,121)",
-                                                    fontSize: "1.5vw",
+                                                    fontSize: "20px",
 
                                                     letterSpacing: "2px"
                                                 }}
@@ -370,7 +372,7 @@ class ServiceBranch extends React.Component {
                                                     backgroundColor: LightBlueButtonBackground,
 
                                                     letterSpacing: "2px",
-                                                    fontSize: "1.5vw"
+                                                    fontSize: "20px"
                                                 }}
                                                 onClick={this.nextBranch}
                                             >
@@ -387,7 +389,7 @@ class ServiceBranch extends React.Component {
 
                                                 fontWeight: "500",
 
-                                                fontSize: "1.5vw",
+                                                fontSize: "20px",
                                                 letterSpacing: "1px"
                                             }}
                                         >

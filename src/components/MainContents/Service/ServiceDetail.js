@@ -220,7 +220,9 @@ class ServiceDetail extends React.Component {
                                 </div>
                                 <div style={{
                                     flexBasis: "67%",
-                                    padding: "0px 0px 0px 10px"
+                                    padding: "0px 0px 0px 10px",
+                                    border: "1px solid rgb(183, 223, 228",
+                                    borderRightStyle: 'none'
                                 }}
                                 >
                                     <div className="middle-section--rightSide"
