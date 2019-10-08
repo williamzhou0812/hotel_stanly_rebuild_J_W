@@ -1251,7 +1251,7 @@ export const serviceInfoData = [
         phone: "+675 302 8511",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday to Sunday 8:00am - 9:00pm`,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday to Sunday 8:00am - 9:00pm`,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [
@@ -1267,7 +1267,7 @@ export const serviceInfoData = [
         phone: "+675 325 1122",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday to Wednesday, Saturday & Sunday 8:00am - 7:30pm; Thursday & Friday 8:00am - 8:00pm `,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday to Wednesday, Saturday & Sunday 8:00am - 7:30pm; Thursday & Friday 8:00am - 8:00pm `,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [
@@ -1283,7 +1283,7 @@ export const serviceInfoData = [
         phone: "+675 325 1538 ",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday – Sunday 8:00am – 7:00pm`,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday – Sunday 8:00am – 7:00pm`,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [
@@ -1299,7 +1299,7 @@ export const serviceInfoData = [
         phone: "+675 472 3328",
         website: "www.rhtradingpng.com",
         email: "rhtpom@rhtradingpng.com",
-        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys Open Monday to Friday 8:00am - 5:00pm; Saturday 8:00am - 12:00pm `,
+        description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday to Friday 8:00am - 5:00pm; Saturday 8:00am - 12:00pm `,
         img_url: "/imgs/service/Retail/S4E-RHTrading.jpg",
         mapImage: "",
         images: [
@@ -1315,7 +1315,7 @@ export const serviceInfoData = [
         phone: "+675 323 3366",
         website: "www.bngtrading.com.pg",
         email: "pomsalesadmin@bngtrading.com.pg",
-        description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
+        description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world.<br/> The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "/imgs/service/Retail/S4F-BNGTrading.jpg",
         mapImage: "",
         images: [
@@ -1379,7 +1379,7 @@ export const serviceInfoData = [
         phone: "N/A",
         website: "www.pacificpalmsproperty.com.pg",
         email: "property@pacificpalmsproperty.com.pg",
-        description: `Now you can meet in private and work in world class surroundings at Pacific Palms Property's latest development, Harbourside West Tower Serviced Offices, on the waterfront in downtown Port Moresby. Choose from a range of contemporary offices with modern, quality furnishings available on an hourly, daily or monthly basis at very reasonable rates. There is 24 hour security with ample, safe, on-site basement parking for peace of mind. Our staff are well trained and ready to assist with efficient administrative support and the offices are supported with quality amenities for your convenience, including a modern kitchen, breakout areas, meeting and training rooms, reception services, printers, security and housekeeping, leaving you free to concentrate on your business.`,
+        description: `<p>Now you can meet in private and work in world class surroundings at Pacific Palms Property's latest development, Harbourside West Tower Serviced Offices, on the waterfront in downtown Port Moresby.</p> <p>Choose from a range of contemporary offices with modern, quality furnishings available on an hourly, daily or monthly basis at very reasonable rates.</p> <p>There is 24 hour security with ample, safe, on-site basement parking for peace of mind.</p> <p>Our staff are well trained and ready to assist with efficient administrative support and the offices are supported with quality amenities for your convenience, including a modern kitchen, breakout areas, meeting and training rooms, reception services, printers, security and housekeeping, leaving you free to concentrate on your business.</p>`,
         img_url: "/imgs/service/Retail/S4G-PacificPalms.jpg",
         mapImage: "",
         images: [
