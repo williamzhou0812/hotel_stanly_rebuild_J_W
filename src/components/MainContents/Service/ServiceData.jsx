@@ -743,7 +743,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -759,7 +759,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -775,7 +775,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -791,7 +791,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -807,7 +807,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -823,7 +823,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -839,7 +839,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -855,7 +855,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -871,7 +871,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -887,7 +887,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
 
     },
@@ -903,7 +903,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
         ]
 
     },
@@ -919,7 +919,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
         ]
 
     },
@@ -935,7 +935,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
         ]
 
     },
@@ -951,7 +951,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
         ]
 
     },
@@ -967,7 +967,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
         ]
 
     },
@@ -983,7 +983,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
         ]
 
     },
@@ -999,7 +999,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
         ]
 
     },
@@ -1015,7 +1015,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3C-HeaderImage.jpg' }
         ]
 
     },
@@ -1031,7 +1031,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3C-HeaderImage.jpg' }
         ]
 
     },
@@ -1047,7 +1047,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Mining/S3D-HeaderImage.jpg' }
         ]
 
     },
@@ -1063,7 +1063,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1079,7 +1079,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1095,7 +1095,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1111,7 +1111,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1127,7 +1127,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1143,7 +1143,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1159,7 +1159,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1175,7 +1175,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1191,7 +1191,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1207,7 +1207,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1223,7 +1223,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1239,7 +1239,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1255,7 +1255,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1271,7 +1271,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1287,7 +1287,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1303,7 +1303,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1319,7 +1319,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1335,7 +1335,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1351,7 +1351,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1367,7 +1367,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1383,7 +1383,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1399,7 +1399,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
@@ -1415,7 +1415,7 @@ export const serviceInfoData = [
         img_url: "",
         mapImage: "",
         images: [
-            { imageFile: '' }
+            { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
 
     },
