@@ -3,7 +3,8 @@
 .event-title {
     flex-basis: 72%;
     background-color: $LightBlueButtonBackground;
-
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
     span {
         font-size: 3.2vw;
         font-weight: bold;
