@@ -219,17 +219,22 @@ class ServiceDetail extends React.Component {
                                     </div>
                                 </div>
                                 <div style={{
-                                    flexBasis: "50%",
-                                    padding: "25px 0px 0px 25px"
+                                    flexBasis: "67%",
+                                    padding: "0px 0px 0px 10px"
                                 }}
                                 >
                                     <div className="middle-section--rightSide"
                                         style={{
                                             height: "100%",
-                                            letterSpacing: "1px",
+                                            letterSpacing: "3px",
                                             fontSize: "28px",
-                                            marginTop:"10%",
-                                            marginLeft: "8%"
+                                            lineHeight: '40px',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            textAlign: 'center',
+
+
                                         }}
                                     >
                                         {service_details.title.toUpperCase()}
