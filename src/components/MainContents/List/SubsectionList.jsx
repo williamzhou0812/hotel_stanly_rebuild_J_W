@@ -60,9 +60,11 @@ class SubsectionList extends React.Component {
             sideTitle,
             mainTitle,
             namespace,
-            thumbnailStyle = { width: "auto", height: "9.3vh"}
+            thumbnailStyle = { width: "auto", height: "9.3vh"},
+            titleWrap = false
         } = this.props;
         const itemHeight = `${100 / numberOfEntries}%`;
+        const titleStyle = (titleWrap) ? 'normal' : 'nowrap'
         let toRender = data.slice();
         // if (data.length < numberOfEntries) {
         //     toRender = addNullItemToData(data, numberOfEntries);
@@ -226,7 +228,7 @@ class SubsectionList extends React.Component {
                                             <div
                                                 style={{
                                                     fontSize: "2.25vw",
-                                                    whiteSpace: "nowrap"
+                                                    whiteSpace: titleStyle
                                                 }}
                                             >
                                                 {item.title}
