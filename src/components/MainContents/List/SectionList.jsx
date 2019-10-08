@@ -122,7 +122,7 @@ class SectionList extends React.Component {
                                                 images[index]
                                                 })`,
                                             //    backgroundImage: `url(${item.images})`,
-                                            backgroundPosition: backgroundPositionValue,
+                                            backgroundPosition: "center center",
                                             backgroundRepeat: "no-repeat",
                                             backgroundSize: "cover",
                                             display: "flex",
@@ -169,7 +169,7 @@ SectionList.defaultProps = {
     linkFunction: (namespace, item) => {
         return `${namespace}/${item.id}`;
     },
-    backgroundPositionValue: "center"
+    backgroundPositionValue: "center center"
 };
 SectionList.propTypes = {
     data: PropTypes.array.isRequired,
