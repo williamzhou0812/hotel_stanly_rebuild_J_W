@@ -233,6 +233,7 @@ class ServiceDetail extends React.Component {
                                             alignItems: 'center',
                                             justifyContent: 'center',
                                             textAlign: 'center',
+                                            paddingLeft: '40px'
 
 
                                         }}
