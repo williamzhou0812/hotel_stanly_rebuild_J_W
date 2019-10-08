@@ -231,8 +231,8 @@ class ServiceDetail extends React.Component {
                                             lineHeight: '40px',
                                             display: 'flex',
                                             alignItems: 'center',
-                                            justifyContent: 'center',
-                                            textAlign: 'center',
+                                            justifyContent: 'left',
+                                            textAlign: 'left',
                                             paddingLeft: '30px'
 
 
