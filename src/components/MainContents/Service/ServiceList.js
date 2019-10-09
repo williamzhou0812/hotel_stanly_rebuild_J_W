@@ -46,7 +46,7 @@ class ServiceList extends React.Component {
                         { title: service.title.toUpperCase(), isLink: true, link: service.sub_url, icon: service.icon }
                     ]}
                     sideTitle="SERVICES"
-                    mainTitle={service.title.toUpperCase()}
+                    mainTitle={sub_service.title.toUpperCase()}
                     thumbnailStyle={{ width: "316px", height: "206.5px", paddingLeft: '80px', paddingTop: '50px'}}
                     iconStyle={{width: '100%', height:'auto', maxWidth: '170px', maxHeight:'120px'}}
                     titleWrap={true}
