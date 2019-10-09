@@ -73,7 +73,7 @@ const RoomSuite = () => {
                     { title: 'RETURN TO LIST', isLink: true, link: '/ourhotel', icon: RestaurantListicon}
                 ]}
                 sideTitle="OUR HOTEL"
-                mainTitle="OUR ROOMS"
+                mainTitle="ROOMS & SUITES"
                 evenDetailsProps={ourhotel_room_suite}                
                 thumbnailStyle={{ width: "316px", height: "207px"}}
             >

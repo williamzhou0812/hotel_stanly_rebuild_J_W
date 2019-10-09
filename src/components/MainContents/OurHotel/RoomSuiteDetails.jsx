@@ -251,7 +251,7 @@ const RoomSuiteDetails = (props) => {
                                         className="menu-title"
                                   
                                     >
-                                        OUR ROOMS
+                                        ROOMS &amp; SUITES
                                      </p>
                                     <p
                                         className="menu-title"

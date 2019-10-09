@@ -99,7 +99,7 @@ import SectionList from '../List/SectionList';
 
   
 const ourHotel = [
-  {id: 1, title: 'OUR ROOMS', url: '/ourhotel/roomsuite'},
+  {id: 1, title: 'ROOMS & SUITES', url: '/ourhotel/roomsuite'},
   {id: 2, title: 'DINING', url: '/ourhotel/dining'},
   {id: 3, title: 'FACILITIES', url: '/ourhotel/facilities' },
   {id: 4, title: 'MEETINGS', url: '/ourhotel/meeting' },
