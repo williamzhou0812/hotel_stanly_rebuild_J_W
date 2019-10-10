@@ -4,6 +4,7 @@ import { DECIMAL_RADIX, activityNamespace } from "../../../Constants";
 import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
 import mapIcon from "../../../components/MainContents/icons/MapIcon.png";
 import { activities } from "./ActivityData";
+import { randomNumber } from "../../../Constants";
 
 class ActivityDestinationList extends React.Component {
     
@@ -16,7 +17,12 @@ class ActivityDestinationList extends React.Component {
 
         // change title to Upper case
         const mod_destinations = destinations.map( item => {
-            return { ...item, title: item.title.toUpperCase()}
+            // get random image idx
+            const random_idx = (activity.images.length === 1) ? 
+            0 : randomNumber(0, activity.images.length - 1);
+            const activity_img_url = activity.images[random_idx].imageFile;
+
+            return { ...item, title: item.title.toUpperCase(), img_url: activity_img_url}
         })
 
         return (

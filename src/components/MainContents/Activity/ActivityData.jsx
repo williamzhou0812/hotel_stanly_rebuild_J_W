@@ -87,7 +87,7 @@ export const cultureList = [
         img_url: "/imgs/activity/A6-Culture/ACTIVITIES-CULTURE-GALLERYIMAGES_P.jpg",
         mapActivity: "Melanesian Tourist Services offers a range of tours for visitors to the Madang region including Highland tours and river expeditions on the Kalibobo Spirit. Cruise up the lower and middle Sepik River stopping for cultural activities along the way. Discover the brightly coloured bilums made by the women of the Eastern Highlands regions.",
         overView:
-            "",
+            "Melanesian Tourist Services offers a range of tours for visitors to the Madang region including Highland tours and river expeditions on the Kalibobo Spirit. Cruise up the lower and middle Sepik River stopping for cultural activities along the way. Discover the brightly coloured bilums made by the women of the Eastern Highlands regions.",
 
         details: [
             {

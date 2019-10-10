@@ -417,3 +417,7 @@ export function imageGallery(
 export function removeHttp(website) {
     return website.replace(/^https?:\/\//i, "");
 }
+
+export function randomNumber(min, max) {  
+    return Math.floor(Math.random() * (max - min) + min); 
+}
