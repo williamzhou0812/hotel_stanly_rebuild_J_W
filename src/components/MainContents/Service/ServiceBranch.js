@@ -282,7 +282,7 @@ class ServiceBranch extends React.Component {
                                             lineHeight: '40px',
                                             display: 'flex',
                                             alignItems: 'center',
-                                            justifyContent: 'center',
+                                            justifyContent: 'left',
                                             textAlign: 'left',
                                             paddingLeft: '30px'
 
@@ -403,7 +403,7 @@ class ServiceBranch extends React.Component {
                                                 color: "rgb(0,109,121)",
                                                 ...this.styles
                                                     .horizontalVerticalCenter,
-
+                                                    textAlign: 'center',
                                                 fontWeight: "500",
 
                                                 fontSize: "20px",

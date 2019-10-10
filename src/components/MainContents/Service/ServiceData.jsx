@@ -1465,7 +1465,7 @@ export const essentialData = [
     {
         id: "EmergencyMedicalServices",
         serviceTypes: "essentials",
-        title: "EMERGENCY MEDICAL SERVICES",
+        title: "MEDICAL SERVICES",
         url: essentialNamespace + "/:serid",
         img_url: MedicalIcon,
         isIcon: true,
@@ -1555,8 +1555,8 @@ export const retailData = [
     {
         id: "BrianBell",
         serviceTypes: "retail",
-        title: "BRIAN BELL",
-        url: retailNamespace + "/aaa",
+        title: "BRIAN BELL HOMECENTRES",
+        url: retailNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4A-BrianBell.jpg',
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
