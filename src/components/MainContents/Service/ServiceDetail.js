@@ -150,7 +150,7 @@ class ServiceDetail extends React.Component {
                             //  height: "14%",
                             textDecoration: "none"
                         }}
-                        to={service.url}
+                        to={service.url + '/' + sub_service.id}
                     >
                         <div className="leftSide-menu--container">
                             <img
