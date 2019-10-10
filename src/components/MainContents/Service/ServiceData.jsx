@@ -1430,6 +1430,22 @@ export const serviceInfoData = [
         ]
 
     },
+    {
+        id: 88,
+        service_type_id: "OFC",
+        title: "OFC",
+        address: "P.O. Box 564 Waterfront, NCD, PNG",
+        phone: "+675 7550 1333",
+        website: "",
+        email: "",
+        description: `We specialise in the areas of voice &amp; cable networks; leading-edge pure-IP, hybrid and traditional telephone systems. OFC provides solutions for very large to very small - and will concept, design and deliver a solution to suit you and your business.`,
+        img_url: "/imgs/service/Retail/Retail/S4J-OFC.jpg",
+        mapImage: "",
+        images: [
+            { imageFile: '/imgs/service/Retail/S4J-HeaderImage1.jpg' },
+        ]
+
+    },
 
 ]
 
@@ -1650,6 +1666,17 @@ export const retailData = [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "MadnessPhotography")
+    },
+    {
+        id: "OFC",
+        serviceTypes: "retail",
+        title: "OFC",
+        url: miningNamespace + "/:serid",
+        img_url: '/imgs/service/Retail/Retail/S4J-OFC.jpg',
+        images: [
+            { imageFile: '/imgs/service/Retail/S4J-HeaderImage1.jpg' }
+        ],
+        services: serviceInfoData.filter(item => item.service_type_id === "OFC")
     },
 ]
 
