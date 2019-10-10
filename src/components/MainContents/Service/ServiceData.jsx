@@ -319,7 +319,7 @@ export const serviceInfoData = [
         id: 19,
         service_type_id: "EmergencyMedicalServices",
         title: "Medevac Pacific (Medivac Service)",
-        address: "P O Box 4997 Boroko, NCD.",
+        address: "PO Box 4997 Boroko, NCD.",
         phone: "+675 323 5626",
         website: "www.medevac.com.pg",
         email: "operations@medevac.com.au",
