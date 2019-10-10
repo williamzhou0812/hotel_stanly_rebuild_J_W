@@ -767,13 +767,13 @@ export const serviceInfoData = [
         id: 47,
         service_type_id: "Mines",
         title: "Porgera Joint Venture",
-        address: "<p>PO box 484 Mt Hagen</p> <p>Papua New Guinea</p>",
+        address: "PO box 484 Mt Hagen Papua New Guinea",
         phone: "+675 547 9500",
         website: "www.barrick.com",
         email: "",
         description: `Located in the Enga Province, approximately 130 kilometres from the township of Mount Hagen, the Porgera Joint Venture is an operational gold mine 95% owned by Barrick (Niugini) Limited.`,
         img_url: "/imgs/service/Mining/Mines/S3A3-PorgeraJointVenture.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A3-PNG-Map-PORGERAJOINTVENTURE.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -783,29 +783,13 @@ export const serviceInfoData = [
         id: 48,
         service_type_id: "Mines",
         title: "OK Tedi Mining Ltd",
-        address: "<p>Ok Tedi Mining Limited PO Box 1</p> <p>1 Dakon Road, Tabubil </p><p>Western Province</p> <p>332</p> <p>Papua New Guinea</p>",
+        address: "OK Tedi Mining Limited PO Box 1 1 Dakon Road, Tabubil Western Province 332 Papua New Guinea",
         phone: "+675 321 3522",
         website: "www.oktedi.com",
         email: "enquiry.tabubil@oktedi.com",
         description: `Ok Tedi Mining Limited is one of the most proliferate copper, gold and silver mines in PNG. Located in the Star Mountains in the Western Province, the company ships ore from the township of Kiunga down the Fly River to the coast.`,
         img_url: "/imgs/service/Mining/Mines/S3A4-OKTediMiningLtd.jpg",
-        mapImage: "",
-        images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
-        ]
-
-    },
-    {
-        id: 49,
-        service_type_id: "Mines",
-        title: "Tolukuma Gold Mines Ltd (Petromin Ltd)",
-        address: "<p>Petromin Haus</p> <p>Section 45, Allotment 4, Hubert Murray Highway,</p> <p>Port Moresby,</p> <p>National Capital District</p> <p>Papua New Guinea</p>",
-        phone: "+675 329 9277",
-        website: "www.petrominpng.com.pg",
-        email: "contact@petrominpng.com.pg",
-        description: `Petromin PNG Holdings Limited is an independent business created to oversee the mineral and petroleum industry and ensure that state and indigenous interests are maximised.`,
-        img_url: "/imgs/service/Mining/Mines/",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A4-PNG-Map-OKTEDI.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -815,13 +799,13 @@ export const serviceInfoData = [
         id: 50,
         service_type_id: "Mines",
         title: "Morobe Mining Joint Ventures (Hidden Valley)",
-        address: "<p>PO Box 40165 Morobe Province</p> <p>Papua New Guinea</p>",
+        address: "PO Box 40165 Morobe Province Papua New Guinea",
         phone: "+675 478 5000",
-        website: "www.morobejv.com",
+        website: "www.morobemorobejv.com",
         email: "mmj.media@morobejv.com",
         description: `Morobe Mining Joint Ventures was established back in 2008 and operates in the Morobe Province.  `,
         img_url: "/imgs/service/Mining/Mines/S3A6-MorobeMiningJointVentures.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A6-PNG-Map-MOROBEMINING.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -847,13 +831,13 @@ export const serviceInfoData = [
         id: 52,
         service_type_id: "Mines",
         title: "Kula Gold (Woodlark Island Gold Project)",
-        address: "<p>Woodlark Island</p> <p>Papua New Guinea</p>",
+        address: "Woodlark Island Papua New Guinea",
         phone: "+61 8 6144 0588",
         website: "www.kulagold.com.au",
         email: "info@kulagold.com.au",
         description: `Woodlark Island Gold Project is a gold mine located on Woodlark Island located in the Milne Bay Province.`,
         img_url: "/imgs/service/Mining/Mines/S3A8-KulaGold.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A8-PNG-Map-WOODLARK.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -863,13 +847,13 @@ export const serviceInfoData = [
         id: 53,
         service_type_id: "Mines",
         title: "K92 Mining Inc.",
-        address: "<p>PO Box 1290 Morobe Province</p> <p>Papua new Guinea</p>",
+        address: "PO Box 1290 Morobe Province Papua New Guinea",
         phone: "+675 7100 2451",
         website: "www.k92mining.com",
         email: "site@k92mining.com",
         description: `K92 Mining is a gold mine operation located in the Eastern Highlands Province of PNG.`,
         img_url: "/imgs/service/Mining/Mines/S3A9-K92MiningInc.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A9-PNG-Map-K92MINING.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -1039,13 +1023,13 @@ export const serviceInfoData = [
         id: 64,
         service_type_id: "Argiculture",
         title: "Ramu Agri Industries Ltd",
-        address: "<p>Gusap Downs</p> <p>PO Box 2183</p> <p>Lae,  411</p> <p>Papua New Guinea</p>",
+        address: "Gusap Downs PO Box 2183 Lae, 411 Papua New Guinea",
         phone: "+675 4743299",
         website: "www.nbpol.com.pg",
         email: "rbeerwald@rai.com.pg",
         description: `Ramu Sugar, PNG's only locally grown and manufactured sugar, is operated by Ramu Agri Industries Ltd (RAIL). Aside from sugar, the company also produces Ramu Premium Beef, Ramu Palm Oil and Ramu Ethanol.`,
         img_url: "/imgs/service/Mining/Agriculture/S3D1-RamuAgriIndustriesLtd.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3D1-PNG-Map-RAMUAGRIINDUSTRIES.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3D-HeaderImage.jpg' }
         ]
