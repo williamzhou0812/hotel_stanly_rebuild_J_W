@@ -718,7 +718,7 @@ export const serviceInfoData = [
     {
         id: 44,
         service_type_id: "VehicleHire",
-        title: "City Cab (MOUNT HAGEN)",
+        title: "City Cab",
         address: "Mount Hagen",
         phone: "+675 690 4431",
         website: "",
@@ -1045,7 +1045,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1062,7 +1062,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1079,7 +1079,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1096,7 +1096,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1113,7 +1113,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1130,7 +1130,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1147,7 +1147,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1164,7 +1164,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
@@ -1181,7 +1181,7 @@ export const serviceInfoData = [
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
         img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }

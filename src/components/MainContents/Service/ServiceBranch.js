@@ -85,7 +85,24 @@ class ServiceBranch extends React.Component {
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
-        }
+        },
+        mapOrFindButtonStyle: {
+            backgroundColor: LightBlueButtonBackground,
+            display: "flex",
+            width: "100%",
+            padding: "4% 0",
+            display: "inline-bock",
+            marginTop: "-5%",
+            borderRadius: "5px",
+            boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
+            color: "white",
+            justifyContent: "center"
+        },
+        mapOrFindButtonText: {
+            letterSpacing: "2px",
+            fontSize: "18px",
+            fontWeight: "bold"
+        },
     };
     renderImages(service_details) {
         const {  images } = service_details;
@@ -274,7 +291,6 @@ class ServiceBranch extends React.Component {
                                         {sub_service.title.toUpperCase()}
                                     
                                     </div>
-
                                 </div>
 
                             </div>
@@ -431,37 +447,29 @@ class ServiceBranch extends React.Component {
                                                 dangerouslySetInnerHTML={{__html: service_details.address}}
                                             ></div>
                                         )}
-                                        {false && /*service[serviceTypeData.mapKey]
-                                            .length > 0 &&*/ (
-                                            <MapModal
-                                                rootStyle={{}}
-                                                textStyle={{
-                                                    width: "100%",
-                                                    padding: "3% 0",
-                                                    borderRadius: "5px",
-                                                    fontSize: "20px",
-                                                    fontWeight: 500,
-                                                    boxShadow:
-                                                        "0px 0px 10px 1px rgba(0,0,0,0.5)",
-                                                    backgroundColor: LightBlueButtonBackground,
-
-                                                    display: "inline-block",
-                                                    alignItems: "center",
-                                                    justifyContent: "center"
-                                                }}
-                                                buttonTitle="SEE MAP"
-                                                title={service.title}
-                                                mapImage={
-                                                    null
-                                                    /*service[
-                                                        serviceTypeData
-                                                            .mapKey
-                                                    ][0].mapImage*/
-                                                }
-                                            />
-                                        )}
+                                        
                                     </div>
-
+                                    {service_details.mapImage && (
+                                        <div style={{padding: '0px 25px 0px 25px'}}>
+                                            <div className="middle-section--btnContainer">
+                                                <div className="middle-section--btnContainer--btn">
+                                                    <MapModal
+                                                        buttonTitle="SEE MAP"
+                                                        title={service_details.title}
+                                                        buttonStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonStyle
+                                                        }
+                                                        textStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonText
+                                                        }
+                                                        mapImage={service_details.mapImage}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -470,284 +478,6 @@ class ServiceBranch extends React.Component {
             </div>
         );
 
-        /*
-        return (
-            <div
-                style={{
-                    width: "100%",
-                    height: "100%",
-                    display: "flex",
-                    color: "white"
-                }}
-            >
-                <div
-                    style={{
-                        backgroundColor: HeavyOrange,
-                        width: "14%",
-                        boxShadow: "9.899px 0px 7px 0px rgba(0,0,0,0.6)",
-                        zIndex: 1,
-
-                        height: "100%",
-                        flexDirection: "column",
-                        display: "flex"
-                    }}
-                >
-                    <Link
-                        style={{
-
-                            textDecoration: "none"
-                        }}
-                        to={serviceNamespace}
-                    >
-                        <div
-                            style={{
-                                borderStyle: "none none solid none",
-                                borderColor: LightOrange,
-                                paddingBottom: "20%"
-                            }}
-                        >
-                            <img
-                                className="leftSide-menu--img"
-                                src={ServiceTypesIcon}
-
-                                alt="Service Types Icon"
-                            />
-                            <div
-                                className="menu-title"
-
-                            >
-                                SERVICE TYPES
-                            </div>
-                        </div>
-                    </Link>
-                    <Link
-                        style={{
-
-                            textDecoration: "none"
-                        }}
-                        to={serviceTypeData.namespace}
-                    >
-                        <div
-                            style={{
-                                borderStyle: "none none solid none",
-                                borderColor: LightOrange,
-                                paddingBottom: "20%"
-                            }}
-                        >
-                            <img
-                                className="leftSide-menu--img"
-                                src={serviceTypeData.icon}
-                                alt="Service Type Icon"
-                            />
-                            <div className="menu-title">
-                                {serviceTypeData.title}
-                            </div>
-                        </div>
-                    </Link>
-                    <div className="vertical-title">
-                        <span style={{ transform: "rotate(-90deg)" }}>
-                            SERVICES
-                        </span>
-                    </div>
-                </div>
-                <div style={{ width: "86%" }}>
-                    {this.renderImages()}
-                    <div style={{ height: "58%" }}>
-                        <div style={{ height: "26%", display: "flex" }}>
-                            <div
-                                style={{
-                                    flexBasis: "33%",
-                                    backgroundImage: `url('${branch.logo}')`,
-                                    backgroundSize: "cover",
-                                    backgroundPosition: "center",
-                                    borderWidth: "1px",
-                                    borderStyle: "solid solid solid none",
-                                    borderColor: "rgb(8,152,163)"
-                                }}
-                            />
-                            <div
-                                style={{
-                                    flex: 1,
-                                    backgroundColor: LightBlueButtonBackground,
-                                    ...this.styles.horizontalVerticalCenter,
-                                    borderWidth: "1px",
-                                    borderStyle: "solid none solid solid",
-                                    borderColor: "rgb(183,223,228)",
-                                    fontSize: "2.3vw",
-
-                                    fontWeight: "bold",
-                                    letterSpacing: "3px"
-                                }}
-                            >
-                                {data.title.toUpperCase()}
-                            </div>
-                        </div>
-                        <div style={{ height: "74%", display: "flex" }}>
-                            <div
-                                style={{
-                                    flexBasis: "50%",
-                                    borderRight: "1px solid rgb(105,194,209)",
-                                    padding: "4%",
-                                    backgroundColor: ExtraHeavyBlueGreen
-                                }}
-                            >
-                                <p className="middle-section--leftSide">
-                                    <Markdown source={branch.description} />
-                                </p>
-                            </div>
-                            <div style={{ width: "50%" }}>
-                                <div style={{ height: "28%" }}>
-                                    <div
-                                        style={{
-                                            height: "50%",
-                                            display: "flex"
-                                        }}
-                                    >
-                                        <div
-                                            style={{
-                                                flex: 1,
-                                                ...this.styles
-                                                    .horizontalVerticalCenter,
-                                                backgroundColor: LightBlueButtonBackground,
-                                                // fontSize: "20px",
-                                                fontSize: "1.5vw",
-                                                letterSpacing: "2px"
-                                                // paddingTop: "10px"
-                                            }}
-                                            onClick={this.prevBranch}
-                                        >
-                                            PREVIOUS
-                                        </div>
-                                        <div
-                                            style={{
-                                                flex: 1,
-                                                ...this.styles
-                                                    .horizontalVerticalCenter,
-                                                backgroundColor:
-                                                    "rgb(75,175,188)",
-                                                color: "rgb(0,109,121)",
-                                                fontSize: "1.5vw",
-
-                                                letterSpacing: "2px"
-                                            }}
-                                        >
-                                            LOCATION
-                                        </div>
-                                        <div
-                                            style={{
-                                                flex: 1,
-                                                ...this.styles
-                                                    .horizontalVerticalCenter,
-                                                backgroundColor: LightBlueButtonBackground,
-
-                                                letterSpacing: "2px",
-                                                fontSize: "1.5vw"
-                                            }}
-                                            onClick={this.nextBranch}
-                                        >
-                                            NEXT
-                                        </div>
-                                    </div>
-                                    <div
-                                        style={{
-                                            height: "50%",
-                                            backgroundColor: "rgb(183,223,228)",
-                                            color: "rgb(0,109,121)",
-                                            ...this.styles
-                                                .horizontalVerticalCenter,
-
-                                            fontWeight: "500",
-
-                                            fontSize: "1.5vw",
-                                            letterSpacing: "1px"
-                                        }}
-                                    >
-                                        {branch.title.toUpperCase()}
-                                    </div>
-                                </div>
-                                <div
-                                    style={{
-                                        height: "72%",
-                                        backgroundColor: ExtraHeavyBlueGreen
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            height: "69%",
-
-                                            textAlign: "left",
-                                            padding: "4%",
-
-                                            fontSize: "1.5vw",
-                                            letterSpacing: "1px",
-                                            overflowWrap: "break-word",
-                                            wordWrap: "break-word"
-                                        }}
-                                    >
-                                        {branch.phone && (
-                                            <div>
-                                                CALL TODAY: {branch.phone}
-                                            </div>
-                                        )}
-                                        {branch.website && (
-                                            <div>
-                                                WEB:{" "}
-                                                {removeHttp(branch.website)}
-                                            </div>
-                                        )}
-                                        {branch.email && (
-                                            <div>EMAIL: {branch.email}</div>
-                                        )}
-                                        {branch.address && (
-                                            <div>{branch.address}</div>
-                                        )}
-                                    </div>
-                                    <div
-                                        style={{
-                                            height: "31%",
-                                            ...this.styles
-                                                .horizontalVerticalCenter
-                                        }}
-                                    >
-                                        {branch[serviceTypeData.mapKey].length >
-                                            0 && (
-                                                <MapModal
-                                                    buttonStyle={{
-                                                        width: "94%",
-                                                        margin: "3%"
-                                                    }}
-                                                    textStyle={{
-                                                        width: "100%",
-                                                        padding: "3%",
-                                                        borderRadius: "5px",
-                                                        fontSize: "1.5vw",
-
-                                                        fontWeight: "bold",
-                                                        boxShadow:
-                                                            "0px 0px 10px 1px rgba(0,0,0,0.5)",
-                                                        backgroundColor: LightBlueButtonBackground,
-                                                        display: "flex",
-                                                        alignItems: "center",
-                                                        justifyContent: "center"
-                                                    }}
-                                                    buttonTitle="SEE MAP"
-                                                    title={data.title}
-                                                    mapImage={
-                                                        branch[
-                                                            serviceTypeData.mapKey
-                                                        ][0].mapImage
-                                                    }
-                                                />
-                                            )}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-        */
     }
 }
 
