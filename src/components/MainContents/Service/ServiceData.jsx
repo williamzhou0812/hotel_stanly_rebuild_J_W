@@ -440,9 +440,7 @@ export const serviceInfoData = [
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS2.jpg' },
-            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS3.jpg' },
-            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS5.jpg' },
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' },
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS3.jpg' }
         ]
 
     },
@@ -458,6 +456,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS4.jpg",
         mapImage: "",
         images: [
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS5.jpg' },
             { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
         ]
 
@@ -530,7 +529,7 @@ export const serviceInfoData = [
         id: 32,
         service_type_id: "FreightServices",
         title: "DHL",
-        address: "<p>Kitty Hawk Street</p> <p>Six Mile, N.C.D</p> <p>Port Moresby</p>",
+        address: "Kitty Hawk Street Six Mile, N.C.D Port Moresby",
         phone: "+675 302 6555",
         website: "www.dhl.com",
         email: "",
@@ -689,7 +688,7 @@ export const serviceInfoData = [
     {
         id: 42,
         service_type_id: "VehicleHire",
-        title: "Izarhlamborn Hire Cars (MADANG)",
+        title: "Izarhlamborn Hire Cars",
         address: "PO Box 739 Madang, Modilon Rd, Madang. ",
         phone: "+675 422 0433",
         website: "",
