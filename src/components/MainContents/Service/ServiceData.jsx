@@ -879,13 +879,13 @@ export const serviceInfoData = [
         id: 54,
         service_type_id: "Mines",
         title: "Crater Gold Mining",
-        address: "<p>Crater Mountain, East highlands</p> <p>Papua New Guinea</p>",
+        address: "Crater Mountain, East highlands Papua New Guinea",
         phone: "+61 2 9241 4224 ",
         website: "www.cratergold.com.au",
         email: "info@cratergold.com.au",
         description: `Crater Gold Mining manages two gold mining projects in PNG, one at Fergusson Island and the other at Crater Mountain. `,
         img_url: "/imgs/service/Mining/Mines/S3A10-CraterGoldMining.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A10-PNG-Map-CRATERGOLDMINING.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -911,9 +911,9 @@ export const serviceInfoData = [
         id: 56,
         service_type_id: "OfficialDepartments",
         title: "Department of Labour & Industrial Relations",
-        address: "<p>P.O Box 5644, Boroko, National Capital District</p> <p>Port Moresby,</p> <p>Papua New Guinea</p>",
+        address: "P.O Box 5644, Boroko, National Capital District Port Moresby, Papua New Guinea",
         phone: "+675 321 2817",
-        website: "www.facebook.com/pg/PngDepartmentOfLabourIndustrialRelation",
+        website: "www.facebook.com/pg/<br/>PngDepartmentOfLabourIndustrialRelation",
         email: "",
         description: `Department of Labour and Industrial Relations is a PNG body that strives to create positive industrial relations and support work opportunities throughout the region. `,
         img_url: "/imgs/service/Mining/Official departments/S3B2-DepartmentOfLabour&IndustrialRelations.jpg",
@@ -1029,7 +1029,7 @@ export const serviceInfoData = [
         email: "",
         description: `ExxonMobile PNG manages the PNG LNG project which is developing a commercial industry for gas resources in the region. `,
         img_url: "/imgs/service/Mining/Petroleum Gas/S3C2-EssoHighlandsLtd.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3C2-PNG-Map-ExxonMobil.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3C-HeaderImage.jpg' }
         ]
@@ -1550,7 +1550,7 @@ export const miningData = [
     {
         id: "Petroleum",
         serviceTypes: "mining",
-        title: "PETROLEUM & GAS IN PNG",
+        title: "PETROLEUM & GAS",
         url: miningNamespace + "/:serid",
         img_url: PetroleumIcon,
         isIcon: true,

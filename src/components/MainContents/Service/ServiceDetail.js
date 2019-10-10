@@ -333,19 +333,22 @@ class ServiceDetail extends React.Component {
                                         )}
                                         {service_details.website && (
                                             <p>
-                                                WEB:{" "}
-                                                {removeHttp(
+                                            <div
+                                                dangerouslySetInnerHTML={{__html: 'WEB: ' + removeHttp(
                                                     service_details.website
-                                                )}
+                                                )}}
+                                            ></div>
                                             </p>
                                         )}
                                         {service_details.email && (
                                             <p>EMAIL: {service_details.email}</p>
                                         )}
                                         {service_details.address && (
+                                            <p>
                                              <div
                                                 dangerouslySetInnerHTML={{__html: service_details.address}}
                                             ></div>
+                                            </p>
                                         )}
                                         
                                     </div>
