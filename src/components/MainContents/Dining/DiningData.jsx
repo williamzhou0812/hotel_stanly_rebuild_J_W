@@ -200,7 +200,7 @@ export const restaurants = [{
     imagesrc: '/imgs/dining/restaurant_logos/Crowne_Hotel_Logo_P-01.jpg',
     phone: '+675 309 3000',
     address: 'Cnr Hunter & Douglas Streets, Port Moresby',
-    synopsis: `<p>Crowne Plaza Hotel offers a range of food and beverage options. Try any of these great venues for dining or relaxing and unwinding with a cocktail: The Café, The Heritage Bar, Rapala Restaurant and The Pondo Tavern. </p>`,
+    synopsis: `<p>Crowne Hotel offers a range of food and beverage options. Try any of these great venues for dining or relaxing and unwinding with a cocktail: The Café, The Heritage Bar, Rapala Restaurant and The Pondo Tavern. </p>`,
     email: null,
     website: null,
     guide: {
