@@ -831,13 +831,13 @@ export const serviceInfoData = [
         id: 51,
         service_type_id: "Mines",
         title: "MCC Ramu Nico Ltd (RAMU)",
-        address: "<p>Port Moresby Office:</p> <p>Level 3, Pacific Place, Port Moresby,</p> <p>Papua New Guinea</p>",
+        address: "Port Moresby Office: Level 3, Pacific Place, Port Moresby, Papua New Guinea",
         phone: "+675 422 2888",
         website: "www.ramunico.com",
         email: "info@mccgrd.com",
         description: `Established back in 2005, Ramu NiCo Management oversees the Ramu Nickel Joint Venture which focuses on nickel mining in the Madang Province. `,
         img_url: "/imgs/service/Mining/Mines/S3A7-MCCRamuNicoLtd(RAMU).jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A7-PNG-Map-RAMUNICO.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -1007,13 +1007,13 @@ export const serviceInfoData = [
         id: 62,
         service_type_id: "Petroleum",
         title: "Oil Search Ltd",
-        address: "<p>PNG Registered Office</p> <p>Oil Search (PNG) Limited</p> <p>Ground Floor</p> <p>Harbourside East Building</p> <p>Stanley Esplanade</p> <p>Port Moresby</p> <p>Papua New Guinea</p><br/><p>PO Box 842</p> <p>Port Moresby</p> <p>NCD 121</p> <p>Papua New Guinea</p>",
+        address: "PNG Registered Office Oil Search (PNG) Limited Ground Floor Harbourside East Building Stanley Esplanade Port Moresby Papua New Guinea PO Box 842 Port Moresby NCD 121 Papua New Guinea",
         phone: "+675 322 5599",
         website: "www.oilsearch.com",
         email: "",
         description: `Oil Search was established in back in 1929 and manages the operation of all of PNG’s established oil fields.`,
         img_url: "/imgs/service/Mining/Petroleum Gas/S3C1-OilSearchLtd.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3C1-PNG-Map-OilSearch.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3C-HeaderImage.jpg' }
         ]

@@ -60,7 +60,24 @@ class ServiceDetail extends React.Component {
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
-        }
+        },
+        mapOrFindButtonStyle: {
+            backgroundColor: LightBlueButtonBackground,
+            display: "flex",
+            width: "100%",
+            padding: "4% 0",
+            display: "inline-bock",
+            marginTop: "-5%",
+            borderRadius: "5px",
+            boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
+            color: "white",
+            justifyContent: "center"
+        },
+        mapOrFindButtonText: {
+            letterSpacing: "2px",
+            fontSize: "18px",
+            fontWeight: "bold"
+        },
     };
     render() {
         // get service details
@@ -291,7 +308,7 @@ class ServiceDetail extends React.Component {
                                 </div>
                                 <div style={{
                                     flexBasis: "50%",
-                                    padding: "35px 20px 35px 50px",
+                                    padding: "35px 20px 35px 20px",
                                     overflowY: "auto",
                                 }}
                                 >
@@ -299,12 +316,13 @@ class ServiceDetail extends React.Component {
                                     
                                     <div className="middle-section--rightSide"
                                         style={{
-                                            height: "38%",
+                                            height: "84%",
                                             letterSpacing: "1px",
                                             overflow: "scroll",
                                             display: "inline-table",
                                             width: "100%",
-                                            lineHeight: '28px'
+                                            lineHeight: '28px',
+                                            paddingLeft: '20px'
                                             // fontSize: "2vw"
                                         }}
                                     >
@@ -329,37 +347,29 @@ class ServiceDetail extends React.Component {
                                                 dangerouslySetInnerHTML={{__html: service_details.address}}
                                             ></div>
                                         )}
-                                        {false && /*service[serviceTypeData.mapKey]
-                                            .length > 0 &&*/ (
-                                            <MapModal
-                                                rootStyle={{}}
-                                                textStyle={{
-                                                    width: "100%",
-                                                    padding: "3% 0",
-                                                    borderRadius: "5px",
-                                                    fontSize: "20px",
-                                                    fontWeight: 500,
-                                                    boxShadow:
-                                                        "0px 0px 10px 1px rgba(0,0,0,0.5)",
-                                                    backgroundColor: LightBlueButtonBackground,
-
-                                                    display: "inline-block",
-                                                    alignItems: "center",
-                                                    justifyContent: "center"
-                                                }}
-                                                buttonTitle="SEE MAP"
-                                                title={service.title}
-                                                mapImage={
-                                                    null
-                                                    /*service[
-                                                        serviceTypeData
-                                                            .mapKey
-                                                    ][0].mapImage*/
-                                                }
-                                            />
-                                        )}
+                                        
                                     </div>
-
+                                    {service_details.mapImage && (
+                                        <div>
+                                            <div className="middle-section--btnContainer">
+                                                <div className="middle-section--btnContainer--btn">
+                                                    <MapModal
+                                                        buttonTitle="SEE MAP"
+                                                        title={service_details.title}
+                                                        buttonStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonStyle
+                                                        }
+                                                        textStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonText
+                                                        }
+                                                        mapImage={service_details.mapImage}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
