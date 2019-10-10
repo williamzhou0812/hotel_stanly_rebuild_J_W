@@ -1214,7 +1214,7 @@ export const serviceInfoData = [
         email: "info@sre.com.pg",
         description: `Strickland Real Estate offers a variety of services: <br/>• Real Estate <br/>• Consultants <br/>• Sales <br/>• Rent Collection <br/>• Property Management <br/>• General Maintenance <br/>• Leasing <br/>• Residential, Industrial, Commercial`,
         img_url: "/imgs/service/Retail/Retail/S4C-StricklandRealEstate.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4C-Port-Moresby-Map-STRICKLAND.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1230,7 +1230,7 @@ export const serviceInfoData = [
         email: "info@pryde.com.pg",
         description: `Pryde Furniture is the pryde of Papua New Guinea: <br/>• Home products <br/>• Furniture & timber products <br/>• Office fitouts <br/>• Curtains & blinds <br/>• Flooring`,
         img_url: "/imgs/service/Retail/Retail/S4D-PrydeFurniture.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4D-Port-Moresby-Map-PRYDEFURNITURE.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1246,7 +1246,7 @@ export const serviceInfoData = [
         email: "rhtpom@rhtradingpng.com",
         description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday to Sunday 8:00am - 9:00pm`,
         img_url: "/imgs/service/Retail/Retail/S4E-RHTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4E-Port-Moresby-Map-RHhypermarket.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1262,7 +1262,7 @@ export const serviceInfoData = [
         email: "rhtpom@rhtradingpng.com",
         description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday to Wednesday, Saturday & Sunday 8:00am - 7:30pm; Thursday & Friday 8:00am - 8:00pm `,
         img_url: "/imgs/service/Retail/Retail/S4E-RHTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4E-Port-Moresby-Map-RHhypermarket.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1278,7 +1278,7 @@ export const serviceInfoData = [
         email: "rhtpom@rhtradingpng.com",
         description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday – Sunday 8:00am – 7:00pm`,
         img_url: "/imgs/service/Retail/Retail/S4E-RHTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4E-Port-Moresby-Map-RHhypermarket.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1294,7 +1294,7 @@ export const serviceInfoData = [
         email: "rhtpom@rhtradingpng.com",
         description: `RH Trading Limited is a retail and wholesale company offering: <br/>• Groceries <br/>• Fruit and vegetables <br/>• Meat & seafood <br/>• Deli goods <br/>• Dairy <br/>• Beverages <br/>• Fashion apparel  <br/>• Hardware & garden products <br/>• Sports equipment <br/>• Toys<br/> Open Monday to Friday 8:00am - 5:00pm; Saturday 8:00am - 12:00pm `,
         img_url: "/imgs/service/Retail/Retail/S4E-RHTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4E4-PNG-Map-RHhypermarketLAE.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1310,7 +1310,7 @@ export const serviceInfoData = [
         email: "pomsalesadmin@bngtrading.com.pg",
         description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world.<br/> The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "/imgs/service/Retail/Retail/S4F-BNGTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4F-PNG-Map-BNGtrading-ALL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1326,7 +1326,7 @@ export const serviceInfoData = [
         email: "laecustomerservice01@bngtrading.com.pg",
         description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "/imgs/service/Retail/Retail/S4F-BNGTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4F-PNG-Map-BNGtrading-ALL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1342,7 +1342,7 @@ export const serviceInfoData = [
         email: "bngkpomgr@global.net.pg",
         description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "/imgs/service/Retail/Retail/S4F-BNGTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4F-PNG-Map-BNGtrading-ALL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
@@ -1358,7 +1358,7 @@ export const serviceInfoData = [
         email: "",
         description: `Operating since 1924, BNG Trading is the oldest and largest importer, distributor and marketer of grocery products in PNG. With a wide range of products covering food, beverage, health & beauty and non-food items, BNG represents some of the largest multi-national consumer companies in the world. The company has branches in Port Moresby, Lae, Kokopo and Kiunga supplying over 500 stores including grocers, wholesalers, foodservices, bakeries and mining camps.`,
         img_url: "/imgs/service/Retail/Retail/S4F-BNGTrading.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4F-PNG-Map-BNGtrading-ALL.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
