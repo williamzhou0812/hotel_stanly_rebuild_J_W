@@ -36,7 +36,7 @@ class ServiceDetail extends React.Component {
     renderImages(service_details) {
         const {  images } = service_details;
         if (images.length > 1) {
-            return imageGallery(images, "100%", "27vh");
+            return imageGallery(images, "100%", "23vh");
         }
         else if (images.length == 1) {
             return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);

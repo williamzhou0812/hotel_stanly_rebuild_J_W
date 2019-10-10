@@ -431,7 +431,7 @@ export const serviceInfoData = [
         id: 26,
         service_type_id: "AirTransportService",
         title: "Air Niugini",
-        address: "ANG Haus 7 Mile PO BOX 7186 Boroko , NCD",
+        address: "ANG Haus 7 Mile PO BOX 7186 Boroko, NCD",
         phone: "+675 327 3444",
         website: "airniugini.com.pg",
         email: "telephonesales@airniugini.com.pg",
@@ -439,7 +439,10 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS2.jpg' },
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS3.jpg' },
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS5.jpg' },
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P.jpg' },
         ]
 
     },
@@ -479,7 +482,7 @@ export const serviceInfoData = [
         id: 29,
         service_type_id: "AirTransportService",
         title: "HeliScope",
-        address: "<p>HeliScope Terminal Portion 2437</p> <p>Jacksons Parade</p> <p>POM Airport</p>",
+        address: "HeliScope Terminal Portion 2437 Jacksons Parade POM Airport",
         phone: "+675 323 0662",
         website: "heliscope.net",
         email: "info@heliscope.net",
@@ -607,7 +610,7 @@ export const serviceInfoData = [
         id: 37,
         service_type_id: "VehicleHire",
         title: "AVIS - Nationwide Rent-A-Car",
-        address: "<p>Headoffice:</p> <p>P.O Box 1533 </p><p>Port Moresby, 111 NCD,</p><p> Papua New Guinea</p><p> Jacksons Parade 7 Mile, NCD</p>",
+        address: "Headoffice: P.O Box 1533 Port Moresby, 111 NCD, Papua New Guinea Jacksons Parade 7 Mile, NCD",
         phone: "+675 324 9400 ",
         website: "www.avis.com.pg",
         email: "reservations@avis.com.pg",
@@ -615,7 +618,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS15.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
@@ -631,7 +634,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS16.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
@@ -647,14 +650,14 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS17.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
     {
         id: 40,
         service_type_id: "VehicleHire",
-        title: "Frangipani (Kokopo)",
+        title: "Frangipani",
         address: "P.O Box 133  Kokopo",
         phone: "+675 982 9311",
         website: "www.facebook.com/pg/Frangipani-Car-Hires",
@@ -663,7 +666,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS18.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
@@ -679,7 +682,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS19.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
@@ -695,7 +698,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS20.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
@@ -711,7 +714,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS21.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
@@ -727,7 +730,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS22.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ]
 
     },
@@ -1486,7 +1489,7 @@ export const transportData = [
     {
         id: "AirTransportService",
         serviceTypes: "transport",
-        title: "AIR TRANSPORT SERVICES (PASSNEGER)",
+        title: "PASSNEGER AIRLINE SERVICES",
         url: transportNamespace + "/:serid",
         img_url: AirTransportIcon,
         isIcon: true,
