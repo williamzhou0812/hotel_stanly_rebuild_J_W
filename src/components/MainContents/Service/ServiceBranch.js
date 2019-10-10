@@ -138,6 +138,7 @@ class ServiceBranch extends React.Component {
             index } = this.state;
         
         const service_details = sub_service_info_list[index];
+        const right_div_height = (sub_service_info_list.length === 1 ) ? '80%' : '52%';
 
 
         return (
@@ -417,7 +418,7 @@ class ServiceBranch extends React.Component {
                                     
                                     <div className="middle-section--rightSide"
                                         style={{
-                                            height: "38%",
+                                            height: right_div_height,
                                             letterSpacing: "1px",
                                             overflow: "scroll",
                                             display: "inline-table",

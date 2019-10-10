@@ -1198,7 +1198,7 @@ export const serviceInfoData = [
         email: "sales@keynote.com.pg",
         description: `Keynote Music is your one stop music stop: <br/>• Piano & digital keyboards <br/>• Guitars, amplifiers & accessories <br/>• Brass, woodwind, percussion instruments & accessories <br/>• Pro audio <br/>• Background music systems – design, installation & service <br/>• Public address systems (portable to large) – design, sales & service`,
         img_url: "/imgs/service/Retail/Retail/S4B-KeynoteMusic.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S4B-PNG-Map-KEYNOTEMUSIC.png",
         images: [
             { imageFile: '/imgs/service/Retail/S4-HeaderImage.jpg' }
         ]
