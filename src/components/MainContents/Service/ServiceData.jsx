@@ -741,7 +741,7 @@ export const serviceInfoData = [
         email: "corporateaffairs@newcrest.com.au",
         description: `Located within the New Ireland Province, Newcrest's Lihir operation has produced over 10 million ounces of gold since its inception back in 1997. It remains one of the most prolific gold mines in PNG today.  `,
         img_url: "/imgs/service/Mining/Mines/S3A1-NewcrestMining.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A1-PNG-Map-NEWCRESTMINING.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
@@ -757,7 +757,7 @@ export const serviceInfoData = [
         email: "info@stbarbara.com.au",
         description: `Simberi Gold Company Limited is located in the New Ireland Province on an island within the Tabar Group. Due to its volcanic composition, the island elevates dramatically around the shoreline and attracts high rain falls. The mining operations currently centres around the eastern part of the island which extends 2,560 hectares in total. `,
         img_url: "/imgs/service/Mining/Mines/S3A2-StBarbaraLtd.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/_Maps/S3A2-PNG-Map-STBARBARA.png",
         images: [
             { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
         ]
