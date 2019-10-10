@@ -756,6 +756,12 @@ export const surfingList = [
                 Phone: "+675 326 3999",
                 email: "sapng06@yahoo.com.au",
                 website: "www.sapng.com"
+            },
+            {
+                associate: "VANIMO SURF LODGE",
+                Phone: "+675 7072 7934",
+                email: "dave@vanimosurflodge.com",
+                website: "dave@vanimosurflodge.com"
             }
         ]
     },

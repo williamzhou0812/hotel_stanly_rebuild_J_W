@@ -239,9 +239,6 @@ class ActivityDestinationDetail extends React.Component {
                             <span>FOR MORE INFORMATION CONTACT:</span>
                         </div>
                         <div className="activity-main-bottom">
-
-
-
                             {destination.details.map((info, index) => {
                                 const info_class = (destination.details.length == 1) ? 'single' : 'multiple';
                                 return (
@@ -265,7 +262,13 @@ class ActivityDestinationDetail extends React.Component {
                                     </div>
                                 )
                             })}
-                            
+                            {destination.details.length === 0 && (
+                                <div className="advertise">
+                                    Advertise your business here!<br/>
+                                    For more information, contact:<br/>
+                                    touchscreen@jbg.com.pg
+                                </div>
+                            )}
                         </div>
                     </div>                    
                 </div>

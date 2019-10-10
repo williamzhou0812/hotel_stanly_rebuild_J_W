@@ -264,6 +264,17 @@
         overflow-wrap: break-word;
     }
 
+    .advertise {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        letter-spacing: 2px;
+        overflow-wrap: break-word;
+        text-align: center;
+        line-height: 31px;
+        padding-top: 20px;
+    }
    
 
     &--D1 {
