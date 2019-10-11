@@ -543,35 +543,6 @@ export const fishingList = [
         ]
     },
     {
-        id: 2,
-        title: "SEPIK",
-        img_url: "/imgs/activity/A3-Fishing/ACTIVITIES-FISHING-GALLERYIMAGES_P.jpg",
-        mapActivity: "",
-        overView:
-            "TBC",
-
-        details: [
-            {
-                associate: "True North",
-                Phone: "+618 9192 1829",
-                email: "cruise@truenorth.com.au",
-                website: "www.truenorth.com.au"
-            },
-            {
-                associate: "Transniugini Tours",
-                Phone: "+675 542 1438",
-                email: "service@pngtours.com",
-                website: "www.pngtours.com"
-            },
-            {
-                associate: "Sepik Adventure Tours",
-                Phone: "+675 7259 6349",
-                email: "adventurepng@gmail.com",
-                website: "www.facebook.com/sepik-village-journeys-sepik-adventure-tours-172884856120976"
-            }
-        ]
-    },
-    {
         id: 3,
         title: "LOWER RAMU RIVER",
         img_url: "/imgs/activity/A3-Fishing/ACTIVITIES-FISHING-GALLERYIMAGES_P.jpg",
