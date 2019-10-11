@@ -11,7 +11,7 @@ class Footer extends Component  {
          const  settings = {
              dots: false,
              infinite: true,
-             speed: 200,
+             speed: 300,
              slidesToScroll: 1,
              autoplay: true,
              autoplaySpeed: 6000,
