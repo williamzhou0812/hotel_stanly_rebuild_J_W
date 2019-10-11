@@ -43,39 +43,6 @@ import {
 } from "./Constants";
 
 import mainComponent from "./components/MainContents/Videos/mainComponent";
-// +++++ services
-
-import Essential from "./components/MainContents/Service/essential/essential";
-
-import Banks from "./components/MainContents/Service/essential/subpages/bank";
-import BankDetails from "./components/MainContents/Service/essential/subpages/bankDetails";
-import MedicalService from "./components/MainContents/Service/essential/medicalService";
-import MedicalServiceDetails from "./components/MainContents/Service/essential/subpages/medicalServiceDetails";
-import Embassy from "./components/MainContents/Service/essential/embassy";
-import EmbassyDetails from "./components/MainContents/Service/essential/subpages/embassyDetails";
-import Security from "./components/MainContents/Service/essential/security";
-import SecurityDetails from "./components/MainContents/Service/essential/subpages/securityDetails";
-
-import Transport from "./components/MainContents/Service/transport/transport";
-
-import VehicleHire from "./components/MainContents/Service/transport/vehicleHire";
-import TransportDetails from "./components/MainContents/Service/transport/subpages/vehicelDetails";
-import FreightService from "./components/MainContents/Service/transport/freightService";
-import FreightServiceDetail from "./components/MainContents/Service/transport/subpages/freightServiceDetails";
-
-import Mining from "./components/MainContents/Service/mining/mining";
-import gasList from "./components/MainContents/Service/mining/gasList";
-import gasDetail from "./components/MainContents/Service/mining/subpages/gasDetail";
-
-import minesList from "./components/MainContents/Service/mining/minesList";
-import minesDetail from "./components/MainContents/Service/mining/subpages/minesDetail";
-
-import departmentsList from "./components/MainContents/Service/mining/departmentsList";
-import departmentsDetail from "./components/MainContents/Service/mining/subpages/departmentsDetail";
-import agricultureDetail from "./components/MainContents/Service/mining/subpages/agricultureDetail";
-
-import retailList from "./components/MainContents/Service/retail/retailList";
-import retailDetail from "./components/MainContents/Service/retail/subpages/retailDetail";
 
 // Style Sheets
 
@@ -95,8 +62,6 @@ import ActivityList from "./components/MainContents/Activity/ActivityList";
 import ActivityDestinationList from "./components/MainContents/Activity/ActivityDestinationList";
 
 import ActivityDestinationDetail from "./components/MainContents/Activity/ActivityDestinationDetail";
-import PassengerAirline from "./components/MainContents/Service/transport/passengerAirline";
-import PassengerAirlineDetail from "./components/MainContents/Service/transport/subpages/passengerAirlineDetail";
 
 import "./App.css";
 
@@ -199,114 +164,6 @@ function App() {
                         component={ServiceDetail}
                     />
 
-                    {/*
-                    <Route
-                        exact
-                        path="/services/essential/banks"
-                        component={Banks}
-                    />
-                    <Route
-                        path="/services/essential/banks/:id"
-                        component={BankDetails}
-                    />
-                    <Route
-                        exact
-                        path="/services/essential/medical"
-                        component={MedicalService}
-                    />
-                    <Route
-                        path="/services/essential/medical/:id"
-                        component={MedicalServiceDetails}
-                    />
-                    <Route
-                        exact
-                        path="/services/essential/embassy"
-                        component={Embassy}
-                    />
-                    <Route
-                        exact
-                        path="/services/essential/embassy/:id"
-                        component={EmbassyDetails}
-                    />
-                    <Route
-                        exact
-                        path="/services/essential/security"
-                        component={Security}
-                    />
-                    <Route
-                        exact
-                        path="/services/essential/security/:id"
-                        component={SecurityDetails}
-                    />
-                  
-                    <Route
-                        exact
-                        path="/services/transport/vehicle-hire"
-                        component={VehicleHire}
-                    />
-                    <Route
-                        exact
-                        path="/services/transport/vehicle-hire/:id"
-                        component={TransportDetails}
-                    />
-                    <Route
-                        exact
-                        path="/services/transport/freight-services"
-                        component={FreightService}
-                    />
-                    <Route
-                        exact
-                        path="/services/transport/freight-services/:id"
-                        component={FreightServiceDetail}
-                    />
-                    <Route
-                        exact
-                        path="/services/transport/passenger-airline-service"
-                        component={PassengerAirline}
-                    />
-                    <Route
-                        exact
-                        path="/services/transport/passenger-airline-service/:id"
-                        component={PassengerAirlineDetail}
-                    />
-                    <Route
-                        exact
-                        path="/services/mining/gas"
-                        component={gasList}
-                    />
-                    <Route
-                        exact
-                        path="/services/mining/gas/:id"
-                        component={gasDetail}
-                    />
-                    <Route
-                        exact
-                        path="/services/mining/mines"
-                        component={minesList}
-                    />
-                    <Route
-                        exact
-                        path="/services/mining/mines/:id"
-                        component={minesDetail}
-                    />
-                    <Route
-                        exact
-                        path="/services/mining/officialDepartment"
-                        component={departmentsList}
-                    />
-                    <Route
-                        exact
-                        path="/services/mining/officialDepartment/:id"
-                        component={departmentsDetail}
-                    />
-                    <Route
-                        exact
-                        path="/services/mining/agriculture"
-                        component={agricultureDetail}
-                    />
-*/}
-                  
-                   
 
                     {/* --------------------------------- */}
                     <Route
