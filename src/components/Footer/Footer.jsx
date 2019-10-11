@@ -11,11 +11,11 @@ class Footer extends Component  {
          const  settings = {
              dots: false,
              infinite: true,
-             speed: 2000,
+             speed: 200,
              slidesToScroll: 1,
              autoplay: true,
-             autoplaySpeed: 2000,
-             cssEase:"lineaar"
+             autoplaySpeed: 6000,
+             cssEase:"linear"
 
          }
         return (
