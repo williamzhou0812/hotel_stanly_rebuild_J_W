@@ -5,10 +5,6 @@ import {
     destinationNamespace
 } from "../../../Constants";
 import SectionList from "../List/SectionList";
-import DP1 from "./images/D-DESTINATIONS-IMAGES_P.jpg";
-import DP2 from "./images/D-DESTINATIONS-IMAGES_P2.jpg";
-import DP3 from "./images/D-DESTINATIONS-IMAGES_P3.jpg";
-import DP4 from "./images/D-DESTINATIONS-IMAGES_P4.jpg";
 import { destinations } from "./DestinationData";
 
 class DestinationList extends React.Component {
