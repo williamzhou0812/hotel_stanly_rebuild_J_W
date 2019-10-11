@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Component, Fragment } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import MainLogo from "./components/Header/MainLogo/MainLogo";
@@ -65,131 +65,139 @@ import ActivityDestinationDetail from "./components/MainContents/Activity/Activi
 
 import "./App.css";
 
-function App() {
-    return (
-        <Fragment>
-            <MainLogo />
-            <SubNavs />
-            <MainNav />
-            <main>
-                <Switch>
-                    <Route exact path="/" component={HotelWelcome} />
-                    <Route exact path="/ourhotel" component={OurHotel} />
-                    <Route
-                        exact
-                        path="/ourhotel/roomsuite"
-                        component={RoomSuite}
-                    />
-                    <Route
-                        exact
-                        path="/ourhotel/roomsuite/:id"
-                        component={RoomSuiteDetails}
-                    />
-                    <Route exact path="/ourhotel/dining" component={Dining} />
-                    <Route
-                        exact
-                        path="/ourhotel/dining/:id"
-                        component={DiningDetails}
-                    />
-                    <Route
-                        exact
-                        path="/ourhotel/facilities"
-                        component={Facilities}
-                    />
-                    <Route
-                        exact
-                        path="/ourhotel/facilities/:id"
-                        component={FacilitieDetails}
-                    />
-                    <Route
-                        exact
-                        path="/ourhotel/meeting"
-                        component={Meetings}
-                    />
-                    <Route
-                        exact
-                        path="/ourhotel/meeting/:id"
-                        component={MeetingDetails}
-                    />
-                    <Route exact path="/hoteldetail" component={HotelWelcome} />
-                    <Route exact path="/events" component={EventList} />
-                    <Route path="/events/:id" component={EventDetail} />
-                    <Route
-                        exact
-                        path={serviceNamespace}
-                        component={ServiceInitialList}
-                    />
-                    <Route
-                        exact
-                        path={destinationNamespace}
-                        component={DestinationList}
-                    />
-                    <Route
-                        exact
-                        path={destinationNamespace + "/:id"}
-                        component={DestinationDetail}
-                    />
-                    <Route
-                        exact
-                        path={diningNamespace}
-                        component={DiningList}
-                    />
-                    <Route
-                        exact
-                        path={diningNamespace + "/:id"}
-                        component={DiningDetail}
-                    />
-                    <Route exact path="/maplist" component={MapList} />
-                    <Route
-                        exact
-                        path="/services/:servicename"
-                        component={ServiceTypeList}
-                    />
+class App extends Component {
+    constructor(props) {
+        super(props);
 
-                    <Route
-                        exact
-                        path="/services/retail/:subservicename"
-                        component={ServiceBranch}
-                    />   
-
-                    <Route
-                        exact
-                        path="/services/:servicename/:subservicename"
-                        component={ServiceList}
-                    />
-
-                    <Route
-                        exact
-                        path="/services/:servicename/:subservicename/:detailid"
-                        component={ServiceDetail}
-                    />
+    }
 
 
-                    {/* --------------------------------- */}
-                    <Route
-                        exact
-                        path={activityNamespace}
-                        component={ActivityList}
-                    />
-                    <Route
-                        exact
-                        path={activityNamespace + "/:id"}
-                        component={ActivityDestinationList}
-                    />
-                    
-                    <Route
-                        exact
-                        path={activityNamespace + "/:id/:subid"}
-                        component={ActivityDestinationDetail}
-                    />
-                    
-                    <Route exact path="/videos" component={mainComponent} />
-                </Switch>
-                <Footer />
-                <StaticFooter />
-            </main>
-        </Fragment>
-    );
+    render() {
+        return (
+            <Fragment>
+                <MainLogo />
+                <SubNavs />
+                <MainNav />
+                <main>
+                    <Switch>
+                        <Route exact path="/" component={HotelWelcome} />
+                        <Route exact path="/ourhotel" component={OurHotel} />
+                        <Route
+                            exact
+                            path="/ourhotel/roomsuite"
+                            component={RoomSuite}
+                        />
+                        <Route
+                            exact
+                            path="/ourhotel/roomsuite/:id"
+                            component={RoomSuiteDetails}
+                        />
+                        <Route exact path="/ourhotel/dining" component={Dining} />
+                        <Route
+                            exact
+                            path="/ourhotel/dining/:id"
+                            component={DiningDetails}
+                        />
+                        <Route
+                            exact
+                            path="/ourhotel/facilities"
+                            component={Facilities}
+                        />
+                        <Route
+                            exact
+                            path="/ourhotel/facilities/:id"
+                            component={FacilitieDetails}
+                        />
+                        <Route
+                            exact
+                            path="/ourhotel/meeting"
+                            component={Meetings}
+                        />
+                        <Route
+                            exact
+                            path="/ourhotel/meeting/:id"
+                            component={MeetingDetails}
+                        />
+                        <Route exact path="/hoteldetail" component={HotelWelcome} />
+                        <Route exact path="/events" component={EventList} />
+                        <Route path="/events/:id" component={EventDetail} />
+                        <Route
+                            exact
+                            path={serviceNamespace}
+                            component={ServiceInitialList}
+                        />
+                        <Route
+                            exact
+                            path={destinationNamespace}
+                            component={DestinationList}
+                        />
+                        <Route
+                            exact
+                            path={destinationNamespace + "/:id"}
+                            component={DestinationDetail}
+                        />
+                        <Route
+                            exact
+                            path={diningNamespace}
+                            component={DiningList}
+                        />
+                        <Route
+                            exact
+                            path={diningNamespace + "/:id"}
+                            component={DiningDetail}
+                        />
+                        <Route exact path="/maplist" component={MapList} />
+                        <Route
+                            exact
+                            path="/services/:servicename"
+                            component={ServiceTypeList}
+                        />
+    
+                        <Route
+                            exact
+                            path="/services/retail/:subservicename"
+                            component={ServiceBranch}
+                        />   
+    
+                        <Route
+                            exact
+                            path="/services/:servicename/:subservicename"
+                            component={ServiceList}
+                        />
+    
+                        <Route
+                            exact
+                            path="/services/:servicename/:subservicename/:detailid"
+                            component={ServiceDetail}
+                        />
+    
+    
+                        {/* --------------------------------- */}
+                        <Route
+                            exact
+                            path={activityNamespace}
+                            component={ActivityList}
+                        />
+                        <Route
+                            exact
+                            path={activityNamespace + "/:id"}
+                            component={ActivityDestinationList}
+                        />
+                        
+                        <Route
+                            exact
+                            path={activityNamespace + "/:id/:subid"}
+                            component={ActivityDestinationDetail}
+                        />
+                        
+                        <Route exact path="/videos" component={mainComponent} />
+                    </Switch>
+                    <Footer />
+                    <StaticFooter />
+                </main>
+            </Fragment>
+        );
+    }
 }
 
 export default App;
