@@ -56,7 +56,7 @@ const temp_mapData  = [
       img_url: 'Madang-Map-MADANG.png'
   },
   {
-      location_name : 'KOKPO MAP East New Britain',
+      location_name : 'KOKOPO MAP East New Britain',
       img_url: 'Madang-Map-MADANG.png'
   },
   {

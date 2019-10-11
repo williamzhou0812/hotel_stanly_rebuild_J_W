@@ -37,7 +37,7 @@ export const maps = [
     },
     {
         id: 6,
-        title: "KOKPO MAP",
+        title: "KOKOPO MAP",
         subTitle: "East New Britain",
         img_url: "/imgs/maps/M-Maps/D5-Kokopo-Map-KOKOPO.png",
         mapImage: "/imgs/maps/M-Maps/D5-Kokopo-Map-KOKOPO.png"
