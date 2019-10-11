@@ -76,7 +76,7 @@ export const restaurants = [{
     id: 4,
     title: "HAPPY DUMPLINGS",
     subTitle: "Northern Chinese",
-    img_url: '/imgs/dining/restaurant_logos/R5-DININGLOGO_P2.jpg',
+    img_url: '/imgs/dining/restaurant_logos/R5-DININGLOGO_P_EqWCjfj.jpg',
     imagesrc: '/imgs/dining/restaurant_logos/R5-DININGLOGO-TEST4.png',
     phone: '+675 302 8538',
     address: 'Vision City, Ground Floor, New Wing',
