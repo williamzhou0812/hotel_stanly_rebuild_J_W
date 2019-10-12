@@ -25,10 +25,11 @@ import EventsIcon from "./icons/EVENTS_ICON.png";
 import ServicesIcon from "./icons/SERVICES_ICON.png";
 import MapListIcon from "./icons/MAP_LIST_ICON.png";
 import "./mainNav.scss";
+//import { connect } from "react-redux";
+//import * as actions from "../actions";
+//import "./Tab.scss";
 
 class mainNav extends React.Component {
-    middle = 3;
-
     constructor(props) {
         super(props);
         this.state = {
@@ -81,60 +82,8 @@ class mainNav extends React.Component {
             sameClicked: false,
             performClick: false
         };
-        this.clickItem = this.clickItem.bind(this);
     }
-   
-    componentDidMount() {
-        // Update route according to middle tab...
-        const { history } = this.props;
-        const { location } = history;
-        const { tabs, sameClicked, performClick } = this.state;
-        if (location.pathname.includes(tabs[this.middle].path)) {
-            if (sameClicked && performClick) {
-                //If clicked on the same main tab even though similar location, force redirect
-                history.replace(tabs[this.middle].path);
-                this.setState({ performClick: false });
-            }
-        } else if (
-            location.pathname !== tabs[this.middle].path &&
-            performClick
-        ) {
-            //Only perform redirect if a performClick on one of the Main Tab is done
-            history.replace(tabs[this.middle].path);
-            this.setState({ performClick: false });
-        } else if (location.pathname !== tabs[this.middle].path) {
-            //Perform tab changing due to automatic redirection
-            tabs.forEach((tab, index) => {
-                if (location.pathname.includes(tab.path)) {
-                    //Change the tabs array based on the difference of the middle and current location pathname
-                    const tempTabs = shiftArray(tabs, this.middle - index);
-                    this.setState({
-                        tabs: tempTabs,
-                        tab: tempTabs[this.middle].name,
-                        sameClicked: false,
-                        performClick: false
-                    });
-                }
-            });
-        }
-    }
-
-    clickItem(clickedTab, clickIndex) {
-        // get tabs
-        const { tabs } = this.state;
-        // check if clicked tab is the middle one
-        if (clickedTab === tabs[this.middle]) {
-            this.setState({ sameClicked: true, performClick: true });
-        }
-        else {
-            const tempTabs = shiftArray(tabs, this.middle - clickIndex);
-            this.setState({
-                tabs: tempTabs,
-                sameClicked: false,
-                performClick: true
-            });
-        }
-    }
+    middle = 3;
 
     render() {
         const { tabs } = this.state;
@@ -151,6 +100,7 @@ class mainNav extends React.Component {
             return pathname === "/";
         }
 
+        // const { pathname } = this.props.location;
         return (
             <div style={{ width: "100vw", height: "8vh" }}>
                 <div
@@ -179,7 +129,6 @@ class mainNav extends React.Component {
                                         borderColor: "#49afbd",
                                         borderWidth: "2px"
                                     }}
-                                    onClick={() => { this.clickItem(t, i);}}
                                 >
                                     <div
                                         style={{
