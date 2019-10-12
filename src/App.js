@@ -109,12 +109,11 @@ class App extends Component {
     }
 
     render() {
-        const { isIdle } = this.state;
         return (
             <Fragment>
                 <MainLogo />
                 <SubNavs />
-                <MainNav history={this.props.history} isIdle={isIdle}/>
+                <MainNav history={this.props.history} />
                 <main>
                     <Switch>
                         <Route exact path="/" component={HotelWelcome} />

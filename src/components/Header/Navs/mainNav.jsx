@@ -119,33 +119,6 @@ class mainNav extends React.Component {
         }
     }
 
-    componentDidUpdate(prevProps) {
-        // check if idle state changed
-        if (prevProps.isIdle !== this.props.isIdle) {
-            if (this.props.isIdle === false) {
-                // this indicate switching from showcase mode to interactive mode
-                const default_pathname = destinationNamespace;
-                const { tabs } = this.state;
-                if (default_pathname !== tabs[this.middle].path) {
-                    //Change the tabs array based on the difference of the middle and current location pathname
-                    tabs.forEach((tab, index) => {
-                        if (default_pathname.includes(tab.path)) {
-                            //Change the tabs array based on the difference of the middle and current location pathname
-                            const tempTabs = shiftArray(tabs, this.middle - index);
-                            this.setState({
-                                tabs: tempTabs,
-                                tab: tempTabs[this.middle].name,
-                                sameClicked: false,
-                                performClick: false
-                            });
-                        }
-                    });
-                }
-                
-            }
-        }
-    }
-
     clickItem(clickedTab, clickIndex) {
         // get tabs
         const { tabs } = this.state;
