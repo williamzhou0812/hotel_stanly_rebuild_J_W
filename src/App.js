@@ -81,11 +81,13 @@ class App extends Component {
     }
 
     componentDidMount() {
+        const { isIdle } = this.state;
         //Set idle timer
         this.idleRef = new idleJS({
             idle: IDLE_TIME,
             onIdle: this.setSPAIdle,
-            onActive: this.setSPAActive
+            onActive: this.setSPAActive,
+            startAtIdle: (isIdle === true)
         }).start();
     }
 
