@@ -1,13 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Switch, Route } from "react-router-dom";
+import idleJS from "idle-js";
 
 import MainLogo from "./components/Header/MainLogo/MainLogo";
 import SubNavs from "./components/Header/Navs/SubNav";
 import MainNav from "./components/Header/Navs/mainNav";
 
-import AboutOurHotel from "./components/MainContents/AboutOurHotel/AboutOurHotel";
-
-// import Maps from './components/MainContents/Maps/Maps';
 import MapList from "./components/MainContents/Maps/MapList";
 
 import OurHotel from "./components/MainContents/OurHotel/OurHotel";
@@ -35,11 +33,11 @@ import DestinationList from "./components/MainContents/Destination/DestinationLi
 
 import {
     serviceNamespace,
-    accomodationNamespace,
     activityNamespace,
     destinationNamespace,
-    mapListNamespace,
-    diningNamespace
+    videosNamespace,
+    diningNamespace,
+    IDLE_TIME
 } from "./Constants";
 
 import mainComponent from "./components/MainContents/Videos/mainComponent";
@@ -66,18 +64,68 @@ import ActivityDestinationDetail from "./components/MainContents/Activity/Activi
 import "./App.css";
 
 class App extends Component {
+    // keep reference of idle object
+    idleRef = null;
+
     constructor(props) {
         super(props);
 
+        // check if it is in video mode
+        const isIdle = (this.props.history.location.pathname.indexOf(videosNamespace) !== -1) ? true : false;
+        this.state = {
+            isIdle
+        };
+        this.setSPAIdle = this.setSPAIdle.bind(this);
+        this.setSPAActive = this.setSPAActive.bind(this);
     }
 
+    componentDidMount() {
+        const { isIdle } = this.state;
+        //Set idle timer
+        this.idleRef = new idleJS({
+            idle: IDLE_TIME,
+            onIdle: this.setSPAIdle,
+            onActive: this.setSPAActive,
+            startAtIdle: (isIdle === true)
+        }).start();
+        this.props.history.listen((location, action) => { this.routeChanged(location, action); })
+    }
+
+    routeChanged(location, action) {
+        if (action === 'PUSH' && location.pathname.indexOf(videosNamespace) !== -1 
+            && this.state.isIdle === false && this.idleRef) {
+                // ensure it is in idle state
+                this.idleRef.reset({
+                    idle: true
+                });
+                this.setState({ isIdle: true });
+        }
+    }
+
+    setSPAIdle() {
+        const { isIdle } = this.state;
+        if (!isIdle) {
+            this.setState({ isIdle: true });        
+            // start videos
+            this.props.history.push(videosNamespace);
+        } 
+    }
+    setSPAActive() {
+        const { isIdle } = this.state;
+        if (isIdle) {
+            this.setState({ isIdle: false });
+            // default to destination
+            this.props.history.push(destinationNamespace);
+        }
+    }
 
     render() {
+        const { isIdle } = this.state;
         return (
             <Fragment>
                 <MainLogo />
                 <SubNavs />
-                <MainNav />
+                <MainNav history={this.props.history} isIdle={isIdle}/>
                 <main>
                     <Switch>
                         <Route exact path="/" component={HotelWelcome} />
@@ -192,8 +240,13 @@ class App extends Component {
                         
                         <Route exact path="/videos" component={mainComponent} />
                     </Switch>
-                    <Footer />
-                    <StaticFooter />
+                    { !isIdle && (
+                        <Footer />
+                    )}
+                    { !isIdle && (
+                        <StaticFooter />
+                    )}
+                    
                 </main>
             </Fragment>
         );
