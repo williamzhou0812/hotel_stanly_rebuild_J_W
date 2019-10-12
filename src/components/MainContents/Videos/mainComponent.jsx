@@ -27,7 +27,7 @@ const  mainComponent = () => {
                       <InternalAds />
                 </div>
                 <div style={{marginTop: '-8px'}} >
-                   {/*  <StaticAds/> */}
+                   <StaticAds/>
                 </div>
 
             </RotateDiv>
