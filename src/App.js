@@ -113,7 +113,7 @@ class App extends Component {
             <Fragment>
                 <MainLogo />
                 <SubNavs />
-                <MainNav />
+                <MainNav history={this.props.history} />
                 <main>
                     <Switch>
                         <Route exact path="/" component={HotelWelcome} />
