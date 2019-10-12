@@ -24,7 +24,7 @@ const  mainComponent = () => {
                 
                 </div>
                 <div style={{marginTop: '-8px'}}>
-                      <InternalAds />
+                      {/*  <InternalAds /> */}
                 </div>
                 <div style={{marginTop: '-8px'}} >
                    {/*  <StaticAds/> */}

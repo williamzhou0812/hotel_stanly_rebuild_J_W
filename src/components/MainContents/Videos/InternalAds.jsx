@@ -1,41 +1,54 @@
 import React from 'react';
 
-import { imageGallery } from '../../../Constants'; 
-import Slider from 'react-slick';
+import ImageGallery from 'react-image-gallery';
+import OutNow from './190523JBGINTERNALADS2.jpg';
+import GBGBANNER from './190523JBGINTERNALADS5_QVwQqkl.jpg';
+import  TOUCHHERER from './190523JBGINTERNALADS6_NZu8HSE.jpg';
+
+
+const images = [
+    {
+      original: OutNow,
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    },
+    {
+      original: GBGBANNER,
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    },
+    {
+      original: TOUCHHERER,
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    }
+
+  ];
+
 
 const InternalAds  = () => { 
-    const  settings = {
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 6000,
-        cssEase:"linear"
 
-    };
+    return ( 
+        <div style={{width: '100%', height: '100%'}} > 
+            <ImageGallery 
+                items={images} 
+                slideInterval={10000}
+                showThumbnails={false}
+                showFullscreenButton={false}
+                autoPlay={true}
+                showNav={false}
+                isRTL={true}
+                renderItem={ (item, index)  => {
+                    return (
+                        <div className='image-gallery-image'>
+                            <img src={item.original}
+                                alt= {index}
+                               
+                                style={{width: '100%', height: '8.88vh'}} />
+                        </div>
+                    )
+                }}
+            />
+        </div>
+    );
 
-       
-    return (
-        
-        <Slider {...settings}>
-            <div >
-                <img src="/imgs/ads/internal/190523JBGINTERNALADS6_NZu8HSE.jpg" alt="" />
-            </div> 
-            <div >
-                <img src="/imgs/ads/internal/190523JBGINTERNALADS5_QVwQqkl.jpg" alt="" />
-            </div> 
-        
-            <div >
-                <img src="/imgs/ads/internal/190523JBGINTERNALADS2.jpg" alt="" />
-            </div> 
-        
-        </Slider>
-
-    )
-
-
-}
-  
+};
 
 export default InternalAds;
