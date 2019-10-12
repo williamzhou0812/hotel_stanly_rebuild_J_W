@@ -53,7 +53,6 @@ export const airportInfoNamespace = "/airportinfo";
 export const searchResultNamespace = "/searchresult";
 export const hotelDetailNamespace = "/hoteldetail";
 export const directoryListNamespace = "/directorylist";
-export const videosNamespace = "/videos";
 
 
 export const SUBSECTION_LIST_ENTRIES = 6;
