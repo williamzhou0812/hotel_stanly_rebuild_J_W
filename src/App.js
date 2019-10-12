@@ -42,6 +42,8 @@ import {
 
 import mainComponent from "./components/MainContents/Videos/mainComponent";
 
+import retailDetail from "./components/MainContents/Service/retail/subpages/retailDetail";
+
 // Style Sheets
 
 import RoomSuite from "./components/MainContents/OurHotel/RoomSuite";
