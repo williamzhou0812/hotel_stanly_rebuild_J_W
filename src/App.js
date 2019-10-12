@@ -77,6 +77,7 @@ class App extends Component {
         };
         this.setSPAIdle = this.setSPAIdle.bind(this);
         this.setSPAActive = this.setSPAActive.bind(this);
+
     }
 
     componentDidMount() {
@@ -88,18 +89,6 @@ class App extends Component {
             onActive: this.setSPAActive,
             startAtIdle: (isIdle === true)
         }).start();
-        this.props.history.listen((location, action) => { this.routeChanged(location, action); })
-    }
-
-    routeChanged(location, action) {
-        if (action === 'PUSH' && location.pathname.indexOf(videosNamespace) !== -1 
-            && this.state.isIdle === false && this.idleRef) {
-                // ensure it is in idle state
-                this.idleRef.reset({
-                    idle: true
-                });
-                this.setState({ isIdle: true });
-        }
     }
 
     setSPAIdle() {
@@ -240,13 +229,8 @@ class App extends Component {
                         
                         <Route exact path="/videos" component={mainComponent} />
                     </Switch>
-                    { !isIdle && (
-                        <Footer />
-                    )}
-                    { !isIdle && (
-                        <StaticFooter />
-                    )}
-                    
+                    <Footer />
+                    <StaticFooter />
                 </main>
             </Fragment>
         );
