@@ -12,6 +12,11 @@ const RotateDiv = styled.div`
 `;
 
 const  mainComponent = () => { 
+    /*setTimeout(() => {
+        console.log(`im time outat index page`)
+        window.location.replace("http://localhost:3000/destinations");
+    }, 50000)
+*/
     return (
         <Fragment>
             <RotateDiv> 

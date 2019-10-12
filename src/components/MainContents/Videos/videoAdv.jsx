@@ -1,65 +1,70 @@
 import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
-import { videoList } from './VideoData';
-import { randomiseItems } from "../../../Constants";
 
-class Videos extends React.Component {
-    constructor(props) {
-        super(props);
-        // prepare video list
-        const video_urls = videoList.map(item => item.video);
-        const shuffled = randomiseItems(video_urls);
-        this.state = {
-            videos: shuffled,
-            playndex: 0,
-            playloop: (shuffled.length > 1) ? false : true,
-            playing: true
-        };
-        this.handleEnded = this.handleEnded.bind(this);
+
+/// shuffle Array 
+
+// const shuffle =  (array) => {
+
+//     let tmp, current, top = array.length;
+
+//     if (top) {
+//         while(--top) {
+//             current = Math.floor(Math.random() * (top + 1));
+//             tmp = array[current];
+//             array[current] = array[top];
+//             array[top] = tmp;
+//         }
+//     }
+
+//     return array;
+ 
+// };
+const temp_video_data = [
+    {
+        video: '/videos/BOEING_737_011.mp4'
+    },
+    {
+        video: '/videos/BSP_60-_TVC.mp4'
+    },
+    {
+        video: '/videos/Enga_Show_Promo_Video_Final_2.mp4'
+    },
+    {
+        video: '/videos/Goroka_Show_Promo_Video_Final.mp4'
+    },
+    {
+        video: '/videos/Hagen_Show_Promo_Video_Final.mp4'
+    },
+    {
+        video: '/videos/NKW_Fresh_teaser_1_-_innovation-Up_to_4K.mp4'
+    },
+    {
+        video: '/videos/Pacific-Palms-OfficeRW_2_dvl9LPE.mp4'
     }
+];
 
-    handleEnded = () => {
-        const { playndex, videos } = this.state;
-        if (videos.length > 1) {
-            // change to next video
-            if (playndex == videos.length - 1) {
-                this.setState({
-                    playndex: 0,
-                    playing: true
-                })
-            }
-            else {
-                this.setState({
-                    playndex: playndex + 1,
-                    playing: true
-                })
-            }
-        }
-    }
+const Videos = () => {
+    const _id = Math.floor(Math.random() * Math.floor(2) )
 
-    render() {
-        const { playndex, videos, playloop, playing } = this.state;
-        return (
+   
+    
+      
+       
+
+    // console.log(_id);
+    return (
         
     
-            <div style={{background: 'back', width: '100%', height: '100%'}} > 
-               
-              {/*  <video src={temp_video_data[_id].video} autoPlay  type="video/mp4"  /> 
-             */}
-               <ReactPlayer
-                    url={videos[playndex]}
-                    playing={playing}
-                    loop={playloop}
-                    onEnded={this.handleEnded}
-                    width='100%'
-                    height='auto'
-                />
-    
-            
-            </div>
-          
-        )
-    }
+        <div style={{background: 'back', width: '100%', height: '100%'}} > 
+           
+            <video src={temp_video_data[_id].video} autoPlay  type="video/mp4"  style={{width: '100%'}} /> 
+         
+        
+        </div>
+      
+    )
 }
+
+
 
 export default Videos;
