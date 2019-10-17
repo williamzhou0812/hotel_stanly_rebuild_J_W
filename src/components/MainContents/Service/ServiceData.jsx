@@ -205,7 +205,7 @@ export const serviceInfoData = [
     },
     {
         id: 12,
-        service_type_id: "HighCommissions",
+        service_type_id: "Embassies",
         title: "Australian High Commision",
         address: "<p>Godwit Road (Waigani)</p> <p>Port Moresby NCD</p><p> Papua New Guinea</p>",
         phone: "+675 7090 0100 (24 Hours)",
@@ -221,7 +221,7 @@ export const serviceInfoData = [
     },
     {
         id: 13,
-        service_type_id: "HighCommissions",
+        service_type_id: "Embassies",
         title: "British High Commision",
         address: "Sec 411 Lot 1 & 2 Kiroki Street, Waigani Port Moresby",
         phone: "+675 303 7600",
@@ -237,7 +237,7 @@ export const serviceInfoData = [
     },
     {
         id: 14,
-        service_type_id: "HighCommissions",
+        service_type_id: "Embassies",
         title: "Fijian High Commision",
         address: "Defence House, Champion Parade, Boroko, Port Moresby",
         phone: "+675 321 1914",
@@ -253,7 +253,7 @@ export const serviceInfoData = [
     },
     {
         id: 15,
-        service_type_id: "HighCommissions",
+        service_type_id: "Embassies",
         title: "New Zealand High Commision",
         address: "<p>Magani Crescent</p> <p>P. O. Box 1051/<p><p> Waigani, NCD</p> <p>Port Moresby</p><p> Papua New Guinea</p>",
         phone: "+675 325 9444",
@@ -269,7 +269,7 @@ export const serviceInfoData = [
     },
     {
         id: 16,
-        service_type_id: "HighCommissions",
+        service_type_id: "Embassies",
         title: "Solomon Island High Commission",
         address: "<p>Unit 1, GB House Poreporena Freeway</p><p>P.O. Box 8922, Boroko Port Moresby</p><p>Papua New Guinea</p>",
         phone: "+675 323 4333",
@@ -285,7 +285,7 @@ export const serviceInfoData = [
     },
     {
         id: 17,
-        service_type_id: "HighCommissions",
+        service_type_id: "Embassies",
         title: "High Commission of India",
         address: "Lot 30, Sec 7, Lawes Road, Granville, NCD, Port Moresby",
         phone: "+675 321 4291",
@@ -301,7 +301,7 @@ export const serviceInfoData = [
     },
     {
         id: 18,
-        service_type_id: "HighCommissions",
+        service_type_id: "Embassies",
         title: "Malaysian High Commission",
         address: "<p>Lot 16, Section 531</p> <p>Rosewood Executive Residence Savannah Heights</p> <p>P.O. Box 1400</p> <p>Port Moresby</p> <p>Papua New Guinea</p>",
         phone: "+675 325 2076",
@@ -1449,20 +1449,11 @@ export const essentialData = [
     {
         id: "Embassies",
         serviceTypes: "essentials",
-        title: "EMBASSIES",
+        title: "EMBASSIES & HIGH COMMISIONS",
         url: essentialNamespace + "/:serid",
         img_url: EmbassyIcon,
         isIcon: true,
         services: serviceInfoData.filter(item => item.service_type_id === "Embassies")
-    },
-    {
-        id: "HighCommissions",
-        serviceTypes: "essentials",
-        title: "HIGH COMMISIONS",
-        url: essentialNamespace + "/:serid",
-        img_url: CommissionsIcon,
-        isIcon: true,
-        services: serviceInfoData.filter(item => item.service_type_id === "HighCommissions")
     },
     {
         id: "EmergencyMedicalServices",
