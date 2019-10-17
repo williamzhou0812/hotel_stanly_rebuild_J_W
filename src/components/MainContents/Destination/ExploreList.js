@@ -43,9 +43,9 @@ class ExploreList extends React.Component {
                 const explore_data = filtered.map(service_item => { return {
                     id: 'serviceitem_' + service_item.id,
                     url: serviceNamespace + '/' + name + '/' + service_type_id + '/' + service_item.id,
-                    title: service_item.title,
+                    title: service_item.title.toUpperCase(),
                     img_url: icon,
-                    icon_title: title,
+                    icon_title: title.toUpperCase(),
                     isIcon: true
                 }});
                 // add to collection
