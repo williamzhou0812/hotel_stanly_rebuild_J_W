@@ -196,7 +196,7 @@ class SubsectionList extends React.Component {
                             return (
                                 <Link
                                     style={{ textDecoration: "none" }}
-                                    to={`${namespace}/${item.id}`}
+                                    to={(this.props.urlKey) ? item[this.props.urlKey] : `${namespace}/${item.id}`}
                                     key={`${item.id}-${index}`}
                                 
                                 >
