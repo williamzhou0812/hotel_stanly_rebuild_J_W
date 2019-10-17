@@ -58,7 +58,8 @@ class DestinationDetail extends React.Component {
         },
         exploreButtonTextStyle: {
             fontSize: "20px",
-            fontWeight: "500"
+            fontWeight: "500",
+            paddingTop: "5px"
         }
     };
 
