@@ -175,7 +175,7 @@ class DestinationDetail extends React.Component {
                                 </div>
                                 <div className="destination-main--details--bottom--right--btnContainer">
                                     <Link style={{ textDecoration: "none", color: "white" }}
-                                          to={destinationNamespace + '/' + destinationsDetail.id + '/expore'}>
+                                          to={destinationNamespace + '/' + destinationsDetail.id + '/explore'}>
                                         <div style={this.styles.exploreButtonStyle}>
                                             <span style={this.styles.exploreButtonTextStyle}>
                                                 EXPLORE

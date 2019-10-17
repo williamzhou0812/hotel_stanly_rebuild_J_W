@@ -1,48 +1,96 @@
 import React from "react";
-import UpButton from "./icons/UpExploreButton.png";
-import DownButton from "./icons/DownExploreButton.png";
+import SubsectionList from "../List/SubsectionList";
 import {
-    MediumOrange,
+    DarkHeavyBlue,
     shiftArray,
     ExtraHeavyBlueGreen,
     HeavyBlue,
-    randomiseItems
+    randomiseItems,
+    destinationNamespace,
+    serviceNamespace
 } from "../../../Constants";
-import { Link } from "react-router-dom";
-import "../List/MainSectionList.scss";
+import BackToIcon from './icons/BackIcon.png';
+// import data
+import { destinations } from "./DestinationData";
+import { services } from "../Service/ServiceData";
 
 class ExploreList extends React.Component {
     constructor(props) {
         super(props);
-        const { data } = this.props;
+
+        // retrieve destination details
+        const id = this.props.match.params.id;
+        const _id = parseInt(id);
+        const destinationsDetail = destinations.find(item => item.id == _id);
+        const explore_list = this.collectExploreData(destinationsDetail);
+
+        // store state
         this.state = {
-            data: randomiseItems(data)
-        };
-        this.goUp = this.goUp.bind(this);
-        this.goDown = this.goDown.bind(this);
-    }
-    goUp() {
-        let items = this.state.data.slice();
-        items = shiftArray(items, 1);
-        this.setState({
-            data: items
-        });
-    }
-    goDown() {
-        let items = this.state.data.slice();
-        items = shiftArray(items, -1);
-        this.setState({
-            data: items
-        });
-    }
-    styles = {
-        horizontalVerticalCenter: {
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
+            destinationsDetail,
+            explore_list
         }
-    };
+    }
+
+    collectExploreData(destination) {
+        // filter service 
+        let explore_list = [];
+        services.forEach(item => {
+            // retrieve service type info
+            const { name ,title, icon, service_types } = item;
+            service_types.forEach(service_type_item => {
+                const { id: service_type_id, services } = service_type_item;
+                const filtered = services.filter(service_item => service_item.destination_id === destination.id)
+                const explore_data = filtered.map(service_item => { return {
+                    id: 'serviceitem_' + service_item.id,
+                    url: serviceNamespace + '/' + name + '/' + service_type_id + '/' + service_item.id,
+                    title: service_item.title,
+                    img_url: icon,
+                    icon_title: title,
+                    isIcon: true
+                }});
+                // add to collection
+                explore_list = [...explore_list, ...explore_data];
+            })
+        });
+        console.log('--------------------');
+        console.log(explore_list);
+
+
+        return explore_list;
+    }
+
     render() {
+        // get state data 
+        const { destinationsDetail, explore_list } = this.state;
+        // create output
+        return (
+            <div style={{width:'100%', height: '100%', whiteSpace: 'nowarp'}}>
+              
+            
+                <SubsectionList
+                    numberOfEntries={4}
+                    data={explore_list}
+                    namespace={destinationNamespace + "/" + destinationsDetail.id}
+                    
+                    imageKey="imageServiceType"
+                    isImageArray={true}
+                    sideButtons={[
+                        { title: 'BACK TO OVERVIEW', isLink: true, link: destinationNamespace + "/" + destinationsDetail.id, icon: BackToIcon}
+                    ]}
+                    sideTitle="EXPLORE"
+                    mainTitle={destinationsDetail.title}
+                    evenDetailsProps={explore_list}                
+                    thumbnailStyle={{ width: "97.75px", height: "64px", backgroundColor: DarkHeavyBlue, borderBottom: '1px solid rgb(4, 60, 66)'}}
+                    iconStyle={{width: '100%', height:'auto', maxWidth: '50px', maxHeight:'50px', marginLeft: '20px'}}
+                    iconTitleStyle={{backgroundColor: DarkHeavyBlue, height: '64px', width: '207px'}}
+                >
+                    
+                </SubsectionList> 
+    
+            </div> 
+        )
+
+        /*
         const { data } = this.state;
         const itemHeight =
             this.props.data.length >= 13
@@ -145,7 +193,7 @@ class ExploreList extends React.Component {
                     <img src={DownButton} style={{ width: "5%" }} alt="Down" />
                 </div>
             </div>
-        );
+        );*/
     }
 }
 

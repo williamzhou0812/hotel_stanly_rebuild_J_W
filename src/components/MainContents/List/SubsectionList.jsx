@@ -211,7 +211,7 @@ class SubsectionList extends React.Component {
                                             {item.isIcon && (
                                                 <div style={thumbnailStyle}>
                                                     <div >
-                                                    <img src={item.img_url} style={this.props.iconStyle}/>
+                                                        <img src={item.img_url} style={this.props.iconStyle}/>
                                                     </div>
                                                 </div>
                                             )}
@@ -220,9 +220,13 @@ class SubsectionList extends React.Component {
                                                 style={thumbnailBgStyle}
                                             >
                                             </div>
-                                            )}
-                                           
-                                        </div>
+                                            )}                                           
+                                        </div>                                        
+                                        {item.isIcon && item.icon_title && (
+                                            <div className="subSection--icon-title" style={this.props.iconTitleStyle}>
+                                                {item.icon_title}
+                                            </div>
+                                        )}                                        
                                         {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
                                         <div className="subSection--title">
                                             <div

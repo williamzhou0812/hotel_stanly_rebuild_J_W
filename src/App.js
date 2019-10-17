@@ -30,6 +30,7 @@ import DiningList from "./components/MainContents/Dining/DiningList";
 import DiningDetail from "./components/MainContents/Dining/DiningDetail";
 import DestinationDetail from "./components/MainContents/Destination/DestinationDetail";
 import DestinationList from "./components/MainContents/Destination/DestinationList";
+import ExploreList from "./components/MainContents/Destination/ExploreList";
 
 import {
     serviceNamespace,
@@ -185,6 +186,11 @@ class App extends Component {
                             exact
                             path={destinationNamespace + "/:id"}
                             component={DestinationDetail}
+                        />
+                        <Route
+                            exact
+                            path={destinationNamespace + "/:id/explore"}
+                            component={ExploreList}
                         />
                         <Route
                             exact
