@@ -271,7 +271,7 @@ export const serviceInfoData = [
         id: 16,
         service_type_id: "HighCommissions",
         title: "Solomon Island High Commission",
-        address: "Unit 1, GB House Poreporena Freeway P. O. Box 8922, Boroko Port Moresby Papua New Guinea",
+        address: "<p>Unit 1, GB House Poreporena Freeway</p><p>P.O. Box 8922, Boroko Port Moresby</p><p>Papua New Guinea</p>",
         phone: "+675 323 4333",
         website: "",
         email: "sihicomm@daltron.com.pg",
