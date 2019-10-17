@@ -43,6 +43,22 @@ class DestinationDetail extends React.Component {
         mapButtonTextStyle: {
             fontSize: "20px",
             fontWeight: "500"
+        },
+        exploreButtonStyle: {
+            width: "85%",
+            height: "5.5vh",
+            padding: "3%",
+            marginBottom: "5%",
+            borderRadius: "5px",
+            boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
+            backgroundColor: HeavyOrange,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+        },
+        exploreButtonTextStyle: {
+            fontSize: "20px",
+            fontWeight: "500"
         }
     };
 
@@ -63,7 +79,7 @@ class DestinationDetail extends React.Component {
                         padding: "30px"
                     }}
                 >
-                    <h1>NO IMAGE FOR THIS RESTAURANT</h1>
+                    <h1>NO IMAGE FOR THIS DESTINATION</h1>
                 </div>
             );
         }
@@ -157,6 +173,14 @@ class DestinationDetail extends React.Component {
                                     )}
                                 </div>
                                 <div className="destination-main--details--bottom--right--btnContainer">
+                                    <Link style={{ textDecoration: "none", color: "white" }}
+                                          to={destinationNamespace + '/' + destinationsDetail.id + '/expore'}>
+                                        <div style={this.styles.exploreButtonStyle}>
+                                            <span style={this.styles.exploreButtonTextStyle}>
+                                                EXPLORE
+                                            </span>                                        
+                                        </div>
+                                    </Link>                                    
                                    {mapInfo.map((item, index)=>{
                                        const firstStyle = (index == 0) ? { marginBottom: "6%" } : {};
                                        return (
