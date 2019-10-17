@@ -112,7 +112,7 @@ class ExploreList extends React.Component {
                     sideTitle="EXPLORE"
                     mainTitle={destinationsDetail.title}
                     evenDetailsProps={explore_list}                
-                    thumbnailStyle={{ width: "97.75px", height: "63px", backgroundColor: DarkHeavyBlue, borderBottom: '1px solid rgb(4, 60, 66)'}}
+                    thumbnailStyle={{ width: "97px", height: "63px", backgroundColor: DarkHeavyBlue, borderBottom: '1px solid rgb(4, 60, 66)'}}
                     iconStyle={{width: '100%', height:'auto', maxWidth: '50px', maxHeight:'50px', marginLeft: '25px', marginTop: '8px'}}
                     iconTitleStyle={{backgroundColor: DarkHeavyBlue, height: '63px', width: '207px'}}
                     urlKey="url"
