@@ -22,7 +22,7 @@ class ExploreList extends React.Component {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
         const destinationsDetail = destinations.find(item => item.id == _id);
-        const explore_list = this.collectExploreData(destinationsDetail);
+        const explore_list = randomiseItems(this.collectExploreData(destinationsDetail));
 
         // store state
         this.state = {
@@ -52,8 +52,6 @@ class ExploreList extends React.Component {
                 explore_list = [...explore_list, ...explore_data];
             })
         });
-        console.log('--------------------');
-        console.log(explore_list);
 
 
         return explore_list;
