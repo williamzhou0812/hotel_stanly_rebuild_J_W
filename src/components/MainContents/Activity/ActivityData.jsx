@@ -24,7 +24,8 @@ export const attractionsList=[
                 email: "portmoresbynaturepark@gmail.com",
                 website: "www.facebook.com/PortMoresbyNaturePark/"
             }
-        ]
+        ],
+        destination_id: 1
     },
     {
         id: 2,

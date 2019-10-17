@@ -12,6 +12,7 @@ export const events = [
             location: 'Port Moresby, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/SP-SPORTS-AWARDS-MAP.png",
+        destination_id: 1
 
     },
     {

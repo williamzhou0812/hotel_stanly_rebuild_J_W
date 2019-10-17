@@ -61,7 +61,9 @@ class SubsectionList extends React.Component {
             mainTitle,
             namespace,
             thumbnailStyle = { width: "auto", height: "9.3vh"},
-            titleWrap = false
+            titleWrap = false,
+            itemTitleStyle = {},
+            itemTitleDivStyle = {}
         } = this.props;
         const itemHeight = `${100 / numberOfEntries}%`;
         const titleStyle = (titleWrap) ? 'normal' : 'nowrap'
@@ -228,11 +230,12 @@ class SubsectionList extends React.Component {
                                             </div>
                                         )}                                        
                                         {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
-                                        <div className="subSection--title">
+                                        <div className="subSection--title" style={itemTitleDivStyle}>
                                             <div
                                                 style={{
                                                     fontSize: "2.25vw",
-                                                    whiteSpace: titleStyle
+                                                    whiteSpace: titleStyle,
+                                                    ...itemTitleStyle
                                                 }}
                                             >
                                                 {item.title}
