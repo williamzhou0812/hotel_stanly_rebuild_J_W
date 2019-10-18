@@ -1106,11 +1106,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1124,11 +1124,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1142,11 +1142,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1160,11 +1160,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1178,11 +1178,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1196,11 +1196,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1214,11 +1214,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1232,11 +1232,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1250,11 +1250,11 @@ export const serviceInfoData = [
         website: "www.brianbellonline.com",
         email: "bbsales@brianbell.com.pg",
         description: `Everything for your home and outdoors! Retail Wholesale Everything for your home`,
-        img_url: "/imgs/service/Retail/Retail/S4A-BrianBell.jpg",
+        img_url: "/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg",
         mapImage: "/imgs/service/_Maps/S4A-PNG-Map-BRIANBELL.png",
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage2.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
         destination_id: -1
 
@@ -1489,12 +1489,12 @@ export const serviceInfoData = [
         website: "www.madnessphotography.com.au",
         email: "ness@madnessphotography.com.au",
         description: `Need to stand out from the crowd?`,
-        img_url: "/imgs/service/Retail/Retail/S4I-MadnessPhotography.jpg",
+        img_url: "/imgs/service/S4-Retail/S4I-MadnessPhotography/S4I-MadnessPhotography.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Retail/S4I-HeaderImage1.jpg' },
-            { imageFile: '/imgs/service/Retail/S4I-HeaderImage2.jpg' },
-            { imageFile: '/imgs/service/Retail/S4I-HeaderImage3.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4I-MadnessPhotography/S4I-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4I-MadnessPhotography/S4I-HeaderImage2.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4I-MadnessPhotography/S4I-HeaderImage3.jpg' }
         ],
         destination_id: -1
 
@@ -1508,10 +1508,10 @@ export const serviceInfoData = [
         website: "",
         email: "",
         description: `We specialise in the areas of voice &amp; cable networks; leading-edge pure-IP, hybrid and traditional telephone systems. OFC provides solutions for very large to very small - and will concept, design and deliver a solution to suit you and your business.`,
-        img_url: "/imgs/service/Retail/Retail/S4J-OFC.jpg",
+        img_url: "/imgs/service/S4-Retail/S4J-OFC/S4J-OFC.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Retail/S4J-HeaderImage1.jpg' },
+            { imageFile: '/imgs/service/S4-Retail/S4J-OFC/S4J-HeaderImage1.jpg' },
         ],
         destination_id: -1
 
@@ -1634,9 +1634,9 @@ export const retailData = [
         serviceTypes: "retail",
         title: "BRIAN BELL HOMECENTRES",
         url: retailNamespace + "/:serid",
-        img_url: '/imgs/service/Retail/Retail/S4A-BrianBell.jpg',
+        img_url: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-BrianBell.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "BrianBell")
     },
@@ -1647,7 +1647,7 @@ export const retailData = [
         url: miningNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4B-KeynoteMusic.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "KeynoteMusic")
     },
@@ -1658,7 +1658,7 @@ export const retailData = [
         url: miningNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4C-StricklandRealEstate.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "SticklandRealEsate")
     },
@@ -1669,7 +1669,7 @@ export const retailData = [
         url: miningNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4D-PrydeFurniture.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "PrydeFurniture")
     },
@@ -1680,7 +1680,7 @@ export const retailData = [
         url: miningNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4E-RHTrading.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "RHTrading")
     },
@@ -1691,7 +1691,7 @@ export const retailData = [
         url: miningNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4F-BNGTrading.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "BNGTrading")
     },
@@ -1702,7 +1702,7 @@ export const retailData = [
         url: miningNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4G-PacificPalms.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "PacificPalmsProperty")
     },
@@ -1713,7 +1713,7 @@ export const retailData = [
         url: miningNamespace + "/:serid",
         img_url: '/imgs/service/Retail/Retail/S4H-VisionCity.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "VisionCityMegaMall")
     },
@@ -1722,9 +1722,9 @@ export const retailData = [
         serviceTypes: "retail",
         title: "MADNESS PHOTOGRAPHY",
         url: miningNamespace + "/:serid",
-        img_url: '/imgs/service/Retail/Retail/S4I-MadnessPhotography.jpg',
+        img_url: '/imgs/service/S4-Retail/S4I-MadnessPhotography/S4I-MadnessPhotography.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4A-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "MadnessPhotography")
     },
@@ -1733,9 +1733,9 @@ export const retailData = [
         serviceTypes: "retail",
         title: "OFC",
         url: miningNamespace + "/:serid",
-        img_url: '/imgs/service/Retail/Retail/S4J-OFC.jpg',
+        img_url: '/imgs/service/S4-Retail/S4J-OFC/S4J-OFC.jpg',
         images: [
-            { imageFile: '/imgs/service/Retail/S4J-HeaderImage1.jpg' }
+            { imageFile: '/imgs/service/S4-Retail/S4J-OFC/S4J-HeaderImage1.jpg' }
         ],
         services: serviceInfoData.filter(item => item.service_type_id === "OFC")
     },
