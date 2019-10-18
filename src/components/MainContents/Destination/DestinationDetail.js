@@ -3,18 +3,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import AllAreas from "./icons/AllAreas.png";
-import BackIcon from "./icons/BackIcon.png";
 import {
     HeavyOrange,
     destinationNamespace,
     LightBlueButtonBackground,
-    ExtraHeavyBlueGreen,
     imageGallery,
-    LightOrange
 } from "../../../Constants";
-import ExploreList from "./ExploreList";
 import MapModal from "../Maps/MapModal";
-import Markdown from "../../../MarkDown";
 import "./Destination.scss";
 import "../List/MainSectionList.scss";
 import { destinations } from "./DestinationData";
@@ -68,8 +63,8 @@ class DestinationDetail extends React.Component {
         if (images.length > 1) {
             return imageGallery(images, "100%", "27vh");
         }
-        else if (images.length == 1) {
-            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        else if (images.length === 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
         }
         else {
             return (
@@ -89,7 +84,7 @@ class DestinationDetail extends React.Component {
     render() {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
-        let destinationsDetail = destinations.find(item => item.id == _id);
+        let destinationsDetail = destinations.find(item => item.id === _id);
         let mapInfo = [];
         if (destinationsDetail.CityMap) {
             mapInfo.push({
@@ -183,7 +178,7 @@ class DestinationDetail extends React.Component {
                                         </div>
                                     </Link>                                    
                                    {mapInfo.map((item, index)=>{
-                                       const firstStyle = (index == 0) ? { marginBottom: "6%" } : {};
+                                       const firstStyle = (index === 0) ? { marginBottom: "6%" } : {};
                                        return (
                                         <div key={index} style={firstStyle}>
                                             <MapModal

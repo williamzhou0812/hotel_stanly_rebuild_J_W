@@ -3,10 +3,6 @@ import React from "react";
 import SubsectionList from "../List/SubsectionList";
 import { events } from "./EventData";
 
-import EventDetail from "./EventDetail";
-
-import { transportNamespace, eventNamespace, toTitleCase } from "../../../Constants";
-
 class EventList extends React.Component {
     constructor(props) {
         super(props);

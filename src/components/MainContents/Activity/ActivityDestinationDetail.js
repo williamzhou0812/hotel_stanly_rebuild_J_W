@@ -1,17 +1,10 @@
 import React from "react";
 //import "../List/MainSectionList.css";
 import {
-    DECIMAL_RADIX,
-    diningNamespace,
     imageGallery,
     HeavyOrange,
-    LightBlueButtonBackground,
-    ExtraHeavyBlueGreen,
-    LightOrange,
-    activityNamespace
 } from "../../../Constants";
 import { Link } from "react-router-dom";
-import ActivityListIcon from "./icons/ActivityListIcon.png";
 import SidebarMapModel from "../Maps/SidebarMapModel";
 import "./Activity.scss";
 import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
@@ -60,8 +53,8 @@ class ActivityDestinationDetail extends React.Component {
         if (images.length > 1) {
             return imageGallery(images, "100%", "22.7vh");
         }
-        else if (images.length == 1) {
-            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        else if (images.length === 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
         }
         else {
             return (
@@ -82,11 +75,11 @@ class ActivityDestinationDetail extends React.Component {
          // get current activtity and destination
          const id = this.props.match.params.id;
          const _id = parseInt(id);
-         const activity = activities.find(item => item.id == _id);
+         const activity = activities.find(item => item.id === _id);
          const { destinations } = activity;
          const subid = this.props.match.params.subid;
          const _subid = parseInt(subid);
-         const destination = destinations.find(item => item.id == _subid);
+         const destination = destinations.find(item => item.id === _subid);
 
         const currentIdx = destinations.indexOf(destination);
         const prev_idx = (currentIdx - 1 < 0) ?  destinations.length -1 : currentIdx - 1;
@@ -240,7 +233,7 @@ class ActivityDestinationDetail extends React.Component {
                         </div>
                         <div className="activity-main-bottom">
                             {destination.details.map((info, index) => {
-                                const info_class = (destination.details.length == 1) ? 'single' : 'multiple';
+                                const info_class = (destination.details.length === 1) ? 'single' : 'multiple';
                                 return (
                                     <div key={index} className={info_class}>
                                         <div className="info-name">

@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 import CalendarIcon from "./icons/CalendarIcon.png";
 import {
     eventNamespace,
-    accomodationNamespace,
     HeavyOrange,
     LightBlueButtonBackground,
     ExtraHeavyBlueGreen
 } from "../../../Constants";
 import MapModal from "../Maps/MapModal";
-import SubsectionList from "../List/SubsectionList";
 import { events } from "./EventData";
 
 import "../List/MainSectionList.scss";
@@ -85,7 +83,7 @@ class EventDetail extends React.Component {
     render() {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
-        const eventDetail = events.find(item => item.id == _id);
+        const eventDetail = events.find(item => item.id === _id);
         const currentIdx = events.indexOf(eventDetail);
         const prev_idx = (currentIdx - 1 < 0) ?  events.length -1 : currentIdx - 1;
         const next_idx = (currentIdx + 1 >= events.length) ? 0 : currentIdx + 1;

@@ -60,7 +60,6 @@ class ServiceDetail extends React.Component {
             display: "flex",
             width: "100%",
             padding: "4% 0",
-            display: "inline-bock",
             marginTop: "-5%",
             borderRadius: "5px",
             boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -378,17 +377,5 @@ class ServiceDetail extends React.Component {
     }
 }
 
-const mapStateToProps = ({
-    essentialServiceTypeList,
-    miningServiceTypeList,
-    retailServiceTypeList,
-    transportServiceTypeList
-}) => {
-    return {
-        essentialServiceTypeList,
-        miningServiceTypeList,
-        retailServiceTypeList,
-        transportServiceTypeList
-    };
-};
+
 export default ServiceDetail;

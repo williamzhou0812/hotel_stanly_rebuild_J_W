@@ -63,8 +63,7 @@ class SectionList extends React.Component {
         const {
             title,
             namespace,
-            linkFunction,
-            backgroundPositionValue
+            linkFunction
         } = this.props;
         const { data, images } = this.state;
         return (
