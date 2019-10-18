@@ -97,7 +97,6 @@ const styles = {
         display: "flex",
         width: "100%",
         padding: "4% 0",
-        display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
         boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -116,7 +115,7 @@ const FacilitieDetails = (props) => {
 
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _facilitiesDetails = ourhotel_Facilities.find(item => item.id == _id);
+    const _facilitiesDetails = ourhotel_Facilities.find(item => item.id === _id);
     const currentIdx = ourhotel_Facilities.indexOf(_facilitiesDetails);
     const prev_idx = (currentIdx - 1 < 0) ?  ourhotel_Facilities.length -1 : currentIdx - 1;
     const next_idx = (currentIdx + 1 >= ourhotel_Facilities.length) ? 0 : currentIdx + 1;

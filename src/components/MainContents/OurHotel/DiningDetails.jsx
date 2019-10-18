@@ -225,7 +225,6 @@ const styles = {
         display: "flex",
         width: "100%",
         padding: "5% 0",
-        display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
         boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",

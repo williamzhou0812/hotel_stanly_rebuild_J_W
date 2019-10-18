@@ -9,7 +9,6 @@ import "./OurHotel.scss";
 
 
 import {
-    eventNamespace,
     imageGallery,
     HeavyOrange,
     LightBlueButtonBackground,
@@ -104,7 +103,6 @@ const styles = {
         display: "flex",
         width: "100%",
         padding: "4% 0",
-        display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
         boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -126,8 +124,8 @@ const renderImages = (meeting) => {
     if (images.length > 1) {
         return imageGallery(images, "100%", "27vh");
     }
-    else if (images.length == 1) {
-        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+    else if (images.length === 1) {
+        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt="" />);
     }
     else {
         return (
@@ -148,7 +146,7 @@ const MeetingDetails = (props) => {
 
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _facilitiesDetails = ourhotel_Meeting.find(item => item.id == _id);
+    const _facilitiesDetails = ourhotel_Meeting.find(item => item.id === _id);
     const currentIdx = ourhotel_Meeting.indexOf(_facilitiesDetails);
     const prev_idx = (currentIdx - 1 < 0) ?  ourhotel_Meeting.length -1 : currentIdx - 1;
     const next_idx = (currentIdx + 1 >= ourhotel_Meeting.length) ? 0 : currentIdx + 1;
