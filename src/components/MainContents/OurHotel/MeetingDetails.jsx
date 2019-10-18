@@ -35,7 +35,7 @@ const ourhotel_Meeting = [
     },
     {
         id: 2,
-        title: 'MT WELHELM ROOMS',
+        title: 'MT WILHELM ROOMS',
         description: `<p>A suite of smaller meeting rooms with direct access onto a large outdoor terrace.</p>
             <p>Rooms have the flexibility to accommodation whatever your requirements may be; theatre, classroom, boardroom, u-shape, cabaret, banqueting or cocktail.</p>
             <p>The rooms can cater for meetings for 20 people or for you to 60 people.</p>`,
