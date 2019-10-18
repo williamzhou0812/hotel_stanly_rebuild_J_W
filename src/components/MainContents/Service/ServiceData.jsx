@@ -62,7 +62,7 @@ export const serviceInfoData = [
         id: 3,
         service_type_id: "Banks",
         title: "Westpac Bank",
-        address: "PO Box 706 Port Moresby, NCD",
+        address: "<p>Various Locations</p> <p>PO Box 706 Port Moresby, NCD</p>",
         phone: "+675 322 0888",
         website: "https://www.westpac.com.pg",
         email: "",
