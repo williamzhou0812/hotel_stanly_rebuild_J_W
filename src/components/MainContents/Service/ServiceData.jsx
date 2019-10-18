@@ -6,7 +6,6 @@ import {
 } from "../../../Constants";
 import BankIcon from "../icons/Services_Icons-Bank.svg";
 import EmbassyIcon from "../icons/Services_Icons-Embassy.svg";
-import CommissionsIcon from "../icons/Services_Icons-Embassy.svg";
 import MedicalIcon from "../icons/Services_Icons-Medical.svg";
 import SecurityIcon from "../icons/Services_Icons-Security.svg";
 
@@ -22,7 +21,6 @@ import PetroleumIcon from "../icons/Services_Icons-Petroleum.svg";
 import ESSENTIAL_ICON from "./icons//ESSENTIAL_ICON.png"
 import MINING_ICON from "./icons//MINING_ICON.png"
 import RETAIL_ICON from "./icons//RETAIL_ICON.png"
-import ServiceTypesIcon from "./icons//ServiceTypesIcon.png"
 import TRANSPORT_ICON from "./icons//TRANSPORT_ICON.png"
 
 
@@ -37,7 +35,7 @@ export const serviceInfoData = [
         email: "servicebsp@bsp.com.pg",
         description: `BSP is the leading bank in Papua New Guinea and the Pacific region with branches also in Fiji, Solomon Islands, Samoa, Tong, Cook Islands and Vanuatu. BSP PNG operates 42 full service branches,  13 Premium Service Centres, 42 sub branches, 239 Agencies, 301 ATM’s and over 9,700 EFTPOS terminals nationwide. BSP offers state-of-the-art mobile and internet banking services, providing access to business and personal banking anytime, anywhere – 24/7.`,
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1A1---Port-Moresby-Map---BSP-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1A-Header-Images_P.jpg' }
         ],
@@ -53,7 +51,7 @@ export const serviceInfoData = [
         email: "cshdpg@anz.com",
         description: `Spanning 28 markets across the Asia Pacific, ANZ provides a range of banking solutions. Talk to ANZ about your banking needs today.`,
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES2.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1A2---Port-Moresby-Map-ANZ-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1A-Header-Images_P.jpg' }
         ],
@@ -70,7 +68,7 @@ export const serviceInfoData = [
         email: "",
         description: `Westpac Bank provides a range of banking solutions. Talk to Westpac Bank about your banking needs today.`,
         img_url: "/imgs/service/S1-Essential-Services/S1A-Banks/S1-IMAGES3.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1A3---Port-Moresby-Map-WESTPAC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1A-Header-Images_P.jpg' }
         ],
@@ -87,7 +85,7 @@ export const serviceInfoData = [
         email: "chineemb_pg@mfa.gov.cn",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES4.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1B1---Port-Moresby-Map-CHINESEEMBASSY-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -104,7 +102,7 @@ export const serviceInfoData = [
         email: "cad.port-moresby-amba@diplomatie.gouv.fr",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES5.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1B2---Port-Moresby-Map-FRENCH-EMBASSY-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -121,7 +119,7 @@ export const serviceInfoData = [
         email: "kbripom@daltron.com.pg",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES6.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1B3---Port-Moresby-Map-INDOESIANEMBASSY-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -138,7 +136,7 @@ export const serviceInfoData = [
         email: "sceoj@pm.mofa.go.jp, infeoj@pm.mofa.go.jp",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES7.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1B4---Port-Moresby-Map-JapaneseEmbassy-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -155,7 +153,7 @@ export const serviceInfoData = [
         email: "",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES8.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1B5--Port-Moresby-Map-USAEmbassy.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -189,7 +187,7 @@ export const serviceInfoData = [
         email: "portmoresby.pe@dfa.gov.ph",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES10.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1B7-Port-Moresby-Map-PhilippinesEmbassy-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -206,7 +204,7 @@ export const serviceInfoData = [
         email: "embpng@mofa.go.kr",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1B-Embassies/S1-IMAGES11.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1B8-Port-Moresby-Map-SouthKoreaEmbassy-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -223,7 +221,7 @@ export const serviceInfoData = [
         email: "consular.portmoresby@dfat.gov.au",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES12.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1C1-Port-Moresby-Map-AUSTRALIAN-HC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -240,7 +238,7 @@ export const serviceInfoData = [
         email: "uk.inpng@fco.gov.uk",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES13.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1C2--Port-Moresby-Map-British-HC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -257,7 +255,7 @@ export const serviceInfoData = [
         email: "rakaie@fijihighcom.org.pg",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES14.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1C3 - Port-Moresby-Map-Fijian-HC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -274,7 +272,7 @@ export const serviceInfoData = [
         email: "nzhcpmy@mfat.govt.nz",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES15.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1C4 - Port-Moresby-Map-NewZealand-HC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -291,7 +289,7 @@ export const serviceInfoData = [
         email: "sihicomm@daltron.com.pg",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES16.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1C5---Port-Moresby-Map-SolomonIslands-HC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -308,7 +306,7 @@ export const serviceInfoData = [
         email: "hc.pmoresby@mea.gov.in",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES17.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1C6---Port-Moresby-Map-India-HC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -325,7 +323,7 @@ export const serviceInfoData = [
         email: "mwportmoresby@kln.gov.my",
         description: `Call or visit your embassy if you experience any travel issues.`,
         img_url: "/imgs/service/S1-Essential-Services/S1C-High-Commissions/S1-IMAGES18.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1C7---Port-Moresby-Map-Malaysia-HC-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1BC-Header-Images_P2.jpg' }
         ],
@@ -376,7 +374,7 @@ export const serviceInfoData = [
         email: "",
         description: `Located in Port Moresby, PNG Chiropractic is there to help with any chiropractic needs.`,
         img_url: "/imgs/service/S1-Essential-Services/S1D-Medical-Services/S1-IMAGES21.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1D3---Port-Moresby-Map-PNGchiro.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
         ],
@@ -410,7 +408,7 @@ export const serviceInfoData = [
         email: "enquires@gdsspng.com",
         description: `Guard Dog Security / NADZAB Airport Coach Service offers: <br/>• Executive personal protection/body guard <br/>• V.I.P. executive car available <br/>• Armed security personnel <br/>• Air-conditioning <br/>• Drop off to your home or hotel <br/>• Guaranteed pick up no matter how late your flight is delayed <br/>• Tours by arrangement`,
         img_url: "/imgs/service/S1-Essential-Services/S1E-Security/S1-IMAGES23.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1E2 - Port-Moresby-Map-GuardDogSecurity-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
         ],
@@ -421,13 +419,13 @@ export const serviceInfoData = [
         id: 24,
         service_type_id: "Security",
         title: "G4S Secure Solutions PNG",
-        address: "",
+        address: "/imgs/service/S1-Essential-Services/_Maps/",
         phone: "+675 305 8300",
         website: "www.g4s.com.pg",
         email: "ENQUIRIES@PG.G4S.COM",
         description: `G4S is an international security solutions organisation which offers a range of security services and systems.`,
         img_url: "/imgs/service/S1-Essential-Services/S1E-Security/S1-IMAGES24.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1E3 - Port-Moresby-Map-G4Ssecuritysolutions-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1E-Header-Images_P4.jpg' }
         ],
@@ -650,9 +648,9 @@ export const serviceInfoData = [
         email: "reservations@avis.com.pg",
         description: `Avis makes travelling in PNG an easy and pleasurable experience. Offering the latest Toyota models, Avis offers great customer service and competitive rates. After hours emergency service also available. `,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS15.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C1-PNG-Map-AVIS.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 1
 
@@ -667,9 +665,9 @@ export const serviceInfoData = [
         email: "reservations@budget.com.pg",
         description: `Regardless of whether you're in PNG for leisure or business, Budget has all your car rental needs covered. <br/>“New Cars ... Old Fashioned Service.”`,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS16.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C2-PNG-Map-BUDGET.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 1
 
@@ -684,9 +682,9 @@ export const serviceInfoData = [
         email: "",
         description: `Europcar offers affordable and reliable car rentals for visitors to PNG. Explore more of the incredible landscapes and culture of this fascinating nation with Europcar.`,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS17.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C3-Port-Moresby-Map-EUROPCAR-01.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 1
 
@@ -701,9 +699,9 @@ export const serviceInfoData = [
         email: "",
         description: `Frangipani car hire provides a pleasurable and reliable experience when exploring the stunning and fascinating region of East New Britain. Customer service and satisfaction guaranteed. `,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS18.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C4-PNG-Map-FRANGIPANI.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 5
 
@@ -718,9 +716,9 @@ export const serviceInfoData = [
         email: "",
         description: `Enjoy a day trip to the beautiful Variata National Park or a week-long getaway to explore more of this wonderful nation. Whatever your transport needs, Hertz car rentals has you covered.`,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS19.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C5-Port-Moresby-Map-HERTZPOM-01.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 1
 
@@ -735,9 +733,9 @@ export const serviceInfoData = [
         email: "",
         description: `A Rental car service located in Madang`,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS20.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C6-PNG-Map-IZARHLAMBORNHIRECARS.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 3
 
@@ -752,9 +750,9 @@ export const serviceInfoData = [
         email: "travellersrentacar@reservations.com",
         description: `Travellers Rent-a-Car is a locally owned car rental company offering transport services to both leisure and executive travellers. Delivering the best rentals for PNG's road and climate conditions.`,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS21.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C7---PNG-Map-TRAVELLERSRENTACAR.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 3
 
@@ -769,9 +767,9 @@ export const serviceInfoData = [
         email: "",
         description: `City Cab is Mt Hagen's sole taxi service.`,
         img_url: "/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2LOGOS22.jpg",
-        mapImage: "",
+        mapImage: "/imgs/service/S2-Car-Hire/_Maps/S2C8---PNG-Map-CITYCAB.png",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2C-Vehicle-Hire/S2-MAINLISTIMAGES_P3_b.jpg' }
         ],
         destination_id: 4
 
