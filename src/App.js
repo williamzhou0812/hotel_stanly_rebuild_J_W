@@ -43,7 +43,7 @@ import {
 
 import mainComponent from "./components/MainContents/Videos/mainComponent";
 
-import retailDetail from "./components/MainContents/Service/retail/subpages/retailDetail";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 // Style Sheets
 

@@ -20,7 +20,7 @@ class ServiceBranch extends React.Component {
         super(props);
 
         const service_name = 'retail';
-        const service = services.find(item => item.name == service_name);
+        const service = services.find(item => item.name === service_name);
         const { service_types } = service;
         const sub_service_name = this.props.match.params.subservicename;
         const sub_service = service_types.find(item => item.id === sub_service_name);
@@ -107,7 +107,7 @@ class ServiceBranch extends React.Component {
         if (images.length > 1) {
             return imageGallery(images, "100%", "23vh");
         }
-        else if (images.length == 1) {
+        else if (images.length === 1) {
             return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
         }
         else {

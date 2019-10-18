@@ -1,17 +1,14 @@
 import React from "react";
 import {
-    DECIMAL_RADIX,
     diningNamespace,
     imageGallery,
     HeavyOrange,
-    LightBlueButtonBackground,
     ExtraHeavyBlueGreen,
     LightBlueGreen
 } from "../../../Constants";
 import { Link } from "react-router-dom";
 import RestaurantListIcon from "./icons/RestaurantListIcon.png";
 import MapModal from "../Maps/MapModal";
-import Markdown from "../../../MarkDown";
 import {restaurants } from "./DiningData";
 
 
@@ -86,7 +83,7 @@ class DiningDetail extends React.Component {
         if (images.length > 1) {
             return imageGallery(images, "100%", "27vh");
         }
-        else if (images.length == 1) {
+        else if (images.length === 1) {
             return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
         }
         else {
@@ -107,7 +104,7 @@ class DiningDetail extends React.Component {
     render() {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
-        const _DingingsDetails = restaurants.find(item => item.id == _id);
+        const _DingingsDetails = restaurants.find(item => item.id === _id);
         
         return (
             <div style={{

@@ -236,24 +236,14 @@ const styles = {
     }
 };
 
-// temp images array for res
-const images = [
-    {
-        imageFile: "http://192.168.0.160:7000/images/R24-DININGIMAGES_P.jpg"
-    },
-    {
-        imageFile: "http://192.168.0.160:7000/images/R25-DININGIMAGES_P4.jpg"
-    }
-];
-
 /// Image Garllery
 const renderImages = (restaurant) => {
     const {  images } = restaurant;
     if (images.length > 1) {
         return imageGallery(images, "100%", "27vh");
     }
-    else if (images.length == 1) {
-        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+    else if (images.length === 1) {
+        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt="" />);
     }
     else {
         return (
@@ -274,9 +264,7 @@ const renderImages = (restaurant) => {
 const DiningDetails = props => {
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _DingingsDetails = ourhotel_Dinings.find(item => item.id == _id);
-    const currentIdx = ourhotel_Dinings.indexOf(_DingingsDetails);
-    
+    const _DingingsDetails = ourhotel_Dinings.find(item => item.id === _id);   
 
     return (
         <div style={{

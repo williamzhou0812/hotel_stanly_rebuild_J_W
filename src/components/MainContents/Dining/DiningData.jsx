@@ -32,7 +32,7 @@ export const restaurants = [{
     imagesrc: '/imgs/dining/restaurant_logos/Cuppa_Cafe_Logo_FB.png',
     phone: '+675 302 8666',
     address: 'Shop G48, Vision City Megamall, 4027 Waigani, National Capital, Papua New Guinea',
-    synopsis: `<p>Cuppa’s relaxed vibe offers the perfect place to catch up over great coffee. Enjoy refreshments such as Cuppa\'s big breakfasts, pasta, soup, sandwiches and more. <p></p>Open 7 days, 9am to 9pm. Free wifi available. </p>`,
+    synopsis: `<p>Cuppa’s relaxed vibe offers the perfect place to catch up over great coffee. Enjoy refreshments such as Cuppa's big breakfasts, pasta, soup, sandwiches and more. <p></p>Open 7 days, 9am to 9pm. Free wifi available. </p>`,
     email: null,
     website: null,
     guide: {
@@ -146,7 +146,7 @@ export const restaurants = [{
 },
 {
     id: 7,
-    title: "HOG\'S BREATH CAFÉ",
+    title: "HOG'S BREATH CAFÉ",
     subTitle: "Steak, Seafood, Australian",
     img_url: '/imgs/dining/restaurant_logos/R8-DININGLOGO_P.jpg',
     imagesrc: '/imgs/dining/restaurant_logos/R8-DININGLOGO_aLejlTs.png',
@@ -368,7 +368,7 @@ export const restaurants = [{
     imagesrc: '/imgs/dining/restaurant_logos/R17-DININGLOGO_10mUfpu.png',
     phone: '+675 304 0170',
     address: 'Grand Papua Hotel, Mary Street, Port Moresby',
-    synopsis: `<p>The Grand Brasserie certainly makes a statement when it comes to quality and style. Overlooking Jackson\'s Harbour, this is the perfect place if you\'re seeking a fine dining experience. Blending Asian and Pacific Rim cuisine, the food here looks as good as it tastes. </p>`,
+    synopsis: `<p>The Grand Brasserie certainly makes a statement when it comes to quality and style. Overlooking Jackson's Harbour, this is the perfect place if you're seeking a fine dining experience. Blending Asian and Pacific Rim cuisine, the food here looks as good as it tastes. </p>`,
     email: null,
     website: null,
     guide: {

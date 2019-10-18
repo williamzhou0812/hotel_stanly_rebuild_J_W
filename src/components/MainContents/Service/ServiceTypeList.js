@@ -1,11 +1,5 @@
 import React from "react";
 import {
-    miningNamespace,
-    essentialNamespace,
-    transportNamespace,
-    retailNamespace,
-    getServiceTypeListBasedLocation,
-    getServiceTypeDetailBasedLocation,
     serviceNamespace
 } from "../../../Constants";
 import ListIcon from "../icons/ListIcon.png";
@@ -18,7 +12,7 @@ class ServiceTypeList extends React.Component {
     
     render() {
         const service_name = this.props.match.params.servicename;
-        const service = services.find(item => item.name == service_name);
+        const service = services.find(item => item.name === service_name);
         const { service_types } = service;
        
         return (

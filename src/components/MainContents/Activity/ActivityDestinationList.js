@@ -1,6 +1,6 @@
 import React from "react";
 import SubsectionList from "../List/SubsectionList";
-import { DECIMAL_RADIX, activityNamespace } from "../../../Constants";
+import { activityNamespace } from "../../../Constants";
 import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
 import mapIcon from "../../../components/MainContents/icons/MapIcon.png";
 import { activities } from "./ActivityData";
@@ -12,7 +12,7 @@ class ActivityDestinationList extends React.Component {
         // get the destination list
         const id = this.props.match.params.id;
         const _id = parseInt(id);
-        const activity = activities.find(item => item.id == _id);
+        const activity = activities.find(item => item.id === _id);
         const { destinations } = activity;
 
         // change title to Upper case
