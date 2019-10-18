@@ -1,9 +1,6 @@
-import React, {useState, Fragment} from 'react';
-
-import {Link, Route} from 'react-router-dom';
+import React from 'react';
 
 import './Maps.scss';
-import PropTypes from 'prop-types';
 
 // new import 
 import { maps } from './MapData';

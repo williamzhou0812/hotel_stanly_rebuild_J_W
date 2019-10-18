@@ -179,7 +179,7 @@ const renderImages = (rooms) => {
         return imageGallery(images, "100%", "27vh");
     }
     else if (images.length === 1) {
-        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
     }
     else {
         return (

@@ -11,11 +11,9 @@ import {
 import { Link } from "react-router-dom";
 import ServiceTypesIcon from "../Dining/icons/RestaurantListIcon.png";
 import MapModal from "../Maps/MapModal";
-import Markdown from "../../../MarkDown";
 import "../List/MainSectionList.scss";
 import "./Service.css";
 import { services } from "./ServiceData";
-import ListIcon from "../icons/ListIcon.png";
 
 class ServiceBranch extends React.Component {
     constructor(props) {

@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment} from 'react';
 import styled, { keyframes} from 'styled-components';
 import { rotateIn } from 'react-animations';
 import Videos from './videoAdv';

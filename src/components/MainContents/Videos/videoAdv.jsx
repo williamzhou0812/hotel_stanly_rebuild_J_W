@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
 import { videoList } from './VideoData';
 import { randomiseItems } from "../../../Constants";
@@ -22,7 +22,7 @@ class Videos extends React.Component {
         const { playndex, videos } = this.state;
         if (videos.length > 1) {
             // change to next video
-            if (playndex == videos.length - 1) {
+            if (playndex === videos.length - 1) {
                 this.setState({
                     playndex: 0,
                     playing: true

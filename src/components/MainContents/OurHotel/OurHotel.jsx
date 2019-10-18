@@ -1,22 +1,7 @@
-import React, {useState, Fragment} from 'react';
+import React from 'react';
 
-import {Link, Route} from 'react-router-dom';
 
 import './OurHotel.scss';
-import PropTypes from 'prop-types';
-
-import { makeStyles } from '@material-ui/core/styles';
-
-import Paper from '@material-ui/core/Paper';
-
-import Grid from '@material-ui/core/Grid';
-
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import IconButton from '@material-ui/core/IconButton';
-import InfoIcon from '@material-ui/icons/Info';
 
 
 // new import 

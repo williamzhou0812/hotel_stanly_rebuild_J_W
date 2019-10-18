@@ -1,15 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 
 import RestaurantListicon from "./icons/RestaurantListIcon.6a75108a.png";
 
 import {
-    DICIMAL_RADIX,
-    diningNamespace,
     imageGallery,
     HeavyOrange,
-    LightBlueButtonBackground,
     ExtraHeavyBlueGreen,
     LightBlueGreen
 } from "../../../Constants";

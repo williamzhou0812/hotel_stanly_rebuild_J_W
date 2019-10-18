@@ -189,7 +189,7 @@ const FacilitieDetails = (props) => {
                 <div >
                     <div className='event-main'>
                         <div style={{ height: "50%", width: "100%" }}>
-                            <img src={_facilitiesDetails.img_url} style={{ height: '100%', width: '100%' }} />
+                            <img src={_facilitiesDetails.img_url} style={{ height: '100%', width: '100%' }} alt=""/>
 
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>

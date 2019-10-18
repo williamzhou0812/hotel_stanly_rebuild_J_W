@@ -153,7 +153,7 @@ export const destinations = [
         images: [         { imageFile: '/imgs/destination/D10-Wewak/D10-KAVIENG-IMAGES_P1.jpg' },
         { imageFile: '/imgs/destination/D10-Wewak/D10-KAVIENG-IMAGES_P2.jpg' } ],
         description:
-            "Wewak is situated on the northern coast of Papua New Guinea in the East Sepik Province. If you\'re a surfer, grab your surfboard and head to Wewak which is known for its excellent surf breaks from October to April. On a cultural note, embark on a culture tour to discover more about the crocodile scarification ritual performed by the Chambri Tribe. Travel to Cape Wom Surrender Park which marks the spot where the Japanese surrendered in 1945. "
+            "Wewak is situated on the northern coast of Papua New Guinea in the East Sepik Province. If you're a surfer, grab your surfboard and head to Wewak which is known for its excellent surf breaks from October to April. On a cultural note, embark on a culture tour to discover more about the crocodile scarification ritual performed by the Chambri Tribe. Travel to Cape Wom Surrender Park which marks the spot where the Japanese surrendered in 1945. "
     },
     {
         id: 11,
