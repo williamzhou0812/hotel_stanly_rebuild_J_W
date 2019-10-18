@@ -565,7 +565,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS11.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2-MAINLISTIMAGES_P2.jpg' }
         ],
         destination_id: 1
 
@@ -582,7 +582,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS12.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2-MAINLISTIMAGES_P2.jpg' }
         ],
         destination_id: 1
 
@@ -599,7 +599,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS13.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2-MAINLISTIMAGES_P2.jpg' }
         ],
         destination_id: 1
 
@@ -616,7 +616,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2LOGOS14.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2-MAINLISTIMAGES_P2.jpg' }
         ],
         destination_id: 1
 
@@ -630,10 +630,10 @@ export const serviceInfoData = [
         website: "http://www.michaelshauliers.net",
         email: "michaelshauliers777@gmail.com.au",
         description: `Over-dimensional & Heavy Haulage Specialists! Safe delivery on time! <br/>- Kenworth Heavy Duty Freight Trucks <br/>- Largest stockists of 30 floats/low loaders <br/>- Mercedes Benz (6x6) off-road heavy duty freight trucks <br/>- Largest stockists of diesel fuel tanker trucks For all your heavy haulage logistic requirements in PNG`,
-        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/",
+        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/Micheals & Micheals LTD_LogoLR-02-01.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2-MAINLISTIMAGES_P2.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2-MAINLISTIMAGES_P2.jpg' }
         ],
         destination_id: -1
 
