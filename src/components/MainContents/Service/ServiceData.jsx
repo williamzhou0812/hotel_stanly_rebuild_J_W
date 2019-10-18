@@ -783,10 +783,10 @@ export const serviceInfoData = [
         website: "www.newcrest.com.au",
         email: "corporateaffairs@newcrest.com.au",
         description: `Located within the New Ireland Province, Newcrest's Lihir operation has produced over 10 million ounces of gold since its inception back in 1997. It remains one of the most prolific gold mines in PNG today.  `,
-        img_url: "/imgs/service/Mining/Mines/S3A1-NewcrestMining.jpg",
-        mapImage: "/imgs/service/_Maps/S3A1-PNG-Map-NEWCRESTMINING.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A1-NewcrestMining.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A1-PNG-Map-NEWCRESTMINING.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -800,10 +800,10 @@ export const serviceInfoData = [
         website: "www.stbarbara.com.au",
         email: "info@stbarbara.com.au",
         description: `Simberi Gold Company Limited is located in the New Ireland Province on an island within the Tabar Group. Due to its volcanic composition, the island elevates dramatically around the shoreline and attracts high rain falls. The mining operations currently centres around the eastern part of the island which extends 2,560 hectares in total. `,
-        img_url: "/imgs/service/Mining/Mines/S3A2-StBarbaraLtd.jpg",
-        mapImage: "/imgs/service/_Maps/S3A2-PNG-Map-STBARBARA.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A2-StBarbaraLtd.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A2-PNG-Map-STBARBARA.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: 9
 
@@ -817,10 +817,10 @@ export const serviceInfoData = [
         website: "www.barrick.com",
         email: "",
         description: `Located in the Enga Province, approximately 130 kilometres from the township of Mount Hagen, the Porgera Joint Venture is an operational gold mine 95% owned by Barrick (Niugini) Limited.`,
-        img_url: "/imgs/service/Mining/Mines/S3A3-PorgeraJointVenture.jpg",
-        mapImage: "/imgs/service/_Maps/S3A3-PNG-Map-PORGERAJOINTVENTURE.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A3-PorgeraJointVenture.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A3-PNG-Map-PORGERAJOINTVENTURE.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: 4
 
@@ -834,10 +834,10 @@ export const serviceInfoData = [
         website: "www.oktedi.com",
         email: "enquiry.tabubil@oktedi.com",
         description: `Ok Tedi Mining Limited is one of the most proliferate copper, gold and silver mines in PNG. Located in the Star Mountains in the Western Province, the company ships ore from the township of Kiunga down the Fly River to the coast.`,
-        img_url: "/imgs/service/Mining/Mines/S3A4-OKTediMiningLtd.jpg",
-        mapImage: "/imgs/service/_Maps/S3A4-PNG-Map-OKTEDI.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A4-OKTediMiningLtd.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A4-PNG-Map-OKTEDI.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -851,10 +851,10 @@ export const serviceInfoData = [
         website: "www.morobemorobejv.com",
         email: "mmj.media@morobejv.com",
         description: `Morobe Mining Joint Ventures was established back in 2008 and operates in the Morobe Province.  `,
-        img_url: "/imgs/service/Mining/Mines/S3A6-MorobeMiningJointVentures.jpg",
-        mapImage: "/imgs/service/_Maps/S3A6-PNG-Map-MOROBEMINING.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A6-MorobeMiningJointVentures.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A6-PNG-Map-MOROBEMINING.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: 2
 
@@ -868,10 +868,10 @@ export const serviceInfoData = [
         website: "www.ramunico.com",
         email: "info@mccgrd.com",
         description: `Established back in 2005, Ramu NiCo Management oversees the Ramu Nickel Joint Venture which focuses on nickel mining in the Madang Province. `,
-        img_url: "/imgs/service/Mining/Mines/S3A7-MCCRamuNicoLtd(RAMU).jpg",
-        mapImage: "/imgs/service/_Maps/S3A7-PNG-Map-RAMUNICO.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A7-MCCRamuNicoLtd(RAMU).jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A7-PNG-Map-RAMUNICO.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: 3
 
@@ -885,10 +885,10 @@ export const serviceInfoData = [
         website: "www.kulagold.com.au",
         email: "info@kulagold.com.au",
         description: `Woodlark Island Gold Project is a gold mine located on Woodlark Island located in the Milne Bay Province.`,
-        img_url: "/imgs/service/Mining/Mines/S3A8-KulaGold.jpg",
-        mapImage: "/imgs/service/_Maps/S3A8-PNG-Map-WOODLARK.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A8-KulaGold.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A8-PNG-Map-WOODLARK.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: 7
 
@@ -902,10 +902,10 @@ export const serviceInfoData = [
         website: "www.k92mining.com",
         email: "site@k92mining.com",
         description: `K92 Mining is a gold mine operation located in the Eastern Highlands Province of PNG.`,
-        img_url: "/imgs/service/Mining/Mines/S3A9-K92MiningInc.jpg",
-        mapImage: "/imgs/service/_Maps/S3A9-PNG-Map-K92MINING.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A9-K92MiningInc.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A9-PNG-Map-K92MINING.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: 2
 
@@ -919,10 +919,10 @@ export const serviceInfoData = [
         website: "www.cratergold.com.au",
         email: "info@cratergold.com.au",
         description: `Crater Gold Mining manages two gold mining projects in PNG, one at Fergusson Island and the other at Crater Mountain. `,
-        img_url: "/imgs/service/Mining/Mines/S3A10-CraterGoldMining.jpg",
-        mapImage: "/imgs/service/_Maps/S3A10-PNG-Map-CRATERGOLDMINING.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Mines/S3A10-CraterGoldMining.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3A10-PNG-Map-CRATERGOLDMINING.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3A-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
         destination_id: 7
 
@@ -936,10 +936,10 @@ export const serviceInfoData = [
         website: "www.pngcci.org.pg",
         email: "",
         description: `The Papua New Guinea Chamber of Commerce and Industry Inc. (PNGCCI) is an government body that is committed to the development of trade and commerce in PNG.`,
-        img_url: "/imgs/service/Mining/Official departments/S3B1-PNGCTI.jpg",
+        img_url: "/imgs/service/S3-Mining&Resources/Official departments/S3B1-PNGCTI.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -953,10 +953,10 @@ export const serviceInfoData = [
         website: "www.facebook.com/pg/<br/>PngDepartmentOfLabourIndustrialRelation",
         email: "",
         description: `Department of Labour and Industrial Relations is a PNG body that strives to create positive industrial relations and support work opportunities throughout the region. `,
-        img_url: "/imgs/service/Mining/Official departments/S3B2-DepartmentOfLabour&IndustrialRelations.jpg",
+        img_url: "/imgs/service/S3-Mining&Resources/Official departments/S3B2-DepartmentOfLabour&IndustrialRelations.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -970,10 +970,10 @@ export const serviceInfoData = [
         website: "",
         email: "",
         description: `The Department of Mineral Policy and Geohazards Management is a government body that oversees mining legislation and the management of geohazards.`,
-        img_url: "/imgs/service/Mining/Official departments/S3B3-DMPGM.jpg",
+        img_url: "/imgs/service/S3-Mining&Resources/Official departments/S3B3-DMPGM.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -987,10 +987,10 @@ export const serviceInfoData = [
         website: "www.mra.gov.pg",
         email: "info@mra.gov.pg",
         description: `The Mineral Resources Authority is a government body formed to assist and approve exploration applications for the benefit of PNG and business operators undertaking exploration.  `,
-        img_url: "/imgs/service/Mining/Official departments/S3B4-MineralResourcesAuthority.jpg",
+        img_url: "/imgs/service/S3-Mining&Resources/Official departments/S3B4-MineralResourcesAuthority.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -1004,10 +1004,10 @@ export const serviceInfoData = [
         website: "www.ipa.gov.pg",
         email: "ispd@ipa.gov.pg/clarence@ipa.gov.pg",
         description: `The Investment Promotion Authority is a government body that incentivises exploration in PNG. The organisation also oversees the Intellectual Property Office, Securities Commission and Companies Office.`,
-        img_url: "/imgs/service/Mining/Official departments/S3B5-InvestmentPromotionAuthority.jpg",
+        img_url: "/imgs/service/S3-Mining&Resources/Official departments/S3B5-InvestmentPromotionAuthority.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -1021,10 +1021,10 @@ export const serviceInfoData = [
         website: "www.pngchamberminpet.com.pg",
         email: "info@pngchamberminpet.com.pg",
         description: `The PNG Chamber of Mines and Petroleum is an official body overseeing the interests of those within the mining and petroleum sector.`,
-        img_url: "/imgs/service/Mining/Official departments/S3B6-PNGChamberOfMinesAndPetroleum.jpg",
+        img_url: "/imgs/service/S3-Mining&Resources/Official departments/S3B6-PNGChamberOfMinesAndPetroleum.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -1038,10 +1038,10 @@ export const serviceInfoData = [
         website: "www.petroleum.gov.pg",
         email: "",
         description: `The Department of Petroleum is a government body that provides current information about the petroleum and energy industries in PNG as well as conducts research and sets policies to manage activities.`,
-        img_url: "/imgs/service/Mining/Official departments/S3B7-DepartmentOfPetroleumAndEnergy.jpg",
+        img_url: "/imgs/service/S3-Mining&Resources/Official departments/S3B7-DepartmentOfPetroleumAndEnergy.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/Mining/S3B-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -1055,10 +1055,10 @@ export const serviceInfoData = [
         website: "www.oilsearch.com",
         email: "",
         description: `Oil Search was established in back in 1929 and manages the operation of all of PNG’s established oil fields.`,
-        img_url: "/imgs/service/Mining/Petroleum Gas/S3C1-OilSearchLtd.jpg",
-        mapImage: "/imgs/service/_Maps/S3C1-PNG-Map-OilSearch.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Petroleum Gas/S3C1-OilSearchLtd.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3C1-PNG-Map-OilSearch.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3C-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3C-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -1072,10 +1072,10 @@ export const serviceInfoData = [
         website: "pnglng.com",
         email: "",
         description: `ExxonMobile PNG manages the PNG LNG project which is developing a commercial industry for gas resources in the region. `,
-        img_url: "/imgs/service/Mining/Petroleum Gas/S3C2-EssoHighlandsLtd.jpg",
-        mapImage: "/imgs/service/_Maps/S3C2-PNG-Map-ExxonMobil.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Petroleum Gas/S3C2-EssoHighlandsLtd.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3C2-PNG-Map-ExxonMobil.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3C-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3C-HeaderImage.jpg' }
         ],
         destination_id: -1
 
@@ -1089,10 +1089,10 @@ export const serviceInfoData = [
         website: "www.nbpol.com.pg",
         email: "rbeerwald@rai.com.pg",
         description: `Ramu Sugar, PNG's only locally grown and manufactured sugar, is operated by Ramu Agri Industries Ltd (RAIL). Aside from sugar, the company also produces Ramu Premium Beef, Ramu Palm Oil and Ramu Ethanol.`,
-        img_url: "/imgs/service/Mining/Agriculture/S3D1-RamuAgriIndustriesLtd.jpg",
-        mapImage: "/imgs/service/_Maps/S3D1-PNG-Map-RAMUAGRIINDUSTRIES.png",
+        img_url: "/imgs/service/S3-Mining&Resources/Agriculture/S3D1-RamuAgriIndustriesLtd.jpg",
+        mapImage: "/imgs/service/S3-Mining&Resources/_Maps/S3D1-PNG-Map-RAMUAGRIINDUSTRIES.png",
         images: [
-            { imageFile: '/imgs/service/Mining/S3D-HeaderImage.jpg' }
+            { imageFile: '/imgs/service/S3-Mining&Resources/S3D-HeaderImage.jpg' }
         ],
         destination_id: -1
 
