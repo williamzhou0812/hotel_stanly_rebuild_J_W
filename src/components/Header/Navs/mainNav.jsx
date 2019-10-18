@@ -1,20 +1,13 @@
 import React from "react";
 //import Tab from "./Tab";
 import {
-    BrowserRouter as Router,
-    Redirect,
-    Route,
     NavLink
 } from "react-router-dom";
 import {
-    accomodationNamespace,
     eventNamespace,
     diningNamespace,
     destinationNamespace,
     serviceNamespace,
-    mapListNamespace,
-    activityNamespace,
-    airportInfoNamespace,
     shiftArray
 } from "../../../Constants";
 import AccommodationIcon from "./icons/ACCOMMODATION_ICON.png";
@@ -220,7 +213,6 @@ class mainNav extends React.Component {
                                             alt=""
                                             src={t.icon}
                                             style={{
-                                                height: "100%",
 
                                                 width: !!t.iconWidth
                                                     ? t.iconWidth

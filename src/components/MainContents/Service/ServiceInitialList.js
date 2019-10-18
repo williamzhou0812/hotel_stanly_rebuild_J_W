@@ -1,10 +1,4 @@
 import React from "react";
-import {
-    essentialNamespace,
-    transportNamespace,
-    miningNamespace,
-    retailNamespace
-} from "../../../Constants";
 
 import SectionList from "../List/SectionList";
 import { services } from "./ServiceData";

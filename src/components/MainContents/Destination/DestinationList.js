@@ -1,7 +1,6 @@
 import React from "react";
 //import { connect } from 'react-redux';
 import {
-    accomodationNamespace,
     destinationNamespace
 } from "../../../Constants";
 import SectionList from "../List/SectionList";

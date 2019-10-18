@@ -1,7 +1,5 @@
 import React from "react";
 import {
-    getServiceTypeListBasedLocation,
-    DECIMAL_RADIX,
     LightBlueGreen,
     imageGallery,
     HeavyOrange,
@@ -11,7 +9,6 @@ import {
     // LightOrange,
     removeHttp
 } from "../../../Constants";
-import ServiceBranch from "./ServiceBranch";
 import ServiceTypesIcon from "../Dining/icons/RestaurantListIcon.png";
 import { Link } from "react-router-dom";
 import MapModal from "../Maps/MapModal";
@@ -21,10 +18,7 @@ import { services } from "./ServiceData";
 import ListIcon from "../icons/ListIcon.png";
 
 class ServiceDetail extends React.Component {
-    constructor(props) {
-        super(props);
-       
-    }
+    
     
     openMap() {
         this.setState({ map: true });
@@ -38,8 +32,8 @@ class ServiceDetail extends React.Component {
         if (images.length > 1) {
             return imageGallery(images, "100%", "23vh");
         }
-        else if (images.length == 1) {
-            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        else if (images.length === 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
         }
         else {
             return (
@@ -82,7 +76,7 @@ class ServiceDetail extends React.Component {
     render() {
         // get service details
         const service_name = this.props.match.params.servicename;
-        const service = services.find(item => item.name == service_name);
+        const service = services.find(item => item.name === service_name);
         const { service_types } = service;
         const sub_service_name = this.props.match.params.subservicename;
         const sub_service = service_types.find(item => item.id === sub_service_name);

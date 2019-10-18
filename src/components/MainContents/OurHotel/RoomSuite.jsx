@@ -2,8 +2,6 @@ import React from 'react';
 import SubsectionList from "../List/SubsectionList";
 import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
 
-import { Link } from "react-router-dom";
-
 import StandTwin  from './img_logo/Our_Hotel_Section_Imagesstandard.jpg';
 import DeluxeKing  from './img_logo/Our_Hotel_Section_ImagesDeluxe.jpg';
 import ExedutiveKing  from './img_logo/Our_Hotel_Section_Images_AuBae3aKing.jpg';

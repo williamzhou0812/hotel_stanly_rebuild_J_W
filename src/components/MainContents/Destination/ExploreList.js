@@ -2,7 +2,6 @@ import React from "react";
 import SubsectionList from "../List/SubsectionList";
 import {
     DarkHeavyBlue,
-    shiftArray,
     eventNamespace,
     activityNamespace,
     randomiseItems,
@@ -25,7 +24,7 @@ class ExploreList extends React.Component {
         // retrieve destination details
         const id = this.props.match.params.id;
         const _id = parseInt(id);
-        const destinationsDetail = destinations.find(item => item.id == _id);
+        const destinationsDetail = destinations.find(item => item.id === _id);
         const explore_list = randomiseItems(this.collectExploreData(destinationsDetail));
 
         // store state
