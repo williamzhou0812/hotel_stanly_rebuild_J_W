@@ -479,8 +479,7 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS4.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS5.jpg' },
-            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2-MAINLISTIMAGES_P.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS5.jpg' }
         ],
         destination_id: 1
 

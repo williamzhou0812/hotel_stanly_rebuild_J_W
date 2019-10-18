@@ -54,7 +54,7 @@ export const attractionsList=[
 
         details: [
             {
-                associate: "Port Moresby Golf Club",
+                associate: "Royal Port Moresby Golf Club",
                 Phone: "+675 325 5367",
                 email: "pomgolf@pomgolf.org.pg",
                 website: "www.royalpomgolf.com"
