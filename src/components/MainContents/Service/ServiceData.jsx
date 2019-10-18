@@ -232,7 +232,7 @@ export const serviceInfoData = [
         id: 13,
         service_type_id: "Embassies",
         title: "British High Commision",
-        address: "Sec 411 Lot 1 & 2 Kiroki Street, Waigani Port Moresby",
+        address: "<p>Sec 411 Lot 1 & 2 Kiroki Street, Waigani</p> <p>Port Moresby</p>",
         phone: "+675 303 7600",
         website: "ukinpng.fco.gov.uk",
         email: "uk.inpng@fco.gov.uk",
