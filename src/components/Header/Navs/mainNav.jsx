@@ -8,7 +8,8 @@ import {
     destinationNamespace,
     serviceNamespace,
     shiftArray,
-    videosNamespace
+    videosNamespace,
+    hotelDetailNamespace
 } from "../../../Constants";
 import AccommodationIcon from "./icons/ACCOMMODATION_ICON.png";
 import ActivitiesIcon from "./icons/ACTIVITIES_ICON.png";
@@ -173,6 +174,10 @@ class mainNav extends React.Component {
         } else {
             // check if showcase mode is on
             if (pathname.indexOf(videosNamespace) >= 0) {
+                // skip if last visit was hotel detail
+                if (this.props.lastPathname && 
+                    this.props.lastPathname.indexOf(hotelDetailNamespace) >= 0)
+                    return false;  
                 // check activate previously clicked menu
                 // set as active in showcase mode
                 return (name === this.state.tab);

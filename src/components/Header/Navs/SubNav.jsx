@@ -5,6 +5,10 @@
 
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import {
+  videosNamespace,
+  hotelDetailNamespace
+} from "../../../Constants";
 
 import Clock from "../../../components/MainContents/Clock/Clock";
 
@@ -24,6 +28,13 @@ class SubNav extends React.Component {
         if (pathname.indexOf(match.url) >= 0)
             return true;
     }
+    else if (pathname.indexOf(videosNamespace) >= 0) {
+      // highlight when last visit was hotel detail
+      if (this.props.lastPathname && 
+        this.props.lastPathname.indexOf(hotelDetailNamespace) >= 0)
+        return true;
+    }
+
     return pathname === "/";
   }
 

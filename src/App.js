@@ -76,7 +76,9 @@ class App extends Component {
         // check if it is in video mode
         const isIdle = (this.props.history.location.pathname.indexOf(videosNamespace) !== -1) ? true : false;
         this.state = {
-            isIdle
+            isIdle,
+            lastPathname: null,
+            currentPathname: this.props.history.location.pathname
         };
         this.setSPAIdle = this.setSPAIdle.bind(this);
         this.setSPAActive = this.setSPAActive.bind(this);
@@ -103,6 +105,15 @@ class App extends Component {
                 });
                 this.setState({ isIdle: true });
         }
+
+        // keep track of last path name
+        const { lastPathname, currentPathname } = this.state;
+        if (lastPathname !== location.pathname) {
+            this.setState({
+                lastPathname: currentPathname,
+                currentPathname: location.pathname
+            });
+        }
     }
 
     setSPAIdle() {
@@ -123,12 +134,12 @@ class App extends Component {
     }
 
     render() {
-        const { isIdle } = this.state;
+        const { isIdle, lastPathname } = this.state;
         return (
             <Fragment>
                 <MainLogo />
-                <SubNavs />
-                <MainNav history={this.props.history} isIdle={isIdle}/>
+                <SubNavs lastPathname={lastPathname} />
+                <MainNav history={this.props.history} isIdle={isIdle} lastPathname={lastPathname}/>
                 <main>
                     <Switch>
                         <Route exact path="/" component={HotelWelcome} />
