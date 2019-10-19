@@ -56,7 +56,7 @@ class DiningDetail extends React.Component {
             indicators: "true",
             arrows: "true",
             onChange: (oldIndex, newIndex) => {
-                console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+                //console.log(`slide transition from ${oldIndex} to ${newIndex}`);
             }
         },
         mapOrFindButtonStyle: {
@@ -64,7 +64,6 @@ class DiningDetail extends React.Component {
             display: "flex",
             width: "100%",
             padding: "5% 0",
-            display: "inline-bock",
             marginTop: "-5%",
             borderRadius: "5px",
             boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -84,7 +83,7 @@ class DiningDetail extends React.Component {
             return imageGallery(images, "100%", "27vh");
         }
         else if (images.length === 1) {
-            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
         }
         else {
             return (

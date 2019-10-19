@@ -36,20 +36,6 @@ class ServiceBranch extends React.Component {
             sub_service_info_list,
             index
         };
-        /*
-        const { data, serviceTypeData, id } = this.props;
-        const branches = data[serviceTypeData.listKey];
-        let branchIndex = 0;
-        if (id) {
-            branchIndex = branches.findIndex(branch => {
-                return branch.id === id;
-            });
-        }
-        this.state = {
-            branches,
-            branchIndex: branchIndex !== -1 ? branchIndex : 0,
-            map: false
-        };*/
         this.openMap = this.openMap.bind(this);
         this.closeMap = this.closeMap.bind(this);
         this.prevBranch = this.prevBranch.bind(this);
@@ -89,7 +75,6 @@ class ServiceBranch extends React.Component {
             display: "flex",
             width: "100%",
             padding: "4% 0",
-            display: "inline-bock",
             marginTop: "-5%",
             borderRadius: "5px",
             boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -108,7 +93,7 @@ class ServiceBranch extends React.Component {
             return imageGallery(images, "100%", "23vh");
         }
         else if (images.length === 1) {
-            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
         }
         else {
             return (
@@ -127,10 +112,8 @@ class ServiceBranch extends React.Component {
     render() {
 
         // get service details
-        const { service_name,
+        const { 
             service,
-            service_types,
-            sub_service_name,
             sub_service,
             sub_service_info_list,
             index } = this.state;

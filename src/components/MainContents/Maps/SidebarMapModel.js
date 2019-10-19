@@ -4,8 +4,6 @@ import {
     MAX_ZOOM_LEVEL,
     MAP_HEIGHT,
     MAP_WIDTH,
-    HeavyOrange,
-    LightOrange,
     HOVER_DELAY
 } from "../../../Constants.js";
 import ReactImageMagnify from "react-image-magnify";
