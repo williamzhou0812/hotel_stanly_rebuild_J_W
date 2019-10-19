@@ -1,5 +1,4 @@
 import React from "react";
-//import Tab from "./Tab";
 import {
     NavLink
 } from "react-router-dom";
@@ -8,7 +7,8 @@ import {
     diningNamespace,
     destinationNamespace,
     serviceNamespace,
-    shiftArray
+    shiftArray,
+    videosNamespace
 } from "../../../Constants";
 import AccommodationIcon from "./icons/ACCOMMODATION_ICON.png";
 import ActivitiesIcon from "./icons/ACTIVITIES_ICON.png";
@@ -19,62 +19,64 @@ import ServicesIcon from "./icons/SERVICES_ICON.png";
 import MapListIcon from "./icons/MAP_LIST_ICON.png";
 import "./mainNav.scss";
 
+const nav_tabs = [
+    {
+        name: "SERVICES",
+        path: serviceNamespace,
+        icon: ServicesIcon,
+        iconWidth: "70px"
+    },
+    {
+        name: "MAPS",
+        path: "/maplist",
+        icon: MapListIcon,
+        iconWidth: "70px"
+    },
+    {
+        name: "ACTIVITIES",
+        path: "/activities",
+        icon: ActivitiesIcon,
+        iconWidth: "70px"
+    },
+    {
+        name: "DESTINATIONS",
+        path: "/destinations",
+        icon: DestinationsIcon,
+        iconWidth: "90px"
+    },
+    {
+        name: "EVENTS",
+        path: eventNamespace,
+        icon: EventsIcon,
+        iconWidth: "70px"
+    },
+    {
+        name: "DINING",
+        path: diningNamespace,
+        icon: DiningIcon,
+        iconWidth: "70px"
+    },
+    {
+        name: "OUR HOTEL",
+        path: "/ourhotel",
+        icon: AccommodationIcon,
+        iconWidth: "70px"
+    }
+];
+
 class mainNav extends React.Component {
     middle = 3;
 
     constructor(props) {
         super(props);
         this.state = {
-            tabs: [
-                {
-                    name: "SERVICES",
-                    path: serviceNamespace,
-                    icon: ServicesIcon,
-                    iconWidth: "70px"
-                },
-                {
-                    name: "MAPS",
-                    //   path: mapListNamespace,
-                    path: "/maplist",
-                    icon: MapListIcon,
-                    iconWidth: "70px"
-                },
-                {
-                    name: "ACTIVITIES",
-                    // path: activityNamespace,
-                    path: "/activities",
-                    icon: ActivitiesIcon,
-                    iconWidth: "70px"
-                },
-                {
-                    name: "DESTINATIONS",
-                    path: "/destinations",
-                    icon: DestinationsIcon,
-                    iconWidth: "90px"
-                },
-                {
-                    name: "EVENTS",
-                    path: eventNamespace,
-                    icon: EventsIcon,
-                    iconWidth: "70px"
-                },
-                {
-                    name: "DINING",
-                    path: diningNamespace,
-                    icon: DiningIcon,
-                    iconWidth: "70px"
-                },
-                {
-                    name: "OUR HOTEL",
-                    path: "/ourhotel",
-                    icon: AccommodationIcon,
-                    iconWidth: "70px"
-                }
-            ],
+            tabs: nav_tabs,
             sameClicked: false,
-            performClick: false
+            performClick: false,
+            tab: nav_tabs[this.middle].name
         };
         this.clickItem = this.clickItem.bind(this);
+        this.checkActive = this.checkActive.bind(this);
     }
    
     componentDidMount() {
@@ -150,26 +152,38 @@ class mainNav extends React.Component {
             const tempTabs = shiftArray(tabs, this.middle - clickIndex);
             this.setState({
                 tabs: tempTabs,
+                tab: tempTabs[this.middle].name,
                 sameClicked: false,
                 performClick: true
             });
         }
     }
 
-    render() {
-        const { tabs } = this.state;
-
-        const checkActive = (match, location) => {
-            //some additional logic to verify if current link is active
-            if(!location) return false;
-            const {pathname} = location;
-            if (!match) return false;
+    checkActive = (match, location, name) => {
+        //some additional logic to verify if current link is active
+        if(!location) return false;
+        const {pathname} = location;
+        // process check when match is provided
+        if (match) {
             if (match.isExact)
-                return true;
+            return true;
             if (pathname.indexOf(match.url) >= 0)
                 return true;
             return pathname === "/";
+        } else {
+            // check if showcase mode is on
+            if (pathname.indexOf(videosNamespace) >= 0) {
+                // check activate previously clicked menu
+                // set as active in showcase mode
+                return (name === this.state.tab);
+            }
         }
+        // default return to false
+        return false;
+    }
+
+    render() {
+        const { tabs } = this.state;
 
         return (
             <div style={{ width: "100vw", height: "8vh" }}>
@@ -189,7 +203,7 @@ class mainNav extends React.Component {
                                 <NavLink
                                     to={t.path}
                                     activeClassName="active-link"
-                                    isActive={checkActive}
+                                    isActive={(match, location) => this.checkActive(match, location, t.name)}
                                     style={{
                                         height: "100%",
                                         width: "100%",
