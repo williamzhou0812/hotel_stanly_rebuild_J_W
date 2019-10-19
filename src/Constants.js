@@ -94,58 +94,6 @@ function gatherImages(images) {
     });
 }
 
-export function getServiceTypeListBasedLocation1(pathname, serviceTypes) {
-    const essentialNames = [{
-        id: 1,
-        title: 'SECURITY',
-    },
-    {
-        id: 2,
-        title: 'BANKS',
-    },
-    {
-        id: 3,
-        title: 'MEDICAL SERVICES',
-    },
-    {
-        id: 4,
-        title: 'EMBASSISE & HIGH COMMISSION',
-    }]
-
-    const miningNames = [{
-        id: 1,
-        title: 'AGRICULTURE',
-    },
-    {
-        id: 2,
-        title: 'OFFICIAL DEPARTMENTS',
-
-    },
-    {
-        id: 3,
-        title: 'MINES',
-    },
-    {
-        id: 4,
-        title: 'PETROLEUM & GAS',
-    }]
-
-
-    if (pathname.includes(essentialNamespace)) {
-        return { ...serviceTypes.essential };
-
-    } else if (pathname.includes(miningNamespace)) {
-        return { ...serviceTypes.mining };
-
-
-    } else if (pathname.includes(retailNamespace)) {
-        return { ...serviceTypes.retail };
-
-    } else if (pathname.includes(transportNamespace)) {
-        return { ...serviceTypes.transport };
-
-    }
-}
 
 export function getServiceTypeListBasedLocation(pathname, serviceTypes) {
     if (pathname.includes(essentialNamespace)) {
