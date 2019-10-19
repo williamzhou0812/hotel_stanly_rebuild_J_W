@@ -1,15 +1,25 @@
 import React from "react";
-//import { connect } from 'react-redux';
+
 import {
-    destinationNamespace
+    destinationNamespace,
+    randomiseItems
 } from "../../../Constants";
 import SectionList from "../List/SectionList";
 import { destinations } from "./DestinationData";
 
 class DestinationList extends React.Component {
     
-
-    images = destinations.map(item => item.img_url);
+    // pick a random url
+    images = destinations.map(item => { 
+        if (item.images && item.images.length > 0) {
+            // randomize the images
+            const randomized = randomiseItems(item.images);
+            // return first image url
+            return randomized[0].imageFile;
+        }
+        else 
+            return item.img_url;
+    });
     render() {
         return (
             <div
