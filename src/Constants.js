@@ -32,6 +32,7 @@ export const LightBlueButtonBackground = "rgb(1, 155, 167)";
 export const ExtraHeavyBlueGreen = "rgb(5, 140, 155)";
 export const SelectedBorderColor = "rgb(183, 223, 228)";
 export const LightBlueGreen = "rgb(1, 155, 167)";
+export const DarkHeavyBlue = "rgb(5, 140, 155)";
 
 
 
@@ -53,6 +54,7 @@ export const airportInfoNamespace = "/airportinfo";
 export const searchResultNamespace = "/searchresult";
 export const hotelDetailNamespace = "/hoteldetail";
 export const directoryListNamespace = "/directorylist";
+export const videosNamespace = "/videos";
 
 
 export const SUBSECTION_LIST_ENTRIES = 6;
@@ -416,4 +418,8 @@ export function imageGallery(
 
 export function removeHttp(website) {
     return website.replace(/^https?:\/\//i, "");
+}
+
+export function randomNumber(min, max) {  
+    return Math.floor(Math.random() * (max - min) + min); 
 }

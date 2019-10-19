@@ -1,151 +1,128 @@
 import React from "react";
-import UpButton from "./icons/UpExploreButton.png";
-import DownButton from "./icons/DownExploreButton.png";
+import SubsectionList from "../List/SubsectionList";
 import {
-    MediumOrange,
-    shiftArray,
-    ExtraHeavyBlueGreen,
-    HeavyBlue,
-    randomiseItems
+    DarkHeavyBlue,
+    eventNamespace,
+    activityNamespace,
+    randomiseItems,
+    destinationNamespace,
+    serviceNamespace
 } from "../../../Constants";
-import { Link } from "react-router-dom";
-import "../List/MainSectionList.scss";
+import BackToIcon from './icons/BackIcon.png';
+import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
+import EventsIcon from "../../Header/Navs/icons/EVENTS_ICON.png";
+// import data
+import { destinations } from "./DestinationData";
+import { services } from "../Service/ServiceData";
+import { activities } from "../Activity/ActivityData";
+import { events } from "../Event/EventData";
 
 class ExploreList extends React.Component {
     constructor(props) {
         super(props);
-        const { data } = this.props;
+
+        // retrieve destination details
+        const id = this.props.match.params.id;
+        const _id = parseInt(id);
+        const destinationsDetail = destinations.find(item => item.id === _id);
+        const explore_list = randomiseItems(this.collectExploreData(destinationsDetail));
+
+        // store state
         this.state = {
-            data: randomiseItems(data)
-        };
-        this.goUp = this.goUp.bind(this);
-        this.goDown = this.goDown.bind(this);
-    }
-    goUp() {
-        let items = this.state.data.slice();
-        items = shiftArray(items, 1);
-        this.setState({
-            data: items
-        });
-    }
-    goDown() {
-        let items = this.state.data.slice();
-        items = shiftArray(items, -1);
-        this.setState({
-            data: items
-        });
-    }
-    styles = {
-        horizontalVerticalCenter: {
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
+            destinationsDetail,
+            explore_list
         }
-    };
+    }
+
+    collectExploreData(destination) {
+        // filter service 
+        let explore_list = [];
+        services.forEach(item => {
+            // retrieve service type info
+            const { name ,title, icon, service_types } = item;
+            service_types.forEach(service_type_item => {
+                const { id: service_type_id, services } = service_type_item;
+                const filtered = services.filter(service_item => service_item.destination_id === destination.id)
+                const explore_data = filtered.map(service_item => { return {
+                    id: 'serviceitem_' + service_item.id,
+                    url: serviceNamespace + '/' + name + '/' + service_type_id + '/' + service_item.id,
+                    title: service_item.title.toUpperCase(),
+                    img_url: icon,
+                    icon_title: title.toUpperCase(),
+                    isIcon: true
+                }});
+                // add to collection
+                explore_list = [...explore_list, ...explore_data];
+            })
+        });
+        // filter activities
+        activities.forEach(item => {
+            const { id: activity_id, destinations: activity_destinations} = item;
+            const filtered = activity_destinations.filter( activity_item => activity_item.destination_id === destination.id);
+            const explore_data = filtered.map(activity_item => { return {
+                id: 'activityitem_' + activity_item.id,
+                url: activityNamespace + '/' + activity_id + '/' + activity_item.id,
+                title: activity_item.title.toUpperCase(),
+                img_url: activityListIcon,
+                icon_title: "ACTIVITIES",
+                isIcon: true
+            }});
+            // add to collection
+            explore_list = [...explore_list, ...explore_data]; 
+        });
+        // filter events
+        events.forEach(item => {
+            if (item.destination_id === destination.id) {
+                const explore_data = {
+                    id: 'eventitem_' + item.id,
+                    url: eventNamespace + '/' + item.id,
+                    title: item.title.toUpperCase(),
+                    img_url: EventsIcon,
+                    icon_title: "EVENT",
+                    isIcon: true
+                };
+                // add to collection
+                explore_list = [...explore_list, explore_data]; 
+            }
+        });
+
+
+        return explore_list;
+    }
+
     render() {
-        const { data } = this.state;
-        const itemHeight =
-            this.props.data.length >= 13
-                ? "7.7%"
-                : `${100 / this.props.data.length}%`;
+        // get state data 
+        const { destinationsDetail, explore_list } = this.state;
+        // create output
         return (
-            <div
-                style={{ width: "100%", height: "100%" }}
-                className="section--bottom--animation"
-            >
-                <div
-                    style={{
-                        height: "6%",
-                        backgroundColor: MediumOrange,
-                        ...this.styles.horizontalVerticalCenter
-                    }}
-                    onClick={this.goUp}
+            <div style={{width:'100%', height: '100%', whiteSpace: 'nowarp'}}>
+              
+            
+                <SubsectionList
+                    numberOfEntries={4}
+                    data={explore_list}
+                    namespace={destinationNamespace + "/" + destinationsDetail.id}
+                    
+                    imageKey="imageServiceType"
+                    isImageArray={true}
+                    sideButtons={[
+                        { title: 'BACK TO OVERVIEW', isLink: true, link: destinationNamespace + "/" + destinationsDetail.id, icon: BackToIcon}
+                    ]}
+                    sideTitle="EXPLORE"
+                    mainTitle={destinationsDetail.title}
+                    evenDetailsProps={explore_list}                
+                    thumbnailStyle={{ width: "97px", height: "63px", backgroundColor: DarkHeavyBlue, borderBottom: '1px solid rgb(4, 60, 66)'}}
+                    iconStyle={{width: '100%', height:'auto', maxWidth: '50px', maxHeight:'50px', marginLeft: '25px', marginTop: '8px'}}
+                    iconTitleStyle={{backgroundColor: DarkHeavyBlue, height: '63px', width: '207px'}}
+                    urlKey="url"
+                    itemTitleStyle={{fontSize: '1.98vw'}}
+                    itemTitleDivStyle={{paddingLeft: '18px'}}
                 >
-                    <img src={UpButton} style={{ width: "5%" }} alt="Up" />
-                </div>
-                <div style={{ height: "88%", overflow: "hidden" }}>
-                    <div
-                        style={{
-                            height: "100%",
-                            overflowY: "auto",
-                            marginRight: "-30px"
-                        }}
-                    >
-                        <div
-                            style={{
-                                height: "100%",
-                                overflow: "auto",
-                                paddingRight: "30px"
-                            }}
-                        >
-                            {data.map((item, index) => {
-                                return (
-                                    <Link
-                                        to={item.linkTo}
-                                        key={`${item.id}-${index}`}
-                                        style={{
-                                            height: itemHeight,
-                                            color: "white",
-                                            display: "flex",
-                                            textDecoration: "none"
-                                        }}
-                                    >
-                                        <div
-                                            style={{
-                                                width: "33%",
-                                                backgroundColor: ExtraHeavyBlueGreen,
-                                                display: "flex",
-                                                borderRight:
-                                                    "1px solid rgb(4,60,66)",
-                                                borderBottom:
-                                                    "1px solid rgb(4,60,66)"
-                                            }}
-                                        >
-                                            <div
-                                                className="explore"
-                                                style={{
-                                                    width: "32%",
-                                                    ...this.styles
-                                                        .horizontalVerticalCenter
-                                                }}
-                                            >
-                                                <img
-                                                    src={item.icon}
-                                                    style={{ width: "43%" }}
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                className="explore--title"
-                                                style={{
-                                                    ...this.styles
-                                                        .horizontalVerticalCenter
-                                                }}
-                                            >
-                                                {item.type}
-                                            </div>
-                                        </div>
-                                        <div className="explore--name">
-                                            {item.title.toUpperCase()}
-                                        </div>
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                    </div>
-                </div>
-                <div
-                    style={{
-                        height: "6%",
-                        backgroundColor: MediumOrange,
-                        ...this.styles.horizontalVerticalCenter
-                    }}
-                    onClick={this.goDown}
-                >
-                    <img src={DownButton} style={{ width: "5%" }} alt="Down" />
-                </div>
-            </div>
-        );
+                    
+                </SubsectionList> 
+    
+            </div> 
+        )
     }
 }
 

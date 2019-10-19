@@ -183,7 +183,7 @@ class AgricultureDetails extends React.Component {
                                 className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${this.agricultureData.img_url})`,
+                                    backgroundImage: `url('${this.agricultureData.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

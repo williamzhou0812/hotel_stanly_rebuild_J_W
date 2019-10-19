@@ -378,7 +378,7 @@ class EmbassyDetails extends React.Component {
                             <div className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${embassyDetail.img_url})`,
+                                    backgroundImage: `url('${embassyDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

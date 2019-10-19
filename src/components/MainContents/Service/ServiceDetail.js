@@ -1,9 +1,6 @@
 import React from "react";
-import { connect } from "react-redux";
 import {
-    getServiceTypeListBasedLocation,
-    DECIMAL_RADIX,
-    getServiceTypeDetailBasedLocation,
+    LightBlueGreen,
     imageGallery,
     HeavyOrange,
     serviceNamespace,
@@ -11,75 +8,18 @@ import {
     ExtraHeavyBlueGreen,
     // LightOrange,
     removeHttp
-} from "../Constants";
-import ServiceBranch from "./ServiceBranch";
+} from "../../../Constants";
 import ServiceTypesIcon from "../Dining/icons/RestaurantListIcon.png";
 import { Link } from "react-router-dom";
 import MapModal from "../Maps/MapModal";
-import Markdown from "../Markdown";
-import "../List/MainSectionList.css";
+import "../List/MainSectionList.scss";
 import "./Service.css";
+import { services } from "./ServiceData";
+import ListIcon from "../icons/ListIcon.png";
 
 class ServiceDetail extends React.Component {
-    constructor(props) {
-        super(props);
-        const data = this.retrieveData();
-        this.state = {
-            serviceType:
-                data.serviceTypes && data.serviceType && data.status
-                    ? data.serviceType
-                    : null,
-            service:
-                data.serviceTypes &&
-                data.serviceType &&
-                data.service &&
-                data.status
-                    ? data.service
-                    : null,
-            status: data.status,
-            map: false
-        };
-        this.openMap = this.openMap.bind(this);
-        this.closeMap = this.closeMap.bind(this);
-    }
-    retrieveData() {
-        const { pathname } = this.props.location;
-        const {
-            essentialServiceTypeList: essential,
-            miningServiceTypeList: mining,
-            retailServiceTypeList: retail,
-            transportServiceTypeList: transport
-        } = this.props;
-        const serviceTypesAndStatus = getServiceTypeListBasedLocation(
-            pathname,
-            { essential, mining, retail, transport }
-        );
-        const { serviceTypes, status } = serviceTypesAndStatus;
-        const serid = parseInt(this.props.match.params.serid, DECIMAL_RADIX);
-        const serviceType =
-            serviceTypes &&
-            serviceTypes.length > 0 &&
-            status &&
-            serviceTypes.find(item => {
-                return item.id === serid;
-            });
-        const { listKey } = getServiceTypeDetailBasedLocation(pathname);
-        const serid2 = parseInt(this.props.match.params.serid2, DECIMAL_RADIX);
-        const service =
-            serviceType &&
-            serviceType[listKey] &&
-            serviceType[listKey].length > 0 &&
-            serviceType[listKey].find(item => {
-                return item.id === serid2;
-            });
-        return { serviceTypes, serviceType, service, status };
-    }
-    componentDidUpdate(prevProps) {
-        if (prevProps.match.params.serid2 !== this.props.match.params.serid2) {
-            const { service, status } = this.retrieveData();
-            this.setState({ service, status });
-        }
-    }
+    
+    
     openMap() {
         this.setState({ map: true });
     }
@@ -87,34 +27,24 @@ class ServiceDetail extends React.Component {
     closeMap() {
         this.setState({ map: false });
     }
-    renderImages() {
-        const { service } = this.state;
-        const { pathname } = this.props.location;
-        const { imageKey } = getServiceTypeDetailBasedLocation(pathname);
-        const images = service[imageKey];
+    renderImages(service_details) {
+        const {  images } = service_details;
         if (images.length > 1) {
-            return imageGallery(images, "100%", "22.68vh");
-        } else if (images.length === 1) {
+            return imageGallery(images, "100%", "23vh");
+        }
+        else if (images.length === 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
+        }
+        else {
             return (
                 <div
                     style={{
-                        height: "42%",
-                        backgroundImage: `url(${images[0].imageFile})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center"
-                    }}
-                />
-            );
-        } else {
-            return (
-                <div
-                    style={{
-                        height: "42%",
                         backgroundColor: HeavyOrange,
-                        ...this.styles.horizontalVerticalCenter
+                        height: "100%",
+                        padding: "30px"
                     }}
                 >
-                    <h1>NO IMAGE FOR {service.title.toUpperCase()}</h1>
+                    <h1>NO IMAGE FOR THIS SERVICE</h1>
                 </div>
             );
         }
@@ -124,258 +54,328 @@ class ServiceDetail extends React.Component {
             display: "flex",
             alignItems: "center",
             justifyContent: "center"
-        }
+        },
+        mapOrFindButtonStyle: {
+            backgroundColor: LightBlueButtonBackground,
+            display: "flex",
+            width: "100%",
+            padding: "4% 0",
+            marginTop: "-5%",
+            borderRadius: "5px",
+            boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
+            color: "white",
+            justifyContent: "center"
+        },
+        mapOrFindButtonText: {
+            letterSpacing: "2px",
+            fontSize: "18px",
+            fontWeight: "bold"
+        },
     };
     render() {
-        const { pathname } = this.props.location;
-        const serviceTypeData = getServiceTypeDetailBasedLocation(pathname);
-        const { serviceType, service, status } = this.state;
-        if (serviceType && serviceType.isBranch) {
-            return (
-                <div style={{ height: "100%" }}>
-                    {status === 200 && (
-                        <ServiceBranch
-                            data={serviceType}
-                            serviceTypeData={serviceTypeData}
-                            id={service.id}
-                        />
-                    )}
-                </div>
-            );
-        } else {
-            return (
+        // get service details
+        const service_name = this.props.match.params.servicename;
+        const service = services.find(item => item.name === service_name);
+        const { service_types } = service;
+        const sub_service_name = this.props.match.params.subservicename;
+        const sub_service = service_types.find(item => item.id === sub_service_name);
+        const sub_service_info_list = sub_service.services;
+        const detail_id = parseInt(this.props.match.params.detailid);
+        const service_details = sub_service_info_list.find(item => item.id === detail_id);
+
+
+        return (
+            <div
+                style={{
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                    color: "white"
+                }}
+                className="section--bottom--animation"
+            >
                 <div
                     style={{
-                        width: "100%",
-                        height: "100%",
+                        backgroundColor: HeavyOrange,
+                        width: "14%",
+                        boxShadow: "9.899px 0px 7px 0px rgba(0,0,0,0.6)",
+                        zIndex: 1,
                         display: "flex",
-                        color: "white"
+                        flexDirection: "column",
+                        justifyContent: "center"
                     }}
-                    className="section--bottom--animation"
                 >
-                    <div
+                    <Link
                         style={{
-                            backgroundColor: HeavyOrange,
-                            width: "14%",
-                            boxShadow: "9.899px 0px 7px 0px rgba(0,0,0,0.6)",
-                            zIndex: 1,
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "center"
+                            textDecoration: "none"
                         }}
+                        to={serviceNamespace}
                     >
-                        <Link
-                            style={{
-                                textDecoration: "none"
-                            }}
-                            to={serviceNamespace}
-                        >
-                            <div className="leftSide-menu--container">
-                                <img
-                                    className="leftSide-menu--img"
-                                    src={ServiceTypesIcon}
-                                    alt="Service Types Icon"
-                                />
-                                <div className="menu-title">SERVICE TYPES</div>
+                        <div className="leftSide-menu--container">
+                            <img
+                                className="leftSide-menu--img"
+                                src={ServiceTypesIcon}
+                                alt="Service Types Icon"
+                            />
+                            <div className="menu-title">SERVICE TYPES</div>
+                        </div>
+                    </Link>
+                    <Link
+                        style={{
+                            //  height: "14%",
+                            textDecoration: "none"
+                        }}
+                        to={service.url}
+                    >
+                        <div className="leftSide-menu--container">
+                            <img
+                                className="leftSide-menu--img"
+                                src={service.icon}
+                                alt="Service Type Icon"
+                            />
+                            <div className="menu-title ">
+                                {service.title}
                             </div>
-                        </Link>
+                        </div>
+                    </Link>
+                    <Link
+                        style={{
+                            //  height: "14%",
+                            textDecoration: "none"
+                        }}
+                        to={service.url + '/' + sub_service.id}
+                    >
+                        <div className="leftSide-menu--container">
+                            <img
+                                className="leftSide-menu--img"
+                                src={sub_service.img_url}
+                                alt="Service Type Icon"
+                            />
+                            <div className="menu-title ">
+                                {sub_service.title}
+                            </div>
+                        </div>
+                    </Link>
+                    {false && (
                         <Link
                             style={{
                                 //  height: "14%",
                                 textDecoration: "none"
                             }}
-                            to={serviceTypeData.namespace}
+                            to={`TBC`}
                         >
                             <div className="leftSide-menu--container">
                                 <img
                                     className="leftSide-menu--img"
-                                    src={serviceTypeData.icon}
-                                    alt="Service Type Icon"
+                                    src={ListIcon}
+                                    alt="Service List Icon"
                                 />
                                 <div className="menu-title ">
-                                    {serviceTypeData.title}
+                                    {"TBC".toUpperCase()}
                                 </div>
                             </div>
                         </Link>
-                        {status === 200 && (
-                            <Link
-                                style={{
-                                    //  height: "14%",
-                                    textDecoration: "none"
-                                }}
-                                to={`${serviceTypeData.namespace}/${
-                                    serviceType.id
-                                }`}
-                            >
-                                <div className="leftSide-menu--container">
-                                    <img
-                                        className="leftSide-menu--img"
-                                        src={serviceType.icon}
-                                        alt="Service List Icon"
-                                    />
-                                    <div className="menu-title ">
-                                        {serviceType.title.toUpperCase()}
-                                    </div>
-                                </div>
-                            </Link>
-                        )}
-                        <div
-                            className="vertical-title"
-                            style={{
-                                height: "60%"
-                            }}
+                    )}
+                    <div
+                        className="vertical-title"
+                        style={{
+                            height: "60%"
+                        }}
+                    >
+                        <span
+                            // className="verticalTitleMargin"
+                            style={{ transform: "rotate(-90deg)" }}
                         >
-                            <span
-                                // className="verticalTitleMargin"
-                                style={{ transform: "rotate(-90deg)" }}
-                            >
-                                SERVICES
-                            </span>
-                        </div>
+                            SERVICES
+                        </span>
                     </div>
-                    {status === 200 && (
-                        <div style={{ width: "86%" }}>
-                            {this.renderImages()}
+                </div>
+                {service_details && (
+                    <div className='event-main'>
+                        <div style={{ height: "42%", width: "100%" }}>
+                            {this.renderImages(service_details)}
+                        </div>
+                        <div style={{ height: "58%", width: "100%" }}>
                             <div
                                 style={{
-                                    height: "58%"
+                                    height: "26%",
+                                    backgroundColor: LightBlueGreen,
+                                    display: "flex"
                                 }}
                             >
-                                <div style={{ height: "26%", display: "flex" }}>
-                                    <div
+                                <div
+                                style={{
+                                    flexBasis: "33%",
+                                    borderRight:
+                                        "1px solid rgb(105,194,209)",
+                                    padding: "0px"
+                                }}
+                                >
+                                    
+                                    <div className="middle-section--leftSide"
                                         style={{
-                                            flexBasis: "33%",
-                                            backgroundImage: `url(${
-                                                service.logo
-                                            })`,
-                                            backgroundSize: "cover",
-                                            backgroundPosition: "center",
-                                            borderWidth: "1px",
-                                            borderStyle:
-                                                "solid solid solid none",
-                                            borderColor: "rgb(8,152,163)"
+                                            height: "100%",
+                                            padding: "0px"
                                         }}
-                                    />
-                                    <div className="services-title">
-                                        <h3>{service.title.toUpperCase()}</h3>
+                                    >
+                                        <div style={{
+                                                width: "100%",
+                                                height: "100%",
+                                                backgroundImage: `url('${service_details.img_url}')`,
+                                                backgroundSize: "100%",
+                                                backgroundPosition: "center"
+                                            }}>
+                                        </div>
                                     </div>
                                 </div>
+                                <div style={{
+                                    flexBasis: "67%",
+                                    padding: "0px 0px 0px 10px",
+                                    border: "1px solid rgb(183, 223, 228",
+                                    borderRightStyle: 'none'
+                                }}
+                                >
+                                    <div className="middle-section--rightSide"
+                                        style={{
+                                            height: "100%",
+                                            letterSpacing: "3px",
+                                            fontSize: "28px",
+                                            lineHeight: '40px',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'left',
+                                            textAlign: 'left',
+                                            paddingLeft: '30px'
+
+
+                                        }}
+                                    >
+                                        {service_details.title.toUpperCase()}
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div
+                                style={{
+                                    height: "74%",
+                                    backgroundColor: ExtraHeavyBlueGreen,
+                                    display: "flex"
+                                }}
+                            >
                                 <div
                                     style={{
-                                        height: "74%",
-                                        backgroundColor: ExtraHeavyBlueGreen,
-                                        display: "flex"
+                                        flexBasis: "50%",
+                                        padding: "35px 20px 35px 50px",
+                                        overflowY: "auto",
+                                        borderRight:
+                                                "1px solid rgb(105,194,209)",
                                     }}
                                 >
-                                    <div
+                                    {false && (<div
+                                        className="middle-section--innerTitle"
                                         style={{
-                                            width: "50%",
-                                            padding: "3% 5% 0 5%",
-                                            borderRight:
-                                                "2px solid rgb(103,195,209)"
+                                            height: "15%"
+                                        }}
+                                    >
+                                        
+                                        {/* <span>{eventDetail.month}</span> */}
+                                    </div>)}
+                                    <div className="middle-section--leftSide"
+                                        style={{
+                                            height: "75%",
+                                            overflow: "scroll",
+                                            display: "inline-table"
                                         }}
                                     >
                                         <div
-                                            className="middle-section--leftSide"
+                                            dangerouslySetInnerHTML={{__html: service_details.description}}
                                             style={{
-                                                height: "100%"
+                                                marginTop: 0,
+                                                marginBottom: 0,
+                                                lineHeight: '28px'
                                             }}
-                                        >
-                                            <Markdown
-                                                source={service.description}
-                                            />
-                                        </div>
+                                        ></div>
                                     </div>
-                                    <div
+                                </div>
+                                <div style={{
+                                    flexBasis: "50%",
+                                    padding: "35px 20px 35px 20px",
+                                    overflowY: "auto",
+                                }}
+                                >
+                                    {false && (<div style={{ height: "15%" }} />)}
+                                    
+                                    <div className="middle-section--rightSide"
                                         style={{
-                                            width: "50%",
-                                            padding: "3% 5% 0 5%"
+                                            height: "84%",
+                                            letterSpacing: "1px",
+                                            overflow: "scroll",
+                                            display: "inline-table",
+                                            width: "100%",
+                                            lineHeight: '28px',
+                                            paddingLeft: '20px'
+                                            // fontSize: "2vw"
                                         }}
                                     >
-                                        <div
-                                            className="middle-section--rightSide"
-                                            style={{
-                                                height: "78%"
-                                            }}
-                                        >
-                                            {service.phone && (
-                                                <p>
-                                                    CALL TODAY: {service.phone}
-                                                </p>
-                                            )}
-                                            {service.website && (
-                                                <p>
-                                                    WEB:{" "}
-                                                    {removeHttp(
-                                                        service.website
-                                                    )}
-                                                </p>
-                                            )}
-                                            {service.email && (
-                                                <p>EMAIL: {service.email}</p>
-                                            )}
-                                            {service.address && (
-                                                <p>{service.address}</p>
-                                            )}
-                                        </div>
-                                        <div
-                                            className="seeMap-btn"
-                                            style={{ height: "20%" }}
-                                        >
-                                            {service[serviceTypeData.mapKey]
-                                                .length > 0 && (
-                                                <MapModal
-                                                    rootStyle={{}}
-                                                    textStyle={{
-                                                        width: "100%",
-                                                        padding: "3% 0",
-                                                        borderRadius: "5px",
-                                                        fontSize: "20px",
-                                                        fontWeight: 500,
-                                                        boxShadow:
-                                                            "0px 0px 10px 1px rgba(0,0,0,0.5)",
-                                                        backgroundColor: LightBlueButtonBackground,
-
-                                                        display: "inline-block",
-                                                        alignItems: "center",
-                                                        justifyContent: "center"
-                                                    }}
-                                                    buttonTitle="SEE MAP"
-                                                    title={service.title}
-                                                    mapImage={
-                                                        service[
-                                                            serviceTypeData
-                                                                .mapKey
-                                                        ][0].mapImage
-                                                    }
-                                                />
-                                            )}
-                                        </div>
+                                        {service_details.phone && (
+                                            <p>
+                                                CALL TODAY: {service_details.phone}
+                                            </p>
+                                        )}
+                                        {service_details.website && (
+                                            <p>
+                                            <div
+                                                dangerouslySetInnerHTML={{__html: 'WEB: ' + removeHttp(
+                                                    service_details.website
+                                                )}}
+                                            ></div>
+                                            </p>
+                                        )}
+                                        {service_details.email && (
+                                            <p>EMAIL: {service_details.email}</p>
+                                        )}
+                                        {service_details.address && (
+                                            <p>
+                                             <div
+                                                dangerouslySetInnerHTML={{__html: service_details.address}}
+                                            ></div>
+                                            </p>
+                                        )}
+                                        
                                     </div>
+                                    {service_details.mapImage && (
+                                        <div>
+                                            <div className="middle-section--btnContainer">
+                                                <div className="middle-section--btnContainer--btn">
+                                                    <MapModal
+                                                        buttonTitle="SEE MAP"
+                                                        title={service_details.title}
+                                                        buttonStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonStyle
+                                                        }
+                                                        textStyle={
+                                                            this.styles
+                                                                .mapOrFindButtonText
+                                                        }
+                                                        mapImage={service_details.mapImage}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
-                    )}
-                </div>
-            );
-        }
+                    </div>
+                )}
+            </div>
+        );
+
     }
 }
 
-const mapStateToProps = ({
-    essentialServiceTypeList,
-    miningServiceTypeList,
-    retailServiceTypeList,
-    transportServiceTypeList
-}) => {
-    return {
-        essentialServiceTypeList,
-        miningServiceTypeList,
-        retailServiceTypeList,
-        transportServiceTypeList
-    };
-};
-export default connect(
-    mapStateToProps,
-    null
-)(ServiceDetail);
+
+export default ServiceDetail;

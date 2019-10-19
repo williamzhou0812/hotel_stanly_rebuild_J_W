@@ -1,7 +1,6 @@
 import React from 'react';
 import SubsectionList from "../List/SubsectionList";
 import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
-import { Link } from "react-router-dom";
 import  SilverLeaf  from './img_logo/dinings/R25-DININGLOGO_P-silver-leaf.jpg';
 import  GreenHausRes  from './img_logo/dinings/R18-DININGLOGO_P-green_haus_res.jpg';
 import  MonsoonLoungeBar from './img_logo/dinings/Our_Hotel_Section_Logo_Monsoon.jpg';

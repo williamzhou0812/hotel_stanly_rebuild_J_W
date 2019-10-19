@@ -2,12 +2,9 @@ import React from 'react';
 import SubsectionList from "../List/SubsectionList";
 import RestaurantListicon from './icons/RestaurantListIcon.6a75108a.png';
 
-import { Link } from "react-router-dom";
-
 import StandTwin  from './img_logo/Our_Hotel_Section_Imagesstandard.jpg';
 import DeluxeKing  from './img_logo/Our_Hotel_Section_ImagesDeluxe.jpg';
 import ExedutiveKing  from './img_logo/Our_Hotel_Section_Images_AuBae3aKing.jpg';
-import CornerSuite from './img_logo/Our Hotel Section_Imagessuite.jpg';
 import JuniorSuite from './img_logo/Our_Hotel_Section_Images-JUNIOR-SUITE.jpg';
 import Persidential from './img_logo/Our_Hotel_Section_Images_Pres_d1uSXpj.jpg';
 
@@ -37,7 +34,7 @@ const ourhotel_room_suite = [
     {
         id: 4,
         title: 'CORNER SUITE',
-        img_url: CornerSuite,
+        img_url: '/imgs/ourHotel/H1-Rooms and Suites/H1D-Corner/Our Hotel Section_ImagesCorner.jpg',
         link: '/ourhotel/roomsuite/'
 
     },
@@ -73,7 +70,7 @@ const RoomSuite = () => {
                     { title: 'RETURN TO LIST', isLink: true, link: '/ourhotel', icon: RestaurantListicon}
                 ]}
                 sideTitle="OUR HOTEL"
-                mainTitle="OUR ROOMS"
+                mainTitle="ROOMS & SUITES"
                 evenDetailsProps={ourhotel_room_suite}                
                 thumbnailStyle={{ width: "316px", height: "207px"}}
             >

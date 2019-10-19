@@ -73,7 +73,7 @@ const ourhotel_Facilities = [
         img_url: WOMEMARKING,
         description: `<p>Did you forget to pack something? Owen’s market has everything you need!</p>
         <p>We stock anything from fresh produce, snacks, toiletries, drinks to fresh meat, food and beverage gourmet items, in-house made delicatessen and even our famous roast chicken!</p>
-        <p>Location: Ground Floor Daily: 08:00 – 20:00</p>`,
+        `,
         details: {
        
             location: 'the Ground Floor',
@@ -97,7 +97,6 @@ const styles = {
         display: "flex",
         width: "100%",
         padding: "4% 0",
-        display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
         boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -116,7 +115,7 @@ const FacilitieDetails = (props) => {
 
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _facilitiesDetails = ourhotel_Facilities.find(item => item.id == _id);
+    const _facilitiesDetails = ourhotel_Facilities.find(item => item.id === _id);
     const currentIdx = ourhotel_Facilities.indexOf(_facilitiesDetails);
     const prev_idx = (currentIdx - 1 < 0) ?  ourhotel_Facilities.length -1 : currentIdx - 1;
     const next_idx = (currentIdx + 1 >= ourhotel_Facilities.length) ? 0 : currentIdx + 1;
@@ -190,7 +189,7 @@ const FacilitieDetails = (props) => {
                 <div >
                     <div className='event-main'>
                         <div style={{ height: "50%", width: "100%" }}>
-                            <img src={_facilitiesDetails.img_url} style={{ height: '100%', width: '100%' }} />
+                            <img src={_facilitiesDetails.img_url} style={{ height: '100%', width: '100%' }} alt=""/>
 
                         </div>
                         <div style={{ height: "50%", width: "100%" }}>

@@ -1,23 +1,18 @@
 import React from 'react';
 
 import ImageGallery from 'react-image-gallery';
-import OutNow from './190523JBGINTERNALADS2.jpg';
-import GBGBANNER from './190523JBGINTERNALADS5_QVwQqkl.jpg';
-import  TOUCHHERER from './190523JBGINTERNALADS6_NZu8HSE.jpg';
+
 
 
 const images = [
     {
-      original: OutNow,
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      original: '/imgs/ads/internal/190523JBGINTERNALADS5_QVwQqkl.jpg',
     },
     {
-      original: GBGBANNER,
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        original: '/imgs/ads/internal/190523JBGINTERNALADS2.jpg',
     },
     {
-      original: TOUCHHERER,
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        original: '/imgs/ads/internal/190523JBGINTERNALADS6_NZu8HSE.jpg',
     }
 
   ];
@@ -35,6 +30,7 @@ const InternalAds  = () => {
                 autoPlay={true}
                 showNav={false}
                 isRTL={true}
+                showPlayButton={false}
                 renderItem={ (item, index)  => {
                     return (
                         <div className='image-gallery-image'>

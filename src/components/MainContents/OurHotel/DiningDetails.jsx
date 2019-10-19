@@ -1,15 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 
 import RestaurantListicon from "./icons/RestaurantListIcon.6a75108a.png";
 
 import {
-    DICIMAL_RADIX,
-    diningNamespace,
     imageGallery,
     HeavyOrange,
-    LightBlueButtonBackground,
     ExtraHeavyBlueGreen,
     LightBlueGreen
 } from "../../../Constants";
@@ -188,9 +185,9 @@ const ourhotel_Dinings = [
         img_url: MezzBar,
         description:
             `<p>An elegant bar hidden away above level 19, Mezz Bar is the perfect place to start or finish your night. An extensive selection of carefully designed cocktails combined with international wines and premium whiskeys makes this bar a unique place to visit.</p>
-            <p>Open Monday to Saturday 3pm until late and closed on Sundays. Smart casual dress code.</p>`,
+            <p>Open Monday to Saturday 3pm until late and closed on Sundays.</p><p>Smart casual dress code.</p>`,
         details: {
-            call: false,
+            call: "+675 302 8888",
             location: "Located on Level 19",
             cuisine: "Bar",
             wifi: "Yes",
@@ -225,7 +222,6 @@ const styles = {
         display: "flex",
         width: "100%",
         padding: "5% 0",
-        display: "inline-bock",
         marginTop: "-5%",
         borderRadius: "5px",
         boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -240,24 +236,14 @@ const styles = {
     }
 };
 
-// temp images array for res
-const images = [
-    {
-        imageFile: "http://192.168.0.160:7000/images/R24-DININGIMAGES_P.jpg"
-    },
-    {
-        imageFile: "http://192.168.0.160:7000/images/R25-DININGIMAGES_P4.jpg"
-    }
-];
-
 /// Image Garllery
 const renderImages = (restaurant) => {
     const {  images } = restaurant;
     if (images.length > 1) {
         return imageGallery(images, "100%", "27vh");
     }
-    else if (images.length == 1) {
-        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+    else if (images.length === 1) {
+        return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt="" />);
     }
     else {
         return (
@@ -278,9 +264,7 @@ const renderImages = (restaurant) => {
 const DiningDetails = props => {
     const id = props.match.params.id;
     const _id = parseInt(id);
-    const _DingingsDetails = ourhotel_Dinings.find(item => item.id == _id);
-    const currentIdx = ourhotel_Dinings.indexOf(_DingingsDetails);
-    
+    const _DingingsDetails = ourhotel_Dinings.find(item => item.id === _id);   
 
     return (
         <div style={{
@@ -375,7 +359,7 @@ const DiningDetails = props => {
                                     <div style={{
                                             width: "100%",
                                             height: "100%",
-                                            backgroundImage: `url(${_DingingsDetails.img_url})`,
+                                            backgroundImage: `url('${_DingingsDetails.img_url}')`,
                                             backgroundSize: "100%",
                                             backgroundPosition: "center"
                                         }}>

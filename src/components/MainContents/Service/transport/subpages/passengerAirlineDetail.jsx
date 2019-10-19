@@ -220,7 +220,7 @@ class passengerAirlineDetail extends React.Component {
                             <div className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${passengerAirlineDetail.img_url})`,
+                                    backgroundImage: `url('${passengerAirlineDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

@@ -60,9 +60,13 @@ class SubsectionList extends React.Component {
             sideTitle,
             mainTitle,
             namespace,
-            thumbnailStyle = { width: "auto", height: "9.3vh"}
+            thumbnailStyle = { width: "auto", height: "9.3vh"},
+            titleWrap = false,
+            itemTitleStyle = {},
+            itemTitleDivStyle = {}
         } = this.props;
         const itemHeight = `${100 / numberOfEntries}%`;
+        const titleStyle = (titleWrap) ? 'normal' : 'nowrap'
         let toRender = data.slice();
         // if (data.length < numberOfEntries) {
         //     toRender = addNullItemToData(data, numberOfEntries);
@@ -125,9 +129,10 @@ class SubsectionList extends React.Component {
                             } else if (item.isMap) {
                                 return (
                                     <SidebarMapModel
+                                        key={index}
                                         item={item}
                                         mainTitle={mainTitle}
-                                        // maps={maps}
+                                        mapImage={item.map}
                                     />
                                 );
                             } else {
@@ -183,17 +188,19 @@ class SubsectionList extends React.Component {
                         }}
                     >
                         {data.map((item, index) => {
-                            let imageSrc = null;
-
+                            
+                            const thumbnailBgStyle = { 
+                                ...thumbnailStyle, 
+                                backgroundImage: 'url(\'' + item.img_url + '\')',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center center'}
+                
                             return (
                                 <Link
                                     style={{ textDecoration: "none" }}
-                                    to={`${namespace}/${item.id}`}
+                                    to={(this.props.urlKey) ? item[this.props.urlKey] : `${namespace}/${item.id}`}
                                     key={`${item.id}-${index}`}
-                                    // imageSrc={`${item.imgSrc}`}
-                                    // backgroundImage={ `url(${
-                                    // images[index]
-                                    // })`}
+                                
                                 >
                                     <div
                                         style={{
@@ -203,26 +210,32 @@ class SubsectionList extends React.Component {
                                         }}
                                     >
                                         <div>
-                                            <div
-                                                style={{
-                                                    backgroundImage: `url(${imageSrc})`,
-                                                    backgroundSize: "cover",
-                                                    backgroundPosition: "center"
-                                                }}
+                                            {item.isIcon && (
+                                                <div style={thumbnailStyle}>
+                                                    <div >
+                                                        <img src={item.img_url} style={this.props.iconStyle}/>
+                                                    </div>
+                                                </div>
+                                            )}
+                                            {!item.isIcon && (
+                                                <div
+                                                style={thumbnailBgStyle}
                                             >
-                                                <img
-                                                    src={item.img_url}
-                                                    alt={item.event_title}
-                                                    style={thumbnailStyle}
-                                                />
                                             </div>
-                                        </div>
+                                            )}                                           
+                                        </div>                                        
+                                        {item.isIcon && item.icon_title && (
+                                            <div className="subSection--icon-title" style={this.props.iconTitleStyle}>
+                                                {item.icon_title}
+                                            </div>
+                                        )}                                        
                                         {/* <div className="subSection--title"><div>{item.event_title}</div> <div>{item.month}</div> </div> */}
-                                        <div className="subSection--title">
+                                        <div className="subSection--title" style={itemTitleDivStyle}>
                                             <div
                                                 style={{
                                                     fontSize: "2.25vw",
-                                                    whiteSpace: "nowrap"
+                                                    whiteSpace: titleStyle,
+                                                    ...itemTitleStyle
                                                 }}
                                             >
                                                 {item.title}

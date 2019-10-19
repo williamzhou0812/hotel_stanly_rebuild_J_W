@@ -3,18 +3,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import AllAreas from "./icons/AllAreas.png";
-import BackIcon from "./icons/BackIcon.png";
 import {
     HeavyOrange,
     destinationNamespace,
     LightBlueButtonBackground,
-    ExtraHeavyBlueGreen,
     imageGallery,
-    LightOrange
 } from "../../../Constants";
-import ExploreList from "./ExploreList";
 import MapModal from "../Maps/MapModal";
-import Markdown from "../../../MarkDown";
 import "./Destination.scss";
 import "../List/MainSectionList.scss";
 import { destinations } from "./DestinationData";
@@ -43,6 +38,23 @@ class DestinationDetail extends React.Component {
         mapButtonTextStyle: {
             fontSize: "20px",
             fontWeight: "500"
+        },
+        exploreButtonStyle: {
+            width: "85%",
+            height: "5.5vh",
+            padding: "3%",
+            marginBottom: "5%",
+            borderRadius: "5px",
+            boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
+            backgroundColor: HeavyOrange,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+        },
+        exploreButtonTextStyle: {
+            fontSize: "20px",
+            fontWeight: "500",
+            paddingTop: "5px"
         }
     };
 
@@ -51,8 +63,8 @@ class DestinationDetail extends React.Component {
         if (images.length > 1) {
             return imageGallery(images, "100%", "27vh");
         }
-        else if (images.length == 1) {
-            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} />);
+        else if (images.length === 1) {
+            return (<img src={images[0].imageFile} style={{ height: '100%', width: '100%' }} alt=""/>);
         }
         else {
             return (
@@ -63,7 +75,7 @@ class DestinationDetail extends React.Component {
                         padding: "30px"
                     }}
                 >
-                    <h1>NO IMAGE FOR THIS RESTAURANT</h1>
+                    <h1>NO IMAGE FOR THIS DESTINATION</h1>
                 </div>
             );
         }
@@ -72,7 +84,7 @@ class DestinationDetail extends React.Component {
     render() {
         const id = this.props.match.params.id;
         const _id = parseInt(id);
-        let destinationsDetail = destinations.find(item => item.id == _id);
+        let destinationsDetail = destinations.find(item => item.id === _id);
         let mapInfo = [];
         if (destinationsDetail.CityMap) {
             mapInfo.push({
@@ -157,8 +169,16 @@ class DestinationDetail extends React.Component {
                                     )}
                                 </div>
                                 <div className="destination-main--details--bottom--right--btnContainer">
+                                    <Link style={{ textDecoration: "none", color: "white" }}
+                                          to={destinationNamespace + '/' + destinationsDetail.id + '/explore'}>
+                                        <div style={this.styles.exploreButtonStyle}>
+                                            <span style={this.styles.exploreButtonTextStyle}>
+                                                EXPLORE
+                                            </span>                                        
+                                        </div>
+                                    </Link>                                    
                                    {mapInfo.map((item, index)=>{
-                                       const firstStyle = (index == 0) ? { marginBottom: "6%" } : {};
+                                       const firstStyle = (index === 0) ? { marginBottom: "6%" } : {};
                                        return (
                                         <div key={index} style={firstStyle}>
                                             <MapModal

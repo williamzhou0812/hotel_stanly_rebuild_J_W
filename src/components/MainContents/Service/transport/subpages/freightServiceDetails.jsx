@@ -219,7 +219,7 @@ class FreightServiceDetail extends React.Component {
                             <div className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${FreightServiceDetail.img_url})`,
+                                    backgroundImage: `url('${FreightServiceDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

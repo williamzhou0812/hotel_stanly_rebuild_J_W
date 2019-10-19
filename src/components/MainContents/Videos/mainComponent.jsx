@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment} from 'react';
 import styled, { keyframes} from 'styled-components';
 import { rotateIn } from 'react-animations';
 import Videos from './videoAdv';
@@ -12,11 +12,6 @@ const RotateDiv = styled.div`
 `;
 
 const  mainComponent = () => { 
-    setTimeout(() => {
-        console.log(`im time outat index page`)
-        window.location.replace("http://localhost:3000/destinations");
-    }, 50000)
-
     return (
         <Fragment>
             <RotateDiv> 
@@ -29,11 +24,11 @@ const  mainComponent = () => {
                 
                 </div>
                 <div style={{marginTop: '-8px'}}>
-                        <InternalAds /> 
+                      <InternalAds />
                 </div>
-                {/* <div style={{marginTop: '-8px'}} >
-                    <StaticAds/>
-                </div> */}
+                <div style={{marginTop: '-8px'}} >
+                   <StaticAds/>
+                </div>
 
             </RotateDiv>
         </Fragment>

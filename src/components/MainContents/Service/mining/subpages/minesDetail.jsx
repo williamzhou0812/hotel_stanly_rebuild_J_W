@@ -309,7 +309,7 @@ class MinesDetail extends React.Component {
                                 className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${minesDetail.img_url})`,
+                                    backgroundImage: `url('${minesDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

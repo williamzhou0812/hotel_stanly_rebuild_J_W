@@ -165,7 +165,7 @@ class DiningDetail extends React.Component {
                         <div className="main-top--left"
                             style={{
                                 flexBasis: "50%",
-                                backgroundImage: `url(${restaurantsDetail.img_url})`,
+                                backgroundImage: `url('${restaurantsDetail.img_url}')`,
                                 backgroundRepeat: "no-repeat",
                                 backgroundSize: "cover",
                                 backgroundPosition: "center"

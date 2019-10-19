@@ -63,8 +63,7 @@ class SectionList extends React.Component {
         const {
             title,
             namespace,
-            linkFunction,
-            backgroundPositionValue
+            linkFunction
         } = this.props;
         const { data, images } = this.state;
         return (
@@ -118,11 +117,11 @@ class SectionList extends React.Component {
                                         style={{
                                             width: "100%",
                                             height: "33.33333%",
-                                            backgroundImage: `url(${
+                                            backgroundImage: `url('${
                                                 images[index]
-                                                })`,
+                                                }')`,
                                             //    backgroundImage: `url(${item.images})`,
-                                            backgroundPosition: backgroundPositionValue,
+                                            backgroundPosition: "center center",
                                             backgroundRepeat: "no-repeat",
                                             backgroundSize: "cover",
                                             display: "flex",
@@ -169,7 +168,7 @@ SectionList.defaultProps = {
     linkFunction: (namespace, item) => {
         return `${namespace}/${item.id}`;
     },
-    backgroundPositionValue: "center"
+    backgroundPositionValue: "center center"
 };
 SectionList.propTypes = {
     data: PropTypes.array.isRequired,

@@ -204,7 +204,7 @@ class BankDetails extends React.Component {
                             <div className="main-top--left"
                                 style={{
                                     flexBasis: "30%",
-                                    backgroundImage: `url(${bankDetail.img_url})`,
+                                    backgroundImage: `url('${bankDetail.img_url}')`,
                                     backgroundRepeat: "no-repeat",
                                     backgroundSize: "cover",
                                     backgroundPosition: "center"

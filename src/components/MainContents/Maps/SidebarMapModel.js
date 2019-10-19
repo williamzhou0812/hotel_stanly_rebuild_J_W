@@ -8,9 +8,9 @@ import {
     LightOrange,
     HOVER_DELAY
 } from "../../../Constants.js";
-// import ReactImageMagnify from "react-image-magnify";
-// import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-// import CloseIcon from "material-ui/svg-icons/navigation/close";
+import ReactImageMagnify from "react-image-magnify";
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import CloseIcon from '@material-ui/icons/Close';
 import PropTypes from "prop-types";
 
 class SidebarMapModel extends React.Component {
@@ -30,7 +30,8 @@ class SidebarMapModel extends React.Component {
     }
     render() {
         const { showModal } = this.state;
-        const { item, mainTitle, maps } = this.props;
+        const { item, mainTitle, mapImage } = this.props;
+       
         return (
             <div>
                 <div
@@ -58,81 +59,60 @@ class SidebarMapModel extends React.Component {
                 </div>
 
                 <Modal
+                    className="modal-100"
                     show={showModal}
                     onHide={this.closeModal}
                     dialogClassName="map-modal"
                 >
                     <Modal.Body>
                         <div style={{ position: "absolute", right: 0, top: 0 }}>
-                            {/* <MuiThemeProvider>
+                            <MuiThemeProvider>
                                 <CloseIcon
                                     onClick={this.closeModal}
                                     color="white"
                                     style={{
                                         padding: 0,
                                         height: 32,
-                                        width: 32
+                                        width: 32,
+                                        color: "white",
+                                        float: "right",
+                                        marginRight: "20px",
+                                        marginTop: "20px"
                                     }}
                                 />
-                            </MuiThemeProvider> */}
+                            </MuiThemeProvider>
                         </div>
-                        <div
-                            style={{
-                                backgroundColor: HeavyOrange,
-                                //fontSize: "28pt",
-                                fontSize: "4vw",
-                                padding: 20,
-                                textAlign: "center"
+                        <div className="map-title">
+                            MAP OF
+                            <br />
+                            {mainTitle.toUpperCase()}
+                        </div>
+                        <ReactImageMagnify
+                            {...{
+                                smallImage: {
+                                    alt: `Map of ${mainTitle}`,
+                                    isFluidWidth: true,
+                                    src: mapImage
+                                },
+                                largeImage: {
+                                    src: mapImage,
+                                    width: MAX_ZOOM_LEVEL * MAP_WIDTH,
+                                    height: MAX_ZOOM_LEVEL * MAP_HEIGHT
+                                },
+                                hoverOffDelayInMs: HOVER_DELAY,
+                                enlargedImagePosition: "over",
+                                isHintEnabled: true,
+                                isActivatedOnTouch: true,
+                                shouldHideHintAfterFirstActivation: false,
+                                hintTextMouse: "Long-Touch to Zoom"
                             }}
-                        >
-                            MAP OF <br /> {mainTitle.toUpperCase()}
-                        </div>
-
-                        <div style={{ backgroundColor: LightOrange }}>
-                            {/* {maps.length !== 0 ? (
-                                <ReactImageMagnify
-                                    {...{
-                                        smallImage: {
-                                            alt: `Hotels Map of ${mainTitle.toUpperCase()}`,
-                                            isFluidWidth: true,
-                                            src: maps[0].imageFile
-                                        },
-                                        largeImage: {
-                                            src: maps[0].imageFile,
-                                            width: MAX_ZOOM_LEVEL * MAP_WIDTH,
-                                            height: MAX_ZOOM_LEVEL * MAP_HEIGHT
-                                        },
-                                        hoverOffDelayInMs: HOVER_DELAY,
-                                        enlargedImagePosition: "over",
-                                        isHintEnabled: true,
-                                        isActivatedOnTouch: true,
-                                        shouldHideHintAfterFirstActivation: false,
-                                        hintTextMouse: "Long-Touch to Zoom"
-                                    }}
-                                />
-                            ) : (
-                                    <h1
-                                        style={{
-                                            color: "white",
-                                            textAlign: "center",
-                                            margin: 0,
-                                            padding: "20px",
-                                            letterSpacing: "2px",
-                                            fontSize: "4vw"
-                                        }}
-                                    >
-                                        No Map Available
-                                </h1>
-                                )} */}
-                        </div>
-
+                        />
                         <div
                             style={{
                                 backgroundColor: "rgb(13,109,121)",
                                 color: "rgb(107,193,209)",
                                 padding: 5,
-                                textAlign: "center",
-                                fontSize: "3vw"
+                                textAlign: "center"
                             }}
                         >
                             TAP OUTSIDE OF MAP TO CLOSE
@@ -147,7 +127,7 @@ class SidebarMapModel extends React.Component {
 SidebarMapModel.propTypes = {
     item: PropTypes.object.isRequired,
     mainTitle: PropTypes.string.isRequired,
-    maps: PropTypes.array.isRequired
+    //maps: PropTypes.array.isRequired
 };
 
 export default SidebarMapModel;

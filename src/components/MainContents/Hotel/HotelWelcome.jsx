@@ -1,6 +1,5 @@
 
-import React, { Component } from "react";
-import { HeavyOrange, LightBlueButtonBackground, ExtraHeavyBlueGreen } from "../../../Constants"
+import React  from "react";
 import '../List/MainSectionList.scss';
 import './Hotel.scss';
 

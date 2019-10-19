@@ -1,7 +1,6 @@
 import React from "react";
 
 import SubsectionList from "../List/SubsectionList";
-import { diningNamespace } from "../../../Constants";
 import {restaurants } from "./DiningData";
 import "../List/MainSectionList.scss";
 

@@ -3,10 +3,6 @@ import React from "react";
 import SubsectionList from "../List/SubsectionList";
 import { events } from "./EventData";
 
-import EventDetail from "./EventDetail";
-
-import { transportNamespace, eventNamespace, toTitleCase } from "../../../Constants";
-
 class EventList extends React.Component {
     constructor(props) {
         super(props);
@@ -38,7 +34,7 @@ class EventList extends React.Component {
                     sideTitle="EVENTS"
                     mainTitle="CALENDAR OF EVENTS"
                     evenDetailsProps={this.events}
-
+                    thumbnailStyle={{ width: "316px", height: "138px"}}
                 >
 
                 </SubsectionList>

@@ -1,50 +1,57 @@
-import React from "react";
-import ImageGallery from 'react-image-gallery';
-import AdvImgOne from './5-Coral_Sea_Hotels_118x85mm_Ad_interactive-01.jpg';
+import React, {Component} from 'react';
+import Slider from 'react-slick';
+import { randomiseItems } from "../../../Constants";
 
-const images = [
-    {
-      original: AdvImgOne,
-      thumbnail: '',
-    },
- 
-  ];
+const ads = [
+    "/imgs/ads/Showcase mode/2019 Air Niugini.jpg",
+    "/imgs/ads/Showcase mode/2019 Asia Aromas.jpg",
+    "/imgs/ads/Showcase mode/2019 Brian Bell.jpg",
+    "/imgs/ads/Showcase mode/2019 Budget.jpg",
+    "/imgs/ads/Showcase mode/2019 JBG PNG.jpg",
+    "/imgs/ads/Showcase mode/2019 MadNESSphotography.jpg",
+    "/imgs/ads/Showcase mode/2019 PacificPalmsProperty.jpg",
+    "/imgs/ads/Showcase mode/2019 POM Nature Park.jpg",
+    "/imgs/ads/Showcase mode/2019 Strickland.jpg"   
+];
 
+class StaticAds extends Component  { 
+    constructor(props) {
+        super(props);
+        const shuffled = randomiseItems(ads);
+        this.state = {
+            random_ads: shuffled
+        }
+    }
+    
+    render() {
+        const { random_ads } = this.state;
+        const  settings = {
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 6000,
+            cssEase:"linear"
+    
+        }
 
-const StaticAds = () => {
-
-    // http call to retive the imgae data 
-
-   
-    return ( 
-        <div style={{width: '100%', height: '100%'}}>
-
-                <ImageGallery  
-                
-                    items={images}
-                    slideInterval={10000}
-                    showThumbnails={false}
-                    showPlayButton={false}
-                    showFullscreenButton={false}
-                    autoPlay={true}
-                    showNav={false}
-                    renderItem={ (item, index)=> {
-                        return (
-                            <div className="image-gallery-image" >
-                                <img 
-                                    src={item.original}
-                                    alt={index}
-                                    sizes={item.sizes}
-                                    style={{width: '100%', height: '33.3vh'}} />
-                            </div>
-                        )
-                    }}
-
-                />
-
-        </div>
-    )
-
-};
+        return (
+        
+            <Slider {...settings}>
+                 {random_ads.map((item, i) => {
+                    return (
+                        <div key={i}>
+                            <img src={item} alt="" />
+                        </div>
+                    )
+                })}
+            
+            </Slider>
+        
+           )
+    }
+    
+}
 
 export default  StaticAds;
