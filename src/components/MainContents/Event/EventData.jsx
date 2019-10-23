@@ -28,6 +28,7 @@ export const events = [
             location: 'Balimo, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/GOGODALA-CANOE-FESTIVAL-MAP.png",
+        destination_id: 1
     },
     {
         id: 3,
@@ -42,6 +43,7 @@ export const events = [
             location: 'Madang, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/THE-MADANG-FESTIVAL-MAP.png",
+        destination_id: 3
 
     },
     {
@@ -57,6 +59,7 @@ export const events = [
             location: 'Buka, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/MONA-FESTIVAL-MAP.png",
+        destination_id: 13
     },
     {
 
@@ -72,6 +75,7 @@ export const events = [
             location: 'Rabaul, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/NATIONAL-MASK-FESTIVAL-01.png",
+        destination_id: 5
     },
     {
         id: 6,
@@ -85,7 +89,8 @@ export const events = [
             email: 'contact@engashow.com',
             location: 'Wabag Town, Papua New Guniea'
         },
-        mapImage: "/imgs/events/E-Events/_Maps/ENGA-FESTIVAL-MAP-01.png",       
+        mapImage: "/imgs/events/E-Events/_Maps/ENGA-FESTIVAL-MAP-01.png",
+        destination_id: 4       
 
 
     },
@@ -102,6 +107,7 @@ export const events = [
             location: 'Ambunti, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/SEPIK-CROCODILE-FESTIVAL-MAP.png",
+        destination_id: 10
 
 
     },
@@ -119,6 +125,7 @@ export const events = [
             location: 'Mount Hagen, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/MOUNT-HAGEN-SHOW-MAP.png",
+        destination_id: 4
 
 
     },
@@ -136,6 +143,7 @@ export const events = [
             location: 'Madang Campus, Divine Word University, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/DWU-CULTURAL-DAY-MAP.png",
+        destination_id: 3
     },
     {
         id: 10,
@@ -150,6 +158,7 @@ export const events = [
             location: 'Goroka, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/Goroka-Show-Map-01.png",
+        destination_id: 6
     },
     {
         id: 11,
@@ -164,6 +173,7 @@ export const events = [
             location: 'Port Moresby, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/HIRI-MOALE-SHOW-MAP-01.png",
+        destination_id: 1
     },
     {
         id: 12,
@@ -178,6 +188,7 @@ export const events = [
             location: 'Rabaul, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/FRANGIPANI-FESTIVAL-MAP-01.png",
+        destination_id: 5
 
 
     },
@@ -196,6 +207,7 @@ export const events = [
             location: 'Lae, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/MOROBE-CULTURAL-SHOW-01.png",
+        destination_id: 2
     },
     {
         id: 14,
@@ -210,5 +222,6 @@ export const events = [
             location: 'Alotau, Papua New Guniea'
         },
         mapImage: "/imgs/events/E-Events/_Maps/PNG-KENU-&-KUNDU-FESTIVAL-01.png",
+        destination_id: 7
     },
 ];

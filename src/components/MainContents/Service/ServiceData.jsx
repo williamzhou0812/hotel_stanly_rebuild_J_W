@@ -435,7 +435,7 @@ export const serviceInfoData = [
     {
         id: 25,
         service_type_id: "Security",
-        title: "Black Swan Security ",
+        title: "Black Swan Security",
         address: "Kanage Street, 6 Mile, Port Moresby",
         phone: "+675 752 00200",
         website: "www.blackswanss.com",
@@ -634,7 +634,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2-MAINLISTIMAGES_P2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 2
 
     },
     {
@@ -787,7 +787,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3A-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -940,7 +940,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -957,7 +957,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -974,7 +974,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -991,7 +991,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1008,7 +1008,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1025,7 +1025,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1042,7 +1042,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3B-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1059,7 +1059,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3C-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1076,7 +1076,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3C-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1093,7 +1093,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S3-Mining&Resources/S3D-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 2
 
     },
     {
@@ -1111,7 +1111,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 5
 
     },
     {
@@ -1129,7 +1129,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 4
 
     },
     {
@@ -1147,7 +1147,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 2
 
     },
     {
@@ -1165,7 +1165,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1201,7 +1201,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 3
 
     },
     {
@@ -1219,7 +1219,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 6
 
     },
     {
@@ -1237,7 +1237,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1272,7 +1272,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1289,7 +1289,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1306,7 +1306,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1323,7 +1323,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1374,7 +1374,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 2
 
     },
     {
@@ -1391,7 +1391,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1408,7 +1408,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 2
 
     },
     {
@@ -1425,7 +1425,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 5
 
     },
     {
@@ -1459,7 +1459,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1476,7 +1476,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1495,7 +1495,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4I-MadnessPhotography/S4I-HeaderImage2.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4I-MadnessPhotography/S4I-HeaderImage3.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1512,7 +1512,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4J-OFC/S4J-HeaderImage1.jpg' },
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
 
