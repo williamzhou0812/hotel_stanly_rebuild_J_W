@@ -136,7 +136,7 @@ class ExploreList extends React.Component {
                     iconTitleStyle={{backgroundColor: DarkHeavyBlue, height: '63px', width: '207px'}}
                     urlKey="url"
                     itemTitleStyle={{fontSize: '1.98vw'}}
-                    itemTitleDivStyle={{paddingLeft: '18px'}}
+                    itemTitleDivStyle={{paddingLeft: '18px', width: '620px'}}
                 >
                     
                 </SubsectionList> 
