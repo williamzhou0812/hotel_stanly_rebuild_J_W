@@ -2,19 +2,13 @@ import React from "react";
 import DownButton from "../../MainContents/Destination/icons/DownExploreButton.png";
 import UpButton from "../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import MapModal from "../Maps/MapModal";
 import {
-    SUBSECTION_LIST_ENTRIES,
     MediumOrange,
     shiftArray,
     HeavyBlue,
     HeavyOrange,
     LightOrange,
-    getRandomImage,
-    LightBlue,
     randomiseButKeepOrder,
-    addNullItemToData
 } from "../../../Constants";
 import SidebarMapModel from "./../Maps/SidebarMapModel";
 import "./MainSectionList.scss";
@@ -55,7 +49,6 @@ class SubsectionList extends React.Component {
     render() {
         const { data } = this.state;
         const {
-            numberOfEntries,
             sideButtons,
             sideTitle,
             mainTitle,
@@ -65,13 +58,7 @@ class SubsectionList extends React.Component {
             itemTitleStyle = {},
             itemTitleDivStyle = {}
         } = this.props;
-        const itemHeight = `${100 / numberOfEntries}%`;
-        const titleStyle = (titleWrap) ? 'normal' : 'nowrap'
-        let toRender = data.slice();
-        // if (data.length < numberOfEntries) {
-        //     toRender = addNullItemToData(data, numberOfEntries);
-        // }
-        let hasRenderedAdvertiseWithUs = false;
+        const titleStyle = (titleWrap) ? 'normal' : 'nowrap';
         return (
             <div
                 style={{ width: "100%", height: "100%", display: "flex" }}
@@ -213,7 +200,7 @@ class SubsectionList extends React.Component {
                                             {item.isIcon && (
                                                 <div style={thumbnailStyle}>
                                                     <div >
-                                                        <img src={item.img_url} style={this.props.iconStyle}/>
+                                                        <img src={item.img_url} style={this.props.iconStyle} alt=""/>
                                                     </div>
                                                 </div>
                                             )}

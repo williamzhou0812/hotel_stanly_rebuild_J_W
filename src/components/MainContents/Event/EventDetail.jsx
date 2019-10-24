@@ -65,7 +65,6 @@ class EventDetail extends React.Component {
             display: "flex",
             width: "100%",
             padding: "4% 0",
-            display: "inline-bock",
             marginTop: "-5%",
             borderRadius: "5px",
             boxShadow: "0px 0px 10px 1px rgba(0,0,0,0.5)",
@@ -149,6 +148,7 @@ class EventDetail extends React.Component {
                         <div style={{ height: "50%", width: "100%" }}>
                             <img
                                 src={eventDetail.img_url}
+                                alt=""
                                 style={{ height: "100%", width: "100%" }}
                             />
                         </div>

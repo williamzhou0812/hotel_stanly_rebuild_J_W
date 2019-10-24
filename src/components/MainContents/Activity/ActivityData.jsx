@@ -42,7 +42,8 @@ export const attractionsList=[
                 email: "N/A",
                 website: "N/A"
             }
-        ]
+        ],
+        destination_id: 1
     },
     {
         id: 3,
@@ -59,7 +60,8 @@ export const attractionsList=[
                 email: "pomgolf@pomgolf.org.pg",
                 website: "www.royalpomgolf.com"
             }
-        ]
+        ],
+        destination_id: 1
     }
 ]
 
@@ -182,7 +184,8 @@ export const birdwatchingList = [
                 website: "www.pngtours.com"
             }
 
-        ]
+        ],
+        destination_id: 1
     },
     {
         id: 2,
@@ -206,7 +209,8 @@ export const birdwatchingList = [
                 website: "www.jaisabenresort.com"
             }
 
-        ]
+        ],
+        destination_id: 3
     },
     {
         id: 3,
@@ -224,7 +228,8 @@ export const birdwatchingList = [
                 website: "www.lissenung.com"
             }
 
-        ]
+        ],
+        destination_id: 9
     },
     {
         id: 4,
@@ -242,7 +247,8 @@ export const birdwatchingList = [
                 email: "resort@walindifebrina.com",
                 website: "www.walindifebrina.com"
             }
-        ]
+        ],
+        destination_id: 8
     },
     {
         id: 5,
@@ -320,7 +326,8 @@ export const birdwatchingList = [
                 website: "www.rapopo.com"
             }
 
-        ]
+        ],
+        destination_id: 5
     },
     {
         id: 9,
@@ -338,7 +345,8 @@ export const birdwatchingList = [
                 website: "www.bougtours.com"
             }
 
-        ]
+        ],
+        destination_id: 13
     }
 ]
 
@@ -389,7 +397,8 @@ export const trekkingList = [
                 website: "www.pngtrekkingadventures.com"
             },
 
-        ]
+        ],
+        destination_id: 1
     },
     {
         id: 2,
@@ -425,7 +434,8 @@ export const trekkingList = [
                 website: "www.escapetrekkingadventures.com.au"
             },
 
-        ]
+        ],
+        destination_id: 4
     },
     {
         id: 3,
@@ -449,7 +459,8 @@ export const trekkingList = [
                 website: "www.letpng.com"
             }
 
-        ]
+        ],
+        destination_id: 4
     },
     {
         id: 4,
@@ -473,7 +484,8 @@ export const trekkingList = [
                 website: "www.rapopo.com"
             }
 
-        ]
+        ],
+        destination_id: 5
     },
     {
         id: 5,
@@ -497,7 +509,8 @@ export const trekkingList = [
                 website: "www.walindifebrina.com"
             }
 
-        ]
+        ],
+        destination_id: 8
     },
     {
         id: 6,
@@ -514,7 +527,8 @@ export const trekkingList = [
                 email: "rotokas.ecotourism@gmail.com",
                 website: "rotokasecotourism.com"
             }
-        ]
+        ],
+        destination_id: 13
     }
 
 ]
@@ -553,7 +567,8 @@ export const fishingList = [
 
         details: [
 
-        ]
+        ],
+        destination_id: 3
     },
     {
         id: 4,
@@ -584,7 +599,8 @@ export const fishingList = [
         details: [
 
 
-        ]
+        ],
+        destination_id: 8
     },
     {
         id: 6,
@@ -602,7 +618,8 @@ export const fishingList = [
                 email: "reservations@tufiresort.com",
                 website: "www.tufidive.com"
             }
-        ]
+        ],
+        destination_id: 12
     },
     {
         id: 7,
@@ -626,7 +643,8 @@ export const fishingList = [
                 email: "ramona@liamoreefresort.com",
                 website: "www.liamoreefresort.com"
             }
-        ]
+        ],
+        destination_id: 8
     },
     {
         id: 8,
@@ -644,7 +662,8 @@ export const fishingList = [
                 email: "info@lissenung.com",
                 website: "www.lissenung.com"
             }
-        ]
+        ],
+        destination_id: 9
     }
 
 
@@ -678,7 +697,8 @@ export const surfingList = [
                 email: "sapng06@yahoo.com.au",
                 website: "www.sapng.com"
             }
-        ]
+        ],
+        destination_id: 9
     },
     {
         id: 2,
@@ -695,7 +715,8 @@ export const surfingList = [
                 email: "sapng06@yahoo.com.au",
                 website: "www.sapng.com"
             }
-        ]
+        ],
+        destination_id: 3
     },
     {
         id: 3,
@@ -712,7 +733,8 @@ export const surfingList = [
                 email: "sapng06@yahoo.com.au",
                 website: "www.sapng.com"
             }
-        ]
+        ],
+        destination_id: 10
     },
     {
         id: 4,
@@ -752,7 +774,8 @@ export const surfingList = [
                 email: "sapng06@yahoo.com.au",
                 website: "www.sapng.com"
             }
-        ]
+        ],
+        destination_id: 1
     },
     {
         id: 6,
@@ -769,7 +792,8 @@ export const surfingList = [
                 email: "sapng06@yahoo.com.au",
                 website: "www.sapng.com"
             }
-        ]
+        ],
+        destination_id: 11
     }
 ]
 
@@ -788,7 +812,8 @@ export const divingList = [
             Phone: "+675 7202 1200",
             email: "info@divecentre.com.pg",
             website: "www.divecentre.com.pg"
-        }]
+        }],
+        destination_id: 1
     },
     {
         id: 2,
@@ -811,7 +836,8 @@ export const divingList = [
                 email: "nda@mtspng.com",
                 website: "www.niuginidive.com"
             }
-        ]
+        ],
+        destination_id: 3
     },
 
     {
@@ -827,7 +853,8 @@ export const divingList = [
             Phone: "+675 323 3462",
             email: "reservations@tufiresort.com",
             website: "www.tufidive.com"
-        }]
+        }],
+        destination_id: 12
     },
     {
         id: 4,
@@ -850,7 +877,8 @@ export const divingList = [
                 email: "reservations@tawali.com",
                 website: "www.tawali.com"
             }
-        ]
+        ],
+        destination_id: 7
     },
     {
         id: 5,
@@ -873,7 +901,8 @@ export const divingList = [
                 email: "reservations@liamoreefresort.com",
                 website: "www.liamoreefresort.com"
             }
-        ]
+        ],
+        destination_id: 8
     },
     {
         id: 6,
@@ -902,7 +931,8 @@ export const divingList = [
                 email: "reservations@rapopo.com",
                 website: "www.rapopo.com"
             }
-        ]
+        ],
+        destination_id: 5
     },
     {
         id: 7,
@@ -931,7 +961,8 @@ export const divingList = [
                 email: "nda@madangresort.com",
                 website: "www.niuginidive.com"
             }
-        ]
+        ],
+        destination_id: 9
     }
 ];
 

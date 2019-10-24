@@ -3,21 +3,18 @@ import DownButton from "../../MainContents/Destination/icons/DownExploreButton.p
 import UpButton from "../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
 import {
-    SUBSECTION_LIST_ENTRIES,
     MediumOrange,
     shiftArray,
     HeavyBlue,
     HeavyOrange,
     LightOrange,
-    getRandomImage,
-    LightBlue,
     randomiseButKeepOrder,
     MAX_ZOOM_LEVEL,
     MAP_HEIGHT,
     MAP_WIDTH,
     HOVER_DELAY
 } from "../../../Constants";
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import CloseIcon from '@material-ui/icons/Close';
 import SidebarMapModel from "./../Maps/SidebarMapModel";
 import "./MainSectionList.scss";
@@ -75,20 +72,12 @@ class SubsectionMapList extends React.Component {
     render() {
         const { data } = this.state;
         const {
-            numberOfEntries,
             sideButtons,
             sideTitle,
             mainTitle,
-            namespace,
             thumbnailStyle = { width: "auto", height: "9.3vh"}
         } = this.props;
         
-        const itemHeight = `${100 / numberOfEntries}%`;
-        let toRender = data.slice();
-        // if (data.length < numberOfEntries) {
-        //     toRender = addNullItemToData(data, numberOfEntries);
-        // }
-        let hasRenderedAdvertiseWithUs = false;
         return (
             <div
                 style={{ width: "100%", height: "100%", display: "flex" }}

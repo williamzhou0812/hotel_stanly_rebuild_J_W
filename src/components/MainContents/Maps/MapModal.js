@@ -6,11 +6,10 @@ import {
     MAX_ZOOM_LEVEL,
     MAP_HEIGHT,
     MAP_WIDTH,
-    HeavyOrange,
     HOVER_DELAY
 } from "../../../Constants";
 import ReactImageMagnify from 'react-image-magnify';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import CloseIcon from '@material-ui/icons/Close';
 import PropTypes from "prop-types";
 import "./Maps.scss";

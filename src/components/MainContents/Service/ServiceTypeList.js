@@ -6,9 +6,6 @@ import ListIcon from "../icons/ListIcon.png";
 import SubsectionList from "../List/SubsectionList";
 import { services } from "./ServiceData";
 class ServiceTypeList extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     
     render() {
         const service_name = this.props.match.params.servicename;

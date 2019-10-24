@@ -5,6 +5,10 @@
 
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import {
+  videosNamespace,
+  hotelDetailNamespace
+} from "../../../Constants";
 
 import Clock from "../../../components/MainContents/Clock/Clock";
 
@@ -12,6 +16,28 @@ import './SubNav.scss';
 
 
 class SubNav extends React.Component {
+
+  checkActive = (match, location) => {
+    //some additional logic to verify if current link is active
+    if(!location) return false;
+    const {pathname} = location;
+    // process check when match is provided
+    if (match) {
+        if (match.isExact)
+        return true;
+        if (pathname.indexOf(match.url) >= 0)
+            return true;
+    }
+    else if (pathname.indexOf(videosNamespace) >= 0) {
+      // highlight when last visit was hotel detail
+      if (this.props.lastPathname && 
+        this.props.lastPathname.indexOf(hotelDetailNamespace) >= 0)
+        return true;
+    }
+
+    return pathname === "/";
+  }
+
   render() {
     return (
       <div style={{ width: "100%", height: "3vh" }}>
@@ -23,6 +49,7 @@ class SubNav extends React.Component {
             className="subNav-container--about"
             to="/hoteldetail" 
             exact
+            isActive={this.checkActive}
             activeClassName="subNav-container--about-active">
              ABOUT OUR HOTEL
           </NavLink>          

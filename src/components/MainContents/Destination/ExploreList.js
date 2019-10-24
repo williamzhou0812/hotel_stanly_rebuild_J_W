@@ -6,16 +6,21 @@ import {
     activityNamespace,
     randomiseItems,
     destinationNamespace,
-    serviceNamespace
+    serviceNamespace,
+    diningNamespace
 } from "../../../Constants";
 import BackToIcon from './icons/BackIcon.png';
 import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
 import EventsIcon from "../../Header/Navs/icons/EVENTS_ICON.png";
+import DiningIcon from "../../Header/Navs/icons/DINING_ICON.png";
+import "./ExploreList.scss";
+
 // import data
 import { destinations } from "./DestinationData";
 import { services } from "../Service/ServiceData";
 import { activities } from "../Activity/ActivityData";
 import { events } from "../Event/EventData";
+import {restaurants } from "../Dining/DiningData";
 
 class ExploreList extends React.Component {
     constructor(props) {
@@ -57,12 +62,12 @@ class ExploreList extends React.Component {
         });
         // filter activities
         activities.forEach(item => {
-            const { id: activity_id, destinations: activity_destinations} = item;
+            const { id: activity_id, destinations: activity_destinations, title: activityTitle} = item;
             const filtered = activity_destinations.filter( activity_item => activity_item.destination_id === destination.id);
             const explore_data = filtered.map(activity_item => { return {
                 id: 'activityitem_' + activity_item.id,
                 url: activityNamespace + '/' + activity_id + '/' + activity_item.id,
-                title: activity_item.title.toUpperCase(),
+                title: activityTitle + " IN " + activity_item.title.toUpperCase(),
                 img_url: activityListIcon,
                 icon_title: "ACTIVITIES",
                 isIcon: true
@@ -85,6 +90,22 @@ class ExploreList extends React.Component {
                 explore_list = [...explore_list, explore_data]; 
             }
         });
+        // filter dinings
+        restaurants.forEach(item => {
+            if (item.destination_id === destination.id) {
+                const explore_data = {
+                    id: 'diningitem_' + item.id,
+                    url: diningNamespace + '/' + item.id,
+                    title: item.title.toUpperCase(),
+                    img_url: DiningIcon,
+                    icon_title: "DINING",
+                    isIcon: true
+                };
+                // add to collection
+                explore_list = [...explore_list, explore_data]; 
+            }
+        });
+
 
 
         return explore_list;
@@ -95,7 +116,7 @@ class ExploreList extends React.Component {
         const { destinationsDetail, explore_list } = this.state;
         // create output
         return (
-            <div style={{width:'100%', height: '100%', whiteSpace: 'nowarp'}}>
+            <div className="explorelist" style={{width:'100%', height: '100%', whiteSpace: 'nowarp'}}>
               
             
                 <SubsectionList
@@ -116,7 +137,7 @@ class ExploreList extends React.Component {
                     iconTitleStyle={{backgroundColor: DarkHeavyBlue, height: '63px', width: '207px'}}
                     urlKey="url"
                     itemTitleStyle={{fontSize: '1.98vw'}}
-                    itemTitleDivStyle={{paddingLeft: '18px'}}
+                    itemTitleDivStyle={{paddingLeft: '18px', width: '620px', letterSpacing: 'normal'}}
                 >
                     
                 </SubsectionList> 
