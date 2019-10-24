@@ -61,12 +61,12 @@ class ExploreList extends React.Component {
         });
         // filter activities
         activities.forEach(item => {
-            const { id: activity_id, destinations: activity_destinations} = item;
+            const { id: activity_id, destinations: activity_destinations, title: activityTitle} = item;
             const filtered = activity_destinations.filter( activity_item => activity_item.destination_id === destination.id);
             const explore_data = filtered.map(activity_item => { return {
                 id: 'activityitem_' + activity_item.id,
                 url: activityNamespace + '/' + activity_id + '/' + activity_item.id,
-                title: activity_item.title.toUpperCase(),
+                title: activityTitle + " IN " + activity_item.title.toUpperCase(),
                 img_url: activityListIcon,
                 icon_title: "ACTIVITIES",
                 isIcon: true
