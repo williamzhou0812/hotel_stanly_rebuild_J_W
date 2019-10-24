@@ -432,7 +432,7 @@ export const serviceInfoData = [
         destination_id: 1
 
     },
-    {
+    /*{
         id: 25,
         service_type_id: "Security",
         title: "Black Swan Security",
@@ -448,7 +448,7 @@ export const serviceInfoData = [
         ],
         destination_id: 1
 
-    },
+    },*/
     {
         id: 26,
         service_type_id: "AirTransportService",
@@ -1183,7 +1183,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1255,7 +1255,7 @@ export const serviceInfoData = [
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage1.jpg' },
             { imageFile: '/imgs/service/S4-Retail/S4A-Brian Bell/S4A-HeaderImage2.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1340,7 +1340,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {
@@ -1357,7 +1357,7 @@ export const serviceInfoData = [
         images: [
             { imageFile: '/imgs/service/S4-Retail/S4-HeaderImage.jpg' }
         ],
-        destination_id: -1
+        destination_id: 1
 
     },
     {

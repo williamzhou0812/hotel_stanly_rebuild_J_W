@@ -836,7 +836,8 @@ export const divingList = [
                 email: "nda@mtspng.com",
                 website: "www.niuginidive.com"
             }
-        ]
+        ],
+        destination_id: 3
     },
 
     {
@@ -930,7 +931,8 @@ export const divingList = [
                 email: "reservations@rapopo.com",
                 website: "www.rapopo.com"
             }
-        ]
+        ],
+        destination_id: 5
     },
     {
         id: 7,

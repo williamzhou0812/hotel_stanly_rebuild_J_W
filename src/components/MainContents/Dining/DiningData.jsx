@@ -396,7 +396,8 @@ export const restaurants = [{
         price: 'Entree: K30, Main: K65, Dessert: K26 ',
     },
     mapImage: '/imgs/dining/R-Dining/_Maps/R16-Grand-Brasserie-01.png',
-    images: [         { imageFile: '/imgs/dining/R-Dining/R16-HeaderImage_P.jpg' }     ]
+    images: [         { imageFile: '/imgs/dining/R-Dining/R16-HeaderImage_P.jpg' }     ],
+    destination_id: 1
 
 },
 {
@@ -550,7 +551,8 @@ export const restaurants = [{
         price: 'Entree: K12, Main: K20, Dessert: K10',
     },
     mapImage: '/imgs/dining/R-Dining/_Maps/R22-Port-Moresby-NAture-Park-Cafe-01.png',
-    images: [         { imageFile: '/imgs/dining/R-Dining/R22-HeaderImage_P.jpg' }     ]
+    images: [         { imageFile: '/imgs/dining/R-Dining/R22-HeaderImage_P.jpg' }     ],
+    destination_id: 1
 
 },
 {
