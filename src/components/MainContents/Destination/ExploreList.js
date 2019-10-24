@@ -13,6 +13,7 @@ import BackToIcon from './icons/BackIcon.png';
 import activityListIcon from "../../../components/MainContents/icons/ACTIVITIES_ICON.png";
 import EventsIcon from "../../Header/Navs/icons/EVENTS_ICON.png";
 import DiningIcon from "../../Header/Navs/icons/DINING_ICON.png";
+import "./ExploreList.scss";
 
 // import data
 import { destinations } from "./DestinationData";
@@ -115,7 +116,7 @@ class ExploreList extends React.Component {
         const { destinationsDetail, explore_list } = this.state;
         // create output
         return (
-            <div style={{width:'100%', height: '100%', whiteSpace: 'nowarp'}}>
+            <div className="explorelist" style={{width:'100%', height: '100%', whiteSpace: 'nowarp'}}>
               
             
                 <SubsectionList
