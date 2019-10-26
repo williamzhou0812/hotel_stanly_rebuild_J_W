@@ -972,7 +972,7 @@ export const activities = [
         title: 'DIVING',
         url: activityNamespace,
         destinations: divingList,
-        map_image: '/imgs/activity/A1-Diving/Map/MAP_Diving.png',
+        map_image: '/imgs/activity/_Maps/Diving Map-01.png',
         icon: divingIcon,
         images: [
             { imageFile: '/imgs/activity/A1-Diving/ACTIVITIES-DIVING-GALLERY_P.jpg' },
@@ -989,7 +989,7 @@ export const activities = [
         title: 'SURFING',
         url: activityNamespace,
         destinations: surfingList,
-        map_image: '',
+        map_image: '/imgs/activity/_Maps/Surfing Map-01.png',
         icon: surfingIcon,
         images: [
             { imageFile: '/imgs/activity/A2-Surfing/ACTIVITIES-SURFING-GALLERYIMAGES_P.jpg' },
@@ -1004,7 +1004,7 @@ export const activities = [
         title: 'FISHING',
         url: activityNamespace,
         destinations: fishingList,
-        map_image: '',
+        map_image: '/imgs/activity/_Maps/Fishing Map-01.png',
         icon: fishingIcon,
         images: [
             { imageFile: '/imgs/activity/A3-Fishing/ACTIVITIES-FISHING-GALLERYIMAGES_P.jpg' },
@@ -1016,7 +1016,7 @@ export const activities = [
         title: 'TREKKING',
         url: activityNamespace,
         destinations: trekkingList,
-        map_image: '',
+        map_image: '/imgs/activity/_Maps/Trekking Map-01.png',
         icon: trekkingIcon,
         images: [
             { imageFile: '/imgs/activity/A4-Trekking/ACTIVITIES-TREKKING-GALLERYIMAGES_P.jpg' },
@@ -1027,7 +1027,7 @@ export const activities = [
         title: 'BIRDWATCHING',
         url: activityNamespace,
         destinations: birdwatchingList,
-        map_image: '',
+        map_image: '/imgs/activity/_Maps/Birdwatching Map-01.png',
         icon: birdwatchingIcon,
         images: [
             { imageFile: '/imgs/activity/A5-Birwatching/ACTIVITIES-BIRDWATCHING-GALLERYIMAGES_P.jpg' }
@@ -1049,7 +1049,7 @@ export const activities = [
         title: 'ATTRACTIONS',
         url: activityNamespace,
         destinations: attractionsList,
-        map_image: '',
+        map_image: '/imgs/activity/_Maps/Attractions Map-01.png',
         icon: attractionsIcon,
         images: [
             { imageFile: '/imgs/activity/A7-Attractions/ACTIVITIES-ATTRACTIONS-GALLERYIMAGES_P.jpg' }
