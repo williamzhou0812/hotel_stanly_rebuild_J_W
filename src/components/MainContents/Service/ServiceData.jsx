@@ -374,7 +374,7 @@ export const serviceInfoData = [
         email: "",
         description: `Located in Port Moresby, PNG Chiropractic is there to help with any chiropractic needs.`,
         img_url: "/imgs/service/S1-Essential-Services/S1D-Medical-Services/S1-IMAGES21.jpg",
-        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1D3---Port-Moresby-Map-PNGchiro.png",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1D3---Port-Moresby-Map-PNGchiro-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
         ],
