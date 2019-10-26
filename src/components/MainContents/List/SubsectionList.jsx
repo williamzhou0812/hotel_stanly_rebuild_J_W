@@ -125,7 +125,7 @@ class SubsectionList extends React.Component {
                                     );
                                 }
                                 else {
-                                    return (<Fragment/>);
+                                    return (<Fragment key={index}/>);
                                 }                                
                             } else {
                                 return (
