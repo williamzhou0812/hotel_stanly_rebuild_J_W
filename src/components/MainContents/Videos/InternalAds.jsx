@@ -9,7 +9,7 @@ const images = [
       original: '/imgs/ads/internal/190523JBGINTERNALADS5_QVwQqkl.jpg',
     },
     {
-        original: '/imgs/ads/internal/190523JBGINTERNALADS2.jpg',
+        original: '/imgs/ads/internal/190523JBGINTERNALADS3.jpg',
     },
     {
         original: '/imgs/ads/internal/190523JBGINTERNALADS6_NZu8HSE.jpg',
