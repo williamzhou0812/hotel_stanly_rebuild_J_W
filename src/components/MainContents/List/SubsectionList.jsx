@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import DownButton from "../../MainContents/Destination/icons/DownExploreButton.png";
 import UpButton from "../../MainContents/Destination/icons/UpExploreButton.png";
 import { Link } from "react-router-dom";
@@ -114,14 +114,19 @@ class SubsectionList extends React.Component {
                                     </div>
                                 );
                             } else if (item.isMap) {
-                                return (
-                                    <SidebarMapModel
-                                        key={index}
-                                        item={item}
-                                        mainTitle={mainTitle}
-                                        mapImage={item.map}
-                                    />
-                                );
+                                if (item.map.length > 0) {
+                                    return (
+                                        <SidebarMapModel
+                                            key={index}
+                                            item={item}
+                                            mainTitle={mainTitle}
+                                            mapImage={item.map}
+                                        />
+                                    );
+                                }
+                                else {
+                                    return (<Fragment key={index}/>);
+                                }                                
                             } else {
                                 return (
                                     <div key={index}>

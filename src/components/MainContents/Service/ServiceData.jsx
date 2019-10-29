@@ -374,7 +374,7 @@ export const serviceInfoData = [
         email: "",
         description: `Located in Port Moresby, PNG Chiropractic is there to help with any chiropractic needs.`,
         img_url: "/imgs/service/S1-Essential-Services/S1D-Medical-Services/S1-IMAGES21.jpg",
-        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1D3---Port-Moresby-Map-PNGchiro.png",
+        mapImage: "/imgs/service/S1-Essential-Services/_Maps/S1D3---Port-Moresby-Map-PNGchiro-01.png",
         images: [
             { imageFile: '/imgs/service/S1-Essential-Services/S1D-Header-Images_P3.jpg' }
         ],
@@ -461,8 +461,8 @@ export const serviceInfoData = [
         img_url: "/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS.jpg",
         mapImage: "",
         images: [
-            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS2.jpg' },
-            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2LOGOS3.jpg' }
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2-MAINLISTIMAGES_AirNuigini_P.jpg' },
+            { imageFile: '/imgs/service/S2-Car-Hire/S2A-Air-Transport/S2-MAINLISTIMAGES_AirNuigini_P2.jpg' }
         ],
         destination_id: 1
 
@@ -629,7 +629,7 @@ export const serviceInfoData = [
         website: "http://www.michaelshauliers.net",
         email: "michaelshauliers777@gmail.com.au",
         description: `Over-dimensional & Heavy Haulage Specialists! Safe delivery on time! <br/>- Kenworth Heavy Duty Freight Trucks <br/>- Largest stockists of 30 floats/low loaders <br/>- Mercedes Benz (6x6) off-road heavy duty freight trucks <br/>- Largest stockists of diesel fuel tanker trucks For all your heavy haulage logistic requirements in PNG`,
-        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/Micheals & Micheals LTD_LogoLR-02-01.jpg",
+        img_url: "/imgs/service/S2-Car-Hire/S2B-Freight-Services/Micheals & Micheals LTD_Logo.jpg",
         mapImage: "",
         images: [
             { imageFile: '/imgs/service/S2-Car-Hire/S2B-Freight-Services/S2-MAINLISTIMAGES_P2.jpg' }

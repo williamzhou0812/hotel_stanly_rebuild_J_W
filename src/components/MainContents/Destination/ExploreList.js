@@ -46,11 +46,17 @@ class ExploreList extends React.Component {
             // retrieve service type info
             const { name ,title, icon, service_types } = item;
             service_types.forEach(service_type_item => {
-                const { id: service_type_id, services } = service_type_item;
+                const { id: service_type_id, services, serviceTypes } = service_type_item;
                 const filtered = services.filter(service_item => service_item.destination_id === destination.id)
-                const explore_data = filtered.map(service_item => { return {
+                const explore_data = filtered.map(service_item => {
+                    // retail service has a very specific url structure
+                    const service_item_url = (serviceTypes === 'retail') ? 
+                    serviceNamespace + '/' + name + '/' + service_type_id + '?id=' + service_item.id :
+                    serviceNamespace + '/' + name + '/' + service_type_id + '/' + service_item.id
+          
+                    return {
                     id: 'serviceitem_' + service_item.id,
-                    url: serviceNamespace + '/' + name + '/' + service_type_id + '/' + service_item.id,
+                    url: service_item_url,
                     title: service_item.title.toUpperCase(),
                     img_url: icon,
                     icon_title: title.toUpperCase(),

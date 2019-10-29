@@ -14,6 +14,7 @@ import MapModal from "../Maps/MapModal";
 import "../List/MainSectionList.scss";
 import "./Service.css";
 import { services } from "./ServiceData";
+const querystring = require('querystring');
 
 class ServiceBranch extends React.Component {
     constructor(props) {
@@ -25,7 +26,19 @@ class ServiceBranch extends React.Component {
         const sub_service_name = this.props.match.params.subservicename;
         const sub_service = service_types.find(item => item.id === sub_service_name);
         const sub_service_info_list = sub_service.services;
-        const index = 0;
+        // default index
+        let index = 0;
+        if (this.props.location.search) {
+            // get request id
+            const query = querystring.parse(this.props.location.search.replace('?', ''));
+            if (query.id) {
+                // id is provided, search from given data list
+                const requested = sub_service_info_list.find(item => item.id === parseInt(query.id));
+                if (requested) {
+                    index = sub_service_info_list.indexOf(requested);
+                }
+            }
+        }
         
         this.state = {
             service_name,

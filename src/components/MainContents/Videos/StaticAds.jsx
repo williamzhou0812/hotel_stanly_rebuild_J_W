@@ -37,18 +37,18 @@ class StaticAds extends Component  {
         }
 
         return (
-        
-            <Slider {...settings}>
-                 {random_ads.map((item, i) => {
-                    return (
-                        <div key={i}>
-                            <img src={item} alt="" />
-                        </div>
-                    )
-                })}
-            
-            </Slider>
-        
+            <div style={{height: '640px', overflow: 'hidden'}}>
+                <Slider {...settings}>
+                    {random_ads.map((item, i) => {
+                        return (
+                            <div key={i}>
+                                <img src={item} alt="" />
+                            </div>
+                        )
+                    })}
+                
+                </Slider>
+            </div>
            )
     }
     

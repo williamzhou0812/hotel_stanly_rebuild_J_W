@@ -122,11 +122,13 @@ class ActivityDestinationDetail extends React.Component {
                             <div className="menu-title">ALL ACTIVITIES</div>
                         </div>
                     </Link>
-                    <SidebarMapModel
-                        item={{ title: activity.title + " MAP", icon: mapIcon, isMap: true, map: activity.map_image }}
-                        mainTitle={activity.title}
-                        mapImage={activity.map_image}
-                    />
+                    {activity.map_image && (                        
+                        <SidebarMapModel
+                            item={{ title: activity.title + " MAP", icon: mapIcon, isMap: true, map: activity.map_image }}
+                            mainTitle={activity.title}
+                            mapImage={activity.map_image}
+                        />
+                    )}
                     <Link
                         to={"/activities/" + activity.id}
                         style={{

@@ -588,7 +588,7 @@ export const restaurants = [{
     imagesrc: '/imgs/dining/restaurant_logos/R25-DININGLOGO_kHZuGjy.png',
     phone: '+675 302 8888',
     address: 'The Stanley Hotel',
-    synopsis: `<p>If you’re seeking a fine dining experience, then look no further than Silver Leaf Restaurant. Boasting an opulent, modern interior, stunning views of Port Moresby complete this culinary experience where the quality of ingredients and flavours are unsurpassed.</p>`,
+    synopsis: `<p>If you’re seeking a fine dining experience, then look no further than Silver Leaf Restaurant. Boasting an opulent, modern interior, stunning views of Port Moresby complete this culinary experience where the quality of ingredients and flavours are unsurpassed.</p><p>Monday to Saturday 18:00 - 22:30 & Sunday: Closed</p>`,
     email: null,
     website: null,
     guide: {
