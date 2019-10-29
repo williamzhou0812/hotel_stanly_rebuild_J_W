@@ -39,19 +39,23 @@ class Footer extends Component  {
              cssEase:"linear"
 
          }
+
         return (
-           
-            <Slider {...settings}>
-                {random_ads.map((item, i) => {
-                    return (
-                        <div key={i}>
-                            <img src={item} alt="" />
-                        </div>
-                    )
-                })}
-            </Slider>
-     
-        )
+            <div className="slider-holder">
+                    <Slider {...settings}>
+                        {random_ads.map((item, i) => {
+                            return (
+                                <div key={i}>
+                                    <img src={item} alt="" />
+                                </div>
+                            )
+                        })}
+                    </Slider>
+                </div>
+
+        );
+
+       
     }
   
 
